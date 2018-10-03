@@ -618,13 +618,13 @@ html {
   vertical-align: middle;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.input,
-.mod .modal-dialog.mad1 .email .modal-body.input {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input {
   padding: 0;
   overflow: hidden;
   margin-bottom: 18px;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .country,
-.mod .modal-dialog.mad1 .email .modal-body.input .country {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .country {
   width: 112px;
   height: 44px;
   padding: 8px 10px;
@@ -634,24 +634,24 @@ html {
   color: #666;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .country span,
-.mod .modal-dialog.mad1 .email .modal-body.input .country span {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .country span {
   float: right;
   transform: rotate(180deg);
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .country span i,
-.mod .modal-dialog.mad1 .email .modal-body.input .country span i {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .country span i {
   font-size: 20px;
   transform: scale(2);
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .inputnmb,
-.mod .modal-dialog.mad1 .email .modal-body.input .inputnmb {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .inputnmb {
   width: 372px;
   height: 44px;
   float: right;
   color: #484848;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .inputnmb input,
-.mod .modal-dialog.mad1 .email .modal-body.input .inputnmb input {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .inputnmb input {
   border: none;
   outline: none;
   box-shadow: none;
@@ -664,16 +664,16 @@ html {
   letter-spacing: 1px;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .inputnmb input:focus,
-.mod .modal-dialog.mad1 .email .modal-body.input .inputnmb input:focus {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .inputnmb input:focus {
   border: 1px solid #008489;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.verify,
-.mod .modal-dialog.mad1 .email .modal-body.verify {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.verify {
   padding: 0;
   overflow: hidden;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.verify input,
-.mod .modal-dialog.mad1 .email .modal-body.verify input {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.verify input {
   width: 30%;
   background-color: #fff;
   height: 42px;
@@ -685,11 +685,11 @@ html {
   float: left;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.verify input:focus,
-.mod .modal-dialog.mad1 .email .modal-body.verify input:focus {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.verify input:focus {
   border-color: #008489;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.verify .result,
-.mod .modal-dialog.mad1 .email .modal-body.verify .result {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.verify .result {
   float: left;
   height: 42px;
   width: 30%;
@@ -706,7 +706,7 @@ html {
   font-family: Courier, monospace;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.verify .generate,
-.mod .modal-dialog.mad1 .email .modal-body.verify .generate {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.verify .generate {
   float: left;
   width: 30%;
   height: 42px;
@@ -722,26 +722,20 @@ html {
   font-weight: bold;
   cursor: pointer;
 }
-.mod .modal-dialog.mad1 .modal-content.phone .modal-body.verify .generate:hover,
-.mod .modal-dialog.mad1 .email .modal-body.verify .generate:hover {
-  background-color: #fff;
-  border-color: #008489;
-  color: #666;
-}
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password,
-.mod .modal-dialog.mad1 .email .modal-body.password {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password {
   overflow: hidden;
   padding: 0;
   margin: 16px 0;
   position: relative;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password .box,
-.mod .modal-dialog.mad1 .email .modal-body.password .box {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password .box {
   overflow: hidden;
   position: relative;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password .box .pwd,
-.mod .modal-dialog.mad1 .email .modal-body.password .box .pwd {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password .box .pwd {
   height: 44px;
   outline: none;
   box-shadow: none;
@@ -754,48 +748,48 @@ html {
   overflow: hidden;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password .box .pwd:focus,
-.mod .modal-dialog.mad1 .email .modal-body.password .box .pwd:focus {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password .box .pwd:focus {
   border-color: #008489;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password .box > i,
-.mod .modal-dialog.mad1 .email .modal-body.password .box > i {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password .box > i {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 24px;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password .box > i i.show,
-.mod .modal-dialog.mad1 .email .modal-body.password .box > i i.show {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password .box > i i.show {
   color: #ccc;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password p,
-.mod .modal-dialog.mad1 .email .modal-body.password p {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password p {
   line-height: 20px;
   font-size: 14px;
   height: 20px;
   color: #fc642d;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password p i,
-.mod .modal-dialog.mad1 .email .modal-body.password p i {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password p i {
   padding-right: 8px;
   vertical-align: middle;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password p.strength,
-.mod .modal-dialog.mad1 .email .modal-body.password p.strength {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password p.strength {
   color: #008489;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.rule,
-.mod .modal-dialog.mad1 .email .modal-body.rule {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.rule {
   padding: 0;
   margin-bottom: 10px;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.rule .box,
-.mod .modal-dialog.mad1 .email .modal-body.rule .box {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.rule .box {
   overflow: hidden;
   float: left;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.rule .box .check,
-.mod .modal-dialog.mad1 .email .modal-body.rule .box .check {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.rule .box .check {
   float: left;
   height: 16px;
   width: 16px;
@@ -804,12 +798,12 @@ html {
   margin-top: 6px;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.rule p,
-.mod .modal-dialog.mad1 .email .modal-body.rule p {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.rule p {
   overflow: hidden;
   padding: 3px 5px;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.button,
-.mod .modal-dialog.mad1 .email .modal-body.button {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.button {
   margin-bottom: 10px;
   text-align: center;
   background-color: #ff5a5f;
@@ -821,13 +815,15 @@ html {
   border: 1px solid rgba(0, 132, 137, 0);
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.button:hover,
-.mod .modal-dialog.mad1 .email .modal-body.button:hover {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.button:hover {
   background-color: #008489;
 }
-.mod .modal-dialog.mad1 .modal-content.regist.email .modal-body.input .inputnmb {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .inputnmb {
   width: 100%;
 }
-.mod .modal-dialog.mad1 .modal-content.regist.email .modal-body.input .inputnmb input {
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .inputnmb input {
+  width: 100%;
+  height: 100%;
   letter-spacing: 1px;
   font-size: 16px;
 }
