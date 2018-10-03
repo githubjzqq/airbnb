@@ -111,16 +111,27 @@ $(function() {
 
     //验证手机号；
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .inputnmb input').on('keyup', function() {
-        var reg = /^1[34578]\d{9}$/;
+        var reg = /^1[34578][0-9]{9}$/;
         if (reg.test($(this).val())) {
             $(this).css('border-color', 'yellowgreen');
         } else {
             $(this).css('border-color', 'red');
         }
     });
+    //验证邮箱：
+    $('.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .inputnmb input').on('keyup', function() {
+        var reg = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+        reg.test($(this).val()) ? $(this).css('border-color', 'yellowgreen') : $(this).css('border-color', 'red');
+    });
+    //生成验证码函数；
+    function generate(e) {
+        $(this).off('click');
+        $(this).css({ 'background-color': '#999', 'border-color': 'transparent' });
+        $(this).html('20秒后重新获取');
+        $(this).siblings('input').val(''); //每次点击清除输入框内容；
+        $(this).siblings('input').css('border-color', ''); //初始化边框样式；
 
-    //生成验证码；
-    function generate() {
+        //随机数生成函数；
         function generateNum() {
             var num = 0;
             do {
@@ -129,8 +140,49 @@ $(function() {
             return num;
         };
         var str = String.fromCharCode(generateNum(), generateNum(), generateNum(), generateNum(), generateNum(), generateNum());
-        $(this).parent().children('.result').html(str);
-        console.log(str.toLowerCase());
+        $(this).siblings('.result').html(str);
+        setTimeout(function() {
+            $(e.target).css('background-color', '');
+            $(e.target).on('click', generate);
+            $(e.target).html('点击获取验证码');
+        }, 21000);
+
+        //动态倒计时；
+        for (let i = 20; i > 0; i--) {
+            setTimeout(function() {
+                $(e.target).html((21 - i) + '秒后重新获取');
+            }, i * 1000)
+        }
     }
     $('.mod .modal-dialog.mad1 .modal-content .modal-body.verify .generate').on('click', generate);
+
+    //验证验证码
+    $('.mod .modal-dialog.mad1 .modal-content .modal-body.verify input').on('keyup', function() {
+        var str1 = $(this).siblings('.result').html().toLowerCase();
+        var str2 = $(this).val().toLowerCase(); //转为小写比较（不区分大小写）
+        if (str1 && str2) {
+            if (str1 === str2) {
+                $(this).css('border-color', 'yellowgreen');
+            } else {
+                $(this).css('border-color', 'red');
+            }
+        }
+    });
+
+    //验证密码(验证数字，大写字母，小写字母，特殊字符四选三组成的密码强度，且长度在8到30个数之间);
+    $('.mod .modal-dialog.mad1 .modal-content .modal-body.password .pwd').on('keyup', function() {
+        var reg = /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]{8,30}$/;
+        reg.test($(this).val()) ? $(this).css('border-color', 'yellowgreen') : $(this).css('border-color', 'red');
+        if ($(this).val().length > 7) {
+            $(this).parent().siblings('.length').children('.val').css('color', 'yellowgreen').siblings('i').css('color', 'yellowgreen');
+            $(this).parent().siblings('.length').children('i').removeClass('icon-cha').addClass('icon-gou');
+            if (reg.test($(this).val())) {
+                $(this).parent().siblings('.word').children('.val').css('color', 'yellowgreen').siblings('i').css('color', 'yellowgreen');
+                $(this).parent().siblings('.word').children('i').removeClass('icon-cha').addClass('icon-gou');
+            }
+        } else {
+            $(this).parent().siblings('p').children('.val').css('color', '#fc642d').siblings('i').css('color', '#fc642d');
+            $(this).parent().siblings('p').children('i').removeClass('icon-cha').addClass('icon-cha');
+        }
+    });
 });
