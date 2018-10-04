@@ -1,5 +1,7 @@
 $(function() {
-    var login = 0; //登陆状态；
+    var login = 0; //储存登陆信息；
+    var regist = {}; //储存注册信息；
+    regist.url = '../php/regist.php';
 
 
     if (login) {
@@ -113,7 +115,7 @@ $(function() {
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.input .inputnmb input').on('keyup', function() {
         var reg = /^1[34578][0-9]{9}$/;
         if (reg.test($(this).val())) {
-            $(this).css('border-color', 'yellowgreen');
+            $(this).css('border-color', '');
         } else {
             $(this).css('border-color', 'red');
         }
@@ -121,7 +123,7 @@ $(function() {
     //验证邮箱：
     $('.mod .modal-dialog.mad1 .modal-content.email .modal-body.input .inputnmb input').on('keyup', function() {
         var reg = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
-        reg.test($(this).val()) ? $(this).css('border-color', 'yellowgreen') : $(this).css('border-color', 'red');
+        reg.test($(this).val()) ? $(this).css('border-color', '') : $(this).css('border-color', 'red');
     });
     //生成验证码函数；
     function generate(e) {
@@ -162,7 +164,7 @@ $(function() {
         var str2 = $(this).val().toLowerCase(); //转为小写比较（不区分大小写）
         if (str1 && str2) {
             if (str1 === str2) {
-                $(this).css('border-color', 'yellowgreen');
+                $(this).css('border-color', '');
             } else {
                 $(this).css('border-color', 'red');
             }
@@ -170,7 +172,7 @@ $(function() {
     });
 
     //验证密码(验证数字，大写字母，小写字母，特殊字符四选三组成的密码强度，且长度在8到30个数之间);
-    $('.mod .modal-dialog.mad1 .modal-content .modal-body.password .pwd').on('keyup', function() {
+    $('.mod .modal-dialog.mad1 .modal-content.regist .modal-body.password .pwd').on('keyup', function() {
         var reg = /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]{8,30}$/;
         reg.test($(this).val()) ? $(this).css('border-color', 'yellowgreen') : $(this).css('border-color', 'red');
         if ($(this).val().length > 7) {
@@ -185,4 +187,70 @@ $(function() {
             $(this).parent().siblings('p').children('i').removeClass('icon-cha').addClass('icon-cha');
         }
     });
+    //密码显示&隐藏；
+    $('.mod .modal-dialog.mad1 .modal-content .modal-body.password i').on('click', function() {
+        if ($(this).siblings('.pwd').val()) {
+            $(this).toggleClass('show');
+            $(this).siblings('.pwd')[0].type == 'text' ? $(this).siblings('.pwd')[0].type = 'password' : $(this).siblings('.pwd')[0].type = 'text';
+        }
+    });
+
+    //邮箱注册&登陆提交验证；
+    $('.mod .modal-dialog.mad1 .modal-content.email .modal-body.button').on('click', function() {
+        regist.email = [];
+        var reg1 = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+        var reg2 = /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]{8,30}$/;
+        regist.email.push(reg1.test($(this).siblings('.input').children('.inputnmb').children('input').val()));
+        if ($(this).siblings('.verify').length != 0) {
+            console.log($(this).siblings('.verify').children('input').val(), $(this).siblings('.verify').children('.result').html());
+            if ($(this).siblings('.verify').children('input').val()) {
+                regist.email.push($(this).siblings('.verify').children('input').val().toLowerCase() === $(this).siblings('.verify').children('.result').html().toLowerCase());
+            } else {
+                regist.email.push(false);
+            }
+        };
+        regist.email.push(reg2.test($(this).siblings('.password').children('.box').children('.pwd').val()));
+        regist.email.push($(this).siblings('.rule').children('.box').children('.check')[0].checked);
+        regist.emailAd = regist.email.every(function(item, index, array) {
+            return item == true;
+        })
+        console.log(regist.email, regist.emailAd);
+    });
+
+    //手机号注册&登陆提交验证；
+    $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', function() {
+        regist.phone = [];
+        var reg1 = /^1[34578][0-9]{9}$/;
+        var reg2 = /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]{8,30}$/;
+        regist.phone.push(reg1.test($(this).siblings('.input').children('.inputnmb').children('input').val()));
+        if ($(this).siblings('.verify').length != 0) {
+            console.log($(this).siblings('.verify').children('input').val(), $(this).siblings('.verify').children('.result').html());
+            if ($(this).siblings('.verify').children('input').val()) {
+                regist.phone.push($(this).siblings('.verify').children('input').val().toLowerCase() === $(this).siblings('.verify').children('.result').html().toLowerCase());
+            } else {
+                regist.phone.push(false);
+            }
+        };
+        regist.phone.push(reg2.test($(this).siblings('.password').children('.box').children('.pwd').val()));
+        regist.phone.push($(this).siblings('.rule').children('.box').children('.check')[0].checked);
+        regist.phoneAd = regist.phone.every(function(item, index, array) {
+            return item == true;
+        });
+        console.log(regist.phone, regist.phoneAd);
+        regist.phoneData = ;
+        if (regist.phoneAd) {
+            $.ajax({
+                url: regist.url,
+                type: 'post',
+                data: regist.phoneData,
+                success: function() {
+
+                },
+                error: function(err) {
+                    console.log(err)
+                },
+            })
+        }
+    });
+
 });

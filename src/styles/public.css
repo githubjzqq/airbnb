@@ -758,8 +758,8 @@ html {
   right: 10px;
   font-size: 24px;
 }
-.mod .modal-dialog.mad1 .modal-content.phone .modal-body.password .box > i i.show,
-.mod .modal-dialog.mad1 .modal-content.email .modal-body.password .box > i i.show {
+.mod .modal-dialog.mad1 .modal-content.phone .modal-body.password .box > i.show,
+.mod .modal-dialog.mad1 .modal-content.email .modal-body.password .box > i.show {
   color: #ccc;
 }
 .mod .modal-dialog.mad1 .modal-content.phone .modal-body.password p,
