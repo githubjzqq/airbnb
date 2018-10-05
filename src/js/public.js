@@ -196,11 +196,12 @@ $(function() {
     });
 
     //邮箱注册&登陆提交验证；
-    $('.mod .modal-dialog.mad1 .modal-content.email .modal-body.button').on('click', function() {
+    function email() {
         regist.email = [];
         var reg1 = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
         var reg2 = /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]{8,30}$/;
         regist.email.push(reg1.test($(this).siblings('.input').children('.inputnmb').children('input').val()));
+        console.log($(this).siblings('.verify'));
         if ($(this).siblings('.verify').length != 0) {
             console.log($(this).siblings('.verify').children('input').val(), $(this).siblings('.verify').children('.result').html());
             if ($(this).siblings('.verify').children('input').val()) {
@@ -215,42 +216,59 @@ $(function() {
             return item == true;
         })
         console.log(regist.email, regist.emailAd);
-    });
+    }
+    $('.mod .modal-dialog.mad1 .modal-content.email .modal-body.button').on('click', email);
 
     //手机号注册&登陆提交验证；
-    $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', function() {
+    function phone() {
+        $(this).siblings('.tips').css('display', ''); //清除报错信息；
         regist.phone = [];
         var reg1 = /^1[34578][0-9]{9}$/;
         var reg2 = /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]{8,30}$/;
-        regist.phone.push(reg1.test($(this).siblings('.input').children('.inputnmb').children('input').val()));
+        var phoneNmb = $(this).siblings('.input').children('.inputnmb').children('input').val();
+        var pwd = $(this).siblings('.password').children('.box').children('.pwd').val();
+        regist.phone.push(reg1.test(phoneNmb));
         if ($(this).siblings('.verify').length != 0) {
-            console.log($(this).siblings('.verify').children('input').val(), $(this).siblings('.verify').children('.result').html());
+            console.log(phoneNmb, pwd);
             if ($(this).siblings('.verify').children('input').val()) {
                 regist.phone.push($(this).siblings('.verify').children('input').val().toLowerCase() === $(this).siblings('.verify').children('.result').html().toLowerCase());
             } else {
                 regist.phone.push(false);
             }
         };
-        regist.phone.push(reg2.test($(this).siblings('.password').children('.box').children('.pwd').val()));
+        regist.phone.push(reg2.test(pwd));
         regist.phone.push($(this).siblings('.rule').children('.box').children('.check')[0].checked);
         regist.phoneAd = regist.phone.every(function(item, index, array) {
             return item == true;
         });
         console.log(regist.phone, regist.phoneAd);
-        regist.phoneData = ;
         if (regist.phoneAd) {
-            $.ajax({
-                url: regist.url,
-                type: 'post',
-                data: regist.phoneData,
-                success: function() {
-
-                },
-                error: function(err) {
-                    console.log(err)
-                },
-            })
+            regist.phoneData = 'phoneNmb=' + phoneNmb + '&pwd=' + pwd;
+            //注册账号操作；
+            console.log($(this).text());
+            if ($(this).text() === '注册') {
+                console.log('注册');
+                regist.url = '../php/regist.php';
+                if (regist.phoneAd) {
+                    $.ajax({
+                        url: regist.url,
+                        type: 'post',
+                        data: regist.phoneData,
+                        success: function(data) {
+                            console.log(data);
+                        },
+                        error: function(err) {
+                            console.log(err)
+                        },
+                    })
+                }
+            } else {
+                //登陆操作；
+            }
+        } else {
+            $(this).siblings('.tips').css('display', 'block'); //报错；
         }
-    });
+    }
+    $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', phone);
 
 });

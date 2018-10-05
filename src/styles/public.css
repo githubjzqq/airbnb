@@ -541,6 +541,19 @@ html {
   display: none;
   padding: 32px;
   border-radius: 2px;
+  position: relative;
+}
+.mod .modal-dialog.mad1 .modal-content .tips {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 70px;
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  display: none;
+  padding: 5px 15px;
+  background-color: yellow;
 }
 .mod .modal-dialog.mad1 .modal-content.active {
   display: block;
