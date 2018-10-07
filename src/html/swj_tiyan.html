@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 引入bootstrap的和自加的css文件 -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="swj_tiyan.css">
+    <link rel="stylesheet" href="swj_common.css">
+
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- 下方横条 -->
+    <div style="width:100%;background-color: #fff;height:70px;position: fixed;bottom: 1px;z-index: 5; ">
+        <div class="fix">
+            <div class="user" style="width:48px;float: left;"><img src="https://z2.muscache.cn/im/pictures/user/803da5d9-5b33-4b2a-9e84-504bc8ed8562.jpg?aki_policy=profile_x_medium" alt="头像"></div>
+            <div style="width:264px;float: left;padding-left: 15px;"><small>Yacht along the coast with a captain<br>体验达人：Ian</small></div>
+            <div style="width: 390px;height: 50px;float:right">
+                <a style="color:black;" href="#">￥320每人</a><br>
+                <i class="xing">
+                <span>4.98</span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <a style="color: rgb(0, 132, 137);" href="#">61条评价</a>
+            </i>
+                <div class="btn-right">
+                    <div>查看日期</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%;height: 1000px;border-bottom: 1px solid rgba(196, 189, 189, 0.781);">
+        <!-- 左侧轮播 -->
+        <div style="width: 1290px;height: 1000px; margin:0 auto;" class="lunbo">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- 轮播列表 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+
+                </ol>
+
+                <!-- 插入图片 -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="https://z2.muscache.cn/im/pictures/2ce3945d-3259-4d02-8854-ef38ecc400ec.jpg?aki_policy=poster" alt="第一张">
+                    </div>
+                    <div class="item">
+                        <img src="https://z2.muscache.cn/im/pictures/2c8161bc-b1d3-4981-be71-e6399692a70f.jpg?aki_policy=poster" alt="第二张">
+                    </div>
+                    <div class="item">
+                        <img src="https://z2.muscache.cn/im/pictures/697b72d7-4331-4059-a6fe-b255dae6ebe2.jpg?aki_policy=poster" alt="第三张">
+                    </div>
+                    <div class="item">
+                        <img src="https://z2.muscache.cn/im/pictures/77836451-5f41-48d6-a640-560337d10e59.jpg?aki_policy=poster" alt="第四张">
+                    </div>
+                    <div class="item">
+                        <img src="https://z2.muscache.cn/im/pictures/78b100ad-195e-4748-b29d-dc8a5e4cdc95.jpg?aki_policy=poster" alt="第五张">
+                    </div>
+                    <div class="item">
+                        <img src="https://z2.muscache.cn/im/pictures/9dbeb577-b940-4d47-8060-f37094697ca2.jpg?aki_policy=poster" alt="第六张">
+                    </div>
+                    <div class="item">
+                        <img src="https://z2.muscache.cn/im/pictures/f0463437-b8af-4aaf-a279-d4339f91b9d4.jpg?aki_policy=poster" alt="第七张">
+                    </div>
+
+                </div>
+
+                <!-- 轮播控制 -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 右侧文章 -->
+            <div class="article-right">
+                <div>
+                    <small style="font-weight: 600;">乘船游览</small>
+                    <div style="float:right;margin-right: 20px;font-size: 18px;">
+                        <span class="glyphicon glyphicon-new-window" style="font-weight: 200; margin-right:10px;"></span>
+                        <span class="glyphicon glyphicon-heart-empty"></span>
+                    </div>
+                </div>
+                <h1 style="font-weight:800;width: 655px;height: 104px;font-size: 40px;">Yacht along the coast with a captain</h1>
+                <div class="user1" style="width:100%;margin-top: 15px;"><img src="https://z2.muscache.cn/im/pictures/user/803da5d9-5b33-4b2a-9e84-504bc8ed8562.jpg?aki_policy=profile_x_medium" alt="头像"></div>
+                <br>
+                <div style="width: 565px;float: left;">
+                    <div style="font-size:18px;font-weight: 600;height: 30px;">关于您的体验达人Ian</div>
+                    <br>
+                    <span class="eng">
+                    I was born in Gangneung, Korea. I've crossed the Straits of Korea from<br> Japan and I've also sailed to the South Sea and the East Sea from<br>  Tongyeong to Anmok Port. 
+                    I am an experienced skipper with a formal<br> yacht certificate and a rescue agent certificate. I provide nice music<br> on the yacht and I can guide you through the city of Gangneung.
+                    I can<br> also introduce you to rooms, restaurants, and sightseeing spots. You'll <br>live like a Gangneung local during your time with me.
+                    </span>
+                </div>
+                <div style="float:right;" class="tips">
+                    <div><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;<a style="color:rgb(0, 132, 137) ">江陵市</a></div>
+                    <div><span class="glyphicon glyphicon-dashboard"></span>&nbsp;&nbsp;&nbsp;2小时</div>
+                    <div><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;零食和饮品</div>
+                    <div><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;以英语和韩语提供</div>
+                </div>
+                <div style="width: 820px;float: left;margin-top:50px;border-top: 1px solid rgba(196, 189, 189, 0.781);">
+                    <div style="width: 565px; font-size:18px;font-weight: 600;height: 30px;margin:20px 0;">体验内容</div>
+
+                    <span class="eng" style="float:left;">
+                        We will sail together on my 28-foot yacht and explore beautiful<br>
+                         Gangneung. You'll have the opportunity to swim, tan, and snorkel<br> 
+                          with your own gear. There is no shark or crocodile in God blessing. <br> 
+                          You'll enjoy simple snacks and drinks. You can also use the Bluetooth <br> 
+                          amplifier to enjoy your favorite music. We'll take in breathtaking views<br> 
+                           of the sea from Gyeongpo Beach and Daegwallyeong. It will be a<br> 
+                         wonderfully satisfying experience and we'll all enjoy it together.
+                    </span>
+                    <div style="float:right;width: 200px; " class="tips ">
+                        <div style="font-weight: 800;">体验内包括的东西</div><br>
+                        <div>free Drinks <span class="glyphicon glyphicon-glass "></span></div>
+                        <div>I'll provide free (water, mixed<br>coffee, soft drinks.)</div><br>
+                        <div>free Snacks and sweets <span class="glyphicon glyphicon-cutlery "></span></div><br>
+                        <div style="font-weight: 800;">准备物品</div><br>
+                        <div>Hat, sunglasses, sun block, sneakers</div>
+                    </div>
+                    <div style=" width: 565px; font-size:18px;font-weight: 600;height:20px;margin:10px 0;float:left;">其他应注意的事项</div>
+                    <span style="float:left; "> Smoking is not permitted. Your valuables will be kept in private<br>
+                            storage. Do not fall into the sea and do wear a life jacket.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height:500px;width: 100%;"></div>
+
+    <!-- 滚动条监听事件 -->
+    <!-- <script>
+        $(document).scroll(function() {     
+            var scroH = $(document).scrollTop(); //滚动高度		
+            var viewH = $(window).height(); //可见高度		
+            var contentH = $(document).height(); //内容高度         
+            if (scroH > 10) { //距离顶部大于100px时         
+            }
+            if (contentH - (scroH + viewH) <=  100) { //距离底部高度小于100px                     
+            } 
+            if (contentH = (scroH + viewH)) { //滚动条滑到底部啦                     
+            }    
+        });
+    </script> -->
+    <!-- 引入bootstrap和jq的js文件 -->
+    <script src="./node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+</body>
+
+</html>
