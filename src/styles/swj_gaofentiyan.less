@@ -3,7 +3,7 @@
     a{
         text-decoration: none;
     }
-    h3{
+    h4{
         font-weight: 700;
         color: black;
     }
@@ -25,19 +25,19 @@ a{
     color: black;
 }  
 .all{
-    width: 1150px;
-    height: 900px;
+    width: 12rem;
+    height: 6rem;
     margin: 0 auto;
 
     .title{
-        margin-top: 20px;
+        margin-top: .2rem;
         a{
         color: black;
         }
     }
     img{
-        width: 262px;
-        height: 164px;
+        width: 2.62rem;
+        height: 1.64rem;
         overflow: hidden;
     }
     .exam:hover{
@@ -47,10 +47,10 @@ a{
         transform: scale(1.1);
     }
     .row{
-        width: 1200px;
-       height:700px;
+        width: 12rem;
+        height:6rem;
     .exam{
-        margin-top:40px;
+        margin-top:.4rem;
     .xing{
      span{
          cursor: pointer;
@@ -61,3 +61,29 @@ a{
    }
 
 } 
+@media screen and (max-width:768px){
+    .title{
+        p{
+             font-size: 24px;
+        };
+        h4{
+            font-size:24px; 
+        };
+        a{
+            font-size: 25px;
+       };
+    } 
+}
+@media screen and (max-width:1200px){
+    .title{
+        p{
+             font-size: 28px;
+        };
+        h4{
+            font-size:28px; 
+        };
+        a{
+            font-size: 29px;
+       };
+    } 
+}

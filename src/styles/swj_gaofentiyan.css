@@ -4,7 +4,7 @@
 .title a {
   text-decoration: none;
 }
-.title h3 {
+.title h4 {
   font-weight: 700;
   color: black;
 }
@@ -22,19 +22,19 @@ a {
   color: black;
 }
 .all {
-  width: 1150px;
-  height: 900px;
+  width: 12rem;
+  height: 6rem;
   margin: 0 auto;
 }
 .all .title {
-  margin-top: 20px;
+  margin-top: .2rem;
 }
 .all .title a {
   color: black;
 }
 .all img {
-  width: 262px;
-  height: 164px;
+  width: 2.62rem;
+  height: 1.64rem;
   overflow: hidden;
 }
 .all .exam:hover {
@@ -42,13 +42,35 @@ a {
   transform: scale(1.1);
 }
 .all .row {
-  width: 1200px;
-  height: 700px;
+  width: 12rem;
+  height: 6rem;
 }
 .all .row .exam {
-  margin-top: 40px;
+  margin-top: .4rem;
 }
 .all .row .exam .xing span {
   cursor: pointer;
   color: #008489;
+}
+@media screen and (max-width: 768px) {
+  .title p {
+    font-size: 24px;
+  }
+  .title h4 {
+    font-size: 24px;
+  }
+  .title a {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .title p {
+    font-size: 28px;
+  }
+  .title h4 {
+    font-size: 28px;
+  }
+  .title a {
+    font-size: 29px;
+  }
 }

@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" id="vp" content="width=device-width, initial-scale=1">
     <title>高分体验</title>
+    <!-- 引入bootstrap的和自加的css文件 -->
     <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/swj_gaofentiyan.css">
     <link rel="stylesheet" href="../styles/swj_common.css">
@@ -13,20 +14,30 @@
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <script type="text/javascript">
+        //把尺寸放大N倍(N是window. devicePixelRatio(视窗宽度)) 
+        var wd = document.documentElement.clientWidth * window.devicePixelRatio / 10;
+        document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        //把屏幕的倍率缩小到N分之一一 (N是window. devicePixelRatio)
+        var scale = 1 / window.devicePixelRatio;
+        var mstr = 'initial-scale= ' + scale + ',maximum-scale=' + scale + ',minimum-scale= ' + scale + ', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
 </head>
 
 
 
 <body>
-    <div style="width: 100%;height:900px;">
+    <div style="width: 100%;height:9rem;">
 
 
-        <div class="all">
+        <div class="all" style="margin:0 auto;">
             <div class="title">
                 <a href="#"><span><h3>高分体验</h3><p>当地人和全球旅行者赞不绝口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-right"></span></p></span></a>
             </div>
-            <div class="row">
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="row" style="margin:0 auto;">
+
+                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/e21bf2f4-7b01-4175-a76a-b72b9d047173.jpg?aki_policy=large" alt="https://z1.muscache.cn/im/pictures/e21bf2f4-7b01-4175-a76a-b72b9d047173.jpg?aki_policy=large"></a>
                     <a href="#" class="text-decoration: none;">
                         <p class="text-danger" style="cursor: pointer;">乘船游览·江陵</p>
@@ -36,16 +47,17 @@
                     </a>
                     <a href="#">每人￥318</a><br>
                     <i class="xing">
-                        <span>4.98</span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <a href="#">61</a>
+                            <span>4.98</span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <a href="#">61</a>
                     </i>
+
                 </div>
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/7045c7ca-e603-42f4-9cef-8057d387f12a.jpg?aki_policy=large"></a>
                     <a href="#" class="text-decoration: none;">
                         <p style="cursor: pointer;">乘船游览·江陵</p>
@@ -62,9 +74,9 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
                             <a href="#">61</a>
-                        </i>
+                    </i>
                 </div>
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/79335a79-379b-444b-8d52-251e89b378b9.jpg?aki_policy=large"></a>
                     <a href="#" class="text-decoration: none;">
                         <p style="cursor: pointer;">乘船游览·江陵</p>
@@ -74,17 +86,40 @@
                     </a>
                     <a href="#">每人￥318</a><br>
                     <i class="xing">
-                                <span>4.98</span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <a href="#">61</a>
-                            </i>
+                            <span>4.98</span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <a href="#">61</a>
+                    </i>
                 </div>
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/3eb66cf0-39dc-4560-b138-e99ec157a95d.jpg?aki_policy=large"></a>
+                    <a href="#" class="text-decoration: none;">
+                        <p style="cursor: pointer;">乘船游览·江陵</p>
+                    </a>
+                    <a href="#">
+                        <h4 style="font-weight: 600;cursor: pointer;">Yacht along the coast with a captain</h4>
+                    </a>
+                    <a href="#">每人￥318</a><br>
+                    <i class="xing">
+                        <span>4.98</span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <a href="#">61</a>
+                   </i>
+                </div>
+
+
+
+
+                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/a7e59c75-a34d-4964-81e4-894e9b6afa66.jpg?aki_policy=large"></a>
                     <a href="#" class="text-decoration: none;">
                         <p style="cursor: pointer;">乘船游览·江陵</p>
                     </a>
@@ -102,12 +137,8 @@
                         <a href="#">61</a>
                     </i>
                 </div>
-
-
-
-
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/a7e59c75-a34d-4964-81e4-894e9b6afa66.jpg?aki_policy=large"></a>
+                <div class="exam col-lg-3 col-`-6 col-sm-6 col-xs-12">
+                    <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/b11a5248-93c2-4a56-b8f4-b37c2fd2371c.jpg?aki_policy=large"></a>
                     <a href="#" class="text-decoration: none;">
                         <p style="cursor: pointer;">乘船游览·江陵</p>
                     </a>
@@ -123,10 +154,10 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
                             <a href="#">61</a>
-                        </i>
+                    </i>
                 </div>
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/b11a5248-93c2-4a56-b8f4-b37c2fd2371c.jpg?aki_policy=large"></a>
+                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/3a004989-ba62-4c48-82df-99993b371ec2.jpg?aki_policy=large"></a>
                     <a href="#" class="text-decoration: none;">
                         <p style="cursor: pointer;">乘船游览·江陵</p>
                     </a>
@@ -142,28 +173,9 @@
                                 <span class="glyphicon glyphicon-star"></span>
                                 <span class="glyphicon glyphicon-star"></span>
                                 <a href="#">61</a>
-                            </i>
+                    </i>
                 </div>
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/3a004989-ba62-4c48-82df-99993b371ec2.jpg?aki_policy=large"></a>
-                    <a href="#" class="text-decoration: none;">
-                        <p style="cursor: pointer;">乘船游览·江陵</p>
-                    </a>
-                    <a href="#">
-                        <h4 style="font-weight: 600;cursor: pointer;">Yacht along the coast with a captain</h4>
-                    </a>
-                    <a href="#">每人￥318</a><br>
-                    <i class="xing">
-                                    <span>4.98</span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <a href="#">61</a>
-                                </i>
-                </div>
-                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="exam col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="#"> <img style="cursor: pointer;" src="https://z1.muscache.cn/im/pictures/632e48f7-3e9f-4d47-860e-08d8a902653d.jpg?aki_policy=large"></a>
                     <a href="#" class="text-decoration: none;">
                         <p style="cursor: pointer;">乘船游览·江陵</p>
@@ -173,19 +185,21 @@
                     </a>
                     <a href="#">每人￥318</a><br>
                     <i class="xing">
-                            <a href="#"><span>4.98</span></a>
-                            <a href="#"><span class="glyphicon glyphicon-star"></span></a>
-                            <a href="#"><span class="glyphicon glyphicon-star"></span></a>
-                            <a href="#"><span class="glyphicon glyphicon-star"></span></a>
-                            <a href="#"><span class="glyphicon glyphicon-star"></span></a>
-                            <a href="#"><span class="glyphicon glyphicon-star"></span></a>
-                           <!-- <span class="glyphicon glyphicon-heart"></span> -->
-                            <a href="#">61</a>
+                        <a href="#"><span>4.98</span></a>
+                        <a href="#"><span class="glyphicon glyphicon-star"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-star"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-star"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-star"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-star"></span></a>
+                       <!-- <span class="glyphicon glyphicon-heart"></span> -->
+                        <a href="#">61</a>
                     </i>
                 </div>
             </div>
-            <a href="#"><span style="color: rgb(0, 132, 137);font-size: 18px;font-weight: 600;display: block; margin-top: 5px;" class="text text-left">显示全部体验&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-right"></span></span></a>
+            <a href="#"><span style="color: rgb(0, 132, 137);font-size: 18px;font-weight: 600;display: block; margin-top: .05rem;" class="text text-left">显示全部体验&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-right"></span></span></a>
         </div>
+
+
 
     </div>
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
