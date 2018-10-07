@@ -334,12 +334,8 @@ a:visited,a:link,a{
             }
         }
     }
-    .active1{
-        border-bottom: 2px solid rgb(0, 132, 137);
-        color: rgb(0, 132, 137);
-    }
-    // 动态添加
     .tabs_house{
+        overflow: hidden;
         &>li{
             position: relative;
             img{
@@ -350,6 +346,9 @@ a:visited,a:link,a{
                 font-weight: 800 !important;
                 padding-top: 10px;
                 margin-bottom: 0;
+                .glyphicon-flash{
+                    color: rgb(255, 180, 0);;
+                }
                 span{
                     float: right;
                     font-size: 1.2rem
@@ -365,6 +364,8 @@ a:visited,a:link,a{
                 white-space: nowrap;
                 padding-top: 8px;
                 font-size: 1.4rem;
+                font-weight: 800;
+                color: #727272;
                 width: 70%;  
                 margin-bottom: 0;
             }
@@ -386,6 +387,260 @@ a:visited,a:link,a{
                     max-width: 70%!important;
                 }
                 
+            }
+        }
+        
+    }
+    .tabs_more{
+        padding: 8px 16px;
+        background-color:rgb(0, 132, 137);
+        color: #fff;
+        font-size: 1.4rem;
+        margin-top: 10px;
+        display: inline-block;
+        margin-left: 15px;
+        border-radius: 5%;
+        a{
+            color: #fff!important;
+        }
+    }
+    
+
+    .active1{
+        border-bottom: 2px solid rgb(0, 132, 137);
+        color: rgb(0, 132, 137);
+    }
+    // 动态添加
+    
+}
+// <!-- 经典旅游城市 -->  
+.aby_travel{
+    margin-top: 30px;
+    &>p{
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    ul>li{
+        float: left;
+        img{
+            max-width: 100%;
+        }
+        a>p:nth-child(2){
+            margin: 0;
+            padding-top: 5px;
+            span{
+            color: rgb(72, 72, 72);
+            font-size: 1.4rem; 
+            font-weight: 800;
+            }
+        }
+        a>p:nth-child(3){
+            font-size: 1.2rem;
+            color: rgb(72, 72, 72);
+        }   
+    }
+}
+.aby_pay{
+    ul>li{
+        div:nth-child(1){
+            float: left;
+            padding-right: 5%;
+            i{
+              font-size: 42px;  
+            }
+            .icon-rectangle390{
+                color: #00a9f2;
+            }
+            .icon-logo{
+                color: #5bbb97;
+            }
+        }
+        div:nth-child(2){
+            float: left;
+            p:nth-child(1){
+                font-weight: 800;
+                font-size: 1.5rem;
+                color: #484848;
+                line-height: 1 !important;
+                margin-top: 13px;
+            }
+            p:nth-child(2){
+                // font-weight: 800;
+                font-size: 1.3rem;
+                color: #484848;
+                line-height: 1 !important;
+                margin-top: 13px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px)and (min-width: 768px) {
+    .aby_pay{
+        ul>li{
+            div:nth-child(1){
+                width: 30%;
+            }
+            div:nth-child(2){
+                width: 70%;
+            }
+        }
+    }
+}
+// <!-- 故事 -->
+.aby_story{
+    img{
+        max-width: 100%;
+        // height: width;
+        // max-height: 100%
+    }
+    margin-top: 30px;
+    &>p{
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    &>p:nth-child(3){
+        font-size: 1.5rem;
+        font-weight: 800;
+        a{
+            color: rgb(0, 132, 137);
+        }
+    }
+    &>ul{
+        li{
+            margin-top: 15px;
+            overflow: hidden;
+            position: relative;
+            &>i{
+                position: absolute;
+                top: 10px;
+                right: 10%;
+                font-size: 20px;
+                &:hover{
+                    color: red;
+                }
+            }
+            
+        }
+        li>a{
+            display: block;
+            overflow: hidden;
+            &>div{
+                display: block;
+                position: relative;
+                border-radius: 2%;
+                overflow: hidden;
+                &>span{
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 5%;
+                    right: 5%;
+                    padding:  5px 8px;
+                    background-color: #fff;
+                    border-radius: 8%;
+                    font-size: 1.2rem;
+                }
+            }
+            &>p:nth-child(2){
+                margin-top:8px;
+                font-size: 14px ;
+                line-height: 18px !important;
+                color: rgb(72, 72, 72) !important;
+                &>span:nth-child(1){
+                    display: inline-block;
+                    padding-right: 3px;
+                    font-weight: 800 !important;
+                }
+                
+            }
+            &>p:nth-child(3){
+                b:nth-child(1){
+                    width: 20px;
+                    height: 20px;
+                    overflow: hidden;
+                    display: inline-block;
+                    border-radius: 50%;
+                    img{
+                        width: 100%;
+                        display: block;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+// <!-- 高分体验 -->
+.aby_experience{
+    img{
+        max-width: 100%;
+    }
+    margin-top: 30px;
+    &>p{
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    h4{
+        margin-top: 0;
+        color: rgb(72, 72, 72) !important;
+        font-size: 1.5rem;
+    }
+    &>p:nth-child(4){
+        font-size: 1.5rem;
+        font-weight: 800;
+        a{
+            color: rgb(0, 132, 137)!important;
+        }
+    }
+    ul{
+        li{
+            margin-top: 10px;
+            min-height: 220px;
+            a{
+                &>div{
+                    border-radius: 2%;
+                    overflow: hidden;
+                }
+                p{
+                    margin: 0;
+                }
+                &>p:nth-child(2){
+                    color: rgb(66, 55, 32);
+                    padding-top: 8px;
+                    font-weight: 800 !important;
+                    font-size: 1.2rem !important;
+                    line-height: 16px !important;
+                }
+                &>p:nth-child(3){
+                    font-weight: 800 !important;
+                    font-size: 1.5rem !important;
+                    line-height: 21px !important;
+                    max-height: 42px !important;
+                    color: rgb(72, 72, 72)
+                }
+                &>p:nth-child(4){
+                    font-size: 1.3rem ;
+                    color: rgb(72, 72, 72)
+                }
+                &>p:nth-child(5){
+                    color: #008489;
+                    span{
+                        font-size: 1.0rem ;
+                        padding-right: 3px;
+                        display: inline-block;
+                        
+                    }
+                    .glyphicon-star{
+                        font-size: 1.0rem ;   
+                    }
+                    span:nth-of-type(2){
+                        padding-left: 3px;
+                        display: inline-block;
+                        color: rgb(72, 72, 72);
+                        
+                    }
+                    
+                }
             }
         }
     }
