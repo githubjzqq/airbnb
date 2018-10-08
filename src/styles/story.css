@@ -276,6 +276,21 @@
 
 .caption {
     text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
     position: relative;
 }
 
@@ -283,11 +298,53 @@
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    top: 50%;
-    left: 5%;
+    bottom: 20%;
+    right: 10%;
     z-index: 1;
     height: 20px;
-    width: 60px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .fangyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 15%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .kafeiguan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 15%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .laofoye1 {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
     text-align: center;
     background: white;
     border-radius: 10%;
