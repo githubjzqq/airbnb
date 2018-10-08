@@ -220,7 +220,7 @@ $(function() {
     $('.mod .modal-dialog.mad1 .modal-content.email .modal-body.button').on('click', email);
 
     //手机号注册&登陆提交验证；
-    function phone() {
+    function phone(e) {
         $(this).siblings('.tips').css('display', ''); //清除报错信息；
         regist.phone = [];
         var reg1 = /^1[34578][0-9]{9}$/;
@@ -245,9 +245,7 @@ $(function() {
         if (regist.phoneAd) {
             regist.phoneData = 'phoneNmb=' + phoneNmb + '&pwd=' + pwd;
             //注册账号操作；
-            console.log($(this).text());
             if ($(this).text() === '注册') {
-                console.log('注册');
                 regist.url = '../php/regist.php';
                 if (regist.phoneAd) {
                     $.ajax({
@@ -255,7 +253,16 @@ $(function() {
                         type: 'post',
                         data: regist.phoneData,
                         success: function(data) {
-                            console.log(data);
+                            if (data) {
+                                console.log(data);
+                                $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('手机号已被注册');
+                            } else {
+                                console.log('注册成功');
+                                $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('注册成功(2s后自动跳转)');
+                                setTimeout(function() {
+                                    //登陆操作；
+                                }, 2000);
+                            }
                         },
                         error: function(err) {
                             console.log(err)
@@ -263,12 +270,28 @@ $(function() {
                     })
                 }
             } else {
-                //登陆操作；
+                regist.url = '../php/login.php';
+                if (regist.phoneAd) {
+                    $.ajax({
+                        url: regist.url,
+                        type: 'post',
+                        data: regist.phoneData,
+                        success: function(data) {
+                            if (data) {
+                                var user = JSON.parse(data);
+                                if (user[1] == 'pwd_error') {
+                                    $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
+                                }
+                            } else {
+                                $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
+                            }
+                        }
+                    })
+                }
             }
         } else {
             $(this).siblings('.tips').css('display', 'block'); //报错；
         }
     }
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', phone);
-
 });
