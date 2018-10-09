@@ -92,10 +92,6 @@
     font-size: 13px;
   }
 }
-.main .container .content {
-  padding-right: 0;
-  padding-left: 0;
-}
 .main .container .content .title {
   line-height: 17px;
   font-size: 16px;
@@ -106,11 +102,15 @@
   color: #484848;
   margin-bottom: 20px;
 }
-.main .container .content.base > .row {
+.main .container .content > .row {
   margin-right: 0;
   margin-left: 0;
   border: 1px solid #dce0e0;
   margin-bottom: 24px;
+}
+.main .container .content.base {
+  padding-right: 0;
+  padding-left: 0;
 }
 .main .container .content.base > .row .msg_list {
   margin-bottom: 24px;
@@ -189,40 +189,6 @@
   margin-right: 0;
   margin-left: 0;
 }
-.main .container .content.base > .row.msg2 .box {
-  padding: 20px;
-  overflow: hidden;
-}
-.main .container .content.base > .row.msg2 .userpic {
-  padding: 5px;
-  text-align: center;
-}
-.main .container .content.base > .row.msg2 .userpic img {
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .main .container .content.base > .row.msg2 .userpic img {
-    width: 225px;
-  }
-}
-.main .container .content.base > .row.msg2 .text p {
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-.main .container .content.base > .row.msg2 .text .selectpic {
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 4px;
-  height: 42px;
-  width: 100%;
-  border: 1px solid #999;
-  line-height: 42px;
-  text-align: center;
-  cursor: pointer;
-}
-.main .container .content.base > .row.msg2 .text .selectpic:hover {
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-}
 @media (max-width: 768px) {
   .main .container .content.base .title {
     font-size: 16px;
@@ -243,4 +209,30 @@
 }
 .main .container .content.base .save:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+.main .container .content.picture > .row .pic {
+  padding: 0 20px 20px;
+  text-align: center;
+}
+.main .container .content.picture > .row .pic img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .main .container .content.picture > .row .pic img {
+    width: 225px;
+  }
+}
+.main .container .content.picture > .row .text p {
+  line-height: 1.7;
+}
+.main .container .content.picture > .row .text .select {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #999;
+  line-height: 42px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 24px;
 }

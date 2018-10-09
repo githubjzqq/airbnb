@@ -181,9 +181,9 @@
                         查看个人资料</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 content base" style="">
+                <div class="col-xs-12 col-sm-9 content base" style="display: none">
                     <div class="row">
-                        <div class="title">必填</div>
+                        <div class="title">主要信息</div>
                         <div class="msg_list firstName row">
                             <div class="label col-xs-3">
                                 <label for="lastName">名字</label>
@@ -294,7 +294,7 @@
                         </div>
                         <div class="msg_list phoneNmb">
                             <div class="label col-xs-3">
-                                <label for="phoneNmb">电子邮件地址</label>
+                                <label for="phoneNmb">手机号</label>
                             </div>
                             <div class="input col-xs-9">
                                 <input type="text" id="phoneNmb">
@@ -308,365 +308,474 @@
                             <div class="input col-xs-9">
                                 <select class="form-control" id="firstLunguage">
                                     <option value="">简体中文</option>
+                                    <option value="">繁体中文</option>
                                     <option value="">English</option>
+                                    <option value="">日文</option>
                                 </select>
                                 <p>我们将会使用此语言给您发消息</p>
                             </div>
                         </div>
-                        <div class="msg_list firstCurrency"></div>
-                        <div class="msg_list address"></div>
-                        <div class="msg_list intro"></div>
+                        <div class="msg_list firstCurrency">
+                            <div class="label col-xs-3">
+                                <label for="firstCurrency">首选货币</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="firstCurrency">
+                                <option value="">人民币</option>
+                                <option value="">美元</option>
+                                <option value="">欧元</option>
+                                <option value="">日元</option>
+                            </select>
+                                <p>我们将会使用此货币为您显示价格。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list address">
+                            <div class="label col-xs-3">
+                                <label for="address">您住的地方</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="address">
+                            </div>
+                        </div>
+                        <div class="msg_list intro">
+                            <div class="label col-xs-3">
+                                <label for="address">自我介绍</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <textarea type="text" id="address"></textarea>
+                                <p>爱彼迎是建立在相互关系上的，请帮助其他人了解您。</p>
+                                <p>告诉他们您喜欢什么，您离开了哪几样东西就不能活？分享您最喜爱的旅游目的地丶书籍丶电影丶电视节目丶音乐以及食物。</p>
+                                <p>告诉他们您会是个什么样的房东或房客，您旅游的风格是怎样的？您作为爱彼迎房东的风格又是怎样呢？</p>
+                                <p>向大家介绍一下自己吧，您有什么人生格言吗？</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="title">选填</div>
-                        <div class="msg_list school"></div>
-                        <div class="msg_list work"></div>
-                        <div class="msg_list timeZone"></div>
-                        <div class="msg_list timeZone"></div>
+                        <div class="msg_list school">
+                            <div class="label col-xs-3">
+                                <label for="school">学校</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="school">
+                            </div>
+                        </div>
+                        <div class="msg_list work">
+                            <div class="label col-xs-3">
+                                <label for="work">工作</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="work" placeholder="公司名称或工作职位">
+                            </div>
+                        </div>
+                        <div class="msg_list timeZone">
+                            <div class="label col-xs-3">
+                                <label for="timeZoney">时区</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="timeZoney">
+                                    <option value="International Date Line West">(GMT-11:00) International Date Line West</option>
+                                    <option value="Midway Island">(GMT-11:00) Midway Island</option>
+                                    <option value="Samoa">(GMT-11:00) Samoa</option>
+                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                    <option value="Alaska">(GMT-09:00) Alaska</option>
+                                    <option value="America/Los_Angeles">(GMT-08:00) America/Los_Angeles</option>
+                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                                    <option value="Tijuana">(GMT-08:00) Tijuana</option>
+                                    <option value="America/Denver">(GMT-07:00) America/Denver</option>
+                                    <option value="Arizona">(GMT-07:00) Arizona</option>
+                                    <option value="Chihuahua">(GMT-07:00) Chihuahua</option>
+                                    <option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                                    <option value="America/Chicago">(GMT-06:00) America/Chicago</option>
+                                    <option value="America/Mexico_City">(GMT-06:00) America/Mexico_City</option>
+                                    <option value="Central America">(GMT-06:00) Central America</option>
+                                    <option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                                    <option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+                                    <option value="Mexico City">(GMT-06:00) Mexico City</option>
+                                    <option value="Monterrey">(GMT-06:00) Monterrey</option>
+                                    <option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                                    <option value="America/New_York">(GMT-05:00) America/New_York</option>
+                                    <option value="Bogota">(GMT-05:00) Bogota</option>
+                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                    <option value="Lima">(GMT-05:00) Lima</option>
+                                    <option value="Quito">(GMT-05:00) Quito</option>
+                                    <option value="Atlantic Time (Canada)">(GMT-04:00) Atlantic Time (Canada)</option>
+                                    <option value="Caracas">(GMT-04:00) Caracas</option>
+                                    <option value="Georgetown">(GMT-04:00) Georgetown</option>
+                                    <option value="La Paz">(GMT-04:00) La Paz</option>
+                                    <option value="Santiago">(GMT-04:00) Santiago</option>
+                                    <option value="Newfoundland">(GMT-03:30) Newfoundland</option>
+                                    <option value="Brasilia">(GMT-03:00) Brasilia</option>
+                                    <option value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
+                                    <option value="Greenland">(GMT-03:00) Greenland</option>
+                                    <option value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
+                                    <option value="Azores">(GMT-01:00) Azores</option>
+                                    <option value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
+                                    <option value="Casablanca">(GMT+00:00) Casablanca</option>
+                                    <option value="Dublin">(GMT+00:00) Dublin</option>
+                                    <option value="Edinburgh">(GMT+00:00) Edinburgh</option>
+                                    <option value="Europe/London">(GMT+00:00) Europe/London</option>
+                                    <option value="Lisbon">(GMT+00:00) Lisbon</option>
+                                    <option value="London">(GMT+00:00) London</option>
+                                    <option value="Monrovia">(GMT+00:00) Monrovia</option>
+                                    <option value="UTC">(GMT+00:00) UTC</option>
+                                    <option value="Amsterdam">(GMT+01:00) Amsterdam</option>
+                                    <option value="Belgrade">(GMT+01:00) Belgrade</option>
+                                    <option value="Berlin">(GMT+01:00) Berlin</option>
+                                    <option value="Bern">(GMT+01:00) Bern</option>
+                                    <option value="Bratislava">(GMT+01:00) Bratislava</option>
+                                    <option value="Brussels">(GMT+01:00) Brussels</option>
+                                    <option value="Budapest">(GMT+01:00) Budapest</option>
+                                    <option value="Copenhagen">(GMT+01:00) Copenhagen</option>
+                                    <option value="Europe/Madrid">(GMT+01:00) Europe/Madrid</option>
+                                    <option value="Europe/Paris">(GMT+01:00) Europe/Paris</option>
+                                    <option value="Europe/Prague">(GMT+01:00) Europe/Prague</option>
+                                    <option value="Europe/Rome">(GMT+01:00) Europe/Rome</option>
+                                    <option value="Europe/Zagreb">(GMT+01:00) Europe/Zagreb</option>
+                                    <option value="Europe/Zurich">(GMT+01:00) Europe/Zurich</option>
+                                    <option value="Ljubljana">(GMT+01:00) Ljubljana</option>
+                                    <option value="Madrid">(GMT+01:00) Madrid</option>
+                                    <option value="Paris">(GMT+01:00) Paris</option>
+                                    <option value="Prague">(GMT+01:00) Prague</option>
+                                    <option value="Rome">(GMT+01:00) Rome</option>
+                                    <option value="Sarajevo">(GMT+01:00) Sarajevo</option>
+                                    <option value="Skopje">(GMT+01:00) Skopje</option>
+                                    <option value="Stockholm">(GMT+01:00) Stockholm</option>
+                                    <option value="Vienna">(GMT+01:00) Vienna</option>
+                                    <option value="Warsaw">(GMT+01:00) Warsaw</option>
+                                    <option value="West Central Africa">(GMT+01:00) West Central Africa</option>
+                                    <option value="Zagreb">(GMT+01:00) Zagreb</option>
+                                    <option value="Athens">(GMT+02:00) Athens</option>
+                                    <option value="Bucharest">(GMT+02:00) Bucharest</option>
+                                    <option value="Cairo">(GMT+02:00) Cairo</option>
+                                    <option value="Europe/Athens">(GMT+02:00) Europe/Athens</option>
+                                    <option value="Harare">(GMT+02:00) Harare</option>
+                                    <option value="Helsinki">(GMT+02:00) Helsinki</option>
+                                    <option value="Jerusalem">(GMT+02:00) Jerusalem</option>
+                                    <option value="Kyiv">(GMT+02:00) Kyiv</option>
+                                    <option value="Pretoria">(GMT+02:00) Pretoria</option>
+                                    <option value="Riga">(GMT+02:00) Riga</option>
+                                    <option value="Sofia">(GMT+02:00) Sofia</option>
+                                    <option value="Tallinn">(GMT+02:00) Tallinn</option>
+                                    <option value="Vilnius">(GMT+02:00) Vilnius</option>
+                                    <option value="Baghdad">(GMT+03:00) Baghdad</option>
+                                    <option value="Istanbul">(GMT+03:00) Istanbul</option>
+                                    <option value="Kuwait">(GMT+03:00) Kuwait</option>
+                                    <option value="Minsk">(GMT+03:00) Minsk</option>
+                                    <option value="Moscow">(GMT+03:00) Moscow</option>
+                                    <option value="Nairobi">(GMT+03:00) Nairobi</option>
+                                    <option value="Riyadh">(GMT+03:00) Riyadh</option>
+                                    <option value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
+                                    <option value="Volgograd">(GMT+03:00) Volgograd</option>
+                                    <option value="Tehran">(GMT+03:30) Tehran</option>
+                                    <option value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
+                                    <option value="Baku">(GMT+04:00) Baku</option>
+                                    <option value="Muscat">(GMT+04:00) Muscat</option>
+                                    <option value="Tbilisi">(GMT+04:00) Tbilisi</option>
+                                    <option value="Yerevan">(GMT+04:00) Yerevan</option>
+                                    <option value="Kabul">(GMT+04:30) Kabul</option>
+                                    <option value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
+                                    <option value="Islamabad">(GMT+05:00) Islamabad</option>
+                                    <option value="Karachi">(GMT+05:00) Karachi</option>
+                                    <option value="Tashkent">(GMT+05:00) Tashkent</option>
+                                    <option value="Asia/Calcutta">(GMT+05:30) Asia/Calcutta</option>
+                                    <option value="Chennai">(GMT+05:30) Chennai</option>
+                                    <option value="Kolkata">(GMT+05:30) Kolkata</option>
+                                    <option value="Mumbai">(GMT+05:30) Mumbai</option>
+                                    <option value="New Delhi">(GMT+05:30) New Delhi</option>
+                                    <option value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
+                                    <option value="Kathmandu">(GMT+05:45) Kathmandu</option>
+                                    <option value="Almaty">(GMT+06:00) Almaty</option>
+                                    <option value="Astana">(GMT+06:00) Astana</option>
+                                    <option value="Dhaka">(GMT+06:00) Dhaka</option>
+                                    <option value="Urumqi">(GMT+06:00) Urumqi</option>
+                                    <option value="Rangoon">(GMT+06:30) Rangoon</option>
+                                    <option value="Bangkok">(GMT+07:00) Bangkok</option>
+                                    <option value="Hanoi">(GMT+07:00) Hanoi</option>
+                                    <option value="Jakarta">(GMT+07:00) Jakarta</option>
+                                    <option value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                                    <option value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
+                                    <option value="Asia/Makassar">(GMT+08:00) Asia/Makassar</option>
+                                    <option value="Asia/Shanghai">(GMT+08:00) Asia/Shanghai</option>
+                                    <option value="Asia/Singapore">(GMT+08:00) Asia/Singapore</option>
+                                    <option value="Beijing">(GMT+08:00) Beijing</option>
+                                    <option value="Chongqing">(GMT+08:00) Chongqing</option>
+                                    <option value="Hong Kong" selected="selected">(GMT+08:00) Hong Kong</option>
+                                    <option value="Irkutsk">(GMT+08:00) Irkutsk</option>
+                                    <option value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
+                                    <option value="Perth">(GMT+08:00) Perth</option>
+                                    <option value="Singapore">(GMT+08:00) Singapore</option>
+                                    <option value="Taipei">(GMT+08:00) Taipei</option>
+                                    <option value="Ulaan Bataar">(GMT+08:00) Ulaan Bataar</option>
+                                    <option value="Asia/Seoul">(GMT+09:00) Asia/Seoul</option>
+                                    <option value="Osaka">(GMT+09:00) Osaka</option>
+                                    <option value="Sapporo">(GMT+09:00) Sapporo</option>
+                                    <option value="Seoul">(GMT+09:00) Seoul</option>
+                                    <option value="Tokyo">(GMT+09:00) Tokyo</option>
+                                    <option value="Yakutsk">(GMT+09:00) Yakutsk</option>
+                                    <option value="Adelaide">(GMT+09:30) Adelaide</option>
+                                    <option value="Darwin">(GMT+09:30) Darwin</option>
+                                    <option value="Australia/Hobart">(GMT+10:00) Australia/Hobart</option>
+                                    <option value="Brisbane">(GMT+10:00) Brisbane</option>
+                                    <option value="Canberra">(GMT+10:00) Canberra</option>
+                                    <option value="Guam">(GMT+10:00) Guam</option>
+                                    <option value="Hobart">(GMT+10:00) Hobart</option>
+                                    <option value="Melbourne">(GMT+10:00) Melbourne</option>
+                                    <option value="Port Moresby">(GMT+10:00) Port Moresby</option>
+                                    <option value="Sydney">(GMT+10:00) Sydney</option>
+                                    <option value="Vladivostok">(GMT+10:00) Vladivostok</option>
+                                    <option value="Magadan">(GMT+11:00) Magadan</option>
+                                    <option value="New Caledonia">(GMT+11:00) New Caledonia</option>
+                                    <option value="Solomon Is.">(GMT+11:00) Solomon Is.</option>
+                                    <option value="Auckland">(GMT+12:00) Auckland</option>
+                                    <option value="Fiji">(GMT+12:00) Fiji</option>
+                                    <option value="Kamchatka">(GMT+12:00) Kamchatka</option>
+                                    <option value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
+                                    <option value="Wellington">(GMT+12:00) Wellington</option>
+                                    <option value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option>
+                                </select>
+                                <p>您所在地的时区。</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 content picture" style="display:none">
+                <div class="col-xs-12 col-sm-9 content picture">
                     <div class="row">
-                        <div class="title">必填</div>
-                        <div class="msg_list firstName row">
-                            <div class="label col-xs-3">
-                                <label for="lastName">名字</label>
-                            </div>
-                            <div class="input col-xs-9">
-                                <input type="text" id="lastName">
-                            </div>
+                        <div class="title">个人头像</div>
+                        <div class="pic col-xs-12 col-sm-3"><img src="../images/user/mario.JPG" alt=""></div>
+                        <div class="text col-xs-12 col-sm-9">
+                            <p>清晰的正面脸部照片是房东和房客互相认识对方的重要途径。您能想象把自己的房子租给一只猫吗？ 请确保使用能够清楚显示您面部的照片，并确认其中不包含任何您不希望其他房东或房客看到的个人或敏感信息。</p>
+                            <div class="select">选择用户头像</div>
                         </div>
-                        <div class="msg_list lastName">
-                            <div class="label col-xs-3">
-                                <label for="firstName">姓氏</label>
-                            </div>
-                            <div class="input col-xs-9">
-                                <input type="text" id="firstName">
-                                <p>您的公开个人资料将仅显示您的名字。申请预订时，房东会看到您的名字和姓氏。</p>
-                            </div>
-                        </div>
-                        <div class="msg_list sex">
-                            <div class="label col-xs-3">
-                                <label for="sex">性别</label>
-                            </div>
-                            <div class="input col-xs-9">
-                                <select class="form-control" id="sex">
-                                    <option>男</option>
-                                    <option>女</option>
-                                    <option>其他</option>
-                                    <option selected="selected">性别</option>
-                                </select>
-                                <p>此数据仅用于分析，我们不会透露给其它用户。</p>
-                            </div>
-                        </div>
-                        <div class="msg_list birthday">
-                            <div class="label col-xs-3">
-                                <label for="birthday">出生日期</label>
-                            </div>
-                            <div class="input col-xs-9">
-                                <select class="form-control" id="birthday">
-                                    <option value="1">一月</option>
-                                    <option value="2">二月</option>
-                                    <option value="3">三月</option>
-                                    <option value="4">四月</option>
-                                    <option value="5">五月</option>
-                                    <option value="6">六月</option>
-                                    <option value="7">七月</option>
-                                    <option value="8">八月</option>
-                                    <option value="9" selected="selected">九月</option>
-                                    <option value="10">十月</option>
-                                    <option value="11">十一月</option>
-                                    <option value="12">十二月</option>
-                                </select>
-                                <select class="form-control" id="birthday">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                </select>
-                                <select class="form-control" id="birthday">
-                                    <option value="1990">1990</option>
-                                    <option value="1991">1991</option>
-                                    <option value="1992">1992</option>
-                                    <option value="1993">1993</option>
-                                    <option value="1994">1994</option>
-                                    <option value="1995">1995</option>
-                                    <option value="1996">1996</option>
-                                    <option value="1997">1997</option>
-                                    <option value="1998">1998</option>
-                                    <option value="1999">1999</option>
-                                    <option value="2000">2000</option>
-                                </select>
-                                <p>此数据将帮助我们更好地为您提供服务，除必要的内部使用外，我们不会将您的信息透露给房东或其他用户。您必须年满 18 周岁才能使用爱彼迎的网站和服务。</p>
-                            </div>
-                        </div>
-                        <div class="msg_list email"></div>
-                        <div class="msg_list phoneNmb"></div>
-                        <div class="msg_list firstLunguage"></div>
-                        <div class="msg_list firstCurrency"></div>
-                        <div class="msg_list address"></div>
-                        <div class="msg_list intro"></div>
-                    </div>
-                    <div class="row">
-                        <div class="title">选填</div>
-                        <div class="msg_list school"></div>
-                        <div class="msg_list work"></div>
-                        <div class="msg_list timeZone"></div>
-                        <div class="msg_list timeZone"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- 登陆注册模态框 -->
-    <div class="mod">
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog mad1" role="document">
-                <div class="modal-content first active regist">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">注册爱彼迎账号</h4>
+    <div class="mod ">
+        <div class="modal fade " id="myModal " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
+            <div class="modal-dialog mad1 " role="document ">
+                <div class="modal-content first active regist ">
+                    <div class="modal-header ">
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                        <h4 class="modal-title " id="myModalLabel ">注册爱彼迎账号</h4>
                         <p>已有账号？<a>登陆</a></p>
                     </div>
-                    <div class="modal-body phone">
-                        <a><i class="iconfont icon-dianhua-copy"></i>手机号注册</a>
+                    <div class="modal-body phone ">
+                        <a><i class="iconfont icon-dianhua-copy "></i>手机号注册</a>
                     </div>
-                    <div class="modal-body email">
-                        <a><i class="iconfont icon-weibiaoti-"></i>邮箱注册</a>
+                    <div class="modal-body email ">
+                        <a><i class="iconfont icon-weibiaoti- "></i>邮箱注册</a>
                     </div>
-                    <div class="modal-body other">
+                    <div class="modal-body other ">
                     </div>
                 </div>
-                <div class="modal-content regist phone">
-                    <div class="tips">信息填写有误</div>
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">手机号注册</h4>
+                <div class="modal-content regist phone ">
+                    <div class="tips ">信息填写有误</div>
+                    <div class="modal-header ">
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                        <h4 class="modal-title " id="myModalLabel ">手机号注册</h4>
                         <p>已有账号？<a>登陆</a></p>
                     </div>
-                    <div class="modal-body input">
-                        <div class="country">+86<span><i class="iconfont icon-fangxiangshang"></i></span></div>
-                        <div class="inputnmb"><input type="text" placeholder="手机号"></div>
+                    <div class="modal-body input ">
+                        <div class="country ">+86<span><i class="iconfont icon-fangxiangshang "></i></span></div>
+                        <div class="inputnmb "><input type="text " placeholder="手机号 "></div>
                     </div>
-                    <div class="modal-body verify">
-                        <input type="text" placeholder="输入验证码"><span class="result"></span><span class="generate">点击获取验证码</span>
+                    <div class="modal-body verify ">
+                        <input type="text " placeholder="输入验证码 "><span class="result "></span><span class="generate ">点击获取验证码</span>
                     </div>
-                    <div class="modal-body password">
-                        <div class="box">
-                            <input type="password" class="pwd"><i class="iconfont icon-kejian"></i>
+                    <div class="modal-body password ">
+                        <div class="box ">
+                            <input type="password " class="pwd "><i class="iconfont icon-kejian "></i>
                         </div>
-                        <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
-                        <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                        <p class="length "><i class="iconfont icon-cha "></i><span class="val ">至少包含8个字符</span></p>
+                        <p class="word "><i class="iconfont icon-cha "></i><span class="val ">包含数字符号和大小写字母</span></p>
                     </div>
-                    <div class="modal-body rule">
-                        <div class="box"><input type="checkbox" class="check"></div>
-                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    <div class="modal-body rule ">
+                        <div class="box "><input type="checkbox " class="check "></div>
+                        <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
                     </div>
-                    <div class="modal-body button">注册</div>
-                    <div class="modal-body other">
+                    <div class="modal-body button ">注册</div>
+                    <div class="modal-body other ">
                         <a>使用其他方式注册</a>
                     </div>
                 </div>
-                <div class="modal-content login phone">
-                    <div class="tips">信息填写有误</div>
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">手机号登陆</h4>
+                <div class="modal-content login phone ">
+                    <div class="tips ">信息填写有误</div>
+                    <div class="modal-header ">
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                        <h4 class="modal-title " id="myModalLabel ">手机号登陆</h4>
                         <p>还没有账号？<a>注册</a></p>
                     </div>
-                    <div class="modal-body input">
-                        <div class="country">+86<span><i class="iconfont icon-fangxiangshang"></i></span></div>
-                        <div class="inputnmb"><input type="text" placeholder="手机号"></div>
+                    <div class="modal-body input ">
+                        <div class="country ">+86<span><i class="iconfont icon-fangxiangshang "></i></span></div>
+                        <div class="inputnmb "><input type="text " placeholder="手机号 "></div>
                     </div>
-                    <div class="modal-body password">
-                        <div class="box">
-                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                    <div class="modal-body password ">
+                        <div class="box ">
+                            <input type="password " class="pwd " placeholder="请输入密码 "><i class="iconfont icon-kejian "></i>
                         </div>
                     </div>
-                    <div class="modal-body rule">
-                        <div class="box"><input type="checkbox" class="check"></div>
-                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    <div class="modal-body rule ">
+                        <div class="box "><input type="checkbox " class="check "></div>
+                        <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
                     </div>
-                    <div class="modal-body button">登陆</div>
-                    <div class="modal-body other">
+                    <div class="modal-body button ">登陆</div>
+                    <div class="modal-body other ">
                         <a>使用其他方式登陆</a>
                     </div>
                 </div>
-                <div class="modal-content regist email">
-                    <div class="tips">信息填写有误</div>
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">邮箱注册</h4>
+                <div class="modal-content regist email ">
+                    <div class="tips ">信息填写有误</div>
+                    <div class="modal-header ">
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                        <h4 class="modal-title " id="myModalLabel ">邮箱注册</h4>
                         <p>已有账号？<a>登陆</a></p>
                     </div>
-                    <div class="modal-body input">
-                        <div class="inputnmb"><input type="text" placeholder="输入邮箱"></div>
+                    <div class="modal-body input ">
+                        <div class="inputnmb "><input type="text " placeholder="输入邮箱 "></div>
                     </div>
-                    <div class="modal-body verify">
-                        <input type="text" placeholder="输入验证码"><span class="result"></span><span class="generate">点击获取验证码</span>
+                    <div class="modal-body verify ">
+                        <input type="text " placeholder="输入验证码 "><span class="result "></span><span class="generate ">点击获取验证码</span>
                     </div>
-                    <div class="modal-body password">
-                        <div class="box">
-                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                    <div class="modal-body password ">
+                        <div class="box ">
+                            <input type="password " class="pwd " placeholder="请输入密码 "><i class="iconfont icon-kejian "></i>
                         </div>
-                        <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
-                        <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                        <p class="length "><i class="iconfont icon-cha "></i><span class="val ">至少包含8个字符</span></p>
+                        <p class="word "><i class="iconfont icon-cha "></i><span class="val ">包含数字符号和大小写字母</span></p>
                     </div>
-                    <div class="modal-body rule">
-                        <div class="box"><input type="checkbox" class="check"></div>
-                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    <div class="modal-body rule ">
+                        <div class="box "><input type="checkbox " class="check "></div>
+                        <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
                     </div>
-                    <div class="modal-body button">注册</div>
-                    <div class="modal-body other">
+                    <div class="modal-body button ">注册</div>
+                    <div class="modal-body other ">
                         <a>使用其他方式注册</a>
                     </div>
                 </div>
-                <div class="modal-content login email">
-                    <div class="tips">信息填写有误</div>
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">邮箱登陆</h4>
+                <div class="modal-content login email ">
+                    <div class="tips ">信息填写有误</div>
+                    <div class="modal-header ">
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                        <h4 class="modal-title " id="myModalLabel ">邮箱登陆</h4>
                         <p>还没有账号？<a>注册</a></p>
                     </div>
-                    <div class="modal-body input">
-                        <div class="inputnmb"><input type="text" placeholder="输入邮箱"></div>
+                    <div class="modal-body input ">
+                        <div class="inputnmb "><input type="text " placeholder="输入邮箱 "></div>
                     </div>
-                    <div class="modal-body password">
-                        <div class="box">
-                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                    <div class="modal-body password ">
+                        <div class="box ">
+                            <input type="password " class="pwd " placeholder="请输入密码 "><i class="iconfont icon-kejian "></i>
                         </div>
                     </div>
-                    <div class="modal-body rule">
-                        <div class="box"><input type="checkbox" class="check"></div>
-                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    <div class="modal-body rule ">
+                        <div class="box "><input type="checkbox " class="check "></div>
+                        <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
                     </div>
-                    <div class="modal-body button">登陆</div>
-                    <div class="modal-body other">
+                    <div class="modal-body button ">登陆</div>
+                    <div class="modal-body other ">
                         <a>使用其他方式登陆</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="container">
-            <div class="tab1 row">
-                <div class="item col-md-3 col-sm-3">
-                    <div class="dropup language">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="footer ">
+        <div class="container ">
+            <div class="tab1 row ">
+                <div class="item col-md-3 col-sm-3 ">
+                    <div class="dropup language ">
+                        <button class="btn btn-default dropdown-toggle " type="button " id="dropdownMenu2 " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
                                   <span>中文（简体）</span>
-                                  <i class="iconfont icon-fangxiangshang1"></i>
+                                  <i class="iconfont icon-fangxiangshang1 "></i>
                                 </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <li><a href="#">中文（简体）</a></li>
-                            <li><a href="#">中文（繁体）</a></li>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Dansk</a></li>
-                            <li><a href="#">Deutsch</a></li>
-                            <li><a href="#">Language1</a></li>
-                            <li><a href="#">Language2</a></li>
-                            <li><a href="#">Language3</a></li>
-                            <li><a href="#">Language4</a></li>
-                            <li><a href="#">Language5</a></li>
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenu2 ">
+                            <li><a href="# ">中文（简体）</a></li>
+                            <li><a href="# ">中文（繁体）</a></li>
+                            <li><a href="# ">English</a></li>
+                            <li><a href="# ">Dansk</a></li>
+                            <li><a href="# ">Deutsch</a></li>
+                            <li><a href="# ">Language1</a></li>
+                            <li><a href="# ">Language2</a></li>
+                            <li><a href="# ">Language3</a></li>
+                            <li><a href="# ">Language4</a></li>
+                            <li><a href="# ">Language5</a></li>
                         </ul>
                     </div>
-                    <div class="dropup currency">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropup currency ">
+                        <button class="btn btn-default dropdown-toggle " type="button " id="dropdownMenu3 " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
                             <span>CNY 人民币</span>
-                            <i class="iconfont icon-fangxiangshang1"></i>
+                            <i class="iconfont icon-fangxiangshang1 "></i>
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                            <li><a href="#">CNY 人民币</a></li>
-                            <li><a href="#">USD 美元</a></li>
-                            <li><a href="#">JPY 日元</a></li>
-                            <li><a href="#">HKD 港币</a></li>
-                            <li><a href="#">TWD 新台币</a></li>
-                            <li><a href="#">EUR 欧元</a></li>
-                            <li><a href="#">GBP 英镑</a></li>
-                            <li><a href="#">AUD 澳大利亚元</a></li>
-                            <li><a href="#">AED 阿联酋迪拉姆</a></li>
-                            <li><a href="#">BRL 巴西雷亚尔</a></li>
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenu3 ">
+                            <li><a href="# ">CNY 人民币</a></li>
+                            <li><a href="# ">USD 美元</a></li>
+                            <li><a href="# ">JPY 日元</a></li>
+                            <li><a href="# ">HKD 港币</a></li>
+                            <li><a href="# ">TWD 新台币</a></li>
+                            <li><a href="# ">EUR 欧元</a></li>
+                            <li><a href="# ">GBP 英镑</a></li>
+                            <li><a href="# ">AUD 澳大利亚元</a></li>
+                            <li><a href="# ">AED 阿联酋迪拉姆</a></li>
+                            <li><a href="# ">BRL 巴西雷亚尔</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="item col-md-3 hidden-xs col-sm-3">
+                <div class="item col-md-3 hidden-xs col-sm-3 ">
                     <ul>
                         <li><b>爱彼迎</b></li>
-                        <li><a href="">工作机会</a></li>
-                        <li><a href="">新闻</a></li>
-                        <li><a href="">政策</a></li>
-                        <li><a href="">帮助</a></li>
-                        <li><a href="">多元化与归属感</a></li>
+                        <li><a href=" ">工作机会</a></li>
+                        <li><a href=" ">新闻</a></li>
+                        <li><a href=" ">政策</a></li>
+                        <li><a href=" ">帮助</a></li>
+                        <li><a href=" ">多元化与归属感</a></li>
                     </ul>
                 </div>
-                <div class="item col-md-3 hidden-xs col-sm-3">
-                    <ul class="">
+                <div class="item col-md-3 hidden-xs col-sm-3 ">
+                    <ul class=" ">
                         <li><b>发现</b></li>
-                        <li><a href="">信用与安区</a></li>
-                        <li><a href="">基金旅行</a></li>
-                        <li><a href="">礼品卡</a></li>
-                        <li><a href="">爱彼迎公民</a></li>
-                        <li><a href="">商务差旅</a></li>
-                        <li><a href="">旅游指南</a></li>
-                        <li><a href="">爱彼迎杂志</a></li>
-                        <li><a href="">活动</a></li>
+                        <li><a href=" ">信用与安区</a></li>
+                        <li><a href=" ">基金旅行</a></li>
+                        <li><a href=" ">礼品卡</a></li>
+                        <li><a href=" ">爱彼迎公民</a></li>
+                        <li><a href=" ">商务差旅</a></li>
+                        <li><a href=" ">旅游指南</a></li>
+                        <li><a href=" ">爱彼迎杂志</a></li>
+                        <li><a href=" ">活动</a></li>
                     </ul>
                 </div>
-                <div class="item col-md-3 hidden-xs col-sm-3">
+                <div class="item col-md-3 hidden-xs col-sm-3 ">
                     <ul>
                         <li><b>出租</b></li>
-                        <li><a href="">为什么要出租？</a></li>
-                        <li><a href="">待客之道</a></li>
-                        <li><a href="">房东义务</a></li>
-                        <li><a href="">开展体验</a></li>
-                        <li><a href="">Open Homes</a></li>
+                        <li><a href=" ">为什么要出租？</a></li>
+                        <li><a href=" ">待客之道</a></li>
+                        <li><a href=" ">房东义务</a></li>
+                        <li><a href=" ">开展体验</a></li>
+                        <li><a href=" ">Open Homes</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="tab2 row">
-                <div class="container">
-                    <i class="iconfont icon-aibiying"></i>© Airbnb, Inc
-                    <div class="link">
-                        <a href="">条款</a>
-                        <a href="">隐私政策</a>
-                        <a href="">网站地图</a>
-                        <a href=""><i class="iconfont icon-weibo"></i></a>
-                        <a href=""><i class="iconfont icon-weixin"></i></a>
+            <div class="tab2 row ">
+                <div class="container ">
+                    <i class="iconfont icon-aibiying "></i>© Airbnb, Inc
+                    <div class="link ">
+                        <a href=" ">条款</a>
+                        <a href=" ">隐私政策</a>
+                        <a href=" ">网站地图</a>
+                        <a href=" "><i class="iconfont icon-weibo "></i></a>
+                        <a href=" "><i class="iconfont icon-weixin "></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src=" ../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../js/public.js"></script>
+    <script src=" ../../node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="../js/public.js "></script>
 </body>
 
 </html>

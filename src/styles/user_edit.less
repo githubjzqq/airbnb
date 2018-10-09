@@ -112,8 +112,6 @@
 
         }
         .content{
-            padding-right: 0;
-            padding-left: 0;
             .title{
                 line-height: 17px;
                 font-size: 16px;
@@ -124,13 +122,17 @@
                 color: #484848;
                 margin-bottom: 20px;
             }
-        }
-        .content.base{
             &>.row{
                 margin-right:0;
                 margin-left:0;
                 border:1px solid #dce0e0;
                 margin-bottom:24px;
+            }
+        }
+        .content.base{
+            padding-right: 0;
+            padding-left: 0;
+            &>.row{
                 .msg_list{
                     margin-bottom:24px;
                     overflow: hidden;
@@ -214,46 +216,7 @@
                 .row{
                     margin-right:0;
                     margin-left:0;
-                }
-                &.msg2{
-                    .box{
-                        padding: 20px;
-                        overflow: hidden;
-                    }
-                    .userpic{
-                        padding: 5px;
-                        text-align: center;
-                        img{
-                            width: 100%;
-                            @media(max-width:768px){
-                                width: 225px;
-                            }
-                        }
-                    }
-                    .text{
-                        p{
-                            font-size: 14px;
-                            margin-bottom: 15px;
-                        }
-                        .selectpic{
-                            font-size: 16px;
-                            font-weight: bold;
-                            border-radius: 4px;
-                            height: 42px;
-                            width: 100%;
-                            border:1px solid #999;
-                            line-height: 42px;
-                            text-align: center; 
-                            cursor: pointer;
-                            &:hover{
-                                box-shadow:0 1px 5px rgba(0,0,0,.3)
-                            }
-                        }
-                    }
-                }
-                &.msg3{
-                    
-                }      
+                }    
             }
             @media (max-width:768px){
                 .title{
@@ -275,6 +238,37 @@
                 &:hover{
                     box-shadow: 0 1px 5px rgba(0,0,0,.4);
                 }
+            }
+        }
+        .content.picture{
+            &>.row{
+                .pic{
+                    padding: 0 20px 20px;
+                    text-align: center;
+                    img{
+                        width: 100%;
+                        @media(max-width:768px){
+                            width: 225px;
+                        }
+                    }
+                }
+                .text{
+                    p{
+                        line-height: 1.7;
+                    }
+                    .select{
+                        width: 100%;
+                        height: 42px;
+                        border: 1px solid #999;
+                        line-height: 42px;
+                        text-align: center;
+                        font-size:16px;
+                        font-weight:bold;
+                        border-radius: 5px;
+                        margin-top:24px;
+                    }
+                }
+                
             }
         }
         
