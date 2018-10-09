@@ -18,7 +18,8 @@ fieldset,
 legend,
 input,
 textarea,
-select {
+select,
+label {
     margin: 0;
     padding: 0
 }

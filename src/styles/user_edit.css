@@ -1,0 +1,163 @@
+.header {
+  height: 80px;
+  background: none;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
+.header #logo i {
+  color: #FF5A5F;
+}
+.header .search {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.header .search.focus {
+  border: 1px solid #788;
+}
+.header .search i {
+  color: #484848;
+  font-weight: bold;
+}
+.header .search .input-text {
+  color: #484848;
+}
+.header .search .user-history {
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.header .header-nav > li:not(.sub):hover {
+  border-color: #788;
+}
+.header .header-nav > li:not(.sub) a {
+  color: #484848;
+}
+.header .header-nav li.sub {
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid#f1f1f1;
+}
+.header .header-nav li.sub.app {
+  width: 420px;
+}
+.main {
+  padding-top: 24px;
+}
+.main .container {
+  z-index: inherit;
+}
+.main .container .content:first-child {
+  margin-bottom: 24px;
+}
+.main .container .content:first-child ul li a {
+  font-size: 16px;
+  line-height: 33px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  color: #767676;
+  text-decoration: none;
+}
+.main .container .content:first-child ul li.active a {
+  font-weight: bold;
+  color: #484848;
+}
+.main .container .content:first-child ul li:not(.active):hover a {
+  color: #bbb;
+}
+.main .container .content:first-child .user_msg {
+  height: 34px;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  line-height: 34px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.main .container .content:first-child .user_msg:hover {
+  border-color: #888;
+}
+.main .container .content:first-child .user_msg a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .main .container .content:first-child ul li a {
+    font-size: 15px;
+  }
+  .main .container .content:first-child .user_msg {
+    font-size: 13px;
+  }
+}
+.main .container .content:nth-child(2) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.main .container .content:nth-child(2) .title {
+  line-height: 17px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  background-color: #edefed;
+  border-bottom: 1px solid #dce0e0;
+  color: #484848;
+  margin-bottom: 20px;
+}
+.main .container .content:nth-child(2) > .row {
+  margin-right: 0;
+  margin-left: 0;
+  border: 1px solid #dce0e0;
+  margin-bottom: 24px;
+}
+.main .container .content:nth-child(2) > .row .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .main .container .content:nth-child(2) .title {
+    font-size: 16px;
+  }
+}
+.main .container .content:nth-child(2) .msg_list {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.main .container .content:nth-child(2) .msg_list .label {
+  padding: 0;
+}
+.main .container .content:nth-child(2) .msg_list .label label {
+  line-height: 36px;
+  text-align: right;
+  margin: 0;
+  height: 36px;
+  float: right;
+  color: #484848;
+  font-weight: normal;
+  font-size: 14px;
+}
+.main .container .content:nth-child(2) .msg_list .input p {
+  line-height: 22px;
+  color: #767676;
+  margin-top: 5px;
+}
+.main .container .content:nth-child(2) .msg_list .input input {
+  border: 1px solid #aaaaaa;
+  height: 36px;
+  width: 100%;
+}
+.main .container .content:nth-child(2) .msg_list.sex select {
+  width: 25%;
+}
+.main .container .content:nth-child(2) .msg_list.sex select option {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .main .container .content:nth-child(2) .msg_list.sex select {
+    width: 50%;
+  }
+}
+.main .container .content:nth-child(2) .msg_list.brithday select {
+  width: auto;
+}

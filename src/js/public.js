@@ -80,7 +80,6 @@ $(function() {
             var pwd = sessionStorage.user_password;
             var phoneNmb = sessionStorage.usertel;
             var email = sessionStorage.useremail;
-            console.log(pwd, phoneNmb, email);
             //判断登陆方式；
             if (phoneNmb) {
                 phoneLogin(phoneNmb, pwd);
@@ -339,7 +338,7 @@ $(function() {
                 //登陆操作；
                 if (regist.emailAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    emailLogin(email, pwd, event);
+                    emailLogin(email, pwd, e);
                 }
             }
         } else {
@@ -399,7 +398,7 @@ $(function() {
                 //登陆操作；
                 if (regist.phoneAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    phoneLogin(phoneNmb, pwd, event);
+                    phoneLogin(phoneNmb, pwd, e);
                 }
             }
         } else {
