@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div id="home_msg">
+    <div id="home_msg" class="container">
         <!-- 导航 -->
         <div class="nav" style="padding:30px;">
         </div>
@@ -26,28 +26,28 @@
         <div class="banner">
             <div class="container-fluid" style="padding:0;">
                 <div class="row">
-                    <div class="banner_left  col-lg-6 col-md-6">
+                    <div class="banner_left  col-lg-6 col-md-8 col-sm-8">
                         <div class="row">
                             <div class="banner_img" style="padding:0;">
                                 <img src="../images/fangyuan/images/banner1.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="banner_right  col-lg-6 col-md-6">
+                    <div class="banner_right  col-lg-6 col-md-4 col-sm-4">
                         <div class="row">
-                            <div class="banner_img col-lg-6 col-md-6" style="padding:0;">
+                            <div class="banner_img col-lg-6" style="padding:0;">
                                 <div class="screen"></div>
                                 <img src="../images/fangyuan/images/banner2.jpg" alt="">
                             </div>
-                            <div class="banner_img  col-lg-6 col-md-6" style="padding:0;">
+                            <div class="banner_img  col-lg-6" style="padding:0;">
                                 <img src="../images/fangyuan/images/banner3.jpg" alt="">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="banner_img col-lg-6 col-md-6" style="padding:0;">
+                            <div class="banner_img col-lg-6 " style="padding:0;">
                                 <img src="../images/fangyuan/images/banner4.jpg" alt="">
                             </div>
-                            <div class="banner_img  col-lg-6 col-md-6" style="padding:0;">
+                            <div class="banner_img  col-lg-6" style="padding:0;">
                                 <img src="../images/fangyuan/images/banner5.jpg" alt="">
                             </div>
                         </div>
@@ -57,8 +57,9 @@
         </div>
 
         <!-- content -->
-        <div class="container">
+        <div class="container" style="padding:0;">
             <div class="content">
+                <!-- 导航条 -->
                 <div class="row list">
                     <span class="xq">详情</span>
                     <span class="li">
@@ -82,50 +83,168 @@
                     <span>房东</span>
                     </span>
                 </div>
-                <div class="row">
-                    <div class="content_left col-lg-6 col-md-6">
-                        <div></div>
-                        <div class="section">
-                            <div>
-                                <span>克拉科夫·整间阁楼</span>
+
+                <!-- 房间预定窗口 -->
+                <div class="reserve">
+                    <div>
+                        <div class="row ">
+                            <div class="reserve_head">
+                                <div>
+                                    <span>￥</span><span class="house_price">260</span>
+                                    <span>每晚</span>
+                                </div>
+                                <div>
+                                    <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
+                                    <span>510条</span>
+                                </div>
                             </div>
-                            <div>
-                                <span>Amazing and Extremely Central Flat</span>
+                            <div class="reserve_date">
+                                <div><small>日期</small></div>
+                                <div>
+                                    <span><input type="text" class="datepicker1" placeholder="入住"></span>
+                                    <span>→</span>
+                                    <span><input type="text" class="datepicker2" placeholder="退房"></span>
+                                </div>
                             </div>
-                            <div></div>
-                            <div>
-                                <p>这个房源是很多人的心仪之所。</p>
-                                <p>过去一周浏览量超过500次。</p>
+                            <div class="reserve_people">
+                                <div><small>房客</small></div>
+                                <div class="change_num">
+                                    <div class="num" value="">
+                                        <button class="num_btn">
+                                            <span class="all_num">1位房客</span>
+                                            <span class="iconfont shang">&#xe631;</span>
+                                            <span class="iconfont xia">&#xe630;</span>
+                                        </button>
+                                    </div>
+
+                                    <!-- 费用 -->
+                                    <div class="cost">
+                                        <div class="cost1">
+                                            <span>
+                                                <span class="house_cost"></span>
+                                            <a href="#" class="iconfont">&#xe63c;</a>
+                                            </span>
+                                            <span class="house_total"></span>
+                                        </div>
+                                        <div class="cost2">
+                                            <span>
+                                                <span class="clean_cost">清洁费</span>
+                                            <a href="#" class="iconfont">&#xe63c;</a>
+                                            </span>
+                                            <span class="clean_total">￥92</span>
+                                        </div>
+                                        <div class="cost3">
+                                            <span>
+                                                <span class="clean_cost">服务费</span>
+                                            <a href="#" class="iconfont">&#xe63c;</a>
+                                            </span>
+                                            <span class="clean_total">￥68</span>
+                                        </div>
+                                        <div class="cost4">
+                                            <span>总价</span>
+                                            <span class="total"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--  -->
+                                    <div class="change">
+                                        <div class="adult" value="">
+                                            <span>成人</span>
+                                            <button class="adult_btn1">-</button>
+                                            <span class="adult_count">1</span>
+                                            <button class="adult_btn2">+</button>
+                                        </div>
+                                        <div class="child" value="">
+                                            <span>
+                                                <span>儿童</span>
+                                            <span>2-12岁</span>
+                                            </span>
+                                            <button class="child_btn1">-</button>
+                                            <span class="child_count">0</span>
+                                            <button class="child_btn2">+</button>
+                                        </div>
+                                        <div class="baby" value="">
+                                            <span>
+                                                <span>婴儿</span>
+                                            <span>2岁以下</span>
+                                            </span>
+                                            <button class="baby_btn1">-</button>
+                                            <span class="baby_count">0</span>
+                                            <button class="baby_btn2">+</button>
+                                        </div>
+                                        <div>最多6位房客，婴幼儿不计算在内。</div>
+                                        <div class="close_change">
+                                            <button href="#">关闭</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div></div>
+                            <div class="reserve_btn">
+                                <div>
+                                    <button>预定</button>
+                                </div>
+                                <div><small>您暂时不会被收费</small></div>
+                            </div>
+                            <div class="reserve_rep">
+                                <span class="iconfont">&#xe661;</span>
+                                <span>举报此房源</span>
+                            </div>
                         </div>
-                        <div class="row fy_scale">
-                            <div class="col-xs-6">
-                                <div>
-                                    <span class="iconfont">&#xe62c;</span>
-                                    <span>两间卧室</span>
-                                </div>
-                                <div>
-                                    <span class="iconfont">&#xe60d;</span>
-                                    <span>3张床</span>
-                                </div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div>
-                                    <span class="iconfont">&#xe7ff;</span>
-                                    <span>1间卫生间</span>
-                                </div>
-                                <div>
-                                    <span class="iconfont">&#xf014b;</span>
-                                    <span>最多住6人</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 房间详情 -->
+            <div class="row">
+                <div class="content_left col-lg-6">
+                    <div class="start"></div>
+                    <div class="section">
+                        <div>
+                            <span>克拉科夫·整间阁楼</span>
+                        </div>
+                        <div>
+                            <span>Amazing and Extremely Central Flat</span>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>这个房源是很多人的心仪之所。</p>
+                            <p>过去一周浏览量超过500次。</p>
                         </div>
                         <div></div>
                     </div>
 
+                    <div class="row fy_scale">
+                        <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6">
+                            <div class="row col-sm-6 col-md-6 col-lg-6">
+                                <span class="iconfont">&#xe62c;</span>
+                                <span>两间卧室</span>
+                            </div>
+                            <div class="row col-sm-5 col-md-6 col-lg-6">
+                                <span class="iconfont">&#xe60d;</span>
+                                <span>3张床</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="row col-sm-5 col-md-6 col-lg-6">
+                                <span class="iconfont">&#xe7ff;</span>
+                                <span>1间卫生间</span>
+                            </div>
+                            <div class="row col-sm-5 col-md-6 col-lg-6">
+                                <span class="iconfont">&#xf014b;</span>
+                                <span>最多住6人</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
                 </div>
-                <div class="row">
+            </div>
+
+            <!-- 房源描述 -->
+            <div class="container" style="padding:0;">
+                <div class="row col-lg-6" style="padding:0;">
                     <div class="eval">
                         <div class="row">
                             <div class="translate">
@@ -156,26 +275,31 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="details">
-                                        <div class="row">
-                                            <div>
-                                                <p>整套房子/公寓</p>
-                                                <p>无需与房东或房客共享空间，独享整个房源</p>
+
+                                <!-- 细节 -->
+                                <div class="container" style="padding:0;">
+                                    <div class="details col-lg-6" style="padding:0;">
+                                        <!-- -->
+                                        <div>
+                                            <div class="row">
+                                                <p class="col-lg-2 col-md-2 col-sm-2">整套房子/公寓</p>
+                                                <p class="col-lg-6 col-md-6 col-sm-6">无需与房东或房客共享空间，独享整个房源</p>
                                             </div>
-                                            <div>
-                                                <p>超赞房东</p>
-                                                <p>超赞房东经验丰富、评分很高，他们致力于为房客提供优质的住宿体验</p>
+                                            <div class="row">
+                                                <p class="col-lg-2 col-md-2 col-sm-2">超赞房东</p>
+                                                <p class="col-lg-6 col-md-6 col-sm-6">超赞房东经验丰富、评分很高，他们致力于为房客提供优质的住宿体验</p>
                                             </div>
-                                            <div>
-                                                <p>入住/退房</p>
-                                                <p>入住时间14:00后 · 退房时间11:00</p>
+                                            <div class="row">
+                                                <p class="col-lg-2 col-md-2 col-sm-2">入住/退房</p>
+                                                <p class="col-lg-6 col-md-6 col-sm-6">入住时间14:00后 · 退房时间11:00</p>
                                             </div>
-                                            <div>
-                                                <p>自助入住</p>
-                                                <p>通过智能门锁自助入住</p>
+                                            <div class="row">
+                                                <p class="col-lg-2 col-md-2 col-sm-2">自助入住</p>
+                                                <p class="col-lg-6 col-md-6 col-sm-6">通过智能门锁自助入住</p>
                                             </div>
                                         </div>
+
+                                        <!-- 设施 -->
                                         <div></div>
                                         <div class="row">
                                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -198,74 +322,78 @@
                                         <div></div>
                                     </div>
                                 </div>
+
+                                <!-- 评价 -->
                                 <div class="row pingjia">
                                     <div>评价</div>
-                                    <div>
+                                    <div class="col-md-6 col-sm-6">
                                         <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
                                         <span>510</span>
                                         <span>条评价</span>
                                     </div>
-                                    <div>
+                                    <div class="col-md-4 col-sm-4 pull-md-2 push-sm-2">
                                         <span class="iconfont">&#xe682;</span>
                                         <input type="text" name="" id="" placeholder="搜索评价">
                                     </div>
-                                    <div class="xing">
+                                    <div class="xing col-md-6 col-sm-6">
                                         <span>如实描述</span>
                                         <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
                                     </div>
-                                    <div class="xing">
+                                    <div class="xing col-md-6 col-sm-6">
                                         <span>沟通交流</span>
                                         <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
                                     </div>
-                                    <div class="xing">
+                                    <div class="xing col-md-6 col-sm-6">
                                         <span>干净卫生</span>
                                         <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
                                     </div>
-                                    <div class="xing">
+                                    <div class="xing col-md-6 col-sm-6">
                                         <span>位置便利</span>
                                         <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
                                     </div>
-                                    <div class="xing">
+                                    <div class="xing col-md-6 col-sm-6">
                                         <span>入住顺利</span>
                                         <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
                                     </div>
-                                    <div class="xing">
+                                    <div class="xing col-md-6 col-sm-6">
                                         <span>高性价比</span>
                                         <span class="iconfont">&#xe501;&#xe501;&#xe501;&#xe501;&#xe501;</span>
                                     </div>
                                     <div></div>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 评论区 -->
-                <div class="container comment">
-                    <div class="row">
-                        <div class="translate">
-                            将评论描述翻译为中文 (简体)
-                        </div>
-                        <div class="comment_detail">
+            </div>
 
-                        </div>
+            <!-- 评论区 -->
+            <div class="container comment ">
+                <div class="row col-lg-6">
+                    <div class="translate">
+                        将评论描述翻译为中文 (简体)
                     </div>
+                    <div class="comment_detail">
 
+                    </div>
                 </div>
 
-                <!-- 可定日期 -->
-                <div class="container date">
+            </div>
+
+            <!-- 可定日期 -->
+            <div class="container date">
+                <div class="row">
                     <div>可定日期</div>
                     <div>
                         <span>14天前更新</span>
                     </div>
                     <div id="datepicker"></div>
                 </div>
+            </div>
 
-                <!-- 位置 -->
-                <div class="container address">
+            <!-- 位置 -->
+            <div class="container address">
+                <div class="row col-lg-6" style="padding:0;">
                     <div>位置</div>
                     <div class="translate">
                         将位置信息翻译为中文 (简体)
@@ -311,8 +439,8 @@
                             <span>交易提示</span>
                             <p>
                                 <span>
-                                    为了保护您的账号隐私和付款安全，请不要相信其它任何平台的折扣或礼金券代订，并始终在爱彼迎站内转账和交流。
-                                </span>
+                                            为了保护您的账号隐私和付款安全，请不要相信其它任何平台的折扣或礼金券代订，并始终在爱彼迎站内转账和交流。
+                                        </span>
                                 <a href="#">查看详情</a>
                             </p>
                         </div>
@@ -341,8 +469,8 @@
                             </div>
                             <div class="col-xs-3" style="padding:0;">
                                 <span class="col-xs-3" style="padding:0;">
-                                    <img src="../images/fangyuan/images/verified_badge-6ee370f5ca86a52ed6198fac858ac1f4.png" alt="">
-                                </span>
+                                            <img src="../images/fangyuan/images/verified_badge-6ee370f5ca86a52ed6198fac858ac1f4.png" alt="">
+                                        </span>
                                 <span class="col-xs-6" style="padding:0;">已验证</span>
                             </div>
                         </div>
@@ -359,16 +487,16 @@
                             <span>Open-minded, easygoing and sociable.  And I love Airbnb!!! </span>
 
                             <span>
-                                I am a native of Krakow and greatly enjoy that city.  But I also lived for extensive pe…
-                            </span>
+                                        I am a native of Krakow and greatly enjoy that city.  But I also lived for extensive pe…
+                                    </span>
                             <a href="#">查看更多</a>
                         </div>
                         <!-- 7 -->
                         <div class="row">
                             <span>与房客互动</span>
                             <span>
-                                I am available via Airbnb mailbox, phone, txt and Whatsup. Have a question? Just reach out
-                            </span>
+                                        I am available via Airbnb mailbox, phone, txt and Whatsup. Have a question? Just reach out
+                                    </span>
 
                         </div>
                         <!-- 8 -->
@@ -402,10 +530,10 @@
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
                                 <!-- <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                </ol> -->
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        </ol> -->
 
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
@@ -447,13 +575,12 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
 
-
-
             </div>
+
         </div>
+    </div>
 
 
 
