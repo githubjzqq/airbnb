@@ -79,6 +79,7 @@
 }
 .main .container .content:first-child .user_msg:hover {
   border-color: #888;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 .main .container .content:first-child .user_msg a {
   text-decoration: none;
@@ -91,11 +92,11 @@
     font-size: 13px;
   }
 }
-.main .container .content:nth-child(2) {
+.main .container .content {
   padding-right: 0;
   padding-left: 0;
 }
-.main .container .content:nth-child(2) .title {
+.main .container .content .title {
   line-height: 17px;
   font-size: 16px;
   font-weight: bold;
@@ -105,29 +106,20 @@
   color: #484848;
   margin-bottom: 20px;
 }
-.main .container .content:nth-child(2) > .row {
+.main .container .content.base > .row {
   margin-right: 0;
   margin-left: 0;
   border: 1px solid #dce0e0;
   margin-bottom: 24px;
 }
-.main .container .content:nth-child(2) > .row .row {
-  margin-right: 0;
-  margin-left: 0;
-}
-@media (max-width: 768px) {
-  .main .container .content:nth-child(2) .title {
-    font-size: 16px;
-  }
-}
-.main .container .content:nth-child(2) .msg_list {
+.main .container .content.base > .row .msg_list {
   margin-bottom: 24px;
   overflow: hidden;
 }
-.main .container .content:nth-child(2) .msg_list .label {
+.main .container .content.base > .row .msg_list .label {
   padding: 0;
 }
-.main .container .content:nth-child(2) .msg_list .label label {
+.main .container .content.base > .row .msg_list .label label {
   line-height: 36px;
   text-align: right;
   margin: 0;
@@ -137,27 +129,118 @@
   font-weight: normal;
   font-size: 14px;
 }
-.main .container .content:nth-child(2) .msg_list .input p {
+.main .container .content.base > .row .msg_list .input p {
   line-height: 22px;
   color: #767676;
   margin-top: 5px;
+  margin: 10px 0;
 }
-.main .container .content:nth-child(2) .msg_list .input input {
+.main .container .content.base > .row .msg_list .input input {
   border: 1px solid #aaaaaa;
   height: 36px;
   width: 100%;
+  padding: 8px 10px;
 }
-.main .container .content:nth-child(2) .msg_list.sex select {
+.main .container .content.base > .row .msg_list.sex select {
   width: 25%;
 }
-.main .container .content:nth-child(2) .msg_list.sex select option {
+.main .container .content.base > .row .msg_list.sex select option {
   width: 100%;
 }
 @media (max-width: 768px) {
-  .main .container .content:nth-child(2) .msg_list.sex select {
+  .main .container .content.base > .row .msg_list.sex select {
     width: 50%;
   }
 }
-.main .container .content:nth-child(2) .msg_list.brithday select {
-  width: auto;
+.main .container .content.base > .row .msg_list.birthday select {
+  width: 15%;
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  .main .container .content.base > .row .msg_list.birthday select {
+    width: 25%;
+    font-size: 10px;
+    padding: 0;
+  }
+}
+.main .container .content.base > .row .msg_list.firstLunguage select {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .main .container .content.base > .row .msg_list.firstLunguage select {
+    width: 50%;
+  }
+}
+.main .container .content.base > .row .msg_list.firstCurrency select {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .main .container .content.base > .row .msg_list.firstCurrency select {
+    width: 50%;
+  }
+}
+.main .container .content.base > .row .msg_list.intro textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  resize: none;
+}
+.main .container .content.base > .row .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.main .container .content.base > .row.msg2 .box {
+  padding: 20px;
+  overflow: hidden;
+}
+.main .container .content.base > .row.msg2 .userpic {
+  padding: 5px;
+  text-align: center;
+}
+.main .container .content.base > .row.msg2 .userpic img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .main .container .content.base > .row.msg2 .userpic img {
+    width: 225px;
+  }
+}
+.main .container .content.base > .row.msg2 .text p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.main .container .content.base > .row.msg2 .text .selectpic {
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  height: 42px;
+  width: 100%;
+  border: 1px solid #999;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .container .content.base > .row.msg2 .text .selectpic:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .main .container .content.base .title {
+    font-size: 16px;
+  }
+}
+.main .container .content.base .save {
+  height: 42px;
+  width: 88px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #ff5a5f;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main .container .content.base .save:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }

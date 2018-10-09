@@ -181,7 +181,7 @@
                         查看个人资料</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 content">
+                <div class="col-xs-12 col-sm-9 content base" style="">
                     <div class="row">
                         <div class="title">必填</div>
                         <div class="msg_list firstName row">
@@ -234,6 +234,196 @@
                                     <option value="11">十一月</option>
                                     <option value="12">十二月</option>
                                 </select>
+                                <select class="form-control" id="birthday">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select class="form-control" id="birthday">
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                </select>
+                                <p>此数据将帮助我们更好地为您提供服务，除必要的内部使用外，我们不会将您的信息透露给房东或其他用户。您必须年满 18 周岁才能使用爱彼迎的网站和服务。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list email">
+                            <div class="label col-xs-3">
+                                <label for="emali">电子邮件地址</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="emali">
+                                <p>我们不会向其他爱彼迎用户透露您的个人邮箱地址。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list phoneNmb">
+                            <div class="label col-xs-3">
+                                <label for="phoneNmb">电子邮件地址</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="phoneNmb">
+                                <p>只有在您和另一名爱彼迎用户确认预订时，此资料才会被分享。这是我们帮助大家联系彼此的方式。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list firstLunguage">
+                            <div class="label col-xs-3">
+                                <label for="firstLunguage">首选语言</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="firstLunguage">
+                                    <option value="">简体中文</option>
+                                    <option value="">English</option>
+                                </select>
+                                <p>我们将会使用此语言给您发消息</p>
+                            </div>
+                        </div>
+                        <div class="msg_list firstCurrency"></div>
+                        <div class="msg_list address"></div>
+                        <div class="msg_list intro"></div>
+                    </div>
+                    <div class="row">
+                        <div class="title">选填</div>
+                        <div class="msg_list school"></div>
+                        <div class="msg_list work"></div>
+                        <div class="msg_list timeZone"></div>
+                        <div class="msg_list timeZone"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 content picture" style="display:none">
+                    <div class="row">
+                        <div class="title">必填</div>
+                        <div class="msg_list firstName row">
+                            <div class="label col-xs-3">
+                                <label for="lastName">名字</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="lastName">
+                            </div>
+                        </div>
+                        <div class="msg_list lastName">
+                            <div class="label col-xs-3">
+                                <label for="firstName">姓氏</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="firstName">
+                                <p>您的公开个人资料将仅显示您的名字。申请预订时，房东会看到您的名字和姓氏。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list sex">
+                            <div class="label col-xs-3">
+                                <label for="sex">性别</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="sex">
+                                    <option>男</option>
+                                    <option>女</option>
+                                    <option>其他</option>
+                                    <option selected="selected">性别</option>
+                                </select>
+                                <p>此数据仅用于分析，我们不会透露给其它用户。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list birthday">
+                            <div class="label col-xs-3">
+                                <label for="birthday">出生日期</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="birthday">
+                                    <option value="1">一月</option>
+                                    <option value="2">二月</option>
+                                    <option value="3">三月</option>
+                                    <option value="4">四月</option>
+                                    <option value="5">五月</option>
+                                    <option value="6">六月</option>
+                                    <option value="7">七月</option>
+                                    <option value="8">八月</option>
+                                    <option value="9" selected="selected">九月</option>
+                                    <option value="10">十月</option>
+                                    <option value="11">十一月</option>
+                                    <option value="12">十二月</option>
+                                </select>
+                                <select class="form-control" id="birthday">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select class="form-control" id="birthday">
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                </select>
                                 <p>此数据将帮助我们更好地为您提供服务，除必要的内部使用外，我们不会将您的信息透露给房东或其他用户。您必须年满 18 周岁才能使用爱彼迎的网站和服务。</p>
                             </div>
                         </div>
@@ -252,7 +442,6 @@
                         <div class="msg_list timeZone"></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
