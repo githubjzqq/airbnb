@@ -1,12 +1,104 @@
 $(function() {
-    var login = 0; //储存登陆信息；
-    var regist = {}; //储存注册信息；
-    regist.url = '../php/regist.php';
+    var regist = {}; //储存注册&登陆信息；
 
-
-    if (login) {
-        $('.header .header-nav li.sub.user-msg').attr('style', 'visibility: visible')
+    //登陆功能函数；
+    function phoneLogin(phonenmb, pwd, e) {
+        var data = 'phoneNmb=' + phonenmb + '&pwd=' + pwd;
+        regist.url = '../php/login.php?_dc=' + (new Date()).getTime(); //添加时间戳，解决缓存问题；
+        $.ajax({
+            url: regist.url,
+            type: 'post',
+            data: data,
+            success: function(data) {
+                if (data) {
+                    var user = JSON.parse(data);
+                    if (user[1] == 'pwd_error') {
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
+                    } else {
+                        $('.header .header-nav li.sub').removeClass('active');
+                        $('.header .header-nav li.login .user-pic').css('display:block');
+                        $('.header .header-nav li.login a').css('display:none');
+                        var usermsg = sessionStorage;
+                        usermsg.setItem('login', true);
+                        for (var i in user) {
+                            usermsg.setItem(i, user[i]);
+                        }
+                        $('.header .header-nav li.sub.user-msg').attr('style', ''); //登陆后显示用户信息；
+                        $('.header .header-nav li.login .userpic').css('display', 'block'); //登陆后显示用户头像；
+                        $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
+                        $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
+                        $('.mod').css('display', 'none');
+                        $('.modal-backdrop').remove();
+                    }
+                } else {
+                    $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
+                }
+            }
+        })
     }
+
+    function emailLogin(email, pwd, e) {
+        var data = 'email=' + email + '&pwd=' + pwd;
+        regist.url = '../php/login_email.php?_dc=' + (new Date()).getTime(); //添加时间戳，解决缓存问题；
+        $.ajax({
+            url: regist.url,
+            type: 'post',
+            data: data,
+            success: function(data) {
+                if (data) {
+                    var user = JSON.parse(data);
+                    if (user[1] == 'pwd_error') {
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
+                    } else {
+                        $('.header .header-nav li.sub').removeClass('active');
+                        $('.header .header-nav li.login .user-pic').css('display:block');
+                        $('.header .header-nav li.login a').css('display:none');
+                        var usermsg = sessionStorage;
+                        usermsg.setItem('login', true);
+                        for (var i in user) {
+                            usermsg.setItem(i, user[i]);
+                        }
+                        $('.header .header-nav li.sub.user-msg').attr('style', ''); //登陆后显示用户信息；
+                        $('.header .header-nav li.login .userpic').css('display', 'block'); //登陆后显示用户头像；
+                        $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
+                        $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
+                        $('.mod').css('display', 'none');
+                        $('.modal-backdrop').remove();
+                    }
+                } else {
+                    $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
+                }
+            }
+        })
+    }
+
+    //重新加载页面时判断是否为登陆状态；
+    function adjust() {
+        //判断登陆信息是否储存；
+        if (sessionStorage.userid) {
+            // 若存在登陆信息，则登陆（显示及登陆后的用户信息）；
+            var pwd = sessionStorage.user_password;
+            var phoneNmb = sessionStorage.usertel;
+            var email = sessionStorage.useremail;
+            console.log(pwd, phoneNmb, email);
+            //判断登陆方式；
+            if (phoneNmb) {
+                phoneLogin(phoneNmb, pwd);
+            } else {
+                emailLogin(email, pwd);
+            }
+        } else {
+            console.log('未登录，请登录！');
+        }
+    }
+    adjust();
+
+    //退出登陆；
+    $('.header .header-nav li.sub.user-msg .exit').on('click', function() {
+        sessionStorage.clear(); //清除用户信息；
+        location.reload(); //重新加载页面；
+    });
+
     //搜索框获得焦点时出发事件；
     $('.header .search .input-text').on('focus', function() {
         $(this).parent('.search').addClass('focus'); //边框高亮；
@@ -23,26 +115,26 @@ $(function() {
     });
 
     if (window.innerWidth < 1370) {
-        $('.header .header-nav li:first-child a').html('<img src="../images/public/China.png" alt="" class="country">');
+        $('.header .header-nav>li:first-child a').html('<img src="../images/public/China.png" alt="" class="country">');
     };
 
     //屏幕宽度变化调整导航的隐藏与显示；
     $(window).resize(function() {
         if (window.innerWidth < 1370) {
-            $('.header .header-nav li:first-child a').html('<img src="../images/public/China.png" alt="" class="country">')
+            $('.header .header-nav>li:not(.sub):first-child a').html('<img src="../images/public/China.png" alt="" class="country">')
         };
         if (window.innerWidth >= 1370) {
-            $('.header .header-nav li:first-child a').html('<img src="../images/public/China.png" alt="" class="country">人民币（￥）')
+            $('.header .header-nav>li:not(.sub):first-child a').html('<img src="../images/public/China.png" alt="" class="country">人民币（￥）')
         };
     });
     $(window).resize(function() {
         if (window.innerWidth < 1340) {
-            $('.header .header-nav li:not(.sub)').eq(2).empty();
-            $('.header .header-nav li:not(.sub)').eq(3).empty();
+            $('.header .header-nav>li:not(.sub)').eq(2).empty();
+            $('.header .header-nav>li:not(.sub)').eq(3).empty();
         };
         if (window.innerWidth >= 1340) {
-            $('.header .header-nav li:not(.sub)').eq(2).html('<a href="">成为房东/体验达人</a>');
-            $('.header .header-nav li:not(.sub)').eq(3).html('<a href="">故事</a>');
+            $('.header .header-nav>li:not(.sub)').eq(2).html('<a href="">成为房东/体验达人</a>');
+            $('.header .header-nav>li:not(.sub)').eq(3).html('<a href="">故事</a>');
         };
     });
     $('#logo').on('click', function() {
@@ -55,22 +147,21 @@ $(function() {
     //点击导航出现/隐藏子菜单；
     $('.header .header-nav li:not(.sub)').on('click', function(e) {
         index = $(this).index('.header .header-nav li:not(.sub)');
-        $('.header .header-nav li.sub').not($('.header .header-nav li.sub').eq(index)).removeClass('active');
-        $('.header .header-nav li.sub').eq(index).toggleClass('active');
+        $('.header .header-nav>li.sub').not($('.header .header-nav li.sub').eq(index)).removeClass('active');
+        $('.header .header-nav>li.sub').eq(index).toggleClass('active');
     });
 
     //点击选择货币；
-    $('.header .header-nav li.sub.currency .list').on('click', function(e) {
-        $('.header .header-nav li.sub.currency .list').removeClass('active');
+    $('.header .header-nav>li.sub.currency .list').on('click', function(e) {
+        $('.header .header-nav>li.sub.currency .list').removeClass('active');
         $(e.target).addClass('active');
         var ele = $(e.target).clone().html();
-        $('.header .header-nav li._currency a').html(ele);
-        $('.header .header-nav li.sub').removeClass('active')
+        $('.header .header-nav>li._currency a').html(ele);
+        $('.header .header-nav>li.sub').removeClass('active')
     });
 
     //底部切换语言切换货币；
     $('.footer .tab1 .item:nth-child(1) .dropup .dropdown-menu li').on('click', function() {
-        // console.log($(this).parent().siblings('.dropdown-toggle').children('span'));
         $(this).parent().siblings('.dropdown-toggle').children('span').text($(this).text());
     });
 
@@ -158,7 +249,7 @@ $(function() {
     }
     $('.mod .modal-dialog.mad1 .modal-content .modal-body.verify .generate').on('click', generate);
 
-    //验证验证码
+    //验证验证码输入；
     $('.mod .modal-dialog.mad1 .modal-content .modal-body.verify input').on('keyup', function() {
         var str1 = $(this).siblings('.result').html().toLowerCase();
         var str2 = $(this).val().toLowerCase(); //转为小写比较（不区分大小写）
@@ -196,10 +287,12 @@ $(function() {
     });
 
     //邮箱注册&登陆提交验证；
-    function email() {
+    function email(e) {
         regist.email = [];
         var reg1 = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
         var reg2 = /^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_!@#$%^&*`~()-+=]+$)(?![a-z0-9]+$)(?![a-z\W_!@#$%^&*`~()-+=]+$)(?![0-9\W_!@#$%^&*`~()-+=]+$)[a-zA-Z0-9\W_!@#$%^&*`~()-+=]{8,30}$/;
+        var email = $(this).siblings('.input').children('.inputnmb').children('input').val();
+        var pwd = $(this).siblings('.password').children('.box').children('.pwd').val();
         regist.email.push(reg1.test($(this).siblings('.input').children('.inputnmb').children('input').val()));
         console.log($(this).siblings('.verify'));
         if ($(this).siblings('.verify').length != 0) {
@@ -215,7 +308,43 @@ $(function() {
         regist.emailAd = regist.email.every(function(item, index, array) {
             return item == true;
         })
-        console.log(regist.email, regist.emailAd);
+        if (regist.emailAd) {
+            regist.emailData = 'email=' + email + '&pwd=' + pwd;
+            console.log(regist.emailData);
+            //注册账号操作；
+            if ($(this).text() === '注册') {
+                regist.url = '../php/regist_email.php?_dc=' + (new Date()).getTime(); //添加时间戳，解决缓存问题；
+                console.log(regist.url);
+                if (regist.emailAd) {
+                    $.ajax({
+                        url: regist.url,
+                        type: 'post',
+                        data: regist.emailData,
+                        success: function(data) {
+                            if (data) {
+                                $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('邮箱已被注册');
+                            } else {
+                                $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('注册成功(2s后自动跳转)');
+                                setTimeout(function() {
+                                    emailLogin(email, pwd);
+                                }, 2000);
+                            }
+                        },
+                        error: function(err) {
+                            console.log(err)
+                        },
+                    })
+                }
+            } else {
+                //登陆操作；
+                if (regist.emailAd) {
+                    //登陆功能函数，接收用户手机号和密码；
+                    emailLogin(email, pwd, event);
+                }
+            }
+        } else {
+            $(this).siblings('.tips').css('display', 'block'); //报错；
+        }
     }
     $('.mod .modal-dialog.mad1 .modal-content.email .modal-body.button').on('click', email);
 
@@ -229,7 +358,6 @@ $(function() {
         var pwd = $(this).siblings('.password').children('.box').children('.pwd').val();
         regist.phone.push(reg1.test(phoneNmb));
         if ($(this).siblings('.verify').length != 0) {
-            console.log(phoneNmb, pwd);
             if ($(this).siblings('.verify').children('input').val()) {
                 regist.phone.push($(this).siblings('.verify').children('input').val().toLowerCase() === $(this).siblings('.verify').children('.result').html().toLowerCase());
             } else {
@@ -241,12 +369,12 @@ $(function() {
         regist.phoneAd = regist.phone.every(function(item, index, array) {
             return item == true;
         });
-        console.log(regist.phone, regist.phoneAd);
         if (regist.phoneAd) {
             regist.phoneData = 'phoneNmb=' + phoneNmb + '&pwd=' + pwd;
             //注册账号操作；
             if ($(this).text() === '注册') {
-                regist.url = '../php/regist.php';
+                regist.url = '../php/regist.php?_dc=' + (new Date()).getTime(); //添加时间戳，解决缓存问题；
+                console.log(regist.url);
                 if (regist.phoneAd) {
                     $.ajax({
                         url: regist.url,
@@ -254,13 +382,11 @@ $(function() {
                         data: regist.phoneData,
                         success: function(data) {
                             if (data) {
-                                console.log(data);
                                 $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('手机号已被注册');
                             } else {
-                                console.log('注册成功');
                                 $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('注册成功(2s后自动跳转)');
                                 setTimeout(function() {
-                                    //登陆操作；
+                                    phoneLogin(phoneNmb, pwd);
                                 }, 2000);
                             }
                         },
@@ -270,23 +396,10 @@ $(function() {
                     })
                 }
             } else {
-                regist.url = '../php/login.php';
+                //登陆操作；
                 if (regist.phoneAd) {
-                    $.ajax({
-                        url: regist.url,
-                        type: 'post',
-                        data: regist.phoneData,
-                        success: function(data) {
-                            if (data) {
-                                var user = JSON.parse(data);
-                                if (user[1] == 'pwd_error') {
-                                    $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
-                                }
-                            } else {
-                                $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
-                            }
-                        }
-                    })
+                    //登陆功能函数，接收用户手机号和密码；
+                    phoneLogin(phoneNmb, pwd, event);
                 }
             }
         } else {
@@ -294,4 +407,4 @@ $(function() {
         }
     }
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', phone);
-});
+})
