@@ -1,6 +1,6 @@
 .carousel-inner img {
-  width: 3.5rem;
-  height: 5.3rem;
+  width: 3.1rem;
+  height: 4.64rem;
 }
 .carousel {
   margin: .25rem .25rem;
@@ -72,6 +72,13 @@
 @media screen and (max-width: 768px) {
   .article-right .eng {
     font-size: 20px!important;
+  }
+  .carousel-inner img {
+    width: 3.5rem;
+    height: 4.64rem;
+  }
+  .lunbo {
+    width: 497px;
   }
 }
 @media screen and (max-width: 1200px) {

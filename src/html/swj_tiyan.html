@@ -1,180 +1,1889 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" id="vp" content="width=device-width, initial-scale=1">
-    <title>体验</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PRHtifCTK3xgLdsHAebXQARtI14HMBoO"></script>
+    <title>Document</title>
     <!-- 引入bootstrap的和自加的css文件 -->
     <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/swj_tiyan.css">
+    <!-- <link rel="stylesheet" href="../styles/swj_tiyan.css"> -->
     <link rel="stylesheet" href="../styles/swj_common.css">
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <script type="text/javascript">
-        //把尺寸放大N倍(N是window. devicePixelRatio(视窗宽度)) 
-        var wd = document.documentElement.clientWidth * window.devicePixelRatio / 10;
-        document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
-        //把屏幕的倍率缩小到N分之一一 (N是window. devicePixelRatio)
-        var scale = 1 / window.devicePixelRatio;
-        var mstr = 'initial-scale= ' + scale + ',maximum-scale=' + scale + ',minimum-scale= ' + scale + ', user-scalable=no';
-        document.getElementById("vp").content = mstr;
-    </script>
+    <style data-aphrodite="data-aphrodite">
+        ._ousp44 {
+            position: relative !important;
+            z-index: 20 !important;
+        }
+        
+        ._shsmsj {
+            background-color: #ffffff !important;
+            bottom: 0px !important;
+            height: 100% !important;
+            left: 0px !important;
+            position: fixed !important;
+            right: 0px !important;
+            top: 0px !important;
+            z-index: 10 !important;
+            -webkit-transform: translateY(-100%) !important;
+            -ms-transform: translateY(-100%) !important;
+            transform: translateY(-100%) !important;
+            -webkit-transition-duration: 0.2s !important;
+            transition-duration: 0.2s !important;
+            -webkit-transition-property: -webkit-transform, transform !important;
+            -moz-transition-property: transform !important;
+            transition-property: -ms-transform, -webkit-transform, transform !important;
+            -webkit-transition-timing-function: ease-out !important;
+            transition-timing-function: ease-out !important;
+        }
+        
+        @media print {
+            ._shsmsj {
+                display: none !important;
+            }
+        }
+        
+        ._dx84z0 {
+            margin-right: 8px !important;
+            max-width: 456px !important;
+        }
+        
+        ._8iqo2b {
+            position: relative !important;
+            z-index: 5 !important;
+        }
+        
+        ._17k3wpj {
+            background-color: #ffffff !important;
+            box-shadow: 0 1px 0 #EBEBEB !important;
+        }
+        
+        @media print {
+            ._17k3wpj {
+                box-shadow: none !important;
+            }
+        }
+        
+        ._hgs47m {
+            display: table !important;
+            width: 100% !important;
+            border-spacing: 0px !important;
+        }
+        
+        ._ni9axhe {
+            display: table-cell !important;
+            vertical-align: middle !important;
+        }
+        
+        ._10ejfg4u {
+            display: table-cell !important;
+            width: 100% !important;
+            vertical-align: middle !important;
+        }
+        
+        ._5nim5h {
+            display: table-cell !important;
+            height: 64px !important;
+            position: relative !important;
+            text-align: center !important;
+            text-decoration: none !important;
+            -webkit-transition: 0.25s color !important;
+            -moz-transition: 0.25s color !important;
+            transition: 0.25s color !important;
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+            vertical-align: middle !important;
+            white-space: nowrap !important;
+        }
+        
+        @media (min-width: 744px) {
+            ._5nim5h {
+                height: 80px !important;
+            }
+        }
+        
+        ._36rlri {
+            display: inline-block !important;
+        }
+        
+        ._iiid5y {
+            color: #FF5A5F !important;
+            display: inline-block !important;
+            vertical-align: middle !important;
+            font-size: 34px !important;
+            -webkit-transition: 0.25s color !important;
+            -moz-transition: 0.25s color !important;
+            transition: 0.25s color !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._iiid5y {
+                font-size: 34px !important;
+                left: 45% !important;
+            }
+        }
+        
+        ._tqn903 {
+            color: #767676 !important;
+            display: inline-block !important;
+            font-size: 9px !important;
+            margin-left: 8px !important;
+            -webkit-transition: 1s color !important;
+            -moz-transition: 1s color !important;
+            transition: 1s color !important;
+        }
+        
+        ._1g2dfiu {
+            display: table-cell !important;
+        }
+        
+        ._1gbvotfo {
+            display: table-cell !important;
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+            background: none !important;
+            border: none !important;
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+        
+        ._1gbvotfo:focus {
+            outline: none !important;
+        }
+        
+        ._d5depq {
+            display: table-cell !important;
+            vertical-align: middle !important;
+            -webkit-transition-property: -webkit-transform, transform !important;
+            -moz-transition-property: transform !important;
+            transition-property: -ms-transform, -webkit-transform, transform !important;
+            -webkit-transition-duration: 250ms !important;
+            transition-duration: 250ms !important;
+            -webkit-transition-timing-function: ease-in-out !important;
+            transition-timing-function: ease-in-out !important;
+        }
+        
+        ._cfvh61 {
+            display: inherit !important;
+        }
+        
+        @media print {
+            ._cfvh61 {
+                display: none !important;
+            }
+        }
+        
+        ._e296pg {
+            position: relative !important;
+        }
+        
+        ._1udg6lu {
+            width: 100% !important;
+            padding-left: 48px !important;
+            padding-right: 48px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._1udg6lu {
+                padding-left: 24px !important;
+                padding-right: 24px !important;
+                overflow-x: hidden !important;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            ._1udg6lu {
+                width: 1440px !important;
+                margin: 0 auto !important;
+            }
+        }
+        
+        @media (max-width: 743px) {
+            ._un65bq {
+                width: 100vw !important;
+                margin-left: -webkit-calc(-50vw + 50%) !important;
+                margin-left: -moz-calc(-50vw + 50%) !important;
+                margin-left: calc(-50vw + 50%) !important;
+            }
+        }
+        
+        ._1glqb7j {
+            margin-top: 40px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._1glqb7j {
+                margin-top: 0px !important;
+            }
+        }
+        
+        ._xd7wqa {
+            width: 80% !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._xd7wqa {
+                width: 100% !important;
+            }
+        }
+        
+        ._4efw5a {
+            text-transform: uppercase !important;
+        }
+        
+        ._hdvsm7 {
+            -webkit-box-direction: normal !important;
+            -webkit-box-orient: horizontal !important;
+            position: absolute !important;
+            top: 40px !important;
+            right: 0px !important;
+            display: -webkit-box !important;
+            display: -moz-box !important;
+            display: -ms-flexbox !important;
+            display: -webkit-flex !important;
+            display: flex !important;
+            -webkit-flex-direction: row !important;
+            -ms-flex-direction: row !important;
+            flex-direction: row !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._hdvsm7 {
+                right: 0px !important;
+            }
+        }
+        
+        ._1nrp5up {
+            margin-right: 24px !important;
+        }
+        
+        ._1t0h0lo {
+            -webkit-box-direction: normal !important;
+            -webkit-box-orient: horizontal !important;
+            display: -webkit-box !important;
+            display: -moz-box !important;
+            display: -ms-flexbox !important;
+            display: -webkit-flex !important;
+            display: flex !important;
+            -webkit-flex-direction: row !important;
+            -ms-flex-direction: row !important;
+            flex-direction: row !important;
+            /* border-bottom: 1px solid rgba(196, 189, 189, 0.781); */
+        }
+        
+        @media (max-width: 743px) {
+            ._1t0h0lo {
+                -webkit-box-direction: normal !important;
+                -webkit-box-orient: vertical !important;
+                -webkit-flex-direction: column !important;
+                -ms-flex-direction: column !important;
+                flex-direction: column !important;
+            }
+        }
+        
+        ._uljuat {
+            min-width: 0px !important;
+            -webkit-flex: 2 !important;
+            -ms-flex: 2 !important;
+            flex: 2 !important;
+            margin-right: 48px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._uljuat {
+                margin-right: 0px !important;
+                -webkit-flex: none !important;
+                -ms-flex: none !important;
+                flex: none !important;
+            }
+        }
+        
+        ._oplyxi {
+            -webkit-flex: 1 !important;
+            -ms-flex: 1 !important;
+            flex: 1 !important;
+            max-width: 200px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._oplyxi {
+                -webkit-flex: none !important;
+                -ms-flex: none !important;
+                flex: none !important;
+                max-width: 100% !important;
+            }
+        }
+        
+        ._15fqfo3w {
+            -webkit-box-align: center !important;
+            -ms-flex-align: center !important;
+            -webkit-align-items: center !important;
+            align-items: center !important;
+            position: relative !important;
+            width: -webkit-calc(33.3333% - 5.333333333333333px) !important;
+            width: -moz-calc(33.3333% - 5.333333333333333px) !important;
+            width: calc(33.3333% - 5.333333333333333px) !important;
+            -webkit-flex: none !important;
+            -ms-flex: none !important;
+            flex: none !important;
+            padding-right: 24px !important;
+            display: block !important;
+            padding: 0px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._15fqfo3w {
+                width: 100% !important;
+                margin-bottom: 24px !important;
+            }
+        }
+        
+        ._vx7ityu {
+            position: -webkit-sticky !important;
+            position: sticky !important;
+            top: 0px !important;
+            max-width: 100% !important;
+            margin-right: 24px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._vx7ityu {
+                max-width: 100% !important;
+                margin-right: 0px !important;
+            }
+        }
+        
+        ._1rac2mq {
+            min-width: 0px !important;
+            width: 100% !important;
+            margin-left: 16px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._1rac2mq {
+                margin-left: 0px !important;
+            }
+        }
+        
+        ._15zu15p {
+            contain: strict !important;
+            width: 100% !important;
+            position: relative !important;
+        }
+        
+        ._n02jag {
+            position: absolute !important;
+            top: 0px !important;
+            bottom: 0px !important;
+            left: 0px !important;
+            right: 0px !important;
+        }
+        
+        ._1udg6lu {
+            position: absolute !important;
+            top: 0px !important;
+            bottom: 0px !important;
+            left: 0px !important;
+            right: 0px !important;
+            z-index: 2 !important;
+            /* background-size: cover !important;
+            background-position: center !important; */
+        }
+        
+        ._f7heglr {
+            margin: 0px !important;
+            word-wrap: break-word !important;
+            font-size: 12px !important;
+            line-height: 16px !important;
+            letter-spacing: normal !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            text-transform: undefined !important;
+            color: #484848 !important;
+            padding-top: undefined !important;
+            padding-bottom: undefined !important;
+            font-weight: 800 !important;
+        }
+        
+        ._18gim6s4 {
+            font-weight: 800 !important;
+            margin: 0px !important;
+            word-wrap: break-word !important;
+            font-size: 32px !important;
+            line-height: 36px !important;
+            letter-spacing: normal !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            text-transform: undefined !important;
+            color: #484848 !important;
+            padding-top: 6px !important;
+            padding-bottom: 6px !important;
+        }
+        
+        ._tpbrp {
+            color: inherit !important;
+            font-size: 1em !important;
+            font-weight: 700 !important;
+            line-height: inherit !important;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        
+        ._12r18es {
+            background: #D8D8D8 !important;
+            border-radius: 50% !important;
+            border: 2px solid #ffffff !important;
+            overflow: hidden !important;
+        }
+        
+        ._110nrr2 {
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+            background: transparent !important;
+            border: 0px !important;
+            cursor: pointer !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            -webkit-user-select: auto !important;
+            -moz-user-select: auto !important;
+            -ms-user-select: auto !important;
+            user-select: auto !important;
+            text-decoration: none !important;
+        }
+        
+        ._110nrr2:active {
+            outline: 0px !important;
+        }
+        
+        ._foo5i5 {
+            /* white-space: pre-line !important; */
+            -ms-word-wrap: break-word !important;
+        }
+        
+        ._1d2geue7 {
+            font-weight: 600 !important;
+            margin: 0px !important;
+            word-wrap: break-word !important;
+            font-size: 18px !important;
+            line-height: 26px !important;
+            letter-spacing: normal !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            text-transform: undefined !important;
+            color: #484848 !important;
+            padding-top: undefined !important;
+            padding-bottom: undefined !important;
+        }
+        
+        ._18t4x8uu {
+            margin: 0px !important;
+            word-wrap: break-word !important;
+            font-size: 18px !important;
+            line-height: 26px !important;
+            letter-spacing: normal !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            text-transform: undefined !important;
+            color: #484848 !important;
+            padding-top: undefined !important;
+            padding-bottom: undefined !important;
+            font-weight: normal !important;
+        }
+        
+        ._q2vcgfe {
+            margin: 0px !important;
+            word-wrap: break-word !important;
+            font-size: 18px !important;
+            line-height: 26px !important;
+            letter-spacing: normal !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            text-transform: undefined !important;
+            color: #484848 !important;
+            padding-top: undefined !important;
+            padding-bottom: undefined !important;
+            font-weight: normal !important;
+            display: inline !important;
+        }
+        
+        ._11d4lg6 {
+            position: absolute !important;
+            top: -1px !important;
+        }
+        
+        ._jbdb3p {
+            padding-left: 24px !important;
+        }
+        
+        ._8tbpu3 {
+            font-family: Airmoji_Standalone !important;
+            font-weight: normal !important;
+        }
+        
+        ._1fs0qybj {
+            color: #008489 !important;
+            font: inherit !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            text-decoration: none !important;
+            vertical-align: middle !important;
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+            background: transparent !important;
+            border: 0px !important;
+            cursor: pointer !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            -webkit-user-select: auto !important;
+            -moz-user-select: auto !important;
+            -ms-user-select: auto !important;
+            user-select: auto !important;
+            text-align: left !important;
+        }
+        
+        ._1fs0qybj:hover {
+            text-decoration: underline !important;
+            color: #008489 !important;
+        }
+        
+        ._1fs0qybj:focus {
+            text-decoration: underline !important;
+        }
+        
+        ._1fs0qybj:active {
+            color: #006C70 !important;
+            outline: 0px !important;
+        }
+        
+        ._s50zru {
+            border-bottom: 1px solid #EBEBEB !important;
+        }
+        
+        ._1vx3fhy {
+            padding-top: 5px !important;
+        }
+        
+        ._1qbvfjv7 {
+            font-weight: 600 !important;
+            margin: 0px !important;
+            word-wrap: break-word !important;
+            font-size: 14px !important;
+            line-height: 18px !important;
+            letter-spacing: normal !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            text-transform: undefined !important;
+            color: #484848 !important;
+            padding-top: undefined !important;
+            padding-bottom: undefined !important;
+        }
+        
+        ._1y2fdh0 {
+            position: relative !important;
+            width: 100vw !important;
+            margin-left: -50vw !important;
+            margin-right: -50vw !important;
+            left: 50% !important;
+            right: 50% !important;
+        }
+        
+        ._16kww8a {
+            -webkit-box-align: center !important;
+            -ms-flex-align: center !important;
+            display: -webkit-box !important;
+            display: -moz-box !important;
+            display: -ms-flexbox !important;
+            display: -webkit-flex !important;
+            display: flex !important;
+            -webkit-align-items: center !important;
+            align-items: center !important;
+            position: relative !important;
+            width: -webkit-calc(33.3333% - 5.333333333333333px) !important;
+            width: -moz-calc(33.3333% - 5.333333333333333px) !important;
+            width: calc(33.3333% - 5.333333333333333px) !important;
+            -webkit-flex: none !important;
+            -ms-flex: none !important;
+            flex: none !important;
+            padding-right: 24px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._16kww8a {
+                width: 100% !important;
+                margin-bottom: 40px !important;
+            }
+        }
+        
+        ._53ak5m {
+            max-width: 360px !important;
+        }
+        
+        @media (max-width: 743px) {
+            ._53ak5m {
+                max-width: 100% !important;
+            }
+        }
+        
+        ._12bgzph {
+            padding-top: 48px !important;
+            padding-bottom: 64px !important;
+        }
+        
+        .fix {
+            height: 50px;
+            width: 100%;
+            margin: auto auto;
+        }
+        
+        .btn-right {
+            float: right;
+            border: none;
+            padding: 0;
+            background-color: #ff5a5f;
+            width: 200px;
+            height: 50px;
+            position: relative;
+            top: -20px;
+            border-radius: 5px;
+        }
+        
+        .btn-right div {
+            font-size: 16px;
+            width: 200px;
+            line-height: 50px;
+            color: aliceblue;
+            text-align: center;
+        }
+        
+        .user img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+        
+        .xing a {
+            color: black;
+        }
+        
+        .xing span {
+            padding: 0;
+            color: #008489;
+            font-weight: 500;
+        }
+        
+        #calendar {
+            width: 270px;
+            /* margin: -420px auto; */
+            overflow: hidden;
+            border: 1px solid #000;
+            padding: 20px;
+            /* position: relative; */
+            /* left: 150px */
+        }
+        
+        #calendar h4 {
+            text-align: center;
+            margin-bottom: 10px
+        }
+        /* #calendar .a1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        */
+        
+        #calendar .a2 {
+            margin-left: 153px;
+        }
+        
+        #calendar .week {
+            height: 30px;
+            line-height: 20px;
+            border-bottom: 1px solid #000;
+            margin-bottom: 10px
+        }
+        
+        #calendar .week li {
+            float: left;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            list-style: none;
+        }
+        
+        #calendar .dateList {
+            overflow: hidden;
+            clear: both
+        }
+        
+        #calendar .dateList li {
+            float: left;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            list-style: none;
+        }
+        
+        #calendar .dateList .ccc {
+            color: #ccc;
+        }
+        
+        #calendar .dateList .red {
+            background: #F90;
+            color: #fff;
+        }
+        
+        #calendar .dateList .sun {
+            color: #f00;
+        }
+        
+        ._1hl4b1y {
+            overflow-y: auto !important;
+            max-height: 320px !important;
+            min-width: 268px !important;
+            flex: 1 1 0% !important;
+            margin: 8px !important;
+        }
+        
+        ._utb5aei {
+            cursor: pointer;
+            border: 1px solid #008489;
+            background-color: #fff;
+            color: #008489;
+            width: 62px;
+            height: 36px;
+            border-radius: 5px;
+        }
+        
+        ._fdp53bg {
+            display: inline-block !important;
+            vertical-align: top !important;
+            min-height: 100% !important;
+            position: absolute !important;
+            z-index: -1 !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            visibility: hidden !important;
+        }
+        
+        ._1lds9wb {
+            display: inline-block !important;
+            vertical-align: top !important;
+            min-height: 100% !important;
+        }
+        
+        ._1svux14 {
+            text-align: center !important;
+            vertical-align: top !important;
+            user-select: none !important;
+            background: rgb(255, 255, 255) !important;
+        }
+        
+        ._gucugi {
+            color: rgb(72, 72, 72) !important;
+            font-size: 18px !important;
+            text-align: center !important;
+            padding-top: 22px !important;
+            padding-bottom: 37px !important;
+            caption-side: initial !important;
+        }
+        
+        ._2q1l5fu {
+            margin: 0px !important;
+            word-wrap: break-word !important;
+            font-size: 14px !important;
+            line-height: 18px !important;
+            letter-spacing: normal !important;
+            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+            color: #484848 !important;
+            font-weight: normal !important;
+        }
+        
+        ._p5jgym {
+            border-collapse: collapse !important;
+            border-spacing: 0px !important;
+        }
+        
+        body {
+            font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #484848;
+            background-color: #fff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+        
+        b,
+        strong {
+            font-weight: bold;
+        }
+        
+        @media (max-width: 743px) {
+            ._1t8snzaw {
+                display: block!important;
+                margin: 0 auto;
+            }
+            ._u9jj6t {
+                display: block!important;
+            }
+            #careful {
+                margin-top: 500px!important;
+            }
+            ._e615pd {
+                margin-left: 0!important;
+            }
+            .tiyan {
+                margin: 0 auto!important;
+            }
+            ._1hl4b1y {
+                padding-left: 0!important;
+            }
+            ._189o4cy {
+                width: 309.667px!important;
+                height: 376px!important;
+                left: 34.5px!important;
+                top: -500px!important;
+                font-size: 10px!important;
+            }
+            ._189o4cy h1 {
+                font-size: 18px!important;
+            }
+            ._1mfbomi2 {
+                display: block!important;
+            }
+            ._1jl220aq {
+                display: none;
+            }
+            #help {
+                display: block!important;
+            }
+            ._19ujlzq3 {
+                width: 50%!important;
+            }
+            .carousel-inner img {
+                width: 693px;
+                height: 683px;
+            }
+        }
+        
+        ._1mfbomi2 img {
+            height: 164.44px;
+            width: auto;
+            overflow: hidden;
+        }
+        
+        ._4qkm3d li {
+            float: left;
+        }
+        
+        ._4qkm3d li a {
+            color: #000;
+            margin-right: 10px;
+        }
+        
+        ._ll34wp li a {
+            color: #000;
+        }
+    </style>
+
 </head>
 
 <body>
-    <!-- 下方横条 -->
-    <div style="width:100%;background-color: #fff;height:.5rem;position: fixed;bottom: .01rem;z-index: 5; ">
-        <div class="fix">
-            <div class="user" style="width:.48rem;float: left;"><img src="https://z2.muscache.cn/im/pictures/user/803da5d9-5b33-4b2a-9e84-504bc8ed8562.jpg?aki_policy=profile_x_medium" alt="头像"></div>
-            <div style="width:2.64rem;float: left;padding-left: .15rem;"><small>Yacht along the coast with a captain<br>体验达人：Ian</small></div>
-            <div style="width: 3.9rem;height: .5rem;float:right">
-                <a style="color:black;" href="#">￥320每人</a><br>
-                <i class="xing">
-                <span>4.98</span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <a style="color: rgb(0, 132, 137);" href="#">61条评价</a>
-            </i>
-                <div class="btn-right">
-                    <div>查看日期</div>
+    <div style="width:100%;">
+        <div data-hypernova-key="experience_pdpbundlejs" data-hypernova-id="96580bf5-394f-4518-b6e3-4a390373af1e" class="alltiyan" style="margin: 0 auto;">
+            <div dir="ltr" data-reactroot="">
+                <div itemscope="" itemType="http://schema.org/SocialMediaPosting">
+                    <meta itemProp="image" content="https://a0.muscache.com/im/pictures/2ce3945d-3259-4d02-8854-ef38ecc400ec.jpg?aki_policy=xl_poster" />
+                    <meta itemProp="headline" content="Yacht along the coast with a captain" />
+                    <meta itemProp="datePublished" content="2017-01-01" />
+                </div>
+                <div class="_13sb8m2">
+                    <div class="_e296pg">
+                        <div class="_1t0h0lo">
+                            <div class="_15fqfo3w">
+                                <div class="_vx7ityu">
+                                    <div class="_un65bq">
+                                        <div class="_15zu15p" style="padding-top:113.33333333333333%">
+                                            <div class="_n02jag">
+                                                <div class="_1udg6lu">
+                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                                        <!-- 轮播列表 -->
+                                                        <ol class="carousel-indicators">
+                                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                                                        </ol>
+                                                        <!-- 插入图片 -->
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="item active">
+                                                                <img src="https://z2.muscache.cn/im/pictures/2ce3945d-3259-4d02-8854-ef38ecc400ec.jpg?aki_policy=poster" alt="第一张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/2c8161bc-b1d3-4981-be71-e6399692a70f.jpg?aki_policy=poster" alt="第二张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/697b72d7-4331-4059-a6fe-b255dae6ebe2.jpg?aki_policy=poster" alt="第三张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/77836451-5f41-48d6-a640-560337d10e59.jpg?aki_policy=poster" alt="第四张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/78b100ad-195e-4748-b29d-dc8a5e4cdc95.jpg?aki_policy=poster" alt="第五张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/9dbeb577-b940-4d47-8060-f37094697ca2.jpg?aki_policy=poster" alt="第六张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/f0463437-b8af-4aaf-a279-d4339f91b9d4.jpg?aki_policy=poster" alt="第七张">
+                                                            </div>
+
+                                                        </div>
+
+                                                        <!-- 轮播左右控制 -->
+                                                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="_1rac2mq">
+                                <div class="_1glqb7j">
+                                    <div class="_xd7wqa">
+                                        <section>
+                                            <div class="_4efw5a"><small class="_f7heglr">乘船游览</small></div>
+                                            <div>
+                                                <div style="margin-bottom:24px">
+                                                    <div class="_18gim6s4">
+                                                        <h1 tabindex="-1" class="_tpbrp">Yacht along the coast with a captain</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-bottom:24px">
+                                                <div class="_e296pg" style="height:72px;width:72px;display:inline-block">
+                                                    <a href="/users/show/170504655" target="_blank" rel="noopener noreferrer" class="_110nrr2" aria-label="Ian" aria-busy="false"><img class="_12r18es" src="https://z1.muscache.cn/im/pictures/user/803da5d9-5b33-4b2a-9e84-504bc8ed8562.jpg?aki_policy=profile_x_medium" height="72" width="72" alt="Ian" title="Ian" /></a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="_hdvsm7">
+                                        <div class="_1nrp5up"></div>
+                                    </div>
+                                    <div class="_1t0h0lo">
+                                        <div class="_uljuat">
+                                            <div style="margin-bottom:16px">
+                                                <div class="_1d2geue7">关于您的体验达人Ian</div>
+                                            </div>
+                                            <div style="margin-bottom:24px">
+                                                <div class="_foo5i5">
+                                                    <div class="_18t4x8uu">
+                                                        <div><span class="_q2vcgfe">I was born in Gangneung, Korea. I&#x27;ve crossed the Straits of Korea from Japan and I&#x27;ve also sailed to the South Sea and the East Sea from Tongyeong to Anmok Port. I am an experienced skipper with a formal yacht certificate and a rescue agent certificate. I provide nice music on the yacht and I can guide you through the city of Gangneung. I can also introduce you to rooms, restaurants, and sightseeing spots. You&#x27;ll live like a Gangneung local during your time with me.</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_oplyxi">
+                                            <div style="margin-bottom:8px">
+                                                <div class="_e296pg">
+                                                    <div class="_11d4lg6">
+                                                        <div class="_2q1l5fu"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></div>
+                                                    </div>
+                                                    <div class="_jbdb3p">
+                                                        <div class="_2q1l5fu"><button type="button" class="_1fs0qybj" aria-busy="false">Gangneung-si</button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-bottom:8px">
+                                                <div class="_e296pg">
+                                                    <div class="_11d4lg6">
+                                                        <div class="_2q1l5fu"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span></div>
+                                                    </div>
+                                                    <div class="_jbdb3p">
+                                                        <div class="_2q1l5fu">2小时</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-bottom:8px">
+                                                <div class="_e296pg">
+                                                    <div class="_11d4lg6">
+                                                        <div class="_2q1l5fu"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_jbdb3p">
+                                                        <div class="_2q1l5fu">零食和饮品</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-bottom:8px">
+                                                <div class="_e296pg">
+                                                    <div class="_11d4lg6">
+                                                        <div class="_2q1l5fu"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                                                    </div>
+                                                    <div class="_jbdb3p">
+                                                        <div class="_2q1l5fu">以英语和韩语提供</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-top:24px;margin-bottom:40px">
+                                            <div class="_s50zru"></div>
+                                        </div>
+                                    </div>
+                                    <div class="_1t0h0lo">
+                                        <div class="_uljuat">
+                                            <div style="margin-bottom:16px">
+                                                <div class="_1d2geue7">体验内容</div>
+                                            </div>
+                                            <div style="margin-bottom:24px">
+                                                <div class="_foo5i5">
+                                                    <div class="_18t4x8uu">
+                                                        <div><span class="_q2vcgfe">We will sail together on my 28-foot yacht and explore beautiful Gangneung. You&#x27;ll have the opportunity to swim, tan, and snorkel with your own gear. There is no shark or crocodile in God blessing. You&#x27;ll enjoy simple snacks and drinks. You can also use the Bluetooth amplifier to enjoy your favorite music. We&#x27;ll take in breathtaking views of the sea from Gyeongpo Beach and Daegwallyeong. It will be a wonderfully satisfying experience and we&#x27;ll all enjoy it together.</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-bottom:16px">
+                                                <div class="_1d2geue7">其他应注意的事项</div>
+                                            </div>
+                                            <div style="margin-bottom:24px">
+                                                <div class="_foo5i5">
+                                                    <div class="_18t4x8uu">Smoking is not permitted. Your valuables will be kept in private storage. Do not fall into the sea and do wear a life jacket.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_oplyxi">
+                                            <div style="margin-top:6px">
+                                                <div style="margin-bottom:16px">
+                                                    <div class="_1qbvfjv7">体验内包括的东西</div>
+                                                </div>
+                                                <div style="margin-bottom:24px">
+                                                    <div class="_foo5i5">
+                                                        <div class="_2q1l5fu">
+                                                            <div style="margin-bottom:0">
+                                                                <div class="_2q1l5fu">free Drinks<span class="glyphicon glyphicon-glass "></span></div>
+                                                                <div class="_1vx3fhy">
+                                                                    <div class="_2q1l5fu">I&#x27;ll provide free (water, mixed coffee, soft drinks.)</div><br/></div>
+                                                            </div>
+                                                            <div style="margin-bottom:0">
+                                                                <div class="_2q1l5fu">free Snacks and sweets<span class="glyphicon glyphicon-cutlery "></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-bottom:16px">
+                                                <div class="_1qbvfjv7">准备物品</div>
+                                            </div>
+                                            <div style="margin-bottom:0">
+                                                <div class="_foo5i5">
+                                                    <div class="_2q1l5fu">
+                                                        <div style="margin-bottom:4px">
+                                                            <div class="_2q1l5fu">Hat, sunglasses, sun block, sneakers</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 下方文字 -->
+                        <div>
+                            <!-- 左侧 -->
+                            <div class="_1y2fdh0 ">
+                                <div>
+                                    <div style="margin-top: 40px; margin-bottom: 40px; ">
+                                        <div class="_s50zru "></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_1t0h0lo ">
+                                <div class="_jaldua7 ">
+                                    <div class="_1cxheaym ">
+                                        <div class="_gcxn8f ">
+                                            <section>
+                                                <div class="_18gim6s4 ">
+                                                    <h1 tabindex="-1 " class="_tpbrp ">参与过此项体验的66条参与者评价</h1>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <i class="xing ">
+                                            <span>4.98</span>
+                                            <span class="glyphicon glyphicon-star "></span>
+                                            <span class="glyphicon glyphicon-star "></span>
+                                            <span class="glyphicon glyphicon-star "></span>
+                                            <span class="glyphicon glyphicon-star "></span>
+                                            <span class="glyphicon glyphicon-star "></span>  
+                                    </i>
+                                    </div>
+                                </div>
+                                <!-- 右侧 -->
+                                <div class="_1rac2mq ">
+                                    <div class="_e296pg ">
+                                        <div>
+                                            <div style="margin-bottom: 16px; ">
+                                                <div class="_1ayl717 ">
+                                                    <div class="_nncr1bm ">
+                                                        <div class="_ni9axhe ">
+                                                            <div class="_e296pg " style="height: 48px; width: 48px; display: inline-block; ">
+                                                                <a href="/users/show/108241663 " class="_110nrr2 " aria-label="지홍 " aria-busy="false "><img class="_12r18es " src="https://z2.muscache.cn/im/pictures/7f8375df-8d54-471e-9653-2fab8ce77c5e.jpg?aki_policy=profile_x_medium
+                                                             " height="48 " width="48 " alt="지홍 " title="지홍 "></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_ni9axhe ">
+                                                            <div class="_36rlri " style="margin-left: 16px; ">
+                                                                <div style="margin-bottom: 8px; ">
+                                                                    <div class="_36rlri " style="margin-right: 6px; ">
+                                                                        <a href="/users/show/108241663 " class="_omtri7i " aria-busy="false ">
+                                                                            <span class="_12tqr8cr ">지홍</span>
+                                                                        </a>
+                                                                    </div>
+                                                                    <span class="_1sfeueqe ">十月, 2018</span><br>
+                                                                    <i class="xing " style="font-weight:900; ">
+                                                                        <span class="glyphicon glyphicon-star "></span>
+                                                                        <span class="glyphicon glyphicon-star "></span>
+                                                                        <span class="glyphicon glyphicon-star "></span>
+                                                                        <span class="glyphicon glyphicon-star "></span>
+                                                                        <span class="glyphicon glyphicon-star "></span>  
+                                                                </i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_d6xddq ">
+                                                    <div><span class="_q2vcgfe ">강릉여행중 가장 기대했던 일정입니다. 500%만족하다고 말씀드릴만큼 아주 만족스러웠어요!! 친절하신 선장님이 요트에대해 설명도 해주시고 사진도 잘 찍어주세요! 풍경을 더 이쁘게 담을수 있도록 배려해주시고 너무 감사했습니다. 요트위에서 일몰을 보는데 벅차오를만큼 멋있었어요. 각 계절마다 요트위에서 느낄수있는 분위기가 다를것 같아서 어느 계절이든 추천합니다! 또 강릉에 온다면 재방문의사 매우매우 있습니다. 다음에 또 올게요 선장님!!!! 너무 감사했습니다☺️☺️</span></div>
+                                                </div>
+                                                <div style="margin-top: 16px; ">
+                                                    <div class="_xsb9xa ">
+                                                        <div role="button " tabindex="0 " class="_1hfu0v " style="height: 225.5px; width: 50%;overflow: hidden; "><img class="_phjupp " src="https://z1.muscache.cn/im/pictures/46321776-e0d3-4e3c-8c5e-93727c584ea6.jpg?aki_policy=x_large "></div>
+                                                    </div>
+                                                </div>
+                                                <div style="margin-top: 32px; margin-bottom: 32px; ">
+                                                    <div class="_s50zru "></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div style="margin-bottom: 16px; ">
+                                                    <div class="_1ayl717 ">
+                                                        <div class="_nncr1bm ">
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_e296pg " style="height: 48px; width: 48px; display: inline-block; ">
+                                                                    <a href="/users/show/87147639 " class="_110nrr2 " aria-label="은경 " aria-busy="false "><img class="_12r18es " src="https://z2.muscache.cn/im/pictures/babb17c8-d933-4020-bdda-a530449be17f.jpg?aki_policy=profile_x_medium
+                                                                    " height="48 " width="48 " alt="은경 " title="은경 "></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_36rlri " style="margin-left: 16px; ">
+                                                                    <div style="margin-bottom: 8px; ">
+                                                                        <div class="_36rlri " style="margin-right: 6px; "><a href="/users/show/87147639 " class="_omtri7i " aria-busy="false "><span class="_12tqr8cr ">은경</span></a></div><span class="_1sfeueqe ">九月, 2018</span></div>
+                                                                    <i class="xing " style="font-weight:900; ">
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>  
+                                                                    </i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_d6xddq ">
+                                                    <div><span class="_q2vcgfe ">진짜로 강릉 오시는 분들은 꼭 한번 이용해보시길 바래요! 해안가에서 철썩이는 것과는 다른 바다의 모습을 즐기실수 있습니다! 날씨가 좋았는데 잠깐 눈붙이다가 떴을땐 진짜 바다, 바닷소리, 청명한 하늘까지 눈뜨고 꿈꾸는 기분이였어요. 선장님도 너무 친절하시고 잠깐 운전도 알려주셨는데 특별한 기억으로 남을거같아요!! 좋은 추억 가지고 갑니다!! 주변에도 많이 추천하려구요!!</span></div>
+                                                </div>
+                                                <div style="margin-top: 32px; margin-bottom: 32px; ">
+                                                    <div class="_s50zru "></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div style="margin-bottom: 16px; ">
+                                                    <div class="_1ayl717 ">
+                                                        <div class="_nncr1bm ">
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_e296pg " style="height: 48px; width: 48px; display: inline-block; ">
+                                                                    <a href="/users/show/119682692 " class="_110nrr2 " aria-label="Sang Ro " aria-busy="false "><img class="_12r18es " src="https://z2.muscache.cn/im/pictures/fbb5e7dc-bbf5-49c4-937c-78f82d276f22.jpg?aki_policy=profile_x_medium
+                                                                     " height="48 " width="48 " alt="Sang Ro " title="Sang Ro "></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_36rlri " style="margin-left: 16px; ">
+                                                                    <div style="margin-bottom: 8px; ">
+                                                                        <div class="_36rlri " style="margin-right: 6px; "><a href="/users/show/119682692 " class="_omtri7i " aria-busy="false "><span class="_12tqr8cr
+                                                                         ">Sang Ro</span></a></div><span class="_1sfeueqe ">九月, 2018</span></div>
+                                                                    <i class="xing " style="font-weight:900; ">
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>  
+                                                                    </i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_d6xddq ">
+                                                    <div><span class="_q2vcgfe ">투어내내 불편함 없도록 세심하게 신경써주셔서 기분 좋았습니다. 푸른 바다와 시원한 날씨에 요트 투어는 진리 였어요^^ 여름에는 중간에 수영할 수도 있다고 하셨는데 꼭 여름에 다시 오겠습니다~!</span></div>
+                                                </div>
+                                                <div style="margin-top: 32px; margin-bottom: 32px; ">
+                                                    <div class="_s50zru "></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div style="margin-bottom: 16px; ">
+                                                    <div class="_1ayl717 ">
+                                                        <div class="_nncr1bm ">
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_e296pg " style="height: 48px; width: 48px; display: inline-block; ">
+                                                                    <a href="/users/show/214341892 " class="_110nrr2 " aria-label="나리 " aria-busy="false "><img class="_12r18es " src="https://z1.muscache.cn/defaults/user_pic-225x225.png?v=3 " height="48
+                                                                 " width="48 " alt="나리 " title="나리 "></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_36rlri " style="margin-left: 16px; ">
+                                                                    <div style="margin-bottom: 8px; ">
+                                                                        <div class="_36rlri " style="margin-right: 6px; "><a href="/users/show/214341892 " class="_omtri7i " aria-busy="false "><span class="_12tqr8cr ">나리</span></a></div><span class="_1sfeueqe ">九月, 2018</span></div>
+                                                                    <i class="xing " style="font-weight:900; ">
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>  
+                                                                    </i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_d6xddq ">
+                                                    <div><span class="_q2vcgfe ">긴 말 안하겠습니다. 무조건 신청하세요. 눈 앞에서 펼쳐지는 환상적인 풍경, 그 아름다움을 더욱 빛내주는  BGM, 두 선장님과의 즐거운 대화 그리고 인생샷까지... 강릉하면 요트 세일링, 요트 세일링하면 헤밍웨이호 김명기 선장님! 추천합니다.♡</span></div>
+                                                </div>
+                                                <div style="margin-top: 32px; margin-bottom: 32px; ">
+                                                    <div class="_s50zru "></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div style="margin-bottom: 16px; ">
+                                                    <div class="_1ayl717 ">
+                                                        <div class="_nncr1bm ">
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_e296pg " style="height: 48px; width: 48px; display: inline-block; ">
+                                                                    <a href="/users/show/18556130 " class="_110nrr2 " aria-label="Aiden " aria-busy="false "><img class="_12r18es " src="https://z2.muscache.cn/im/pictures/user/45afe0c0-8eee-43be-aee5-9793693b6fe7.jpg?aki_policy=profile_x_medium
+                                                                    " height="48 " width="48 " alt="Aiden " title="Aiden "></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_ni9axhe ">
+                                                                <div class="_36rlri " style="margin-left: 16px; ">
+                                                                    <div style="margin-bottom: 8px; ">
+                                                                        <div class="_36rlri " style="margin-right: 6px; "><a href="/users/show/18556130 " class="_omtri7i " aria-busy="false "><span class="_12tqr8cr ">Aiden</span></a></div><span class="_1sfeueqe ">九月, 2018</span></div>
+                                                                    <i class="xing " style="font-weight:900; ">
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>
+                                                                            <span class="glyphicon glyphicon-star "></span>  
+                                                                    </i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_d6xddq ">
+                                                    <div><span class="_q2vcgfe ">강릉 2박 3일 여행 중 가장 기대했던 트립이었는데 너무 힐링되는 시간이어서 좋았어요!
+                                                                선장님 두 분이 항해 중에 요트의 역사나 원리, 요트에 있는 돛 등의 기능에 대해 알기 쉽게 설명해주시는 것도 정말 재밌었고, 저희 컨디션 챙겨주시면서 항해 진행해주시는 모습 등 배려 깊으신 말과 행동 하나 하나가 전부 감동이었습니다.
+                                                                2시간이 어떻게 지나갔는지도 모를 만큼 시간이 번개처럼 흘러갔고, 바다에 물도 담궈보고 요트에서 이리 저리 앉는 위치를 바꾸…<button type="button " class="_1fs0qybj " aria-busy="false ">查看更多</button></span></div>
+                                                </div>
+                                                <div style="margin-top: 16px; ">
+                                                    <div class="_xsb9xa ">
+                                                        <div role="button " tabindex="0 " class="_13bzbza5 " style="height: 225.5px; width: 50%;float:left;overflow:hidden;">
+                                                            <img src="https://z1.muscache.cn/im/pictures/1c0e2780-946d-481e-9708-727c5eccfcd9.jpg?aki_policy=x_large " alt="图1 ">
+                                                        </div>
+                                                        <div role="button " tabindex="0 " class="_e296pg " style="height: 225.5px; width: 50%;float: left;overflow: hidden; ">
+                                                            <img src="https://z1.muscache.cn/im/pictures/aa04337f-f638-4719-84fb-7ecb2fc5c5b4.jpg?aki_policy=x_large " alt="图2 ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="margin-top: 32px; margin-bottom: 32px; ">
+                                                    <div class="_s50zru "></div>
+                                                </div>
+                                            </div>
+                                            <!-- 翻页 -->
+
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination">
+                                                    <li>
+                                                        <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li>
+                                                        <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <button style="float: right" type="button" class="_1fs0qybj" aria-busy="false">查看所有照片</button></div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- 下方横条 -->
+            <div style="width: 100%; background-color: #fff;height:70px;position: fixed;bottom: 1px;z-index: 5; ">
+                <div class="fix ">
+                    <div class="user " style="width:48px;float: left; "><img src="https://z2.muscache.cn/im/pictures/user/803da5d9-5b33-4b2a-9e84-504bc8ed8562.jpg?aki_policy=profile_x_medium " alt="头像 "></div>
+                    <div style="width:264px;float: left;padding-left: 15px; "><small>Yacht along the coast with a captain<br>体验达人：Ian</small></div>
+                    <div style="width: 390px;height: 50px;float:right ">
+                        <a style="color:black; " href="# ">￥320每人</a><br>
+                        <i class="xing ">
+                                <span>4.98</span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <a style="color: rgb(0, 132, 137); " href="# ">61条评价</a>
+                        </i>
+                        <div class="btn-right ">
+                            <div>查看日期</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 地图  -->
+            <div id="allmap" width="1784px" height="640px" style="z-index: 99; height: 640px; width: 100%; "></div>
+
+            <div class="_189o4cy" style="background: #fff; position: relative; width: 409.667px; height: 336px; left: 64.5px;top: -500px;">
+                <div class="_1b045eb">
+                    <section>
+                        <div class="_18gim6s4">
+                            <h1 tabindex="-1" class="_tpbrp" style="text-align: center;">体验地点</h1>
+                        </div>
+                    </section>
+                    <div style="top: 16px;">
+                        <div class="_18t4x8uu">You'll come to Gangneung Yacht Marina, and I'll wait for you at the entrance. From the Gangneung Port and around the Gangneung Coast, we will sail and look at the magnificent view of Daegwallyeong and the beautiful sea scenery
+                            from Kangmoon Port to Gyeongpo. The spectacular Gangneung Coast is a wonderful sight to see and it's unlike anywhere else in the world.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 体验 -->
+            <div class="_1t0h0lo" style="margin-top:-260px;height: 260px;">
+                <!-- 询问 -->
+                <div class="_16kww8a" style="height:250px!important">
+                    <div class="_53ak5m">
+                        <section>
+                            <div class="_18gim6s4">
+                                <h1 tabindex="-1" class="_tpbrp">您打算何时参加体验？</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="_1rac2mq" style="height:250px!important;">
+                    <div class="_1nvvo6k">
+                        <div class="_1phityd">
+                            <div role="application" aria-label="Calendar" class="_1t8snzaw" style="width: 819px;height:260px;display:flex; ">
+                                <!-- 日历 -->
+                                <div id="calendar">
+                                    <h4>2018年10月</h4>
+                                    <a href="##" class="a1">上月</a>
+                                    <a href="##" class="a2">下月</a>
+                                    <ul class="week">
+                                        <li>日</li>
+                                        <li>一</li>
+                                        <li>二</li>
+                                        <li>三</li>
+                                        <li>四</li>
+                                        <li>五</li>
+                                        <li>六</li>
+                                    </ul>
+                                    <ul class="dateList"></ul>
+                                </div>
+                                <!-- 预约 -->
+
+                                <div class="_1hl4b1y" style="padding-left:80px;">
+                                    <div style="margin-bottom: 16px;">
+                                        <div class="_2q1l5fu">10月9日 星期二的可订情况</div>
+                                    </div>
+                                    <div style="margin-top: 0px; margin-bottom: 0px;">
+                                        <div class="_s50zru"></div>
+                                    </div>
+                                    <div class="_1okh7pi0" style="margin-top:20px;margin-bottom: 20px;">
+                                        <div class="_ztbpzv" style="display:flex;margin-top: 15px;">
+                                            <div>
+                                                <div class="_1qbvfjv7">13:30 − 15:30</div>
+                                                <div class="_2q1l5fu">人均￥313</div>
+                                            </div>
+                                            <div style="margin-left: 188px; "><button type="button" class="_utb5aei" aria-busy="false"><span class="_gzb2sgv">选择</span></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="_1okh7pi0" style="margin-top:20px;">
+                                        <div class="_ztbpzv" style="display:flex;">
+                                            <div>
+                                                <div class="_1qbvfjv7">17:00 − 19:00</div>
+                                                <div class="_2q1l5fu">人均￥313</div>
+                                            </div>
+                                            <div style="margin-left: 188px;"><button type="button" class="_utb5aei" aria-busy="false"><span class="_gzb2sgv">选择</span></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- 注意事项 -->
+            <div class="_1t0h0lo" id="careful" style="margin-top:30px;">
+                <div class="_16kww8a">
+                    <div class="_53ak5m">
+                        <section>
+                            <div class="_18gim6s4">
+                                <h1 tabindex="-1" class="_tpbrp">注意事项</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="_1rac2mq">
+                    <div class="_u9jj6t" style="display: flex;">
+                        <div class="_6vyxyu">
+                            <div class="_e615pd">
+                                <div style="margin-bottom:3px;">
+                                    <div class="_1qbvfjv7">退订政策</div>
+                                </div>
+                                <div style="margin-bottom: 4px;">
+                                    <div class="_foo5i5">
+                                        <div class="_2q1l5fu">任何体验在预订完成后的24小时内皆可以取消，您将获得全额<br>退款。<a href="/experiences/cancellation-policy" target="_blank" rel="noopener noreferrer" class="_omtri7i" aria-busy="false">查看取消政策。</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 0px; margin-bottom: 4px;">
+                                <div class="_s50zru"></div>
+                            </div>
+                        </div>
+                        <div class="_6vyxyu">
+                            <div class="_e615pd" style="margin-left:70px;margin-top: 18px">
+                                <div style="margin-bottom:3px;">
+                                    <div class="_1qbvfjv7">团体人数</div>
+                                </div>
+                                <div style="margin-bottom: 4px;">
+                                    <div class="_foo5i5">
+                                        <div class="_2q1l5fu">这个体验还有8个名额。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 0px; margin-bottom: 4px;">
+                                <div class="_s50zru"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_u9jj6t" style="display:flex;">
+                        <div class="_6vyxyu">
+                            <div class="_e615pd">
+                                <div style="margin-bottom:3px;">
+                                    <div class="_1qbvfjv7">年龄要求</div>
+                                </div>
+                                <div style="margin-bottom: 4px;">
+                                    <div class="_foo5i5">
+                                        <div class="_2q1l5fu">
+                                            <div class="_2q1l5fu">
+                                                <div style="margin-bottom:3px;">可接待年满8周岁及以上的参与者。</div>
+                                                <div><span class="_1sfeueqe">Extreme yachting will only proceed with the agreement of<br> all passengers.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 0px; margin-bottom: 4px;">
+                                <div class="_s50zru"></div>
+                            </div>
+                        </div>
+                        <div class="_6vyxyu">
+                            <div class="_e615pd" style="margin-left:65px;margin-top: 39px;">
+                                <div style="margin-bottom:3px;">
+                                    <div class="_1qbvfjv7">活动强度</div>
+                                </div>
+                                <div style="margin-bottom: 4px;">
+                                    <div class="_foo5i5">
+                                        <div class="_2q1l5fu">轻微强度</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 0px; margin-bottom: 4px;">
+                                <div class="_s50zru"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_u9jj6t">
+                        <div class="_6vyxyu">
+                            <div class="_e615pd">
+                                <div style="margin-bottom:3px;">
+                                    <div class="_1qbvfjv7">政府签发的身份证件</div>
+                                </div>
+                                <div style="margin-bottom: 4px;">
+                                    <div class="_foo5i5">
+                                        <div class="_2q1l5fu">您将需要拍一张自拍照，自拍照需要与您身份证件上的照片相匹<br>配，以帮助爱彼迎确认真正将要参加体验的是谁。这个步骤您只<br>需要做一次就可以了。</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_6vyxyu">
+                            <div class="_e615pd">
+                                <div style="margin-bottom:3px;">
+                                    <div class="_1qbvfjv7"></div>
+                                </div>
+                                <div style="margin-bottom: 4px;">
+                                    <div class="_foo5i5">
+                                        <div class="_2q1l5fu"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--类似体验 -->
+            <div class="_1t0h0lo" style="border-top: 1px solid #EBEBEB;margin-top:50px;">
+                <div class="_16kww8a" style="margin-top:70px;">
+                    <div class="_53ak5m">
+                        <section>
+                            <div class="_18gim6s4">
+                                <h1 tabindex="-1" class="_tpbrp">Gangneung的类似体验</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="_1rac2mq" style="margin-top:70px;">
+                    <div style="margin-top:-24px;margin-bottom:-48px"><span style="font-size: 0px;"></span>
+                        <div class="_2h22gn">
+                            <div class="_1rnz84d">
+                                <div style="margin-top: 32px; margin-bottom: 32px;">
+                                    <div style="margin-top: 8px; margin-bottom: 12px;">
+                                        <div class="_6htn2u"><span style="font-size: 0px;"></span>
+                                            <div class="_klcypr1">
+                                                <div class="_1mfbomi2" style="display:flex;">
+                                                    <div class="_1ejtnh7q">
+                                                        <div class="_1ilrlnv">
+                                                            <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                                                <meta itemprop="name" content="KORAIL Tour Gangneung and Mount Seorak">
+                                                                <meta itemprop="position" content="1">
+                                                                <meta itemprop="url" content="https://zh.airbnb.com/experiences/301738?salt=15db5b3e-86ef-402d-bc9e-acc8b0d4d258">
+                                                                <div class="_e296pg">
+                                                                    <div><img src="https://z1.muscache.cn/im/pictures/0c415b9b-5d0a-4141-81a7-75302a0ebcd1.jpg?aki_policy=large" alt="图一"></div>
+                                                                    <a href="/experiences/301738?source=pdpother&amp;currentTab=all_tab&amp;searchId=15db5b3e-86ef-402d-bc9e-acc8b0d4d258" target="_self" class="_uxupfic">
+                                                                        <div>
+                                                                            <div class="_15w3dm7"><span style="color: rgb(3, 51, 99);">一日游</span></div>
+                                                                            <div class="_1uel1v2" style="color:#000;font-weight: 600;">KORAIL Tour Gangneung and<br> Mount Seorak</div>
+                                                                            <div class="_1xrakne" style="color:#000;font-weight: 300;">每人￥628</div>
+                                                                            <div></div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_1ejtnh7q">
+                                                        <div class="_1ilrlnv">
+                                                            <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                                                <meta itemprop="name" content="전문가와 함께하는 스키 강습">
+                                                                <meta itemprop="position" content="2">
+                                                                <meta itemprop="url" content="https://zh.airbnb.com/experiences/124587?salt=15db5b3e-86ef-402d-bc9e-acc8b0d4d258">
+                                                                <div class="_e296pg">
+                                                                    <div style="margin-left:20px;margin-right:20px;"><img src="https://z1.muscache.cn/im/pictures/a58d318b-5fb5-4345-8b9d-a9a37b6074a1.jpg?aki_policy=large" alt="图二"></div>
+                                                                    <a href="/experiences/124587?source=pdpother&amp;currentTab=all_tab&amp;searchId=15db5b3e-86ef-402d-bc9e-acc8b0d4d258" target="_self" class="_uxupfic">
+                                                                        <div>
+                                                                            <div class="_15w3dm7"><span style="color: rgb(7, 124, 167);">滑雪课</span></div>
+                                                                            <div class="_1uel1v2" style="color:#000;font-weight: 600;">전문가와 함께하는 스키 강습</div>
+                                                                            <div class=" _1xrakne " style="color:#000;font-weight: 300;">每人￥565</div>
+                                                                            <div></div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_1ejtnh7q ">
+                                                        <div class="_1ilrlnv ">
+                                                            <div itemprop="itemListElement " itemscope=" " itemtype="http://schema.org/ListItem ">
+                                                                <meta itemprop="name " content="In to the Sogeumgang valley ">
+                                                                <meta itemprop="position " content="3 ">
+                                                                <meta itemprop="url " content="https://zh.airbnb.com/experiences/282325?salt=15db5b3e-86ef-402d-bc9e-acc8b0d4d258 ">
+                                                                <div class="_e296pg ">
+                                                                    <div><img src="https://z1.muscache.cn/im/pictures/bd84645b-4479-4a8a-8cf6-c46209e78aae.jpg?aki_policy=large " alt="图三 "></div>
+                                                                    <a href="/experiences/282325?source=pdpother&amp;currentTab=all_tab&amp;searchId=15db5b3e-86ef-402d-bc9e-acc8b0d4d258 " target="_self " class="_uxupfic ">
+                                                                        <div>
+                                                                            <div class="_15w3dm7 "><span style="color: rgb(52, 44, 42); ">徒步</span></div>
+                                                                            <div class="_1uel1v2 " style="color:#000;font-weight: 600;">In to the Sogeumgang valley</div>
+                                                                            <div class="_1xrakne " style="color:#000;font-weight: 300;">每人￥189</div>
+                                                                            <div></div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 帮助简介 -->
+            <div class="_2h22gn" id="help" style="display: flex;width: 100%;border-top: 1px solid #EBEBEB;margin-top: 50px;padding-top: 40px">
+                <div class="_1i7wjj2h" style="margin-right:50px;flex: 1">
+                    <div class="_2h22gn">
+                        <div class="_2tm3geh">
+                            <div>
+                                <div class="_9hxttoo"><label class="_1m8bb6v" for="language-selector">选择语言</label>
+                                    <div class="_1yyjnylt">
+                                        <div class="_y9ev9r"><select id="language-selector" name="language-selector" class="_19ujlzq3" style="width:100%;height: 30px;text-align: center;"><option value="id" lang="id">Bahasa Indonesia</option><option value="ms" lang="ms">Bahasa Melayu</option><option value="ca" lang="ca">Català</option><option value="da" lang="da">Dansk</option><option value="de" lang="de">Deutsch</option><option value="en" lang="en">English</option><option value="es" lang="es">Español</option><option value="el" lang="el">Eλληνικά</option><option value="fr" lang="fr">Français</option><option value="hr" lang="hr">Hrvatski</option><option value="it" lang="it">Italiano</option><option value="hu" lang="hu">Magyar</option><option value="nl" lang="nl">Nederlands</option><option value="no" lang="no">Norsk</option><option value="pl" lang="pl">Polski</option><option value="pt" lang="pt">Português</option><option value="fi" lang="fi">Suomi</option><option value="sv" lang="sv">Svenska</option><option value="tr" lang="tr">Türkçe</option><option value="is" lang="is">Íslenska</option><option value="cs" lang="cs">Čeština</option><option value="ru" lang="ru">Русский</option><option value="th" lang="th">ภาษาไทย</option><option value="zh" lang="zh">中文 (简体)</option><option value="zh-TW" lang="zh-TW">中文 (繁體)</option><option value="ja" lang="ja">日本語</option><option value="ko" lang="ko">한국어</option></select></div>
+                                        <span class="_1pzmvmb"><svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_2tm3geh">
+                            <div>
+                                <div class="_9hxttoo"><label class="_1m8bb6v" for="currency-selector">选择货币</label>
+                                    <div class="_1yyjnylt">
+                                        <div class="_y9ev9r"><select id="currency-selector" name="currency-selector" class="_19ujlzq3" style="width:100%;height: 30px;text-align: center;"><option value="placeholder" disabled="">常用货币</option><option value="CNY">CNY 人民币</option><option value="USD">USD 美元</option><option value="JPY">JPY 日元</option><option value="HKD">HKD 港币</option><option value="TWD">TWD 新台币</option><option value="EUR">EUR 欧元</option><option value="GBP">GBP 英镑</option><option value="placeholder_other" disabled="">其他货币</option><option value="AUD">AUD 澳大利亚元</option><option value="AED">AED 阿联酋迪拉姆</option><option value="BGN">BGN 保加利亚列弗</option><option value="PLN">PLN 波兰兹罗提</option><option value="BRL">BRL 巴西雷亚尔</option><option value="DKK">DKK 丹麦克朗</option><option value="RUB">RUB 俄罗斯卢布</option><option value="PHP">PHP 菲律宾比索</option><option value="COP">COP 哥伦比亚比索</option><option value="CRC">CRC 哥斯达黎加科朗</option><option value="KRW">KRW 韩元</option><option value="CZK">CZK 捷克克朗</option><option value="CAD">CAD 加拿大元</option><option value="HRK">HRK 克罗地亚库纳</option><option value="RON">RON 罗马尼亚列伊</option><option value="MAD">MAD 摩洛哥迪拉姆</option><option value="PEN">PEN 秘鲁索尔</option><option value="MYR">MYR 马来西亚林吉特</option><option value="MXN">MXN 墨西哥比索</option><option value="ZAR">ZAR 南非兰特</option><option value="NOK">NOK 挪威克朗</option><option value="SEK">SEK 瑞典克朗</option><option value="CHF">CHF 瑞士法郎</option><option value="SAR">SAR 沙特里亚尔</option><option value="TRY">TRY 土耳其里拉</option><option value="THB">THB 泰铢</option><option value="UYU">UYU 乌拉圭比索</option><option value="SGD">SGD 新加坡元</option><option value="NZD">NZD 新西兰元</option><option value="HUF">HUF 匈牙利福林</option><option value="INR">INR 印度卢比</option><option value="ILS">ILS 以色列新谢克尔</option><option value="CLP">CLP 智利比索</option></select></div>
+                                        <span class="_1pzmvmb"><svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1jl220aq" style="flex: 1">
+                    <div>
+                        <section>
+                            <h4 class="_tpbrp">
+                                <div class="_1kvvrlr">爱彼迎</div>
+                            </h4>
+                            <ul class="_ll34wp">
+                                <li class="_o2jk4c"><a href="/careers" class="_1ypizmuu" aria-busy="false">工作机会</a></li>
+                                <li class="_o2jk4c"><a href="/press/news" class="_1ypizmuu" aria-busy="false">新闻</a></li>
+                                <li class="_o2jk4c"><a href="/policies" class="_1ypizmuu" aria-busy="false">政策</a></li>
+                                <li class="_o2jk4c"><a href="/help?from=footer" class="_1ypizmuu" aria-busy="false">帮助</a></li>
+                                <li class="_o2jk4c"><a href="/diversity" class="_1ypizmuu" aria-busy="false">多元化与归属感</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="_1jl220aq" style="flex: 1">
+                    <div>
+                        <section>
+                            <h4 class="_tpbrp">
+                                <div class="_1kvvrlr">发现</div>
+                            </h4>
+                            <ul class="_ll34wp">
+                                <li class="_o2jk4c"><a href="/trust" class="_1ypizmuu" aria-busy="false">信任与安全</a></li>
+                                <li class="_o2jk4c"><a href="/invite?r=6" class="_1ypizmuu" aria-busy="false">旅行基金</a></li>
+                                <li class="_o2jk4c"><a href="/gift?s=footer" class="_1ypizmuu" aria-busy="false">礼品卡</a></li>
+                                <li class="_o2jk4c"><a href="https://www.airbnbcitizen.com?utm_source=airbnb&amp;utm_medium=footer&amp;utm_campaign=product" target="_blank" rel="noopener noreferrer" class="_1ypizmuu" aria-busy="false">爱彼迎公民</a></li>
+                                <li class="_o2jk4c"><a href="/work?s=footer" class="_1ypizmuu" aria-busy="false">商务差旅</a></li>
+                                <li class="_o2jk4c"><a href="/things-to-do" class="_1ypizmuu" aria-busy="false">旅游指南</a></li>
+                                <li class="_o2jk4c"><a href="https://airbnbmag.com" class="_1ypizmuu" aria-busy="false">爱彼迎杂志</a></li>
+                                <li class="_o2jk4c"><a href="/events" class="_1ypizmuu" aria-busy="false"><span class="_1jlgm549">活动</span><span class="_1jlgm549"><div class="_1hb2u4i"><span class="_4btwil"><span class="_1kkwz7fa">New</span></span></div></span></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="_1jl220aq" style="flex: 1">
+                    <div>
+                        <section>
+                            <h4 class="_tpbrp">
+                                <div class="_1kvvrlr">出租</div>
+                            </h4>
+                            <ul class="_ll34wp">
+                                <li class="_o2jk4c"><a href="/host/homes?from_footer=1" class="_1ypizmuu" aria-busy="false">为什么要出租?</a></li>
+                                <li class="_o2jk4c"><a href="/hospitality" class="_1ypizmuu" aria-busy="false">待客之道</a></li>
+                                <li class="_o2jk4c"><a href="/help/responsible-hosting" class="_1ypizmuu" aria-busy="false">房东义务</a></li>
+                                <li class="_o2jk4c"><a href="/host/experiences?from_footer=1" class="_1ypizmuu" aria-busy="false"><span class="_1jlgm549">开展体验</span><span class="_1jlgm549"><div class="_1hb2u4i"><span class="_4btwil"><span class="_1kkwz7fa">New</span></span></div></span></a></li>
+                                <li class="_o2jk4c"><a href="/openhomes" class="_1ypizmuu" aria-busy="false">Open Homes<span class="_1jlgm549"><div class="_1hb2u4i"><span class="_4btwil"><span class="_1kkwz7fa">New</span></span></div></span></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- 尾部 -->
+            <div class="_2h22gn" style="display:flex;justify-content: space-between">
+                <div class="_gtj35xg">
+                    <div itemscope="" itemtype="http://schema.org/Organization" class="_7fuu8q">
+                        <div class="_qtix31">
+                            <div class="_ni9axhe">
+                                <div style="margin-right: 8px;"><svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height: 1.5em; width: 1.5em; display: block; fill: rgb(118, 118, 118);"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg></div>
+                            </div>
+                            <div class="_ni9axhe">
+                                <div dir="ltr" class="_1vaezaxp">© Airbnb, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_j6urmsh">
+                    <ul class="_4qkm3d">
+                        <link itemprop="url" href="https://zh.airbnb.com">
+                        <meta itemprop="logo" content="https://z1.muscache.cn/airbnb/static/logos/belo-cn-200x200-9518747d43e25d1834cda4cbe55464c5.png">
+                        <li class="_c2qqzh7"><a href="/terms" class="_1ypizmuu" aria-busy="false">条款</a></li>
+                        <li class="_c2qqzh7"><a href="/terms/privacy_policy" class="_1ypizmuu" aria-busy="false">隐私政策</a></li>
+                        <li class="_c2qqzh7"><a href="/sitemaps" class="_1ypizmuu" aria-busy="false">网站地图</a></li>
+                        <li class="_52tvy" style="display: flex;"><span class="_1oznos1" style="margin-right:10px;"><a href="http://www.weibo.com/airbnb" target="_blank" rel="noopener noreferrer" class="_1rp5252" aria-busy="false" itemprop="sameAs" style="padding: 0px; margin: 0px;"><svg viewBox="0 0 32 32" role="img" aria-label="微博" focusable="false" style="height: 1em; width: 1em; display: block; fill: rgb(118, 118, 118);"><path d="m30.85 14.19c-.15.61-.85.98-1.46.77-.64-.22-.97-.86-.76-1.5.67-2.14.27-4.05-1.21-5.7-1.37-1.56-3.5-2.17-5.47-1.78-.64.15-1.25-.28-1.37-.89-.15-.64.27-1.29.88-1.41 2.77-.61 5.68.31 7.72 2.51 1.97 2.24 2.55 5.33 1.67 8zm-4.77-5.18c-.95-1.11-2.4-1.53-3.74-1.25-.52.12-.88.61-.79 1.2.12.58.64.92 1.22.8.7-.15 1.31.06 1.82.61.49.58.61 1.23.39 1.9-.15.58.15 1.13.67 1.29a1.02 1.02 0 0 0 1.25-.67c.46-1.44.18-2.73-.82-3.86zm-9.33 13.42c-1 2.33-3.95 3.62-6.5 2.79-2.43-.77-3.53-3.22-2.43-5.42 1.06-2.11 3.8-3.31 6.2-2.69 2.52.64 3.74 3 2.73 5.33zm-5.13-1.81c-.82-.34-1.79 0-2.28.77s-.24 1.68.52 2.05 1.85 0 2.34-.77c.49-.83.24-1.72-.58-2.05zm1.94-.8c-.76-.34-1.37.8-.64 1.07.33.15.64.06.88-.31.15-.34.09-.64-.24-.77zm-.03 6.83c-5.08.52-9.45-1.78-9.79-5.18-.34-3.34 3.49-6.47 8.57-6.99 5.1-.49 9.45 1.84 9.78 5.18.34 3.34-3.55 6.5-8.57 6.99zm10.12-11.14c-.18-.03-.3-.09-.39-.13-.15-.09-.27-.28-.12-.64.52-1.32.55-2.36.03-3.06-1.06-1.44-3.68-1.38-6.81-.06l-.24.09c-.34.12-.67.03-.52-.43.52-1.66.4-2.85-.3-3.62-.89-.86-2.28-.89-4.23-.12-3.92 1.56-10.43 7.35-10.43 12.75 0 1.63.64 3.1 1.91 4.35 2.53 2.57 6.66 3.86 10.95 3.86 3.98 0 7.75-1.23 10.09-2.94 2.31-1.72 3.77-3.86 3.77-5.82 0-2.12-1.67-3.59-3.71-4.23z" fill-rule="evenodd"></path></svg></a></span>
+                            <span class="_6et1h5i"><div class="_ni9axhe"><div style="margin-right: 8px;"><svg viewBox="0 0 32 32" role="presentation" aria-hidden="true" focusable="false" style="height: 1em; width: 1em; display: block; fill: currentcolor;"><path d="m25.09 19.47c-.62 0-1.11-.53-1.08-1.16.02-.59.52-1.08 1.1-1.08.62.01 1.11.54 1.09 1.17a1.08 1.08 0 0 1 -1.1 1.07zm-6.89.01a1.12 1.12 0 0 1 -1.11-1.08 1.13 1.13 0 0 1 1.12-1.16c.62 0 1.13.53 1.1 1.17a1.12 1.12 0 0 1 -1.11 1.07zm-1.31-5.54c-4.74 3.15-5.33 9.05-1.23 12.9 2.15 2.02 4.77 2.85 7.68 2.54.96-.1 1.92-.64 2.84-.54s1.78.73 2.72 1.16c-.43-1.74-.44-2.47.48-3.3 3.16-2.85 3.46-7.35.87-10.74-2.97-3.89-9.15-4.82-13.36-2.02zm-9.74-2.66a1.32 1.32 0 0 1 -1.3-1.38 1.34 1.34 0 0 1 1.39-1.31c.73.02 1.34.67 1.32 1.39a1.36 1.36 0 0 1 -1.4 1.3zm9.89-1.36c.01.77-.56 1.36-1.32 1.37a1.35 1.35 0 0 1 -1.38-1.33c-.01-.72.61-1.36 1.34-1.37a1.33 1.33 0 0 1 1.36 1.33zm5.18 1.29a9.07 9.07 0 0 0 -1.85-4.76c-2.88-3.82-8.21-5.42-12.95-3.85-3.47 1.15-6.03 3.36-7.07 7-1.13 3.94.38 7.76 3.95 10.32.56.4.7.96.52 1.57-.25.83-.45 1.48-.66 2.47 1.17-.74 2.16-1.41 3.2-2 .31-.18.75-.22 1.11-.19 1.06.09 2.12.25 3.28.4-.27-3.17.7-5.72 2.82-7.81 2.1-2.07 4.68-2.98 7.65-3.14z" fill-rule="evenodd"></path></svg></div></div><div class="_ni9axhe"></div>
+            </div>
+            
+            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="height:100px; "></div>
+
         </div>
     </div>
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap"); // 创建Map实例
+        // map.ScaleControl({
+        //     anchor: BMAP_ANCHOR_TOP_LEFT
+        // }); // 左上角，添加比例尺
+        map.centerAndZoom(new BMap.Point(126.58, 37.33), 12); // 初始化地图,设置中心点坐标和地图级别
+        map.addControl(new BMap.NavigationControl());
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl({
+            mapTypes: [
+                BMAP_NORMAL_MAP,
+                BMAP_HYBRID_MAP,
+            ]
+        }));
+        map.addControl(new BMap.ScaleControl());
+        map.setCurrentCity("首尔"); // 设置地图显示的城市 此项是必须设置的
+        // map.enableScrollWheelZoom(false); //开启鼠标滚轮缩放
+    </script>
+    <script type="application/json " data-hypernova-key="experience_pdpbundlejs " data-hypernova-id="96580bf5-394f-4518-b6e3-4a390373af1e"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
 
-    <div class="row" style="width: 100%;height: 9rem;border-bottom: .01rem solid rgba(196, 189, 189, 0.781);">
-        <!-- 左侧轮播 -->
-        <div style="width: 9.47rem;height: 7.8rem; margin:0 auto;" class="lunbo">
-            <div>
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- 轮播列表 -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                    </ol>
-                    <!-- 插入图片 -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="https://z2.muscache.cn/im/pictures/2ce3945d-3259-4d02-8854-ef38ecc400ec.jpg?aki_policy=poster" alt="第一张">
-                        </div>
-                        <div class="item">
-                            <img src="https://z2.muscache.cn/im/pictures/2c8161bc-b1d3-4981-be71-e6399692a70f.jpg?aki_policy=poster" alt="第二张">
-                        </div>
-                        <div class="item">
-                            <img src="https://z2.muscache.cn/im/pictures/697b72d7-4331-4059-a6fe-b255dae6ebe2.jpg?aki_policy=poster" alt="第三张">
-                        </div>
-                        <div class="item">
-                            <img src="https://z2.muscache.cn/im/pictures/77836451-5f41-48d6-a640-560337d10e59.jpg?aki_policy=poster" alt="第四张">
-                        </div>
-                        <div class="item">
-                            <img src="https://z2.muscache.cn/im/pictures/78b100ad-195e-4748-b29d-dc8a5e4cdc95.jpg?aki_policy=poster" alt="第五张">
-                        </div>
-                        <div class="item">
-                            <img src="https://z2.muscache.cn/im/pictures/9dbeb577-b940-4d47-8060-f37094697ca2.jpg?aki_policy=poster" alt="第六张">
-                        </div>
-                        <div class="item">
-                            <img src="https://z2.muscache.cn/im/pictures/f0463437-b8af-4aaf-a279-d4339f91b9d4.jpg?aki_policy=poster" alt="第七张">
-                        </div>
+            //必要的数据
+            //今天的年 月 日 ；本月的总天数；本月第一天是周几？？？
+            var iNow = 0;
 
-                    </div>
+            function run(n) {
 
-                    <!-- 轮播控制 -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <!-- 右侧文章 -->
-            <div class="article-right">
-                <div>
-                    <small style="font-weight: 600;">乘船游览</small>
-                    <div style="float:right;margin-right: .20rem;font-size: 18px;">
-                        <span class="glyphicon glyphicon-new-window" style="font-weight: 200; margin-right:1rem;"></span>
-                        <span class="glyphicon glyphicon-heart-empty"></span>
-                    </div>
-                </div>
-                <h1 style="font-weight:800;width: 4.1rem;height: 1.04rem;font-size: 40px;">Yacht along the coast with a captain</h1>
-                <div class="user1" style="width:100%;margin-top: .15rem;"><img src="https://z2.muscache.cn/im/pictures/user/803da5d9-5b33-4b2a-9e84-504bc8ed8562.jpg?aki_policy=profile_x_medium" alt="头像"></div>
-                <br>
-                <div style="width: 4.5rem;float: left;">
-                    <div style="font-size:18px;font-weight: 600;height: .3rem;">关于您的体验达人Ian</div>
-                    <br>
-                    <span class="eng">
-                    I was born in Gangneung, Korea. I've crossed the Straits of Korea from<br> Japan and I've also sailed to the South Sea and the East Sea from<br>  Tongyeong to Anmok Port. 
-                    I am an experienced skipper with a formal<br> yacht certificate and a rescue agent certificate. I provide nice music<br> on the yacht and I can guide you through the city of Gangneung.
-                    I can<br> also introduce you to rooms, restaurants, and sightseeing spots. You'll <br>live like a Gangneung local during your time with me.
-                    </span>
-                </div>
-                <div style="float:right;" class="tips">
-                    <div><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;<a style="color:rgb(0, 132, 137) ">江陵市</a></div>
-                    <div><span class="glyphicon glyphicon-dashboard"></span>&nbsp;&nbsp;&nbsp;2小时</div>
-                    <div><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;零食和饮品</div>
-                    <div><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;以英语和韩语提供</div>
-                </div>
-                <div style="width: 5.8rem;float: left;margin-top:.50rem;border-top: .01rem solid rgba(196, 189, 189, 0.781);">
-                    <div style="width: 5.4rem; font-size:18px;font-weight: 600;height: .30rem;margin:.20rem 0;">体验内容</div>
+                var oDate = new Date(); //定义时间
+                oDate.setMonth(oDate.getMonth() + n); //设置月份
+                var year = oDate.getFullYear(); //年
+                var month = oDate.getMonth(); //月
+                var today = oDate.getDate(); //日
 
-                    <span class="eng" style="float:left;">
-                        We will sail together on my 28-foot yacht and explore beautiful<br>
-                         Gangneung. You'll have the opportunity to swim, tan, and snorkel<br> 
-                          with your own gear. There is no shark or crocodile in God blessing. <br> 
-                          You'll enjoy simple snacks and drinks. You can also use the Bluetooth <br> 
-                          amplifier to enjoy your favorite music. We'll take in breathtaking views<br> 
-                           of the sea from Gyeongpo Beach and Daegwallyeong. It will be a<br> 
-                         wonderfully satisfying experience and we'll all enjoy it together.
-                    </span>
-                    <div style="float:right;width: 1.5rem;padding-left: .2rem; " class="tips ">
-                        <div style="font-weight: 800;">体验内包括的东西</div><br>
-                        <div>free Drinks <span class="glyphicon glyphicon-glass "></span></div>
-                        <div>I'll provide free (water, mixed<br>coffee, soft drinks.)</div><br>
-                        <div>free Snacks and sweets <span class="glyphicon glyphicon-cutlery "></span></div><br>
-                        <div style="font-weight: 800;">准备物品</div><br>
-                        <div>Hat, sunglasses, sun block, sneakers</div>
-                    </div>
-                    <div style=" width: 4.65rem; font-size:18px;font-weight: 600;height:.2rem;margin:.1rem 0;float:left;">其他应注意的事项</div>
-                    <span style="float:left; "> Smoking is not permitted. Your valuables will be kept in private<br>
-                            storage. Do not fall into the sea and do wear a life jacket.
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="height:5rem;width: 100%;"></div>
+                //计算本月有多少天
+                var allDay = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month];
 
-    <!-- 滚动条监听事件 -->
-    <!-- <script>
-        $(document).scroll(function() {     
-            var scroH = $(document).scrollTop(); //滚动高度		
-            var viewH = $(window).height(); //可见高度		
-            var contentH = $(document).height(); //内容高度         
-            if (scroH > 10) { //距离顶部大于100rem时         
-            }
-            if (contentH - (scroH + viewH) <=  100) { //距离底部高度小于100rem                     
-            } 
-            if (contentH = (scroH + viewH)) { //滚动条滑到底部啦                     
-            }    
+                //判断闰年
+                if (month == 1) {
+                    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                        allDay = 29;
+                    }
+                }
+
+                //判断本月第一天是星期几
+                oDate.setDate(1); //时间调整到本月第一天
+                var week = oDate.getDay(); //读取本月第一天是星期几
+
+                //console.log(week);
+                $(".dateList").empty(); //每次清空
+                //插入空白
+
+                for (var i = 0; i < week; i++) {
+                    $(".dateList").append("<li></li>");
+                }
+
+                //日期插入到dateList
+                for (var i = 1; i <= allDay; i++) {
+                    $(".dateList").append("<li>" + i + "</li>")
+                }
+                //标记颜色=====================
+                $(".dateList li").each(function(i, elm) {
+                    //console.log(index,elm);
+                    var val = $(this).text();
+                    //console.log(val);
+                    if (n == 0) {
+                        if (val < today) {
+                            $(this).addClass('ccc')
+                        } else if (val == today) {
+                            $(this).addClass('red')
+                        } else if (i % 7 == 0 || i % 7 == 6) {
+                            $(this).addClass('sun')
+                        }
+                    } else if (n < 0) {
+                        $(this).addClass('ccc')
+                    } else if (i % 7 == 0 || i % 7 == 6) {
+                        $(this).addClass('sun')
+                    }
+                });
+
+                //定义标题日期
+                $("#calendar h4").text(year + "年" + (month + 1) + "月");
+            };
+            run(0);
+
+            $(".a1").click(function() {
+                iNow--;
+                run(iNow);
+            });
+
+            $(".a2").click(function() {
+                iNow++;
+                run(iNow);
+            })
         });
-    </script> -->
-    <!-- 引入bootstrap和jq的js文件 -->
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </script>
 </body>
 
 </html>

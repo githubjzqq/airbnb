@@ -2,241 +2,40 @@
 
 /*标题头部*/
 
-.navbar-brand>span {
+.navbar-brand .title1 {
     font-size: 30px;
-    color: rgb(34, 32, 32);
+    color: rgb(65, 61, 61);
 }
 
-.header-bottom {
-    height: 60px;
-    margin-top: 20px;
+.navbar-brand .title2 {
+    font-size: 15px;
+    margin-top: 5px;
+    color: rgb(73, 68, 68);
 }
 
-.header-bottom>ul {
-    height: 50px;
-    padding-left: 0;
-}
-
-.header-bottom>ul>li {
-    list-style: none;
-    float: left;
-    margin-left: 20px;
-}
-
-@media screen and (max-width:768px) {
-    .header-bottom {
-        font-size: 12px;
-    }
-}
-
-.header-bottom .one {
-    color: rgb(0, 128, 122);
-}
-
-.header-bottom>ul>li>a {
-    text-decoration: none;
-    color: rgb(65, 63, 63);
-}
-
-.header-bottom .first {
-    margin-left: 0;
-}
-
-.header-bottom .second {
-    color: rgb(0, 128, 122);
-    height: 40px;
-    border-bottom: 2px solid rgb(0, 128, 122);
+.container-fluid {
+    height: 80px;
 }
 
 
-/*推荐搜索部分*/
+/*故事类别部分*/
 
 .row .title {
     font-size: 24px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 
-/*热门搜索城市*/
+/*小轮播部分*/
 
-.thumbnail>img {
-    opacity: 0.4;
-    border-radius: 10%;
-}
-
-.city {
-    position: relative;
-}
-
-.city>span {
-    position: absolute;
-    font-size: 16px;
-    /* padding-left: 45px;
-    padding-top: 40px; */
-    color: white;
-}
-
-.city .top {
-    top: 20%;
-    left: 35%;
-    font-size: 20px;
-}
-
-.city .btm {
-    left: 30%;
-    top: 45%;
-    font-size: 14px;
+.row .thumbnail {
+    border: none;
 }
 
 
-/*故事集城市合辑*/
-
-.thumbnail>img {
-    border-radius: 10%;
-}
-
-.kaoya .img {
-    opacity: 0;
-}
-
-.huoguo .img {
-    opacity: 0;
-}
-
-.jianzhu .img {
-    opacity: 0;
-}
-
-.gushi .kaoya {
-    padding: 0;
-    border: 0;
-}
-
-.gushi .huoguo {
-    padding: 0;
-    border: 0;
-}
-
-.gushi .jianzhu {
-    padding: 0;
-    border: 0;
-}
-
-
-/*文字定位到图片上*/
-
-.gushi .kaoya {
-    position: relative;
-}
-
-.kaoya .heji {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    top: 50%;
-    left: 5%;
-    z-index: 1;
-    height: 20px;
-    width: 60px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.kaoya .top {
-    position: absolute;
-    color: white;
-    top: 60%;
-    left: 5%;
-    font-size: 24px;
-    z-index: 1;
-}
-
-.kaoya .btm {
-    position: absolute;
-    color: white;
-    left: 5%;
-    top: 75%;
-    font-size: 24px;
-    z-index: 1;
-}
-
-.gushi .huoguo {
-    position: relative;
-}
-
-.huoguo .heji {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    top: 50%;
-    left: 5%;
-    z-index: 1;
-    height: 20px;
-    width: 60px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.huoguo .top {
-    position: absolute;
-    color: white;
-    top: 60%;
-    left: 5%;
-    font-size: 24px;
-    z-index: 1;
-}
-
-.huoguo .btm {
-    position: absolute;
-    color: white;
-    left: 5%;
-    top: 75%;
-    font-size: 24px;
-    z-index: 1;
-}
-
-.gushi .jianzhu {
-    position: relative;
-}
-
-.jianzhu .heji {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    top: 50%;
-    left: 5%;
-    z-index: 1;
-    height: 20px;
-    width: 60px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.jianzhu .top {
-    position: absolute;
-    color: white;
-    top: 60%;
-    left: 5%;
-    font-size: 24px;
-    z-index: 1;
-}
-
-.jianzhu .btm {
-    position: absolute;
-    color: white;
-    left: 5%;
-    top: 75%;
-    font-size: 24px;
-    z-index: 1;
-}
-
-
-/*主体内容*/
+/*主体内容之町屋*/
 
 .thumbnail.bingfen {
     padding: 0;
@@ -294,7 +93,7 @@
     position: relative;
 }
 
-.caption .chengshi {
+.caption .modu1 {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
@@ -308,35 +107,7 @@
     border-radius: 10%;
 }
 
-.caption .fangyuan {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 20%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.caption .kafeiguan {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 20%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.caption .laofoye1 {
+.caption .zaocan {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
@@ -350,8 +121,207 @@
     border-radius: 10%;
 }
 
+.caption .fengqing {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
 
-/*第二行*/
+.caption .kongjian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 21%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+
+/*主体内容之咖啡店*/
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .sirong {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .baozhi {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .huntun {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .pinwei {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+
+/*主体内容之展览*/
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
 
 .caption .jueban {
     position: absolute;
@@ -410,23 +380,65 @@
 }
 
 
-/*第三行*/
+/*全部故事*/
 
-.caption .sirong {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 25%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
 }
 
-.caption .baozhi {
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .jia {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
@@ -440,7 +452,21 @@
     border-radius: 10%;
 }
 
-.caption .huntun {
+.caption .chenyoujian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .juyuan {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
@@ -454,11 +480,11 @@
     border-radius: 10%;
 }
 
-.caption .pinwei {
+.caption .bali {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    bottom: 20%;
+    bottom: 25%;
     right: 10%;
     z-index: 1;
     height: 20px;
