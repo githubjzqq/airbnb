@@ -35,7 +35,7 @@
 }
 
 
-/*主体内容之住有趣房东*/
+/*主体内容之町屋*/
 
 .thumbnail.bingfen {
     padding: 0;
@@ -93,11 +93,11 @@
     position: relative;
 }
 
-.caption .dingwu {
+.caption .modu1 {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    bottom: 20%;
+    bottom: 25%;
     right: 10%;
     z-index: 1;
     height: 20px;
@@ -107,11 +107,11 @@
     border-radius: 10%;
 }
 
-.caption .lvxing {
+.caption .zaocan {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    bottom: 20%;
+    bottom: 25%;
     right: 10%;
     z-index: 1;
     height: 20px;
@@ -121,11 +121,11 @@
     border-radius: 10%;
 }
 
-.caption .fangjian2 {
+.caption .fengqing {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    bottom: 20%;
+    bottom: 25%;
     right: 10%;
     z-index: 1;
     height: 20px;
@@ -135,11 +135,11 @@
     border-radius: 10%;
 }
 
-.caption .tingyuan {
+.caption .kongjian {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    bottom: 20%;
+    bottom: 21%;
     right: 10%;
     z-index: 1;
     height: 20px;
@@ -208,7 +208,7 @@
     position: relative;
 }
 
-.caption .huangshi {
+.caption .sirong {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
@@ -222,7 +222,21 @@
     border-radius: 10%;
 }
 
-.caption .maomi {
+.caption .baozhi {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .huntun {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
@@ -236,25 +250,11 @@
     border-radius: 10%;
 }
 
-.caption .keji {
+.caption .pinwei {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    bottom: 25%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.caption .wuzao {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 25%;
+    bottom: 20%;
     right: 10%;
     z-index: 1;
     height: 20px;
@@ -265,7 +265,7 @@
 }
 
 
-/*主体内容之寺庙*/
+/*主体内容之展览*/
 
 .thumbnail.bingfen {
     padding: 0;
@@ -323,21 +323,7 @@
     position: relative;
 }
 
-.caption .zhanlan {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 20%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.caption .meishuguan {
+.caption .jueban {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
@@ -351,11 +337,11 @@
     border-radius: 10%;
 }
 
-.caption .huaqiaocheng {
+.caption .tongnian {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
-    bottom: 25%;
+    bottom: 20%;
     right: 10%;
     z-index: 1;
     height: 20px;
@@ -365,11 +351,25 @@
     border-radius: 10%;
 }
 
-.caption .wenhua {
+.caption .zhongzhen {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
     bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .haizi {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
     right: 10%;
     z-index: 1;
     height: 20px;
@@ -438,53 +438,53 @@
     position: relative;
 }
 
-.caption .chengshi {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 25%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.caption .meishia {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 25%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.caption .fangyuana {
-    position: absolute;
-    font-size: 12px;
-    color: rgb(44, 42, 42);
-    bottom: 25%;
-    right: 10%;
-    z-index: 1;
-    height: 20px;
-    width: 40px;
-    text-align: center;
-    background: white;
-    border-radius: 10%;
-}
-
-.caption .jingdu {
+.caption .jia {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);
     bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .chenyoujian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .juyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .bali {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
     right: 10%;
     z-index: 1;
     height: 20px;
