@@ -78,7 +78,7 @@
   cursor: pointer;
 }
 .main .container .content:first-child .user_msg:hover {
-  border-color: #888;
+  border-color: #fff;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 .main .container .content:first-child .user_msg a {
@@ -228,11 +228,15 @@
 .main .container .content.picture > .row .text .select {
   width: 100%;
   height: 42px;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
   line-height: 42px;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
   margin-top: 24px;
+}
+.main .container .content.picture > .row .text .select:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  border-color: #fff;
 }
