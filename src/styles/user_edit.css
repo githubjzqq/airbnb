@@ -43,9 +43,6 @@
 .main {
   padding-top: 24px;
 }
-.main .container {
-  z-index: inherit;
-}
 .main .container .content:first-child {
   margin-bottom: 24px;
 }

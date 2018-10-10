@@ -29,6 +29,7 @@ $(function() {
                         $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
                         $('.mod').css('display', 'none');
                         $('.modal-backdrop').remove();
+                        $('body').attr({ 'style': '', 'class': '' });
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
@@ -64,6 +65,7 @@ $(function() {
                         $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
                         $('.mod').css('display', 'none');
                         $('.modal-backdrop').remove();
+                        $('body').attr({ 'style': '', 'class': '' });
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
@@ -293,9 +295,7 @@ $(function() {
         var email = $(this).siblings('.input').children('.inputnmb').children('input').val();
         var pwd = $(this).siblings('.password').children('.box').children('.pwd').val();
         regist.email.push(reg1.test($(this).siblings('.input').children('.inputnmb').children('input').val()));
-        console.log($(this).siblings('.verify'));
         if ($(this).siblings('.verify').length != 0) {
-            console.log($(this).siblings('.verify').children('input').val(), $(this).siblings('.verify').children('.result').html());
             if ($(this).siblings('.verify').children('input').val()) {
                 regist.email.push($(this).siblings('.verify').children('input').val().toLowerCase() === $(this).siblings('.verify').children('.result').html().toLowerCase());
             } else {
@@ -309,11 +309,9 @@ $(function() {
         })
         if (regist.emailAd) {
             regist.emailData = 'email=' + email + '&pwd=' + pwd;
-            console.log(regist.emailData);
             //注册账号操作；
             if ($(this).text() === '注册') {
                 regist.url = '../php/regist_email.php?_dc=' + (new Date()).getTime(); //添加时间戳，解决缓存问题；
-                console.log(regist.url);
                 if (regist.emailAd) {
                     $.ajax({
                         url: regist.url,
@@ -373,7 +371,6 @@ $(function() {
             //注册账号操作；
             if ($(this).text() === '注册') {
                 regist.url = '../php/regist.php?_dc=' + (new Date()).getTime(); //添加时间戳，解决缓存问题；
-                console.log(regist.url);
                 if (regist.phoneAd) {
                     $.ajax({
                         url: regist.url,
