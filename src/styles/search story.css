@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*输入框*/
+
+.input-group .form-control {
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid rgb(5, 114, 96);
+}
+
+
+/*热门目的地*/
+
+.remen {
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.remen>p {
+    height: 30px;
+    color: rgb(90, 87, 87);
+}
+
+@media screen and (max-width: 375px) {
+    .tupian>ul .yincang {
+        display: none;
+    }
+}
+
+.tupian>ul>li {
+    list-style: none;
+    float: left;
+    width: 60px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.tupian>ul>li>a {
+    text-decoration: none;
+    color: rgb(90, 87, 87);
+}
+
+.tupian>ul>li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
