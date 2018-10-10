@@ -83,6 +83,9 @@
 }
 .main .container .content:first-child .user_msg a {
   text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .main .container .content:first-child ul li a {
@@ -100,7 +103,6 @@
   background-color: #edefed;
   border-bottom: 1px solid #dce0e0;
   color: #484848;
-  margin-bottom: 20px;
 }
 .main .container .content > .row {
   margin-right: 0;
@@ -108,9 +110,16 @@
   border: 1px solid #dce0e0;
   margin-bottom: 24px;
 }
+.main .container .content > .row .row {
+  margin-right: 0;
+  margin-left: 0;
+}
 .main .container .content.base {
   padding-right: 0;
   padding-left: 0;
+}
+.main .container .content.base > .row .title {
+  margin-bottom: 24px;
 }
 .main .container .content.base > .row .msg_list {
   margin-bottom: 24px;
@@ -210,6 +219,9 @@
 .main .container .content.base .save:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
+.main .container .content.picture > .row .title {
+  margin-bottom: 24px;
+}
 .main .container .content.picture > .row .pic {
   padding: 0 20px 20px;
   text-align: center;
@@ -239,4 +251,132 @@
 .main .container .content.picture > .row .text .select:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   border-color: #fff;
+}
+.main .container .content.verify .row:nth-child(1) .text {
+  min-height: 140px;
+}
+.main .container .content.verify .row:nth-child(1) .text h4 {
+  padding-right: 160px;
+}
+.main .container .content.verify .row:nth-child(1) .text p {
+  padding-right: 160px;
+}
+.main .container .content.verify .row:nth-child(1) .text img {
+  width: 152px;
+  height: 100px;
+  vertical-align: text-top;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  .main .container .content.verify .row:nth-child(1) .text img {
+    height: 60%;
+  }
+}
+.main .container .content.verify .text {
+  padding: 20px 10px;
+  position: relative;
+  overflow: hidden;
+}
+.main .container .content.verify .text h4 {
+  font-size: 16px;
+  line-height: 17px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: #484848;
+}
+.main .container .content.verify .text p {
+  font-size: 14px;
+  color: #484848;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+.main .container .content.verify .text .button {
+  height: 36px;
+  width: 289px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.main .container .content.verify .text .button a {
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.main .container .content.verify .text .button:hover {
+  border-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+.main .container .content.estimate .row:nth-child(1) {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.main .container .content.estimate .row:nth-child(1) span {
+  display: inline-block;
+  height: 49px;
+  line-height: 49px;
+  padding: 0 4px;
+  margin-right: 10px;
+  border-bottom: 0px solid transparent;
+  font-size: 14px;
+  transition: all .4s;
+}
+.main .container .content.estimate .row:nth-child(1) span.active {
+  border-bottom: 4px solid #aaa;
+}
+.main .container .content.estimate .tips {
+  font-size: 16px;
+  padding: 20px;
+}
+.main .container .content.estimate .text {
+  margin: 0 20px 20px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.main .container .content.estimate .text:last-child {
+  border-bottom: none;
+}
+.main .container .content.estimate .text > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+.main .container .content.estimate .text > div .user {
+  margin-right: 20px;
+  text-align: center;
+  float: left;
+}
+.main .container .content.estimate .text > div .user img {
+  height: 68px;
+  width: 68px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.main .container .content.estimate .text > div .box p {
+  margin: 0;
+  line-height: 20px;
+}
+.main .container .content.estimate .text > div .box .content {
+  margin: 10px 0 15px;
+}
+.main .container .content.estimate .text > div .box .reply {
+  text-align: right;
+}
+.main .container .content.estimate .text > div .box .time {
+  color: #aaa;
+}
+.main .container .content.estimate .text h4 {
+  font-weight: bold;
+  font-size: 15px;
+}
+.main .container .content.estimate .text p {
+  font-size: 14px;
+  color: #484848;
+  margin-bottom: 15px;
+  line-height: 30px;
 }
