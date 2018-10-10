@@ -113,7 +113,11 @@
             }
 
         }
-        .content{
+        .content:not(.tabs_content){
+            display: none;
+            &.active{
+                display:block;
+            }
             .title{
                 line-height: 17px;
                 font-size: 16px;
@@ -348,7 +352,13 @@
                 }
             }
         }
-        .content.estimate{
+        .content.estimate,.content.recommend{
+            .row:not(.tabs){
+                display: none;
+                &.active{
+                    display: block;
+                }
+            }
             .row:nth-child(1){
                 border: none;
                 border-bottom: 1px solid #ddd;
@@ -361,6 +371,8 @@
                     border-bottom:0px solid transparent;
                     font-size: 14px;
                     transition: all .4s;
+                    cursor: pointer;
+                    user-select: none;
                     &.active{
                         border-bottom:4px solid #aaa;
                     }
@@ -398,7 +410,7 @@
                             margin: 0;
                             line-height: 20px;
                         }
-                        .content{
+                        .contents{
                             margin:10px 0 15px;
                         }
                         .reply{

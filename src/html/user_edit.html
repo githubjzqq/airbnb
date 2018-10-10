@@ -168,7 +168,7 @@
     <div class="main">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-3 content">
+                <div class="col-xs-12 col-sm-3 content tabs_content">
                     <ul class="tabs">
                         <li class="active"><a href="">编辑个人资料</a></li>
                         <li><a href="">照片</a></li>
@@ -181,7 +181,7 @@
                         查看个人资料</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 content base">
+                <div class="col-xs-12 col-sm-9 content base active">
                     <div class="row">
                         <div class="title">主要信息</div>
                         <div class="msg_list firstName row">
@@ -220,65 +220,11 @@
                                 <label for="birthday">出生日期</label>
                             </div>
                             <div class="input col-xs-9">
-                                <select class="form-control" id="birthday">
-                                    <option value="1">一月</option>
-                                    <option value="2">二月</option>
-                                    <option value="3">三月</option>
-                                    <option value="4">四月</option>
-                                    <option value="5">五月</option>
-                                    <option value="6">六月</option>
-                                    <option value="7">七月</option>
-                                    <option value="8">八月</option>
-                                    <option value="9" selected="selected">九月</option>
-                                    <option value="10">十月</option>
-                                    <option value="11">十一月</option>
-                                    <option value="12">十二月</option>
+                                <select class="form-control" id="birthmouth">
                                 </select>
                                 <select class="form-control" id="birthday">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
                                 </select>
-                                <select class="form-control" id="birthday">
-                                    <option value="1990">1990</option>
-                                    <option value="1991">1991</option>
-                                    <option value="1992">1992</option>
-                                    <option value="1993">1993</option>
-                                    <option value="1994">1994</option>
-                                    <option value="1995">1995</option>
-                                    <option value="1996">1996</option>
-                                    <option value="1997">1997</option>
-                                    <option value="1998">1998</option>
-                                    <option value="1999">1999</option>
-                                    <option value="2000">2000</option>
+                                <select class="form-control" id="birthyear">
                                 </select>
                                 <p>此数据将帮助我们更好地为您提供服务，除必要的内部使用外，我们不会将您的信息透露给房东或其他用户。您必须年满 18 周岁才能使用爱彼迎的网站和服务。</p>
                             </div>
@@ -374,110 +320,6 @@
                             </div>
                             <div class="input col-xs-9">
                                 <select class="form-control" id="timeZoney">
-                                    <option value="International Date Line West">(GMT-11:00) International Date Line West</option>
-                                    <option value="Midway Island">(GMT-11:00) Midway Island</option>
-                                    <option value="Samoa">(GMT-11:00) Samoa</option>
-                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                                    <option value="Alaska">(GMT-09:00) Alaska</option>
-                                    <option value="America/Los_Angeles">(GMT-08:00) America/Los_Angeles</option>
-                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
-                                    <option value="Tijuana">(GMT-08:00) Tijuana</option>
-                                    <option value="America/Denver">(GMT-07:00) America/Denver</option>
-                                    <option value="Arizona">(GMT-07:00) Arizona</option>
-                                    <option value="Chihuahua">(GMT-07:00) Chihuahua</option>
-                                    <option value="Mazatlan">(GMT-07:00) Mazatlan</option>
-                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
-                                    <option value="America/Chicago">(GMT-06:00) America/Chicago</option>
-                                    <option value="America/Mexico_City">(GMT-06:00) America/Mexico_City</option>
-                                    <option value="Central America">(GMT-06:00) Central America</option>
-                                    <option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)</option>
-                                    <option value="Guadalajara">(GMT-06:00) Guadalajara</option>
-                                    <option value="Mexico City">(GMT-06:00) Mexico City</option>
-                                    <option value="Monterrey">(GMT-06:00) Monterrey</option>
-                                    <option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
-                                    <option value="America/New_York">(GMT-05:00) America/New_York</option>
-                                    <option value="Bogota">(GMT-05:00) Bogota</option>
-                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
-                                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-                                    <option value="Lima">(GMT-05:00) Lima</option>
-                                    <option value="Quito">(GMT-05:00) Quito</option>
-                                    <option value="Atlantic Time (Canada)">(GMT-04:00) Atlantic Time (Canada)</option>
-                                    <option value="Caracas">(GMT-04:00) Caracas</option>
-                                    <option value="Georgetown">(GMT-04:00) Georgetown</option>
-                                    <option value="La Paz">(GMT-04:00) La Paz</option>
-                                    <option value="Santiago">(GMT-04:00) Santiago</option>
-                                    <option value="Newfoundland">(GMT-03:30) Newfoundland</option>
-                                    <option value="Brasilia">(GMT-03:00) Brasilia</option>
-                                    <option value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
-                                    <option value="Greenland">(GMT-03:00) Greenland</option>
-                                    <option value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
-                                    <option value="Azores">(GMT-01:00) Azores</option>
-                                    <option value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
-                                    <option value="Casablanca">(GMT+00:00) Casablanca</option>
-                                    <option value="Dublin">(GMT+00:00) Dublin</option>
-                                    <option value="Edinburgh">(GMT+00:00) Edinburgh</option>
-                                    <option value="Europe/London">(GMT+00:00) Europe/London</option>
-                                    <option value="Lisbon">(GMT+00:00) Lisbon</option>
-                                    <option value="London">(GMT+00:00) London</option>
-                                    <option value="Monrovia">(GMT+00:00) Monrovia</option>
-                                    <option value="UTC">(GMT+00:00) UTC</option>
-                                    <option value="Amsterdam">(GMT+01:00) Amsterdam</option>
-                                    <option value="Belgrade">(GMT+01:00) Belgrade</option>
-                                    <option value="Berlin">(GMT+01:00) Berlin</option>
-                                    <option value="Bern">(GMT+01:00) Bern</option>
-                                    <option value="Bratislava">(GMT+01:00) Bratislava</option>
-                                    <option value="Brussels">(GMT+01:00) Brussels</option>
-                                    <option value="Budapest">(GMT+01:00) Budapest</option>
-                                    <option value="Copenhagen">(GMT+01:00) Copenhagen</option>
-                                    <option value="Europe/Madrid">(GMT+01:00) Europe/Madrid</option>
-                                    <option value="Europe/Paris">(GMT+01:00) Europe/Paris</option>
-                                    <option value="Europe/Prague">(GMT+01:00) Europe/Prague</option>
-                                    <option value="Europe/Rome">(GMT+01:00) Europe/Rome</option>
-                                    <option value="Europe/Zagreb">(GMT+01:00) Europe/Zagreb</option>
-                                    <option value="Europe/Zurich">(GMT+01:00) Europe/Zurich</option>
-                                    <option value="Ljubljana">(GMT+01:00) Ljubljana</option>
-                                    <option value="Madrid">(GMT+01:00) Madrid</option>
-                                    <option value="Paris">(GMT+01:00) Paris</option>
-                                    <option value="Prague">(GMT+01:00) Prague</option>
-                                    <option value="Rome">(GMT+01:00) Rome</option>
-                                    <option value="Sarajevo">(GMT+01:00) Sarajevo</option>
-                                    <option value="Skopje">(GMT+01:00) Skopje</option>
-                                    <option value="Stockholm">(GMT+01:00) Stockholm</option>
-                                    <option value="Vienna">(GMT+01:00) Vienna</option>
-                                    <option value="Warsaw">(GMT+01:00) Warsaw</option>
-                                    <option value="West Central Africa">(GMT+01:00) West Central Africa</option>
-                                    <option value="Zagreb">(GMT+01:00) Zagreb</option>
-                                    <option value="Athens">(GMT+02:00) Athens</option>
-                                    <option value="Bucharest">(GMT+02:00) Bucharest</option>
-                                    <option value="Cairo">(GMT+02:00) Cairo</option>
-                                    <option value="Europe/Athens">(GMT+02:00) Europe/Athens</option>
-                                    <option value="Harare">(GMT+02:00) Harare</option>
-                                    <option value="Helsinki">(GMT+02:00) Helsinki</option>
-                                    <option value="Jerusalem">(GMT+02:00) Jerusalem</option>
-                                    <option value="Kyiv">(GMT+02:00) Kyiv</option>
-                                    <option value="Pretoria">(GMT+02:00) Pretoria</option>
-                                    <option value="Riga">(GMT+02:00) Riga</option>
-                                    <option value="Sofia">(GMT+02:00) Sofia</option>
-                                    <option value="Tallinn">(GMT+02:00) Tallinn</option>
-                                    <option value="Vilnius">(GMT+02:00) Vilnius</option>
-                                    <option value="Baghdad">(GMT+03:00) Baghdad</option>
-                                    <option value="Istanbul">(GMT+03:00) Istanbul</option>
-                                    <option value="Kuwait">(GMT+03:00) Kuwait</option>
-                                    <option value="Minsk">(GMT+03:00) Minsk</option>
-                                    <option value="Moscow">(GMT+03:00) Moscow</option>
-                                    <option value="Nairobi">(GMT+03:00) Nairobi</option>
-                                    <option value="Riyadh">(GMT+03:00) Riyadh</option>
-                                    <option value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
-                                    <option value="Volgograd">(GMT+03:00) Volgograd</option>
-                                    <option value="Tehran">(GMT+03:30) Tehran</option>
-                                    <option value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
-                                    <option value="Baku">(GMT+04:00) Baku</option>
-                                    <option value="Muscat">(GMT+04:00) Muscat</option>
-                                    <option value="Tbilisi">(GMT+04:00) Tbilisi</option>
-                                    <option value="Yerevan">(GMT+04:00) Yerevan</option>
-                                    <option value="Kabul">(GMT+04:30) Kabul</option>
-                                    <option value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
-                                    <option value="Islamabad">(GMT+05:00) Islamabad</option>
                                     <option value="Karachi">(GMT+05:00) Karachi</option>
                                     <option value="Tashkent">(GMT+05:00) Tashkent</option>
                                     <option value="Asia/Calcutta">(GMT+05:30) Asia/Calcutta</option>
@@ -504,44 +346,13 @@
                                     <option value="Chongqing">(GMT+08:00) Chongqing</option>
                                     <option value="Hong Kong" selected="selected">(GMT+08:00) Hong Kong</option>
                                     <option value="Irkutsk">(GMT+08:00) Irkutsk</option>
-                                    <option value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
-                                    <option value="Perth">(GMT+08:00) Perth</option>
-                                    <option value="Singapore">(GMT+08:00) Singapore</option>
-                                    <option value="Taipei">(GMT+08:00) Taipei</option>
-                                    <option value="Ulaan Bataar">(GMT+08:00) Ulaan Bataar</option>
-                                    <option value="Asia/Seoul">(GMT+09:00) Asia/Seoul</option>
-                                    <option value="Osaka">(GMT+09:00) Osaka</option>
-                                    <option value="Sapporo">(GMT+09:00) Sapporo</option>
-                                    <option value="Seoul">(GMT+09:00) Seoul</option>
-                                    <option value="Tokyo">(GMT+09:00) Tokyo</option>
-                                    <option value="Yakutsk">(GMT+09:00) Yakutsk</option>
-                                    <option value="Adelaide">(GMT+09:30) Adelaide</option>
-                                    <option value="Darwin">(GMT+09:30) Darwin</option>
-                                    <option value="Australia/Hobart">(GMT+10:00) Australia/Hobart</option>
-                                    <option value="Brisbane">(GMT+10:00) Brisbane</option>
-                                    <option value="Canberra">(GMT+10:00) Canberra</option>
-                                    <option value="Guam">(GMT+10:00) Guam</option>
-                                    <option value="Hobart">(GMT+10:00) Hobart</option>
-                                    <option value="Melbourne">(GMT+10:00) Melbourne</option>
-                                    <option value="Port Moresby">(GMT+10:00) Port Moresby</option>
-                                    <option value="Sydney">(GMT+10:00) Sydney</option>
-                                    <option value="Vladivostok">(GMT+10:00) Vladivostok</option>
-                                    <option value="Magadan">(GMT+11:00) Magadan</option>
-                                    <option value="New Caledonia">(GMT+11:00) New Caledonia</option>
-                                    <option value="Solomon Is.">(GMT+11:00) Solomon Is.</option>
-                                    <option value="Auckland">(GMT+12:00) Auckland</option>
-                                    <option value="Fiji">(GMT+12:00) Fiji</option>
-                                    <option value="Kamchatka">(GMT+12:00) Kamchatka</option>
-                                    <option value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
-                                    <option value="Wellington">(GMT+12:00) Wellington</option>
-                                    <option value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option>
                                 </select>
                                 <p>您所在地的时区。</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 content picture" style="display:none">
+                <div class="col-xs-12 col-sm-9 content picture">
                     <div class="row">
                         <div class="title">个人头像</div>
                         <div class="pic col-xs-12 col-sm-3"><img src="../images/user/mario.JPG" alt=""></div>
@@ -551,7 +362,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 content verify" style="display:none">
+                <div class="col-xs-12 col-sm-9 content verify">
                     <div class="row">
                         <div class="text">
                             <h4 class="col-xs-12">您已完成「芝麻信用」实名验证</h4>
@@ -585,12 +396,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 content estimate" style="display:none">
-                    <div class="row">
+                <div class="col-xs-12 col-sm-9 content estimate">
+                    <div class="row tabs">
                         <span class="active">对您的评价</span>
                         <span>您写的评价</span>
                     </div>
-                    <div class="row">
+                    <div class="row active">
                         <div class="title">过往评价</div>
                         <p class="tips">预订的住宿结束后才能在爱彼迎网站上撰写评价。您收到的评价将出现在这里以及您公开的个人资料中。</p>
                         <div class="text">
@@ -600,7 +411,7 @@
                                     <p>Mario</p>
                                 </div>
                                 <div class="box">
-                                    <p class="content">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
                                     <p class="reply"><a href="">撰写公开回复</a></p>
                                     <p class="time">2018年10月</p>
                                 </div>
@@ -613,14 +424,14 @@
                                     <p>Mario_34</p>
                                 </div>
                                 <div class="box">
-                                    <p class="content">超爱干净,赞｡</p>
+                                    <p class="contents">超爱干净,赞｡</p>
                                     <p class="reply"><a href="">撰写公开回复</a></p>
                                     <p class="time">2018年10月</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row active">
                         <div class="title">撰写评论</div>
                         <p class="tips">目前没有写评价的需要。该是预订另一个旅程的时候了！</p>
                     </div>
@@ -635,7 +446,7 @@
                                 </div>
                                 <div class="box">
                                     <h4>对Mario的评价</h4>
-                                    <p class="content">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
                                     <p class="time">2018年10月</p>
                                 </div>
                             </div>
@@ -648,7 +459,77 @@
                                 </div>
                                 <div class="box">
                                     <h4>对Mario_34的评价</h4>
-                                    <p class="content">超级爱干净！</p>
+                                    <p class="contents">超级爱干净！</p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 content recommend">
+                    <div class="row tabs">
+                        <span class="active">关于您的推荐语</span>
+                        <span>撰写您的推荐语</span>
+                    </div>
+                    <div class="row active">
+                        <div class="title">等待批准</div>
+                        <p class="tips">您接受的推荐语将会出现在您的公开个人资料中。您忽略的推荐语将不会出现在您的个人资料中，且对方不会收到通知。</p>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario</p>
+                                </div>
+                                <div class="box">
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="reply"><a href="">撰写公开回复</a></p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario_34</p>
+                                </div>
+                                <div class="box">
+                                    <p class="contents">超爱干净,赞｡</p>
+                                    <p class="reply"><a href="">撰写公开回复</a></p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row active">
+                        <div class="title">您过往的推荐语</div>
+                        <p class="tips">请只为您非常熟悉的人撰写推荐语，把他们推荐到爱彼迎社区。如果您忽略他人让您写推荐语的请求，他们不会收到忽略通知。</p>
+                    </div>
+                    <div class="row">
+                        <div class="title">您过往所写的推荐语</div>
+                        <p class="tips"></p>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario</p>
+                                </div>
+                                <div class="box">
+                                    <h4>对Mario的推荐</h4>
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario_34</p>
+                                </div>
+                                <div class="box">
+                                    <h4>对Mario_34的推荐</h4>
+                                    <p class="contents">超级爱干净！</p>
                                     <p class="time">2018年10月</p>
                                 </div>
                             </div>
@@ -880,6 +761,7 @@
     <script src=" ../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../js/public.js"></script>
+    <script src="../js/user_edit.js"></script>
 </body>
 
 </html>
