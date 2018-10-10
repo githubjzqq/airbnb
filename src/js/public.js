@@ -30,9 +30,13 @@ $(function() {
                         $('.mod').css('display', 'none');
                         $('.modal-backdrop').remove();
                         $('body').attr({ 'style': '', 'class': '' });
+                        $('.header .header-nav>li').on('click', function(e) { //取消事件冒泡
+                            e.stopPropagation();
+                        });
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
+                    return false;
                 }
             }
         })
@@ -66,9 +70,13 @@ $(function() {
                         $('.mod').css('display', 'none');
                         $('.modal-backdrop').remove();
                         $('body').attr({ 'style': '', 'class': '' });
+                        $('.header .header-nav>li').on('click', function(e) { //取消事件冒泡
+                            e.stopPropagation();
+                        });
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
+                    return false;
                 }
             }
         })
@@ -151,6 +159,13 @@ $(function() {
         $('.header .header-nav>li.sub').not($('.header .header-nav li.sub').eq(index)).removeClass('active');
         $('.header .header-nav>li.sub').eq(index).toggleClass('active');
     });
+    //点击其他位置子菜单消失；
+    $('body').on('click', function() {
+        $('.header .header-nav>li.sub').removeClass('active');
+    })
+    $('.header .header-nav>li:not(.login)').on('click', function(e) {
+        e.stopPropagation();
+    })
 
     //点击选择货币；
     $('.header .header-nav>li.sub.currency .list').on('click', function(e) {
@@ -336,7 +351,7 @@ $(function() {
                 //登陆操作；
                 if (regist.emailAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    emailLogin(email, pwd, e);
+                    if (emailLogin(email, pwd, e)) location.reload();
                 }
             }
         } else {
@@ -395,7 +410,7 @@ $(function() {
                 //登陆操作；
                 if (regist.phoneAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    phoneLogin(phoneNmb, pwd, e);
+                    if (phoneLogin(phoneNmb, pwd, e)) location.reload();
                 }
             }
         } else {

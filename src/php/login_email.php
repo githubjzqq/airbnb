@@ -11,8 +11,8 @@
     $sql2="SELECT * FROM `aby_user` WHERE (`useremail`='$email' AND `user_password`='$pwd')";
     $data1 = mysql_query($sql1);
     $data2 = mysql_query($sql2);
-    $result1=mysql_fetch_array($data1);
-    $result2=mysql_fetch_array($data2);
+    $result1=mysql_fetch_assoc($data1);
+    $result2=mysql_fetch_assoc($data2);
     
     if($result1){
         if($result2){

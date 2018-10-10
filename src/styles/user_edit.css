@@ -196,6 +196,8 @@
   height: 150px;
   padding: 10px;
   resize: none;
+  background-color: #ffd;
+  color: #484848;
 }
 .main .container .content.base > .row .row {
   margin-right: 0;

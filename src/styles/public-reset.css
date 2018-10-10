@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 em {
     font-style: normal
 }

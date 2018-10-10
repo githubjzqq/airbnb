@@ -9,7 +9,7 @@
 
     $sql1="SELECT * FROM `aby_user` WHERE (`useremail`='$email')";
     $data = mysql_query($sql1);
-    $result1=mysql_fetch_array($data);
+    $result1=mysql_fetch_assoc($data);
     if($result1){
         $output=json_encode($result1);
         print_r($output);

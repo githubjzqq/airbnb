@@ -387,7 +387,7 @@ html {
 }
 .header .header-nav li.sub.user-msg {
   width: 280px;
-  height: 357px;
+  height: auto;
   right: 0;
 }
 .header .header-nav li.sub.user-msg ul li {

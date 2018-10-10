@@ -128,11 +128,10 @@
             </li>
             <li class="sub user-msg" style="display: none;">
                 <ul>
-                    <li><a href="">编辑个人资料</a></li>
+                    <li><a href="./user_edit.html">编辑个人资料</a></li>
                     <li><a href="">旅行基金</a></li>
                     <li><a href="">账号设置</a></li>
                     <li><a href="">我的指南</a></li>
-                    <li><a href="">礼品卡</a></li>
                     <li><a href="">商务爱彼迎</a></li>
                     <li class="exit"><a href="">退出</a></li>
                 </ul>
@@ -184,21 +183,12 @@
                 <div class="col-xs-12 col-sm-9 content base active">
                     <div class="row">
                         <div class="title">主要信息</div>
-                        <div class="msg_list firstName row">
+                        <div class="msg_list name row">
                             <div class="label col-xs-3">
-                                <label for="lastName">名字</label>
+                                <label for="name">名字</label>
                             </div>
                             <div class="input col-xs-9">
-                                <input type="text" id="lastName">
-                            </div>
-                        </div>
-                        <div class="msg_list lastName">
-                            <div class="label col-xs-3">
-                                <label for="firstName">姓氏</label>
-                            </div>
-                            <div class="input col-xs-9">
-                                <input type="text" id="firstName">
-                                <p>您的公开个人资料将仅显示您的名字。申请预订时，房东会看到您的名字和姓氏。</p>
+                                <input type="text" id="name">
                             </div>
                         </div>
                         <div class="msg_list sex">
@@ -207,10 +197,10 @@
                             </div>
                             <div class="input col-xs-9">
                                 <select class="form-control" id="sex">
-                                    <option>男</option>
-                                    <option>女</option>
-                                    <option>其他</option>
-                                    <option selected="selected">性别</option>
+                                    <option value="1">男</option>
+                                    <option value="0">女</option>
+                                    <option value="2">其他</option>
+                                    <option value="3" selected='selected'>性别</option>
                                 </select>
                                 <p>此数据仅用于分析，我们不会透露给其它用户。</p>
                             </div>
@@ -231,10 +221,10 @@
                         </div>
                         <div class="msg_list email">
                             <div class="label col-xs-3">
-                                <label for="emali">电子邮件地址</label>
+                                <label for="email">电子邮件地址</label>
                             </div>
                             <div class="input col-xs-9">
-                                <input type="text" id="emali">
+                                <input type="text" id="email">
                                 <p>我们不会向其他爱彼迎用户透露您的个人邮箱地址。</p>
                             </div>
                         </div>
@@ -285,10 +275,10 @@
                         </div>
                         <div class="msg_list intro">
                             <div class="label col-xs-3">
-                                <label for="address">自我介绍</label>
+                                <label for="intro">自我介绍</label>
                             </div>
                             <div class="input col-xs-9">
-                                <textarea type="text" id="address"></textarea>
+                                <textarea type="text" id="intro"></textarea>
                                 <p>爱彼迎是建立在相互关系上的，请帮助其他人了解您。</p>
                                 <p>告诉他们您喜欢什么，您离开了哪几样东西就不能活？分享您最喜爱的旅游目的地丶书籍丶电影丶电视节目丶音乐以及食物。</p>
                                 <p>告诉他们您会是个什么样的房东或房客，您旅游的风格是怎样的？您作为爱彼迎房东的风格又是怎样呢？</p>
@@ -351,6 +341,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="save">保存</div>
                 </div>
                 <div class="col-xs-12 col-sm-9 content picture">
                     <div class="row">
@@ -725,7 +716,6 @@
                         <li><b>发现</b></li>
                         <li><a href="">信用与安区</a></li>
                         <li><a href="">基金旅行</a></li>
-                        <li><a href="">礼品卡</a></li>
                         <li><a href="">爱彼迎公民</a></li>
                         <li><a href="">商务差旅</a></li>
                         <li><a href="">旅游指南</a></li>

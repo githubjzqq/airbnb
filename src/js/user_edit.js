@@ -21,7 +21,6 @@ $(function() {
         }
     }
 
-
     //点击左侧tab切换；
     $('.main .tabs_content').on('click', '.tabs a', function(e) {
         //使用事件委托；
@@ -46,6 +45,60 @@ $(function() {
         $(e.target).siblings().removeClass('active');
         $(e.target).addClass('active');
     }
-    $('.main>.container>.row>.content:not(.tabs_content).estimate .row.tabs').on('click', 'span', tab)
-    $('.main>.container>.row>.content:not(.tabs_content).recommend .row.tabs').on('click', 'span', tab)
-});
+    $('.main>.container>.row>.content:not(.tabs_content).estimate .row.tabs').on('click', 'span', tab);
+    $('.main>.container>.row>.content:not(.tabs_content).recommend .row.tabs').on('click', 'span', tab);
+
+    //同步用户信息；
+    function downloadMsg() {
+        var user = sessionStorage;
+        console.log(user);
+        if (user.username) {
+            $('#name').val(user.username).css('background-color', '#f1f1f1');
+        };
+        if (user.usersex) {
+            $('#sex').attr('selected', 'selected').css('background-color', '#f1f1f1');
+            $('#sex option').attr({ 'selectde': '' });
+            $('#sex option[value=' + user.usersex + ']').attr('selected', 'selected').css('background-color', '#f1f1f1');
+        };
+        if (user.userbirth) {
+            var birth = JSON.parse(user.userbirth);
+            var y = birth.year;
+            var d = birth.day;
+            var m = birth.mouth;
+            $("#birthmouth,#birthyear,#birthday").attr('selected', 'selected').css('background-color', '#f1f1f1');
+            $('.main .container .row .base .birthday option').attr({ 'selectde': '' });
+            $('#birthmouth option[value=' + m + ']').attr('selected', 'selected');
+            $('#birthyear option[value=' + y + ']').attr('selected', 'selected');
+            $('#birthday option[value=' + d + ']').attr('selected', 'selected');
+        };
+        if (user.useremail) {
+            $('#email').val(user.useremail).css('background-color', '#f1f1f1');
+        };
+        if (user.usertel) {
+            $('#phoneNmb').val(user.usertel).css('background-color', '#f1f1f1');
+        };
+        if (user.useraddress) {
+            $('#address').val(user.useraddress).css('background-color', '#f1f1f1');
+        };
+        if (user.userintro) {
+            $('#intro').val(user.userintro).css('background-color', '#f1f1f1');
+        };
+        if (user.userschool) {
+            $('#school').val(user.userschool).css('background-color', '#f1f1f1');
+        };
+        if (user.userwork) {
+            $('#work').val(user.userwork).css('background-color', '#f1f1f1');
+        };
+    }
+    downloadMsg();
+
+    //提交编辑用户信息
+    function editMsg() {
+        var msg = {};
+        msg.name = $('#name').val();
+        msg.sex = $('#sex').val();
+        msg.email = $('#email').val();
+        console.log(msg);
+    };
+    editMsg();
+})
