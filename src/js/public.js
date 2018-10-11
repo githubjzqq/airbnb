@@ -345,7 +345,10 @@ $(function() {
                 //登陆操作；
                 if (regist.emailAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    if (emailLogin(email, pwd, e)) location.reload();
+                    emailLogin(email, pwd, e);
+                    setTimeout(function() {
+                        location.reload();
+                    }, 500)
                 }
             }
         } else {
@@ -404,9 +407,10 @@ $(function() {
                 //登陆操作；
                 if (regist.phoneAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    if (phoneLogin(phoneNmb, pwd, e)) {
+                    phoneLogin(phoneNmb, pwd, e);
+                    setTimeout(function() {
                         location.reload();
-                    }
+                    }, 500);
                 }
             }
         } else {
