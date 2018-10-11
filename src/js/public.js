@@ -1,4 +1,10 @@
 $(function() {
+    // $('.contant').load('../html/index.html')
+
+
+    var login = 0; //储存登陆信息；
+    var regist = {}; //储存注册信息；
+    regist.url = '../php/regist.php';
     var regist = {}; //储存注册&登陆信息；
 
     //登陆成功后的DOM操作；
