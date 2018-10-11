@@ -1,1 +1,165 @@
 @charset "utf-8";
+
+/*标题头部*/
+
+.header {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    height: 100px;
+}
+
+
+/*顶部头像*/
+
+.author {
+    max-width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+
+.author .photo {
+    margin: 0 auto;
+    font-size: 14px;
+    height: 50px;
+    width: 200px;
+}
+
+.author .photo .wenzi {
+    margin: 0 auto;
+    font-size: 14px;
+    height: 50px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+
+/*顶部右边关注*/
+
+.container-fluid .word>ul>li>a {
+    height: 35px;
+    width: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(5, 168, 197);
+    border: 1px solid rgb(5, 168, 197);
+    line-height: 4px;
+    border-radius: 5%;
+    margin-top: 40px;
+}
+
+
+/*图片部分*/
+
+.subject {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.subject img {
+    max-width: 652px;
+}
+
+.subject2 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject2 img {
+    max-width: 652px;
+}
+
+.subject3 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject3 img {
+    max-width: 652px;
+}
+
+.subject4 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject4 img {
+    max-width: 652px;
+}
+
+.subject5 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject5 img {
+    max-width: 652px;
+}
+
+.subject6 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject6 img {
+    max-width: 652px;
+}
+
+
+/*体验感受标题*/
+
+.tiyan {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.row {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.tiyan .tiyan2 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row .title {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 652px;
+}
+
+
+/*体验感受内容*/
+
+.ganshou {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.ganshou>span {
+    line-height: 1.6em;
+    font-size: 18px;
+    color: rgb(80, 77, 77);
+}
+
+
+/*点赞情况*/
