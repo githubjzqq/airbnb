@@ -1,9 +1,30 @@
 $(function() {
     var regist = {}; //储存注册&登陆信息；
 
+    //登陆成功后的DOM操作；
+    function successDom() {
+        //隐藏登陆注册内容；
+        $('.header .header-nav li.sub').removeClass('active');
+        $('.header .header-nav li.login .user-pic').css('display:block');
+        $('.header .header-nav li.login a').css('display:none');
+
+        //显示登陆后的用户基本信息；
+        $('.header .header-nav li.sub.user-msg').attr('style', ''); //登陆后显示用户信息；
+        $('.header .header-nav li.login .userpic').css('display', 'block'); //登陆后显示用户头像；
+        $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
+        $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
+        $('.mod').css('display', 'none');
+        $('.modal-backdrop').remove();
+        $('body').attr({ 'style': '', 'class': '' });
+        $('.header .header-nav>li').on('click', function(e) { //取消事件冒泡
+            e.stopPropagation();
+        });
+    }
+
     //登陆功能函数；
     function phoneLogin(phonenmb, pwd, e) {
         var data = 'phoneNmb=' + phonenmb + '&pwd=' + pwd;
+        var success = false; //登陆是否成功；
         regist.url = '../php/login.php?_dc=' + (new Date()).getTime(); //添加时间戳，解决缓存问题；
         $.ajax({
             url: regist.url,
@@ -15,31 +36,19 @@ $(function() {
                     if (user[1] == 'pwd_error') {
                         $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
                     } else {
-                        $('.header .header-nav li.sub').removeClass('active');
-                        $('.header .header-nav li.login .user-pic').css('display:block');
-                        $('.header .header-nav li.login a').css('display:none');
+                        //储存用户信息到本地；
                         var usermsg = sessionStorage;
                         usermsg.setItem('login', true);
                         for (var i in user) {
                             usermsg.setItem(i, user[i]);
-                        }
-                        $('.header .header-nav li.sub.user-msg').attr('style', ''); //登陆后显示用户信息；
-                        $('.header .header-nav li.login .userpic').css('display', 'block'); //登陆后显示用户头像；
-                        $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
-                        $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
-                        $('.mod').css('display', 'none');
-                        $('.modal-backdrop').remove();
-                        $('body').attr({ 'style': '', 'class': '' });
-                        $('.header .header-nav>li').on('click', function(e) { //取消事件冒泡
-                            e.stopPropagation();
-                        });
+                        };
+                        successDom();
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
-                    return false;
                 }
             }
-        })
+        });
     }
 
     function emailLogin(email, pwd, e) {
@@ -55,28 +64,17 @@ $(function() {
                     if (user[1] == 'pwd_error') {
                         $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
                     } else {
-                        $('.header .header-nav li.sub').removeClass('active');
-                        $('.header .header-nav li.login .user-pic').css('display:block');
-                        $('.header .header-nav li.login a').css('display:none');
+
+                        //储存用户信息；
                         var usermsg = sessionStorage;
                         usermsg.setItem('login', true);
                         for (var i in user) {
                             usermsg.setItem(i, user[i]);
                         }
-                        $('.header .header-nav li.sub.user-msg').attr('style', ''); //登陆后显示用户信息；
-                        $('.header .header-nav li.login .userpic').css('display', 'block'); //登陆后显示用户头像；
-                        $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
-                        $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
-                        $('.mod').css('display', 'none');
-                        $('.modal-backdrop').remove();
-                        $('body').attr({ 'style': '', 'class': '' });
-                        $('.header .header-nav>li').on('click', function(e) { //取消事件冒泡
-                            e.stopPropagation();
-                        });
+                        successDom();
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
-                    return false;
                 }
             }
         })
@@ -86,16 +84,12 @@ $(function() {
     function adjust() {
         //判断登陆信息是否储存；
         if (sessionStorage.userid) {
-            // 若存在登陆信息，则登陆（显示及登陆后的用户信息）；
-            var pwd = sessionStorage.user_password;
-            var phoneNmb = sessionStorage.usertel;
-            var email = sessionStorage.useremail;
-            //判断登陆方式；
-            if (phoneNmb) {
-                phoneLogin(phoneNmb, pwd);
-            } else {
-                emailLogin(email, pwd);
-            }
+            // // 若存在登陆信息，则登陆（显示及登陆后的用户信息）；
+            // var pwd = sessionStorage.user_password;
+            // var phoneNmb = sessionStorage.usertel;
+            // var email = sessionStorage.useremail;
+            // //判断登陆方式；
+            successDom();
         } else {
             console.log('未登录，请登录！');
         }
@@ -410,7 +404,9 @@ $(function() {
                 //登陆操作；
                 if (regist.phoneAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    if (phoneLogin(phoneNmb, pwd, e)) location.reload();
+                    if (phoneLogin(phoneNmb, pwd, e)) {
+                        location.reload();
+                    }
                 }
             }
         } else {
@@ -418,4 +414,4 @@ $(function() {
         }
     }
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', phone);
-})
+});

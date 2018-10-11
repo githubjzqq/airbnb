@@ -224,6 +224,45 @@
 .main .container .content.base .save:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
+@media (max-width: 768px) {
+  .main .container .content.base .save {
+    margin: 0 auto 15px;
+  }
+}
+.main .container .content.base #save_mod {
+  padding: 30px;
+  position: relative;
+}
+.main .container .content.base #save_mod .waiting {
+  display: none;
+  line-height: 20px;
+  background-color: yellowgreen;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.main .container .content.base .modal-dialog.box {
+  margin-top: 200px;
+}
+.main .container .content.base .modal-dialog.box .modal-title {
+  font-weight: normal;
+}
+.main .container .content.base .modal-dialog.box .modal-body p {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+.main .container .content.base .modal-dialog.box .modal-footer .btn-default {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+.main .container .content.base .modal-dialog.box .modal-footer .btn-primary {
+  background-color: #008489;
+}
 .main .container .content.picture > .row .title {
   margin-bottom: 24px;
 }

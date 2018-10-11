@@ -252,6 +252,47 @@
                 &:hover{
                     box-shadow: 0 1px 5px rgba(0,0,0,.4);
                 }
+                @media(max-width:768px){
+                    margin: 0 auto 15px;
+                }
+            }
+            #save_mod{
+                padding: 30px;
+                position: relative;
+                .waiting{
+                    display: none;
+                    line-height: 20px;
+                    background-color: yellowgreen;
+                    position: absolute;
+                    top: 40px;
+                    left: 50%;
+                    transform: translate(-50%,0);
+                    color: #fff;
+                    padding: 4px 10px;
+                    border-radius: 20px;
+                }
+            }
+            .modal-dialog.box{
+                margin-top:200px;
+                .modal-title{
+                    font-weight: normal;
+                }
+                .modal-body{
+                    p{
+                        font-size: 18px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                .modal-footer{
+                    .btn-default{
+                        background-color: #ff5a5f;
+                        color: #fff;
+                    }
+                    .btn-primary{
+                        background-color: rgb(0, 132, 137);
+                    }
+                }
             }
         }
         .content.picture{

@@ -52,15 +52,15 @@ $(function() {
     function downloadMsg() {
         var user = sessionStorage;
         console.log(user);
-        if (user.username) {
+        if (user.username != 'null') {
             $('#name').val(user.username).css('background-color', '#f1f1f1');
         };
-        if (user.usersex) {
+        if (user.usersex != 'null') {
             $('#sex').attr('selected', 'selected').css('background-color', '#f1f1f1');
             $('#sex option').attr({ 'selectde': '' });
             $('#sex option[value=' + user.usersex + ']').attr('selected', 'selected').css('background-color', '#f1f1f1');
         };
-        if (user.userbirth) {
+        if (user.userbirth != 'null') {
             var birth = JSON.parse(user.userbirth);
             var y = birth.year;
             var d = birth.day;
@@ -71,34 +71,82 @@ $(function() {
             $('#birthyear option[value=' + y + ']').attr('selected', 'selected');
             $('#birthday option[value=' + d + ']').attr('selected', 'selected');
         };
-        if (user.useremail) {
+        if (user.useremail != 'null') {
             $('#email').val(user.useremail).css('background-color', '#f1f1f1');
         };
-        if (user.usertel) {
+        if (user.usertel != 'null') {
             $('#phoneNmb').val(user.usertel).css('background-color', '#f1f1f1');
         };
-        if (user.useraddress) {
+        if (user.useraddress != 'null') {
             $('#address').val(user.useraddress).css('background-color', '#f1f1f1');
         };
-        if (user.userintro) {
+        if (user.userintro != 'null') {
             $('#intro').val(user.userintro).css('background-color', '#f1f1f1');
         };
-        if (user.userschool) {
+        if (user.userschool != 'null') {
             $('#school').val(user.userschool).css('background-color', '#f1f1f1');
         };
-        if (user.userwork) {
+        if (user.userwork != 'null') {
             $('#work').val(user.userwork).css('background-color', '#f1f1f1');
         };
     }
     downloadMsg();
 
-    //提交编辑用户信息
-    function editMsg() {
+    //获取用户编辑信息
+    function earnMsg() {
         var msg = {};
         msg.name = $('#name').val();
         msg.sex = $('#sex').val();
         msg.email = $('#email').val();
-        console.log(msg);
+        msg.phoneNmb = $('#phoneNmb').val();
+        msg.address = $('#address').val();
+        msg.intro = $('#intro').val();
+        msg.school = $('#school').val();
+        msg.work = $('#work').val();
+        msg.id = sessionStorage.userid;
+        msg.birth = birth();
+
+        function birth() {
+            var m = $('#birthmouth').val();
+            var y = $('#birthyear').val();
+            var d = $('#birthday').val();
+
+            var birth = {};
+            birth.mouth = m;
+            birth.day = d;
+            birth.year = y;
+
+            return JSON.stringify(birth);
+        }
+        return msg;
     };
-    editMsg();
-})
+    //点击保存按钮提交更改；
+    $('#save').on('click', function() {
+
+        var msg = earnMsg();
+        var url = '../php/user_edit.php';
+        var data = '';
+        for (var i in msg) {
+            data = data.concat(i + '=' + msg[i] + '&')
+        };
+        data = data.slice(0, -1);
+        $.ajax({
+            url: url,
+            type: 'post',
+            data: data,
+            success: function(data) {
+                var newMsg = JSON.parse(data);
+                var usermsg = sessionStorage;
+                //储存用户信息；
+                for (var i in newMsg) {
+                    usermsg.setItem(i, newMsg[i]);
+                }
+            }
+        });
+        $('.waiting').css({ 'display': 'block' })
+        setTimeout(function() {
+            $('.waiting').css({ 'display': '' })
+            location.reload();
+        }, 2000)
+    });
+});
