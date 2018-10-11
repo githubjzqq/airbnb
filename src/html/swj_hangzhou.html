@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入bootstrap的和自加的css文件 -->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/swj_common.css">
+    <link rel="stylesheet" href="../styles/swj_hangzhou.css">
+    <!-- <link rel="stylesheet" href="../js/hangzhou.js"> -->
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<style>
+    .viewscreen {
+        width: 1181px;
+        overflow: hidden;
+        margin: 50px auto;
+        position: relative;
+    }
+    
+    .lunbolike {
+        list-style: none;
+        width: 600px;
+        /* padding: 10px; */
+        /* position: absolute; */
+        /* margin-left: -210px; */
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .lunbolike>li {
+        width: 284px;
+        height: 72px;
+        border: 1px solid #ccc;
+        float: left;
+        margin-right: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .lunbolike>li img {
+        width: 96px;
+        height: 72px;
+        overflow: hidden;
+    }
+    
+    .fangxiang span:nth-of-type(1) {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+    }
+    
+    .fangxiang span:nth-of-type(2) {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- 100% -->
+    <div style="width: 100%;height: auto;">
+        <!-- 有宽度 -->
+        <div style="width:max-width;margin: 0 auto;" class="have">
+            <!-- 模拟输入框 -->
+            <div style="height: 200px;"></div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for..." id="search_inp">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"id="go">搜索</button>
+                      </span>
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- 头固定 -->
+        <div style="width:auto;line-height:64px;border: 1px solid rgba(226, 223, 223, 0.877);background-color: #fff;margin: 0 auto;" class="navbar navbar-fixed-top">
+
+
+            <div class="btn-group" role="group" aria-label="..." id="buts">
+                <button type="button" class="btn btn-default">日期</button>
+                <button type="button" class="btn btn-default">一位房客</button>
+
+            </div>
+        </div>
+        <!-- 探索标题 -->
+        <div style="margin:0 auto;">
+            <div class="housecity" style="margin-left:85px;">探索杭州</div>
+            <div style="margin-top:10px;" class="viewscreen">
+                <div class="fangxiang">
+                    <ul style="margin-left:0px;" class="lunbolike">
+                        <li>
+                            <img src="https://z1.muscache.cn/im/pictures/1de3cfee-c967-418d-9feb-f60bef526686.jpg?aki_policy=large" alt="餐饮"> 房源
+                        </li>
+                        <li>
+                            <img src="https://z1.muscache.cn/im/pictures/d582a382-5613-44da-92da-9ce6f6c1a62b.jpg?aki_policy=large" alt="餐饮"> 体验
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 体验 -->
+        <div class="totry" style="margin-left:80px;">
+            <div class="swj_title">热门体验
+                <h4 style="margin-top:20px">在下趟旅程中，不妨预订由本地达人组织的体验活动&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="display:none;font-weight: 600;font-size: 18px;">></span></h4>
+            </div>
+            <div style="display:flex;flex-wrap: wrap;width: 100%;" class="visit">
+                <div class="hangzhou">
+
+                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span><img src="https://z1.muscache.cn/im/pictures/c33630a8-7d4a-484a-b538-479b53cb93c5.jpg?aki_policy=large" alt=""></div>
+                    <small>摄影</small>
+                    <br>
+                    <span>摄影师带你游杭州，用镜头记录你的一天</span>
+                    <p>每人￥360</p>
+                    <a>4.79 
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            19</a>
+                </div>
+                <div class="hangzhou">
+
+                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span>
+                        <img src="https://z1.muscache.cn/im/pictures/cde1003f-5df7-4406-aa39-92742b06b4c6.jpg?aki_policy=large" alt=""></div>
+                    <small>大自然</small>
+                    <br>
+                    <span>杭州西湖闲茶</span>
+                    <p>每人￥236</p>
+                    <a>4.87 
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            39</a>
+                </div>
+                <div class="hangzhou">
+
+                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
+                        <img src="https://z1.muscache.cn/im/pictures/dc454bbf-4e74-4c77-9d83-ea9dbe120aa1.jpg?aki_policy=large" alt=""></div>
+                    <small>逛酒吧</small>
+                    <br>
+                    <span>Uncover Secret Laneway Bars</span>
+                    <p>每人￥300</p>
+                    <a>4.79 
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            19</a>
+                </div>
+
+                <div class="hangzhou">
+
+                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
+                        <img src="https://z1.muscache.cn/im/pictures/f23ea526-ba1a-4b95-9f01-165c00f3da0e.jpg?aki_policy=large" alt=""></div>
+                    <small>一日游</small>
+                    <br>
+                    <span>来西湖龙井原产地体验一天茶农生活</span>
+                    <p>每人￥158</p>
+                    <a>4.79 
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            19</a>
+                </div>
+                <div class="hangzhou" id="none">
+
+                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
+                        <img src="https://z1.muscache.cn/im/pictures/c371bc3d-dee1-4b64-84c5-34cab5cd2110.jpg?aki_policy=large" alt=""></div>
+                    <small>工作坊</small>
+                    <br>
+                    <span>自在坞手工文艺复兴（玻璃马赛克）</span>
+                    <p>每人￥198</p>
+                    <a>4.79 
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        19</a>
+                </div>
+                <div class="hangzhou" id="none">
+
+                    <div style="position:relative;"><span id="swj_heart" class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span>
+                        <img src="https://z1.muscache.cn/im/pictures/d1017c3a-d176-4d6c-a136-6d6a22912b27.jpg?aki_policy=large" alt=""></div>
+                    <small>品茶</small>
+                    <br>
+                    <span>在西山国家森林公园来一次西湖龙井茶采摘体验</span>
+                    <p>每人￥149</p>
+                    <a>4.79 
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            19</a>
+                </div>
+                <div class="hangzhou" id="none">
+
+                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
+                        <img src="https://z1.muscache.cn/im/pictures/69ac8063-2bf4-4c1b-9b62-6c2cb5d22db6.jpg?aki_policy=large" alt=""></div>
+                    <small>摄影</small>
+                    <br>
+                    <span>摄影师带你游杭州，用镜头记录你的一天</span>
+                    <p>每人￥360</p>
+                    <a>4.79 
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            19</a>
+                </div>
+                <div class="hangzhou" id="none">
+
+                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span>
+                        <img src="https://z1.muscache.cn/im/pictures/c33630a8-7d4a-484a-b538-479b53cb93c5.jpg?aki_policy=large" alt=""></div>
+                    <small>摄影</small>
+                    <br>
+                    <span>摄影师带你游杭州，用镜头记录你的一天</span>
+                    <p>每人￥360</p>
+                    <a>4.79 
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        19</a>
+                </div>
+                <div class="xianshi" style="
+                    width:290px;
+                    cursor: pointer;
+                    line-height:48px;
+                    border-radius: 5px;
+                    margin-left:10px;
+                    font-size:18px;
+                    color:rgb(0, 132, 137);
+                    font-weight: 600;
+                    text-align: left;">
+                    <span> 显示全部(20) <span class="glyphicon glyphicon-chevron-right"id="jiantou"></span></span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 房源 -->
+        <div class="totry">
+            <div class="swj_title" style="margin-left:80px;">住宿<span style="display:none;font-weight: 200;" class="glyphicon glyphicon-chevron-right"></span></div>
+            <!-- 动态获取房源数据 -->
+            <ul class="tabs_house">
+
+            </ul>
+            <div class="xianshi" style="
+                    width:290px;
+                    cursor: pointer;
+                    line-height:48px;
+                    border-radius: 5px;
+                    margin-left:80px;
+                    font-size:18px;
+                    color:rgb(0, 132, 137);
+                    font-weight: 600;
+                    text-align: left;">
+                <span> 显示全部(2000+) <span class="glyphicon glyphicon-chevron-right"id="jiantou"></span></span>
+            </div>
+        </div>
+        <!-- 成为房东 -->
+        <div class="totry">
+            <div class="swj_title" style="margin-left:80px;">选择超赞房东
+                <small><h4>这些经验丰富的房东将为您提供宾至如归的体验&nbsp;&nbsp;&nbsp;&nbsp;<span style="display:none;font-weight: 200;" class="glyphicon glyphicon-chevron-right"></span></h4></small>
+            </div>
+            <!-- 动态获取房源数据 -->
+            <ul class="tabs_house">
+
+            </ul>
+            <div class="xianshi" style="
+                        width:290px;
+                        cursor: pointer;
+                        line-height:48px;
+                        border-radius: 5px;
+                        margin-left:80px;
+                        font-size:18px;
+                        color:rgb(0, 132, 137);
+                        font-weight: 600;
+                        text-align: left;">
+                <span> 显示全部(2000+) <span class="glyphicon glyphicon-chevron-right"id="jiantou"></span></span>
+            </div>
+        </div>
+        <!-- 右下固定条 -->
+        <div class="ruler"><span class="glyphicon glyphicon-globe"></span>条款，隐私政策，货币及更多</div>
+    </div>
+    </div>
+</body>
+<script src="../../node_modules/jquery/dist/jquery.min.js "></script>
+<script src="../js/echo.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+<script src="../js/hangzhou.js"></script>
+
+<script>
+    echo.init();
+</script>
+
+</html>

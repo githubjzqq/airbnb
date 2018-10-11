@@ -1,6 +1,7 @@
-.btns{
-    background-color: #fff;
-    width: 40px;
+
+.btn-group
+{
+    margin-left: 15px;
 }
 .tu{
     width: 284px;
@@ -23,7 +24,6 @@
 width: 96px;
 height: 68px;
 overflow: hidden;
-
 }
 @media (max-width: 743px) {
     .active {
@@ -64,6 +64,7 @@ overflow: hidden;
         width: 83px;
         height: 60px;
         font-size: 16px;
+       
     }
     .visit{
         width: 370px!important;
@@ -108,7 +109,7 @@ overflow: hidden;
     #jiage{
         display: none!important;
     }
-    }
+}
 .active{
     display: flex;
     width: 1249px;
@@ -139,8 +140,11 @@ overflow: hidden;
          width: 301.25px;
         height: 330.05px; 
         cursor: pointer;
-        
+        &>div{
+            overflow: hidden;
+        } 
     img{
+        transition: all .5s;
         width: 285.25px;
         height: 190.16px;
     }
@@ -156,6 +160,7 @@ overflow: hidden;
 .hangzhou:hover img{
     opacity: 0.6;
     transform: scale(1.1);
+    // overflow: hidden;
 }
 
 

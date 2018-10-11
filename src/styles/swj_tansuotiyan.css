@@ -1,6 +1,5 @@
-.btns {
-  background-color: #fff;
-  width: 40px;
+.btn-group {
+  margin-left: 15px;
 }
 .tu {
   width: 284px;
@@ -119,7 +118,11 @@
   height: 330.05px;
   cursor: pointer;
 }
+.hangzhou > div {
+  overflow: hidden;
+}
 .hangzhou img {
+  transition: all .5s;
   width: 285.25px;
   height: 190.16px;
 }
