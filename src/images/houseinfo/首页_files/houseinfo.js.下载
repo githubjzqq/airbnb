@@ -1,16 +1,4 @@
 $(function() {
-
-
-    // $('.contant').load('../html/index.html')
-
-
-
-
-
-
-
-
-
     var login = 0; //储存登陆信息；
     var regist = {}; //储存注册信息；
     regist.url = '../php/regist.php';
@@ -283,4 +271,240 @@ $(function() {
     }
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', phone);
 
+
+
+
+
+    // 地图点击按钮
+    $('.search_condition_map>span>i').on('click', function() {
+        var _that = this;
+        $(_that).attr("class", "")
+            // console.log(_that.style.marginLeft)
+        if (_that.style.marginLeft == "0px") {
+            $(_that).animate({
+                "marginLeft": "16px"
+            }, 600, function() {
+                $(_that).stop(true, true);
+            }).addClass('glyphicon glyphicon-ok').parent().css({
+                "backgroundColor": "#008489"
+            })
+        } else {
+            $(_that).animate({
+                "marginLeft": "0px"
+            }, 600, function() {
+                $(_that).stop(true, true);
+            }).addClass('glyphicon glyphicon-remove').parent().css({
+                "backgroundColor": "rgb(226, 226, 226)"
+            })
+        }
+
+    })
+
+
+
+
+    // 获取地图高度
+    var mapheight = document.documentElement.clientHeight - 110;
+    $('#map').css({
+        "height": mapheight
+    })
+    $(window).on('resize', function() {
+        mapheight = document.documentElement.clientHeight - 110;
+        $('#map').css({
+            "height": mapheight
+        })
+    })
+
+
+
+
+
+    //添加数据ajax
+    $.get("../php/index.php", function(data) {
+        var arr = JSON.parse(data);
+        // console.log(arr)
+        //一开始将所有图片显示到页面
+        var arr1 = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr1.indexOf(arr[i].houseposition) == -1) {
+                arr1.push(arr[i].houseposition)
+            }
+        }
+        // var countimg;
+        // if (innerWidth > 980) {
+        //     countimg = 6;
+        // } else if (innerWidth > 760) {
+        //     countimg = 4;
+        // } else if (innerWidth < 760) {
+        //     countimg = 2;
+        // }
+
+        console.log(arr)
+
+        function fn() {
+            for (var i = 0, k = 0; i < arr.length; i++) {
+                if (k < 3) {
+                    var tempLi = $("<li class='row'></li>");
+                    $('.house_plus').append(tempLi);
+                    var divimg = $("<div class='leftimg'><i class='glyphicon glyphicon-heart-empty'></i><img src=." + arr[i].houseimg + "></div>");
+                    tempLi.append(divimg);
+                    var divtext = $("<div class='righttext'></div>");
+                    tempLi.append(divtext)
+                    var divtextl = $("<div class='righttextl'></div>");
+                    divtext.append(divtextl);
+
+                    var divtextr = $("<div class='righttextr'></div>");
+                    divtext.append(divtextr)
+                    var plus_p1 = $("<p class='plus_p1'><span>PLUS</span>已验证 ·" + arr[i].housetype + "</p>");
+                    divtextl.append(plus_p1)
+                    var plus_name = $("<p class='plus_name'>" + arr[i].housetext + "</p>");
+                    divtextl.append(plus_name)
+                    var plus_shebei = $("<p class='plus_shebei'>无线网络·厨房·洗发水·吹风机·等多项便利设施</p>");
+                    divtextl.append(plus_shebei);
+                    var plus_position = $("<p class='plus_position'>" + arr[i].houseaddress + "</p>");
+                    divtextl.append(plus_position);
+                    var plus_price = $("<p class='plus_price'>￥ " + arr[i].houseprice + "</p>");
+                    divtextr.append(plus_price)
+                    var plus_meiwan = $("<p class='plus_meiwan'>每晚</p>");
+                    divtextr.append(plus_meiwan)
+                    var plus_starpj = $("<p class='plus_starpj'><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b>68</p>");
+                    divtextr.append(plus_starpj);
+                    var userimg = $("<p class='plus_tx'>" + "<img src=." + arr[i].userheadimg + "> </p>");
+                    divtextr.append(userimg);
+                    k++;
+                } else {
+                    break;
+                }
+
+            }
+        }
+        fn();
+
+        function fn1() {
+            for (var i = 0, k = 0; i < arr.length; i++) {
+                if (k < 10) {
+                    var tempLi = $("<li class='row'></li>");
+                    $('.house_house').append(tempLi);
+                    var divimg = $("<div class='leftimg'><i class='glyphicon glyphicon-heart-empty'></i><img src=." + arr[i].houseimg + "></div>");
+                    tempLi.append(divimg);
+                    var divtext = $("<div class='righttext'></div>");
+                    tempLi.append(divtext)
+                    var divtextl = $("<div class='righttextl'></div>");
+                    divtext.append(divtextl)
+                    var divtextr = $("<div class='righttextr'></div>");
+                    divtext.append(divtextr)
+                    var plus_p1 = $("<p class='plus_p1'>" + arr[i].housetype + "·" + arr[i].housesize + "</p>");
+                    divtextl.append(plus_p1);
+                    var plus_name = $("<p class='plus_name'>" + arr[i].housetext + "</p>");
+                    divtextl.append(plus_name)
+                    var plus_shebei = $("<p class='plus_shebei'>无线网络·厨房·洗发水·吹风机·等多项便利设施</p>");
+                    divtextl.append(plus_shebei);
+                    var plus_position = $("<p class='plus_position'>" + arr[i].houseaddress + "</p>");
+                    divtextl.append(plus_position);
+                    var plus_price = $("<p class='plus_price'>￥ " + arr[i].houseprice + "</p>");
+                    divtextr.append(plus_price)
+                    var plus_meiwan = $("<p class='plus_meiwan'>每晚</p>");
+                    divtextr.append(plus_meiwan)
+                    var plus_starpj = $("<p class='plus_starpj'><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b>68</p>");
+                    divtextr.append(plus_starpj);
+                    var plus_free = $("<p class='plus_free'>免费取消</p>");
+                    divtextr.append(plus_free)
+                    var userimg = $("<p class='plus_tx'>" + "<img src=." + arr[i].userheadimg + "> </p>");
+                    divtextr.append(userimg);
+                    k++;
+                } else {
+                    break;
+                }
+
+            }
+        }
+        fn1();
+
+
+
+
+
+        // $('.tabs_title>li>a').on('click', function(ev) {
+
+        //         ev.stopPropagation;
+        //         $(ev.target).addClass('active1').parent().siblings().children('a').removeClass('active1');
+        //         console.log($(ev.target).text());
+        //         $('.tabs_house').empty();
+        //         for (var i = 0, k = 0; i < arr.length; i++) {
+        //             if ($(ev.target).text() == arr[i].housecity) {
+        //                 if (k < countimg) {
+        //                     var tempLi = $("<li class='col-lg-4 col-md-4 col-sm-6'><img src=" + arr[i].houseimg + "></li>");
+        //                     $('.tabs_house').append(tempLi);
+        //                     var housePrice = $("<p class='house_price'>每晚￥" + arr[i].houseprice + '<i class="glyphicon glyphicon-flash"></i>' + '<span class="tabs_pj"><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b>' + arr[i].count + "条评价</span>" + "</p>");
+        //                     tempLi.append(housePrice)
+        //                     var houseName = $("<p class='house_name'>" + arr[i].housetext + "</p>");
+        //                     tempLi.append(houseName)
+        //                     var houseSize = $("<p class='house_size'>" + arr[i].housetype + "·" + arr[i].housesize + "</p>");
+        //                     tempLi.append(houseSize)
+        //                     var userimg = $("<p class='user_tx'>" + "<img src=" + arr[i].userheadimg + "> </p>");
+        //                     tempLi.append(userimg);
+        //                     k++;
+        //                 } else {
+        //                     break;
+        //                 }
+        //             }
+        //         }
+        //         return false;
+        //     })
+        ///小分辨率点击轮播
+        // 屏幕变换0------------------------------------------------------------
+
+        var screenwidth = document.documentElement.clientWidth;
+        if (screenwidth < 1000) {
+            $('.hi_contant_right').css({
+                display: "none"
+            })
+            $('.maplogo').css({
+                display: "block"
+            })
+        } else {
+            $('.hi_contant_right').css({
+                display: "block"
+            })
+            $('.maplogo').css({
+                display: "none"
+            })
+        }
+        $(window).on('resize', function() {
+            screenwidth = document.documentElement.clientWidth;
+            if (screenwidth < 1000) {
+                $('.hi_contant_right').css({
+                    display: "none"
+                })
+                $('.maplogo').css({
+                    display: "block"
+                })
+            } else {
+                $('.hi_contant_right').css({
+                    display: "block"
+                })
+                $('.maplogo').css({
+                    display: "none"
+                })
+            }
+        })
+    })
+    $('.maplogo').on('click', function() {
+        var screenwidth1 = document.documentElement.clientWidth;
+        var screenheight1 = document.documentElement.clientHeight + 80;
+        $(window).on('resize', function() {
+            screenwidth1 = document.documentElement.clientWidth;
+            $('#map').css({
+                "width": screenwidth1,
+            })
+            $(".hi_contant_right").toggle();
+        })
+        $('#map').css({
+            "width": screenwidth1,
+        })
+        $(".hi_contant_right").toggle();
+    })
+
+
+    // btm
 });
