@@ -291,11 +291,11 @@ $(function() {
         var top = document.documentElement.scrollTop || document.body.scrollTop;
 
         //
-        if (top > $('.list')[0].offsetTop) {
-            $('.content').addClass('fix1');
-        } else {
-            $('.content').removeClass('fix1');
-        }
+        // if (top > $('.list')[0].offsetTop) {
+        //     $('.content').addClass('fix1');
+        // } else {
+        //     $('.content').removeClass('fix1');
+        // }
 
         //
         if (top > $('.list')[0].offsetTop && top < 3500) {
