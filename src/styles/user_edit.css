@@ -256,6 +256,12 @@
   text-align: center;
   font-weight: bold;
 }
+.main .container .content.base .modal-dialog.box .modal-footer button {
+  border: none;
+}
+.main .container .content.base .modal-dialog.box .modal-footer button:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
 .main .container .content.base .modal-dialog.box .modal-footer .btn-default {
   background-color: #ff5a5f;
   color: #fff;
@@ -291,10 +297,48 @@
   font-weight: bold;
   border-radius: 5px;
   margin-top: 24px;
+  user-select: none;
 }
 .main .container .content.picture > .row .text .select:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   border-color: #fff;
+}
+.main .container .content.picture > .row .text .select_mod > div.modal-dialog {
+  margin-top: 200px;
+}
+.main .container .content.picture > .row .text .select_mod .modal-content {
+  padding: 30px;
+}
+.main .container .content.picture > .row .text .select_mod .modal-content .modal-header h4 {
+  font-weight: bold;
+}
+.main .container .content.picture > .row .text .select_mod .modal-content .modal-body {
+  text-align: center;
+}
+.main .container .content.picture > .row .text .select_mod .modal-content .modal-body .item {
+  height: 80px;
+  width: 80px;
+  background-color: #f1f1f1;
+  display: inline-block;
+  margin: 5px 10px;
+  border: 2px solid #aaa;
+}
+.main .container .content.picture > .row .text .select_mod .modal-content .modal-body .item img {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+.main .container .content.picture > .row .text .select_mod .modal-content .modal-footer button:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+.main .container .content.picture > .row .text .select_mod .modal-content .modal-footer .btn-default {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+}
+.main .container .content.picture > .row .text .select_mod .modal-content .modal-footer .btn-primary {
+  border: none;
+  background-color: #008489;
 }
 .main .container .content.verify .row:nth-child(1) .text {
   min-height: 140px;

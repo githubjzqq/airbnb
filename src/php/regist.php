@@ -14,7 +14,7 @@
         $output=json_encode($result1);
         print_r($output);
     }else{
-        $sql2="INSERT INTO `aby_user` (`userid`, `user_password`, `username`, `usersex`, `userage`, `usertel`, `useraddress`, `useremail`, `userheadimg`) VALUES (NULL, '$pwd', NULL, NULL, NULL, '$phoneNmb', NULL, NULL, NULL)";
+        $sql2="INSERT INTO `aby_user` (`userid`, `user_password`, `username`, `usersex`, `usertel`, `useraddress`, `useremail`, `userheadimg`, `userbirth`, `userintro`, `userschool`, `userwork`) VALUES (NULL, '$pwd', NULL, NULL, '$phoneNmb', NULL, NULL, NULL, NULL, NULL, NULL, NULL);";
         $data1=mysql_query($sql2);
     }
  ?>

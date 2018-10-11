@@ -338,7 +338,7 @@ $(function() {
                             } else {
                                 $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('注册成功(2s后自动跳转)');
                                 setTimeout(function() {
-                                    emailLogin(email, pwd);
+                                    emailLogin(email, pwd, e);
                                 }, 2000);
                             }
                         },
@@ -400,7 +400,7 @@ $(function() {
                             } else {
                                 $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('注册成功(2s后自动跳转)');
                                 setTimeout(function() {
-                                    phoneLogin(phoneNmb, pwd);
+                                    phoneLogin(phoneNmb, pwd, e);
                                 }, 2000);
                             }
                         },
