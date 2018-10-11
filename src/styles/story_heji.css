@@ -1,0 +1,676 @@
+@charset "utf-8";
+body {
+    background-image: url("../images/story/images1/bbfengye.jpg");
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+/*主题部分*/
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+
+/*主题底部横线*/
+
+.line {
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin-top: 30px;
+}
+
+
+/*主题文字说明*/
+
+.word {
+    margin: 0 auto;
+    color: white;
+    margin-top: 80px;
+    font-size: 16px;
+    line-height: 1.6em;
+    max-width: 552px!important;
+}
+
+
+/*标题8篇故事*/
+
+.pane {
+    margin: 0 auto;
+    width: 110px;
+    height: 50px;
+    border: 2px solid white;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 5px;
+}
+
+
+/*故事文本内容*/
+
+.temple {
+    margin: 0 auto;
+    color: white;
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 1.6em;
+    max-width: 612px!important;
+}
+
+
+/*故事文本内容下横线样式如上*/
+
+
+/*轮播*/
+
+.lunbo {
+    max-width: 552px!important;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+
+/*悟道文本内容*/
+
+.lunbo .wudao {
+    margin: 0 auto;
+    max-width: 552px;
+    max-height: 542px;
+    background: white;
+}
+
+.lunbo .wu {
+    max-width: 250px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(51, 50, 50);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.lunbo .wudao .author {
+    max-width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wudao .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.wudao .author .photo {
+    margin: 0 auto;
+}
+
+.wudao .author .photo>span {
+    padding-left: 20px;
+}
+
+.word2 {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.6em;
+    max-width: 432px!important;
+}
+
+.wudao .circle {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(51, 49, 49);
+    margin-top: 20px;
+}
+
+.wudao .circle .zan {
+    margin-top: 25px;
+    margin-left: 28px;
+    color: rgb(51, 48, 48);
+}
+
+.wudao .huozan {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wudao .huozan .huozan-word {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+
+/*茶叶博物馆内容*/
+
+.temple2 {
+    margin: 0 auto;
+    color: white;
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 1.6em;
+    max-width: 612px!important;
+}
+
+
+/*轮播2*/
+
+.lunbo2 {
+    max-width: 552px!important;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+
+/*博物馆纳凉内容*/
+
+.lunbo2 .naliang {
+    margin: 0 auto;
+    max-width: 552px;
+    max-height: 542px;
+    background: white;
+}
+
+.lunbo2 .liang {
+    max-width: 250px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(51, 50, 50);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.lunbo2 .naliang .author2 {
+    max-width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.naliang .author2 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.naliang .author2 .photo2 {
+    margin: 0 auto;
+}
+
+.naliang .author2 .photo2>span {
+    padding-left: 20px;
+}
+
+.word3 {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.6em;
+    max-width: 432px!important;
+}
+
+.naliang .circle2 {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(51, 49, 49);
+    margin-top: 20px;
+}
+
+.naliang .circle2 .zan2 {
+    margin-top: 25px;
+    margin-left: 28px;
+    color: rgb(51, 48, 48);
+}
+
+.naliang .huozan2 {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.naliang .huozan2 .huozan-word2 {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+
+/*十里梅坞内容*/
+
+.temple3 {
+    margin: 0 auto;
+    color: white;
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 1.6em;
+    max-width: 612px!important;
+}
+
+
+/*轮播3*/
+
+.lunbo3 {
+    max-width: 552px!important;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+
+/*梅家坞茶内容*/
+
+.lunbo3 .wucha {
+    margin: 0 auto;
+    max-width: 552px;
+    max-height: 542px;
+    background: white;
+}
+
+.lunbo3 .cha {
+    max-width: 250px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(51, 50, 50);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.lunbo3 .wucha .author3 {
+    max-width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wucha .author3 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.wucha .author3 .photo3 {
+    margin: 0 auto;
+}
+
+.wucha .author3 .photo3>span {
+    padding-left: 20px;
+}
+
+.word4 {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.6em;
+    max-width: 432px!important;
+}
+
+.wucha .circle3 {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(51, 49, 49);
+    margin-top: 20px;
+}
+
+.wucha .circle3 .zan3 {
+    margin-top: 25px;
+    margin-left: 28px;
+    color: rgb(51, 48, 48);
+}
+
+.wucha .huozan3 {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wucha .huozan3 .huozan-word3 {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+
+/*故事集城市合辑*/
+
+.thumbnail>img {
+    border-radius: 10%;
+}
+
+.kaoya .img {
+    opacity: 0;
+}
+
+.huoguo .img {
+    opacity: 0;
+}
+
+.jianzhu .img {
+    opacity: 0;
+}
+
+.gushi .kaoya {
+    padding: 0;
+    border: 0;
+}
+
+.gushi .huoguo {
+    padding: 0;
+    border: 0;
+}
+
+.gushi .jianzhu {
+    padding: 0;
+    border: 0;
+}
+
+
+/*文字定位到图片上*/
+
+.gushi .kaoya {
+    position: relative;
+}
+
+.kaoya .heji {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    top: 50%;
+    left: 5%;
+    z-index: 1;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.kaoya .top {
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 5%;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.kaoya .btm {
+    position: absolute;
+    color: white;
+    left: 5%;
+    top: 75%;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.gushi .huoguo {
+    position: relative;
+}
+
+.huoguo .heji {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    top: 50%;
+    left: 5%;
+    z-index: 1;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.huoguo .top {
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 5%;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.huoguo .btm {
+    position: absolute;
+    color: white;
+    left: 5%;
+    top: 75%;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.gushi .jianzhu {
+    position: relative;
+}
+
+.jianzhu .heji {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    top: 50%;
+    left: 5%;
+    z-index: 1;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.jianzhu .top {
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 5%;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.jianzhu .btm {
+    position: absolute;
+    color: white;
+    left: 5%;
+    top: 75%;
+    font-size: 24px;
+    z-index: 1;
+}
+
+
+/*主体内容*/
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .chengshi {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .fangyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .kafeiguan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .laofoye1 {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+
+/*第二行*/
+
+.caption .jueban {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .tongnian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .zhongzhen {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .haizi {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}

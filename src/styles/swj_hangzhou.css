@@ -1,0 +1,150 @@
+.btn-group {
+  margin-left: 15px;
+}
+@media (max-width: 743px) {
+  .swj_title {
+    margin-left: 40px!important;
+  }
+  #buts {
+    margin-left: 40px;
+  }
+  .totry {
+    margin-left: 40px!important;
+  }
+  .totry h4 {
+    font-size: 12px;
+  }
+  .btn-group button {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .visit {
+    width: 370px!important;
+    height: auto;
+    flex-wrap: wrap!important;
+  }
+  .hangzhou {
+    width: 140px!important;
+    margin-left: 10px;
+    height: 250px!important;
+  }
+  .hangzhou .glyphicon-heart-empty {
+    right: 5px!important;
+  }
+  .hangzhou img {
+    width: 140px!important;
+    height: 105px!important;
+  }
+  .hangzhou span {
+    font-size: 14px!important;
+    font-weight: 700;
+  }
+  .xianshi {
+    border: 1px solid #008489;
+    text-align: center!important;
+    margin-left: 15px!important;
+  }
+  .xianshi #jiantou {
+    display: none!important;
+  }
+  #none {
+    display: none;
+  }
+  .housecity {
+    margin-left: 40px;
+  }
+  .viewscreen {
+    width: 320px!important;
+    margin-left: 0!important;
+  }
+  .viewscreen ul {
+    margin-left: 40px!important;
+  }
+  .viewscreen li {
+    width: 144px!important;
+    height: 140px!important;
+    display: flex;
+    flex-direction: column;
+  }
+  .viewscreen li img {
+    width: 100%!important;
+    height: 77.63px!important;
+  }
+}
+#jiage {
+  display: none!important;
+}
+.hangzhou {
+  width: 301.25px;
+  height: 330.05px;
+  cursor: pointer;
+}
+.hangzhou > div {
+  overflow: hidden;
+}
+.hangzhou img {
+  transition: all 1s;
+  width: max-width;
+  height: 190.16px;
+}
+.hangzhou span {
+  font-size: 16px;
+  font-weight: 700;
+}
+.hangzhou a {
+  color: #008489;
+}
+.hangzhou:hover img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+.hangzhou:hover .glyphicon-heart-empty {
+  color: red!important;
+  font-weight: 900;
+  opacity: 1;
+}
+.swj_title {
+  width: 1000px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.swj_title:hover span {
+  display: inline-block !important;
+  padding: 0;
+  margin: 0;
+}
+.ruler {
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: #fff;
+  z-index: 5;
+}
+.fang img {
+  width: 285.25px;
+  height: 190.16px;
+}
+.housecity {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 80px;
+}
+.tabs_house li {
+  width: max-width;
+  overflow: hidden;
+  cursor: pointer;
+}
+.tabs_house li p {
+  font-weight: 600;
+}
+.tabs_house .gif img {
+  transition: all 1s;
+}
+.tabs_house li:hover .gif img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}

@@ -18,7 +18,8 @@ fieldset,
 legend,
 input,
 textarea,
-select {
+select,
+label {
     margin: 0;
     padding: 0
 }
@@ -29,6 +30,10 @@ body {
 
 a {
     color: #172c45;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: none;
 }
 

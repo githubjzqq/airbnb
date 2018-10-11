@@ -1,0 +1,167 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.content img {
+    width: 100%;
+    height: 71%;
+}
+.all {
+    width: 100%;
+    &>div {
+        width: 100%;
+        margin: 0 auto;
+        .top {
+            width: 100%;
+            height: 80px;
+            // background-color: #ccc;
+            position: fixed;
+            top: 0;
+            padding-left: 80px;
+            overflow: hidden;
+            padding-top: 17px;
+            background-color: #fff;
+
+            #search {
+                width: 458px;
+                height: 46px;
+                text-align: center;
+                font-size: 25px;
+                border: 1px solid #ccc;
+                box-shadow: 2px 2px 2px 2px #ccc;
+                float: left;
+                display: block
+            }
+            .top_ul{
+                list-style: none;
+                float: right;
+                height: 100%;
+                padding-right:20px;
+                &>li{
+                    float: left;
+                    margin:0 12px;
+                    text-align: center;
+                    line-height: 56px;
+                    font-weight: 800;
+                    font-size: 14px;
+                }
+            }
+        }
+        .choose{
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            height: 64px;
+            z-index: 5;
+            background-color: #fff;
+
+            .choose_ul{
+                float: left;
+                list-style: none;
+                padding: 16px;
+                &>li{
+                    float: left;
+                    margin: 0 8px;
+                    padding: 0 8px;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    line-height: 32px;
+                    border-radius: 10%;
+                    font-size: 14px;
+                    position: relative;
+                }
+            }
+            .price_down{
+                background-color: #FFF;
+                // display: none;
+                clear: both;
+                z-index: 5;
+                li{
+                    float: left;
+                    font-size: 14px;
+                }
+            }
+            .btn {
+                float: right;
+                margin: 20px;
+                background-color: #fff;
+                border: none;
+                height: 30px;
+                width: 80px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #ccc;
+            }
+        }
+        .content {
+            width: 100%;
+            /* height: 2000px; */
+            overflow: hidden;
+            position: absolute;
+            top: 140px;
+            z-index: -5;
+            &>p:nth-child(1){
+                margin-top: 24px;
+                margin-left: 40px;
+                font-size: 14px;
+                font-weight: 800;
+            }
+            &>p:nth-child(2){
+                margin-top: 40px;
+                margin-left: 20px;
+                font-size: 25px;
+                font-weight: 800;
+            }
+            .ul1 {
+                width: 60%;
+                list-style: none;
+                float: left;
+                overflow: hidden;
+                padding-left:15px ;
+                &>li {
+                    // border: 1px solid #ccc;
+                    width: 45%;
+                    height: 350px;
+                    // margin-left: 20px;
+                    margin: 20px 20px 0 10px;
+                    // background-color: #ccc;
+                    float: left;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+            .house_size{
+                font-size: 12px;
+                margin-top: 5px;
+                // display: block
+                text-align: left;
+                margin-left: 10px;
+            }
+            .house_name{
+                font-size: 17px;
+                font-weight: 600;
+                text-align: left;
+                margin-left: 10px;
+            }
+            .house_price{
+                font-size: 14px;
+                text-align: left;
+                margin-left: 10px;
+                
+            }
+            #map {
+                height: 100%;
+                width: 40%;
+                background-color: #ccc;
+                position: fixed!important;
+                top: 160px;
+                right: 0;
+            }
+        }
+    }
+}

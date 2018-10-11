@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>编辑个人资料</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/public-reset.css">
+    <link rel="stylesheet" href="../styles/public.css">
+    <link rel="stylesheet" href="../fonts/public/icon_font/iconfont.css">
+    <link rel="stylesheet" href="../styles/user_edit.css">
+
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo" id="logo"><i class="iconfont icon-aibiying"></i>
+            <div class="sub-btn"><svg class="img" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg></div>
+        </div>
+        <div class="search">
+            <i class="iconfont icon-sousuo"></i>
+            <input type="text" class="input-text" placeholder="搜索">
+            <div class="user-history">
+                <p>最近的搜索</p>
+                <ul class="his-list">
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href="https://www.baidu.com"><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="header-nav">
+            <li class="_currency">
+                <a><img src="../images/public/China.png" alt="" class="country">人民币（￥）<i></i></a>
+            </li>
+            <li class="sub currency">
+                <h4>常用货币</h4>
+                <div class="list active"><img src="../images/public/China.png" alt="">人民币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">美元（$）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">日元（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">港币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">新台币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">欧元（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+            </li>
+            <li><a>手机端</a></li>
+            <li class="sub app">
+                <div class='left'>
+                    <img src="../images/public/qr1.png" alt="">
+                    <p>下载手机客户端</p>
+                </div>
+                <div class='right'>
+                    <img src="../images/public/qr2.png" alt="">
+                    <p>关注微信服务号</p>
+                </div>
+            </li>
+            <li><a>成为房东/体验达人</a></li>
+            <li class="sub house">
+                <div class="rent">
+                    <a href="">
+                        <h4>出租房源</h4>
+                        <p>在杭州接待旅行者，每月为您带来高达￥4391的收入</p>
+                        <i class="iconfont icon-fangzi"></i></a>
+                </div>
+                <div class="experience">
+                    <a href="">开展体验</a>
+                </div>
+            </li>
+            <li><a href="../html/story.html">故事</a></li>
+            <li class="sub"></li>
+            <li><a>心愿单</a></li>
+            <li class="sub like">
+                <h4>心愿单<a href="">查看心愿单</a></h4>
+                <div class="list">
+                    <div class="text">
+                        <div class="position">杭州市</div>
+                        <div class="num1">1位客人</div>
+                        <div class="num2">6个房源</div>
+                    </div>
+                    <div class='pic'>
+                        <img src="../images/public/h1.jpg" alt="房源图片">
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="text">
+                        <div class="position">杭州市</div>
+                        <div class="num1">1位客人</div>
+                        <div class="num2">6个房源</div>
+                    </div>
+                    <div class='pic'>
+                        <img src="../images/public/h2.jpg" alt="房源图片">
+                    </div>
+                </div>
+            </li>
+            <li><a href="">旅程</a></li>
+            <li class="sub"></li>
+            <li><a>消息</a></li>
+            <li class="sub message">
+                <div class="list">消息（0）<a href="">查看所有</a></div>
+                <div class="list">通知<a href="">查看所有</a></div>
+            </li>
+            <li><a>帮助</a></li>
+            <li class="sub help"></li>
+            <li data-toggle="modal" data-target="#myModal" class='login'>
+                <a style="display:none" class="userpic"><img src="../images/public/mario.JPG" alt="" class="userpic"></a>
+                <a class="index">登陆/注册</a>
+            </li>
+            <li class="sub user-msg" style="display: none;">
+                <ul>
+                    <li><a href="./user_edit.html">编辑个人资料</a></li>
+                    <li><a href="">旅行基金</a></li>
+                    <li><a href="">账号设置</a></li>
+                    <li><a href="">我的指南</a></li>
+                    <li><a href="">商务爱彼迎</a></li>
+                    <li class="exit"><a href="">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="header-nav-min">
+            <li><a href="">首页</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">个人资料<i class="iconfont icon-yonghu"></i></a></li>
+            <li><a href="">旅程<i class="iconfont icon-601"></i></a></li>
+            <li><a href="">消息<i class="iconfont icon-xinxi"></i></a></li>
+            <li><a href="">心愿单<i class="iconfont icon-aixin"></i></a></li>
+            <li><a href="">邀请好友<i class="iconfont icon-weibiaoti-1"></i></a></li>
+            <li><a href="">故事</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">商务爱彼迎</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">出租房源<i class="iconfont icon-fangzi"></i></a><br>把房子租出去，<b> 每月多赚￥4,387</b></li>
+            <li><a href="">开展体验</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">帮助</a></li>
+            <li><a href="">退出</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 content tabs_content">
+                    <ul class="tabs">
+                        <li class="active"><a href="">编辑个人资料</a></li>
+                        <li><a href="">照片</a></li>
+                        <li><a href="">信任和验证</a></li>
+                        <li><a href="">评价</a></li>
+                        <li><a href="">推荐语</a></li>
+                    </ul>
+                    <div class="user_msg">
+                        <a href="">
+                        查看个人资料</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 content base active">
+                    <div class="row">
+                        <div class="title">主要信息</div>
+                        <div class="msg_list name row">
+                            <div class="label col-xs-3">
+                                <label for="name">名字</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="name">
+                            </div>
+                        </div>
+                        <div class="msg_list sex">
+                            <div class="label col-xs-3">
+                                <label for="sex">性别</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="sex">
+                                    <option value="1">男</option>
+                                    <option value="0">女</option>
+                                    <option value="2">其他</option>
+                                    <option value="3" selected='selected'>性别</option>
+                                </select>
+                                <p>此数据仅用于分析，我们不会透露给其它用户。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list birthday">
+                            <div class="label col-xs-3">
+                                <label for="birthday">出生日期</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="birthmouth">
+                                </select>
+                                <select class="form-control" id="birthday">
+                                </select>
+                                <select class="form-control" id="birthyear">
+                                </select>
+                                <p>此数据将帮助我们更好地为您提供服务，除必要的内部使用外，我们不会将您的信息透露给房东或其他用户。您必须年满 18 周岁才能使用爱彼迎的网站和服务。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list email">
+                            <div class="label col-xs-3">
+                                <label for="email">电子邮件地址</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="email">
+                                <p>我们不会向其他爱彼迎用户透露您的个人邮箱地址。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list phoneNmb">
+                            <div class="label col-xs-3">
+                                <label for="phoneNmb">手机号</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="phoneNmb">
+                                <p>只有在您和另一名爱彼迎用户确认预订时，此资料才会被分享。这是我们帮助大家联系彼此的方式。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list firstLunguage">
+                            <div class="label col-xs-3">
+                                <label for="firstLunguage">首选语言</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="firstLunguage">
+                                    <option value="">简体中文</option>
+                                    <option value="">繁体中文</option>
+                                    <option value="">English</option>
+                                    <option value="">日文</option>
+                                </select>
+                                <p>我们将会使用此语言给您发消息</p>
+                            </div>
+                        </div>
+                        <div class="msg_list firstCurrency">
+                            <div class="label col-xs-3">
+                                <label for="firstCurrency">首选货币</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="firstCurrency">
+                                <option value="">人民币</option>
+                                <option value="">美元</option>
+                                <option value="">欧元</option>
+                                <option value="">日元</option>
+                            </select>
+                                <p>我们将会使用此货币为您显示价格。</p>
+                            </div>
+                        </div>
+                        <div class="msg_list address">
+                            <div class="label col-xs-3">
+                                <label for="address">您住的地方</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="address">
+                            </div>
+                        </div>
+                        <div class="msg_list intro">
+                            <div class="label col-xs-3">
+                                <label for="intro">自我介绍</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <textarea type="text" id="intro"></textarea>
+                                <p>爱彼迎是建立在相互关系上的，请帮助其他人了解您。</p>
+                                <p>告诉他们您喜欢什么，您离开了哪几样东西就不能活？分享您最喜爱的旅游目的地丶书籍丶电影丶电视节目丶音乐以及食物。</p>
+                                <p>告诉他们您会是个什么样的房东或房客，您旅游的风格是怎样的？您作为爱彼迎房东的风格又是怎样呢？</p>
+                                <p>向大家介绍一下自己吧，您有什么人生格言吗？</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">选填</div>
+                        <div class="msg_list school">
+                            <div class="label col-xs-3">
+                                <label for="school">学校</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="school">
+                            </div>
+                        </div>
+                        <div class="msg_list work">
+                            <div class="label col-xs-3">
+                                <label for="work">工作</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <input type="text" id="work" placeholder="公司名称或工作职位">
+                            </div>
+                        </div>
+                        <div class="msg_list timeZone">
+                            <div class="label col-xs-3">
+                                <label for="timeZoney">时区</label>
+                            </div>
+                            <div class="input col-xs-9">
+                                <select class="form-control" id="timeZoney">
+                                    <option value="Karachi">(GMT+05:00) Karachi</option>
+                                    <option value="Tashkent">(GMT+05:00) Tashkent</option>
+                                    <option value="Asia/Calcutta">(GMT+05:30) Asia/Calcutta</option>
+                                    <option value="Chennai">(GMT+05:30) Chennai</option>
+                                    <option value="Kolkata">(GMT+05:30) Kolkata</option>
+                                    <option value="Mumbai">(GMT+05:30) Mumbai</option>
+                                    <option value="New Delhi">(GMT+05:30) New Delhi</option>
+                                    <option value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
+                                    <option value="Kathmandu">(GMT+05:45) Kathmandu</option>
+                                    <option value="Almaty">(GMT+06:00) Almaty</option>
+                                    <option value="Astana">(GMT+06:00) Astana</option>
+                                    <option value="Dhaka">(GMT+06:00) Dhaka</option>
+                                    <option value="Urumqi">(GMT+06:00) Urumqi</option>
+                                    <option value="Rangoon">(GMT+06:30) Rangoon</option>
+                                    <option value="Bangkok">(GMT+07:00) Bangkok</option>
+                                    <option value="Hanoi">(GMT+07:00) Hanoi</option>
+                                    <option value="Jakarta">(GMT+07:00) Jakarta</option>
+                                    <option value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                                    <option value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
+                                    <option value="Asia/Makassar">(GMT+08:00) Asia/Makassar</option>
+                                    <option value="Asia/Shanghai">(GMT+08:00) Asia/Shanghai</option>
+                                    <option value="Asia/Singapore">(GMT+08:00) Asia/Singapore</option>
+                                    <option value="Beijing">(GMT+08:00) Beijing</option>
+                                    <option value="Chongqing">(GMT+08:00) Chongqing</option>
+                                    <option value="Hong Kong" selected="selected">(GMT+08:00) Hong Kong</option>
+                                    <option value="Irkutsk">(GMT+08:00) Irkutsk</option>
+                                </select>
+                                <p>您所在地的时区。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save" data-toggle="modal" data-target=".save_fade">保存</div>
+                    <div class="modal fade save_fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog box" role="document">
+                            <div class="modal-content" id="save_mod">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">确认提交修改信息</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>是否提交修改?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">放弃更改并关闭</button>
+                                    <button type="button" class="btn btn-primary" id="save">保存修改</button>
+                                </div>
+                                <div class="waiting">修改完成，2s后自动跳转...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 content picture">
+                    <div class="row">
+                        <div class="title">个人头像</div>
+                        <div class="pic col-xs-12 col-sm-3"><img src="../images/user/mario.JPG" alt=""></div>
+                        <div class="text col-xs-12 col-sm-9">
+                            <p>清晰的正面脸部照片是房东和房客互相认识对方的重要途径。您能想象把自己的房子租给一只猫吗？ 请确保使用能够清楚显示您面部的照片，并确认其中不包含任何您不希望其他房东或房客看到的个人或敏感信息。</p>
+                            <div class="select">选择用户头像</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 content verify">
+                    <div class="row">
+                        <div class="text">
+                            <h4 class="col-xs-12">您已完成「芝麻信用」实名验证</h4>
+                            <p class="col-xs-12">恭喜您，您的支付宝「芝麻信用」实名验证成功！<br>感谢您让爱彼迎成为一个更安全安心的社区。 <a href="">常见问题</a></p>
+                            <img src="../images/user_edit/zhimaxinyong.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">您已验证的信息</div>
+                        <div class="text">
+                            <h4 class="col-xs-12">手机号</h4>
+                            <p class="col-xs-12">只有在您的预订确认后，我们才会把您的电话号码与另一位爱彼迎用户分享。</p>
+                            <h4 class="col-xs-12">身份证件</h4>
+                            <p class="col-xs-12">您已经成功地提供了验证｡</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">社交平台账号</div>
+                        <div class="text row">
+                            <h4 class="col-xs-12">电子邮箱地址</h4>
+                            <p class="col-xs-12">请点击我们刚刚发送到1506747508@qq.com的链接，验证您的电子邮件地址。<br>找不到我们发送的消息？请检查您的垃圾邮件文件夹或 重新发送确认邮件。</p>
+                            <h4 class="col-xs-12">Facebook</h4>
+                            <p class="col-xs-12 col-sm-7">请通过Facebook登录，建立您与世界各地的房东和房客之间的信任关系。</p>
+                            <div class="button col-xs-12 col-sm-5"><a href="">关联</a></div>
+                            <h4 class="col-xs-12">谷歌</h4>
+                            <p class="col-xs-12 col-sm-7">将您的爱彼迎账号和谷歌账号关联，让一切变得简单轻松。</p>
+                            <div class="button col-xs-12 col-sm-5"><a href="">关联</a></div>
+                            <h4 class="col-xs-12">微博</h4>
+                            <p class="col-xs-12 col-sm-7">把您的爱彼迎账号与微博账号关联起来，轻松完成线上验证。</p>
+                            <div class="button col-xs-12 col-sm-5"><a href="">关联</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 content estimate">
+                    <div class="row tabs">
+                        <span class="active">对您的评价</span>
+                        <span>您写的评价</span>
+                    </div>
+                    <div class="row active">
+                        <div class="title">过往评价</div>
+                        <p class="tips">预订的住宿结束后才能在爱彼迎网站上撰写评价。您收到的评价将出现在这里以及您公开的个人资料中。</p>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario</p>
+                                </div>
+                                <div class="box">
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="reply"><a href="">撰写公开回复</a></p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario_34</p>
+                                </div>
+                                <div class="box">
+                                    <p class="contents">超爱干净,赞｡</p>
+                                    <p class="reply"><a href="">撰写公开回复</a></p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row active">
+                        <div class="title">撰写评论</div>
+                        <p class="tips">目前没有写评价的需要。该是预订另一个旅程的时候了！</p>
+                    </div>
+                    <div class="row">
+                        <div class="title">您过往写的评价</div>
+                        <p class="tips"></p>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario</p>
+                                </div>
+                                <div class="box">
+                                    <h4>对Mario的评价</h4>
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario_34</p>
+                                </div>
+                                <div class="box">
+                                    <h4>对Mario_34的评价</h4>
+                                    <p class="contents">超级爱干净！</p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 content recommend">
+                    <div class="row tabs">
+                        <span class="active">关于您的推荐语</span>
+                        <span>撰写您的推荐语</span>
+                    </div>
+                    <div class="row active">
+                        <div class="title">等待批准</div>
+                        <p class="tips">您接受的推荐语将会出现在您的公开个人资料中。您忽略的推荐语将不会出现在您的个人资料中，且对方不会收到通知。</p>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario</p>
+                                </div>
+                                <div class="box">
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="reply"><a href="">撰写公开回复</a></p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario_34</p>
+                                </div>
+                                <div class="box">
+                                    <p class="contents">超爱干净,赞｡</p>
+                                    <p class="reply"><a href="">撰写公开回复</a></p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row active">
+                        <div class="title">您过往的推荐语</div>
+                        <p class="tips">请只为您非常熟悉的人撰写推荐语，把他们推荐到爱彼迎社区。如果您忽略他人让您写推荐语的请求，他们不会收到忽略通知。</p>
+                    </div>
+                    <div class="row">
+                        <div class="title">您过往所写的推荐语</div>
+                        <p class="tips"></p>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario</p>
+                                </div>
+                                <div class="box">
+                                    <h4>对Mario的推荐</h4>
+                                    <p class="contents">Very clean and tidy, I am honored to meet such tenants.</p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-xs-12">
+                                <div class="user">
+                                    <img src="../images/user/mario.JPG" alt="">
+                                    <p>Mario_34</p>
+                                </div>
+                                <div class="box">
+                                    <h4>对Mario_34的推荐</h4>
+                                    <p class="contents">超级爱干净！</p>
+                                    <p class="time">2018年10月</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登陆注册模态框 -->
+    <div class="mod">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog mad1" role="document">
+                <div class="modal-content first active regist">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">注册爱彼迎账号</h4>
+                        <p>已有账号？<a>登陆</a></p>
+                    </div>
+                    <div class="modal-body phone">
+                        <a><i class="iconfont icon-dianhua-copy"></i>手机号注册</a>
+                    </div>
+                    <div class="modal-body email">
+                        <a><i class="iconfont icon-weibiaoti-"></i>邮箱注册</a>
+                    </div>
+                    <div class="modal-body other">
+                    </div>
+                </div>
+                <div class="modal-content regist phone">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">手机号注册</h4>
+                        <p>已有账号？<a>登陆</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="country">+86<span><i class="iconfont icon-fangxiangshang"></i></span></div>
+                        <div class="inputnmb"><input type="text" placeholder="手机号"></div>
+                    </div>
+                    <div class="modal-body verify">
+                        <input type="text" placeholder="输入验证码"><span class="result"></span><span class="generate">点击获取验证码</span>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd"><i class="iconfont icon-kejian"></i>
+                        </div>
+                        <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
+                        <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">注册</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式注册</a>
+                    </div>
+                </div>
+                <div class="modal-content login phone">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">手机号登陆</h4>
+                        <p>还没有账号？<a>注册</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="country">+86<span><i class="iconfont icon-fangxiangshang"></i></span></div>
+                        <div class="inputnmb"><input type="text" placeholder="手机号"></div>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">登陆</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式登陆</a>
+                    </div>
+                </div>
+                <div class="modal-content regist email">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">邮箱注册</h4>
+                        <p>已有账号？<a>登陆</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="inputnmb"><input type="text" placeholder="输入邮箱"></div>
+                    </div>
+                    <div class="modal-body verify">
+                        <input type="text" placeholder="输入验证码"><span class="result"></span><span class="generate">点击获取验证码</span>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                        </div>
+                        <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
+                        <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">注册</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式注册</a>
+                    </div>
+                </div>
+                <div class="modal-content login email">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">邮箱登陆</h4>
+                        <p>还没有账号？<a>注册</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="inputnmb"><input type="text" placeholder="输入邮箱"></div>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">登陆</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式登陆</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="tab1 row">
+                <div class="item col-md-3 col-sm-3">
+                    <div class="dropup language">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span>中文（简体）</span>
+                                  <i class="iconfont icon-fangxiangshang1"></i>
+                                </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a href="#">中文（简体）</a></li>
+                            <li><a href="#">中文（繁体）</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Dansk</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Language1</a></li>
+                            <li><a href="#">Language2</a></li>
+                            <li><a href="#">Language3</a></li>
+                            <li><a href="#">Language4</a></li>
+                            <li><a href="#">Language5</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropup currency">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>CNY 人民币</span>
+                            <i class="iconfont icon-fangxiangshang1"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <li><a href="#">CNY 人民币</a></li>
+                            <li><a href="#">USD 美元</a></li>
+                            <li><a href="#">JPY 日元</a></li>
+                            <li><a href="#">HKD 港币</a></li>
+                            <li><a href="#">TWD 新台币</a></li>
+                            <li><a href="#">EUR 欧元</a></li>
+                            <li><a href="#">GBP 英镑</a></li>
+                            <li><a href="#">AUD 澳大利亚元</a></li>
+                            <li><a href="#">AED 阿联酋迪拉姆</a></li>
+                            <li><a href="#">BRL 巴西雷亚尔</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item col-md-3 hidden-xs col-sm-3">
+                    <ul>
+                        <li><b>爱彼迎</b></li>
+                        <li><a href="">工作机会</a></li>
+                        <li><a href="">新闻</a></li>
+                        <li><a href="">政策</a></li>
+                        <li><a href="">帮助</a></li>
+                        <li><a href="">多元化与归属感</a></li>
+                    </ul>
+                </div>
+                <div class="item col-md-3 hidden-xs col-sm-3">
+                    <ul class="">
+                        <li><b>发现</b></li>
+                        <li><a href="">信用与安区</a></li>
+                        <li><a href="">基金旅行</a></li>
+                        <li><a href="">爱彼迎公民</a></li>
+                        <li><a href="">商务差旅</a></li>
+                        <li><a href="">旅游指南</a></li>
+                        <li><a href="">爱彼迎杂志</a></li>
+                        <li><a href="">活动</a></li>
+                    </ul>
+                </div>
+                <div class="item col-md-3 hidden-xs col-sm-3">
+                    <ul>
+                        <li><b>出租</b></li>
+                        <li><a href="">为什么要出租？</a></li>
+                        <li><a href="">待客之道</a></li>
+                        <li><a href="">房东义务</a></li>
+                        <li><a href="">开展体验</a></li>
+                        <li><a href="">Open Homes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab2 row">
+                <div class="container">
+                    <i class="iconfont icon-aibiying"></i>© Airbnb, Inc
+                    <div class="link">
+                        <a href="">条款</a>
+                        <a href="">隐私政策</a>
+                        <a href="">网站地图</a>
+                        <a href=""><i class="iconfont icon-weibo"></i></a>
+                        <a href=""><i class="iconfont icon-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=" ../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/user_edit.js"></script>
+</body>
+
+</html>

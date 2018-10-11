@@ -183,6 +183,9 @@ html {
   margin-right: 10px;
   margin-bottom: 3px;
 }
+.header .header-nav > li:not(.sub) a.userpic {
+  padding-top: 25px;
+}
 .header .header-nav > li:not(.sub)._currency i {
   display: none;
 }
@@ -192,6 +195,7 @@ html {
   border-radius: 50%;
   margin-bottom: 4px;
   margin-right: 10px;
+  border: 2px solid #ddd;
 }
 .header .header-nav > li:not(.sub) a {
   height: 80px;
@@ -383,7 +387,7 @@ html {
 }
 .header .header-nav li.sub.user-msg {
   width: 280px;
-  height: 357px;
+  height: auto;
   right: 0;
 }
 .header .header-nav li.sub.user-msg ul li {
@@ -554,6 +558,7 @@ html {
   display: none;
   padding: 5px 15px;
   background-color: yellow;
+  border-radius: 4px;
 }
 .mod .modal-dialog.mad1 .modal-content.active {
   display: block;

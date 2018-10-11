@@ -1,18 +1,14 @@
 // input输入下拉框
 
-// if (typeof sessionStorage.getItem("x") == "object") {
-//     sessionStorage.setItem("x", true)
-//     location.reload();
-// }
+if (typeof sessionStorage.getItem("x") == "object") {
+    sessionStorage.setItem("x", true)
+    location.reload();
+}
 
 
 // $('.index_top').load('../html/indextop.html')
 // $('.indexbtn').load('../html/indexbtn.html')
 $(function() {
-    if (typeof sessionStorage.getItem("x") == "object") {
-        sessionStorage.setItem("x", true)
-        location.reload();
-    }
     // console.log($(".aby_all:not('.search_hover')"))
     $(document).on('click', function() {
         $('.search_hover').css({
@@ -161,13 +157,6 @@ $(function() {
 
         return false;
     })
-
-
-
-
-
-
-
 
 
 
