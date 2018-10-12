@@ -56,27 +56,33 @@
     }
     
     .fangxiang span:nth-of-type(1) {
+        border-radius: 50%;
         position: absolute;
         right: 0;
-        top: 10px;
+        top: 20px;
         cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.411);
+        color: rgb(236, 233, 233)
     }
     
     .fangxiang span:nth-of-type(2) {
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 20px;
         cursor: pointer;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.411);
+        color: rgb(236, 233, 233)
     }
 </style>
 
 <body>
     <!-- 100%的大外圈 -->
-    <div style="width: 100%;height: auto;">
+    <div style="width:100%;height: auto;" id="bigquan">
         <!-- 居中的外圈 -->
-        <div style="width:1249px;margin: 0 auto;">
+        <div style="width:1249px;margin: 0 auto;" id="bag">
             <!-- 头固定 -->
-            <div style="width:auto;line-height:64px;border: 1px solid rgba(226, 223, 223, 0.877);background-color: #fff;margin: 0 auto;" class="navbar navbar-fixed-top">
+            <div id="fix-top" style="width:auto;line-height:64px;border: 1px solid rgba(226, 223, 223, 0.877);background-color: #fff;margin: 0 auto;" class="navbar navbar-fixed-top">
                 <div class="btn-group" role="group" aria-label="...">
                     <button type="button" class="btn btn-default">日期</button>
                     <button type="button" class="btn btn-default">一位房客</button>
@@ -135,8 +141,8 @@
                         </li>
 
                     </ul>
-                    <span class="glyphicon glyphicon-circle-arrow-right next" style="display: block;margin-left:0px;font-size: 56px;z-index: 5;opacity: 0.4;"></span>
-                    <span class="glyphicon glyphicon-circle-arrow-left prev" style="display: none;margin-left:0px;font-size: 56px;z-index: 5;opacity: 0.7;"></span>
+                    <span class="glyphicon glyphicon-menu-right next" style="display: block;margin-left:0px;font-size: 56px;z-index: 5;opacity: 0.4;"></span>
+                    <span class="glyphicon glyphicon-menu-left prev" style="display: none;margin-left:0px;font-size: 56px;z-index: 5;opacity: 0.7;"></span>
                 </div>
             </div>
             <!-- 活动 -->
