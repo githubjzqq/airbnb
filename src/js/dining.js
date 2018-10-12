@@ -37,27 +37,42 @@ $(function() {
     var top = Number($('.content')[0].offsetTop);
     // var h = document.documentElement.clientHeight || document.body.clientHeight;
     // console.log(window.screen.height - top * 2.5);
-    $('#allmap').css('height', document.body.clientHeight - top);
+    $('#allmap').css('height', document.documentElement.clientHeight - top);
+    $(window).on('resize', function() {
+        $('#allmap').css('height', document.documentElement.clientHeight - top);
+    });
 
     // 百度地图API功能
-    var map = new BMap.Map("allmap");
-    var point = new BMap.Point(121.47, 31.23);
-    map.centerAndZoom(point, 15);
-    // 编写自定义函数,创建标注
-    function addMarker(point) {
-        var marker = new BMap.Marker(point);
-        map.addOverlay(marker);
-    }
-    // 随机向地图添加25个标注
-    var bounds = map.getBounds();
-    var sw = bounds.getSouthWest();
-    var ne = bounds.getNorthEast();
-    var lngSpan = Math.abs(sw.lng - ne.lng);
-    var latSpan = Math.abs(ne.lat - sw.lat);
-    for (var i = 0; i < 8; i++) {
-        var point = new BMap.Point(sw.lng + lngSpan * (Math.random() * 0.7), ne.lat - latSpan * (Math.random() * 0.7));
-        addMarker(point);
-    }
+    var map = new BMap.Map("allmap"); // 创建Map实例
+    map.centerAndZoom('上海', 15);
+    var local = new BMap.LocalSearch(map, {
+        renderOptions: { map: map }
+    });
+    local.search('上海的餐厅');
+    $('.choose_coord').on('click', function() {
+        var str = $(this).siblings()[0].innerHTML;
+        // map.centerAndZoom(str.slice(0, 2), 15); // 初始化地图,用城市名设置地图中心点
+
+        var local = new BMap.LocalSearch(map, {
+            renderOptions: { map: map }
+        });
+        local.search(str);
+    });
+    //具体餐厅信息
+    $('.choose>div>div').on('click', function() {
+        // console.log($(this).siblings().children().children().eq(1)[0].innerHTML);
+        console.log($(this).parent().parent().siblings().children().eq(0)[0].innerHTML.slice(0, 2));
+
+        var str1 = $(this).parent().parent().siblings().children().eq(0)[0].innerHTML.slice(0, 2);
+        var name = str1 + $(this).siblings().children().children().eq(1)[0].innerHTML;
+        console.log(name);
+        var local = new BMap.LocalSearch(map, {
+            renderOptions: { map: map }
+        });
+        local.search(name);
+    });
+
+
 
     //地图控件
     //比例尺
@@ -72,6 +87,11 @@ $(function() {
     //心
     $('.choose>div').append('<span class="iconfont choose_like">&#xe6e2;</span>');
     //坐标
-    $('.content_left>div>div').eq(0).append('<span class="iconfont choose_coord">&#xe680;</span>');
-
+    // $('.content_left>div>div:first').append('<span class="iconfont choose_coord">&#xe680;</span>');
+    //文本超出变省略号
+    $('.choose>div>div').siblings().children().children().eq(1).css({
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap'
+    });
 });
