@@ -302,6 +302,18 @@
             }
         }
         .content.picture{
+            .waiting{
+                display: none;
+                line-height: 20px;
+                background-color: yellowgreen;
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translate(-50%,0);
+                color: #fff;
+                padding: 4px 10px;
+                border-radius: 20px;
+            }
             &>.row{
                 .title{
                     margin-bottom: 24px;
@@ -309,6 +321,10 @@
                 .pic{
                     padding: 0 20px 20px;
                     text-align: center;
+                    height: 192px;
+                    @media(max-width:768px){
+                        height: auto;
+                    }
                     img{
                         width: 100%;
                         @media(max-width:768px){
@@ -360,6 +376,14 @@
                                         height: 100%;
                                         width: 100%;
                                         float: left;
+                                    }
+                                    &.active{
+                                        border-color:#ff5a5f;
+                                        border-width: 4px;
+                                        box-shadow: 0 1px 5px rgba(0,0,0,.6);
+                                    }
+                                    &:hover{
+                                        box-shadow: 0 1px 5px rgba(0,0,0,.4);
                                     }
                                 }
                            }

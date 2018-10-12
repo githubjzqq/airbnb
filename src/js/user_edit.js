@@ -15,7 +15,7 @@ $(function() {
     }
     if ($('#birthyear').html()) {
         var time = (new Date).toUTCString().substr(12, 4);
-        for (let i = 1900; i <= Number(time); i++) {
+        for (let i = Number(time); i >= 1900; i--) {
             var elm = '<option value="' + i + '">' + i + '年</option>';
             $('#birthyear').append(elm);
         }
@@ -48,10 +48,9 @@ $(function() {
     $('.main>.container>.row>.content:not(.tabs_content).estimate .row.tabs').on('click', 'span', tab);
     $('.main>.container>.row>.content:not(.tabs_content).recommend .row.tabs').on('click', 'span', tab);
 
-    //同步用户信息；
+
     function downloadMsg() {
         var user = sessionStorage;
-        console.log(user);
         if (user.length != 0) {
             if (user.username != 'null') {
                 $('#name').val(user.username).css('background-color', '#f1f1f1');
@@ -90,9 +89,17 @@ $(function() {
             if (user.userwork != 'null') {
                 $('#work').val(user.userwork).css('background-color', '#f1f1f1');
             };
+            if (user.userheaderimg != 'null') {
+                $('.main .content.picture .row .pic img').attr('src', user.userheadimg);
+            }
         };
     }
-    downloadMsg();
+
+    //同步用户信息；
+    if (sessionStorage.userid) {
+        //如果登陆同步信息；
+        downloadMsg();
+    }
 
     //获取用户编辑信息
     function earnMsg() {
@@ -158,5 +165,73 @@ $(function() {
         }
     });
 
-    //选择用户头像；
+    //用户头像；
+
+    //同步数据库中的头像；
+    function downloadPic() {
+        var url = '../php/user_pic.php';
+        $.ajax({
+            url: url,
+            type: 'post',
+            data: null,
+            success: function(data) {
+                sessionStorage.pic = JSON.stringify(JSON.parse(data));
+            }
+        })
+    };
+    //判断是否已经保存头像到本地；
+    if (!sessionStorage.pic) {
+        downloadPic();
+        var obj = JSON.parse(sessionStorage.pic);
+        console.log(obj);
+        for (var i in obj) {
+            var item = $('<div class="item"></div>')
+            item.html('<img src="' + obj[i].path + '" alt="pic">');
+            $('#pic_list').append(item);
+        }
+    } else {
+        var obj = JSON.parse(sessionStorage.pic);
+        for (var i in obj) {
+            var item = $('<div class="item"></div>')
+            item.html('<img src="' + obj[i].path + '" alt="pic">');
+            $('#pic_list').append(item);
+        }
+    }
+
+
+    //点击选择头像；
+
+    //样式；
+    $('#pic_list').on('click', '.item', function(e) {
+        $(e.target).parent().siblings().removeClass('active');
+        $(e.target).parent().toggleClass('active');
+    });
+
+    //放弃修改移除选中的；
+    $('#no_save').on('click', function(e) {
+        $(e.target).parent().siblings('#pic_list').children().removeClass('active');
+    });
+
+    //点击提交按钮；
+
+    $('#save_pic').on('click', function(e) {
+        if ($('#pic_list .item.active').length && sessionStorage.userid) {
+            var path = $('#pic_list .item.active img').attr('src');
+            var data = 'path=' + path + '&userid=' + sessionStorage.userid;
+            console.log(path, data);
+            $.ajax({
+                url: '../php/user_edit_pic.php',
+                data: data,
+                type: 'post',
+                success: function(data) {
+                    sessionStorage.userheadimg = path;
+                    $('#save_pic').parent().siblings('.waiting').css({ 'display': 'block' }).html(data + '(2s后自动关闭)');
+                    setTimeout(function() {
+                        $('#save_pic').parent().siblings('.waiting').css({ 'display': '' }).empty();
+                        location.reload();
+                    }, 1500)
+                }
+            })
+        }
+    });
 });
