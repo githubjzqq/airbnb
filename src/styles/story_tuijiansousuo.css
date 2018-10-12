@@ -1,4 +1,8 @@
     @charset "utf-8";
+    .all {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
     /*标题头部*/
     
     .navbar-brand .title1 {
