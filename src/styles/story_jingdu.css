@@ -1,4 +1,9 @@
 @charset "utf-8";
+.all {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 
 /*标题头部*/
 
