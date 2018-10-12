@@ -13,22 +13,7 @@
     $work=$_POST['work'];
     $birth=$_POST['birth'];
     $id=$_POST['id'];
-    // echo($id);
-    // echo($name);
-    // user_password: "Zzz123123"
-    // useraddress: "浙江省江干区九堡镇九和路"
-    // userage: "21"
-    // userbirth: "{"year":"1997","mouth":"9","day":"20"}"
-    // useremail: "1506747508@qq.com"
-    // userheadimg: "../images/public/mario.JPG"
-    // userid: "66"
-    // userintro: "一个会打篮球的程序员"
-    // username: "Mario"
-    // userschool: "华东理工大学"
-    // usersex: "1"
-    // usertel: "15715577153"
-    // userwork: "前端工程师"
-
+    
     mysql_query("UPDATE `aby_user` SET `username` = '$name' WHERE (`aby_user`.`userid` = '$id')");
     mysql_query("UPDATE `aby_user` SET `usertel` = '$phoneNmb' WHERE (`aby_user`.`userid` = '$id')");
     mysql_query("UPDATE `aby_user` SET `useraddress` = '$address' WHERE (`aby_user`.`userid` = '$id')");

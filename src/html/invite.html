@@ -168,14 +168,13 @@
     <div class="main">
         <div class="banner">
             <div class="container">
-                <div class="userpic"><img src="../images/user/mario.JPG" alt=""></div>
+                <div class="userpic"><img src="../images/user/tx0.JPG" alt=""></div>
                 <h3>分享您对旅行的热爱</h3>
                 <p>当好友通过你分享的链接注册，将获得最高￥353的礼金券。他们使用礼金券并成功预订后，你将获得￥75的旅行基金。<br><a href=""> 阅读条款</a></p>
             </div>
 
         </div>
     </div>
-
     <div class="mod">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog mad1" role="document">
@@ -397,6 +396,9 @@
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../js/public.js"></script>
     <script src="../js/user_edit.js"></script>
+    <script>
+        $('.userpic img').attr('src', sessionStorage.userheadimg);
+    </script>
 </body>
 
 </html>

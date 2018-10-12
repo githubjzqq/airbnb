@@ -1,7 +1,4 @@
 $(function() {
-    // $('.contant').load('../html/index.html')
-
-
     var login = 0; //储存登陆信息；
     var regist = {}; //储存注册信息；
     regist.url = '../php/regist.php';
@@ -16,7 +13,7 @@ $(function() {
 
         //显示登陆后的用户基本信息；
         $('.header .header-nav li.sub.user-msg').attr('style', ''); //登陆后显示用户信息；
-        $('.header .header-nav li.login .userpic').css('display', 'block'); //登陆后显示用户头像；
+        $('.header .header-nav li.login .userpic').css('display', 'block').children('img').attr('src', sessionStorage.userheadimg); //登陆后显示用户头像；
         $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
         $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
         $('.mod').css('display', 'none');
@@ -147,9 +144,11 @@ $(function() {
         };
     });
     $('#logo').on('click', function() {
-        if (window, innerWidth < 1128) {
+        if (window.innerWidth < 1128) {
             $('.header .sub-btn .img').toggleClass('trans');
-            $('.header-nav-min').toggleClass('show')
+            $('.header-nav-min').toggleClass('show');
+        } else {
+            location.href = '../html/public.html';
         }
     });
 
