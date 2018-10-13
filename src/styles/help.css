@@ -1,0 +1,59 @@
+.main .banner {
+  height: 228px;
+  background-color: #00857a;
+}
+.main .banner h4 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 62PX;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .main .banner h4 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .main .banner h4 {
+    font-size: 28px;
+  }
+}
+.main .banner .input {
+  height: 44px;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+.main .banner .input input {
+  float: left;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 10px 30px;
+}
+.main .content .title {
+  font-size: 32px;
+  line-height: 50px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.main .content ul {
+  float: left;
+}
+.main .content ul li {
+  font-size: 15px;
+  line-height: 30px;
+}
+.main .content ul li:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main .content ul li a {
+  color: #00857a;
+}
+.footer {
+  border: none;
+}
