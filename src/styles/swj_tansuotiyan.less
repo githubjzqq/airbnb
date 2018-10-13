@@ -26,8 +26,27 @@ height: 68px;
 overflow: hidden;
 }
 @media (max-width: 743px) {
-    .active {
-
+    #bigquan{
+        width: 375px!important;
+    }
+    .glyphicon-menu-right{
+        margin-top: 10px;
+        font-size: 30px!important;
+      
+    }
+    .glyphicon-menu-left{
+        margin-top: 10px;
+        font-size: 30px!important;
+    }
+    #bag{
+        width: 375px!important;
+        margin-left: 35px!important;
+    }
+    #fix-top{
+        width: 375px!important;
+    }
+    .actives {
+        width: 375px!important;
         display: block!important;
         
         
@@ -69,13 +88,14 @@ overflow: hidden;
     .visit{
         width: 370px!important;
         height: auto;
+        mrrgin-left:10px;
         flex-wrap: wrap!important;
 
     }
-    .lazy img{
-        width: 140px!important;
-        height: 105px!important;
-    }
+    // .lazy img{
+    //     width: 140px!important;
+    //     height: 105px!important;
+    // }
     .hangzhou{
         // display: block;
         width: 140px!important;
@@ -109,8 +129,12 @@ overflow: hidden;
     #jiage{
         display: none!important;
     }
+    .ruler{
+        right: 10px!important;
+        bottom: 5px!important;
+    }
 }
-.active{
+.actives{
     display: flex;
     width: 1249px;
     
@@ -151,6 +175,7 @@ overflow: hidden;
     span{
         font-size: 16px;
         font-weight: 700;
+        z-index: 99;
     }
     a{
         color: rgb(0, 132, 137);
@@ -164,16 +189,17 @@ overflow: hidden;
 }
 
 
-.hangzhou:hover .glyphicon-heart-empty{
+.hangzhou>div .glyphicon-heart-empty:hover {
     color: red!important;
     font-weight: 900;
     opacity: 1;
+    
 }
 .ruler{
     cursor: pointer;
     position: fixed;
-    bottom:     50px;
-    right: 20px;
+    bottom:25px;
+    right:20px;
     background-color: #fff;
     z-index: 5;
 }

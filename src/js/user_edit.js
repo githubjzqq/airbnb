@@ -188,6 +188,7 @@ $(function() {
             var item = $('<div class="item"></div>')
             item.html('<img src="' + obj[i].path + '" alt="pic">');
             $('#pic_list').append(item);
+            location.reload();
         }
     } else {
         var obj = JSON.parse(sessionStorage.pic);

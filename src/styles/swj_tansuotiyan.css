@@ -22,24 +22,43 @@
   overflow: hidden;
 }
 @media (max-width: 743px) {
-  .active {
+  #bigquan {
+    width: 375px!important;
+  }
+  .glyphicon-menu-right {
+    margin-top: 10px;
+    font-size: 30px!important;
+  }
+  .glyphicon-menu-left {
+    margin-top: 10px;
+    font-size: 30px!important;
+  }
+  #bag {
+    width: 375px!important;
+    margin-left: 35px!important;
+  }
+  #fix-top {
+    width: 375px!important;
+  }
+  .actives {
+    width: 375px!important;
     display: block!important;
   }
-  .active img {
+  .actives img {
     width: 286px!important;
     height: 190px!important;
   }
-  .active small {
+  .actives small {
     font-size: 13px;
   }
-  .active span a {
+  .actives span a {
     word-wrap: break-word;
     font-size: 17px;
   }
-  .active p {
+  .actives p {
     font-size: 15px;
   }
-  .active div {
+  .actives div {
     width: 300px;
   }
   .tuwen {
@@ -53,11 +72,8 @@
   .visit {
     width: 370px!important;
     height: auto;
+    mrrgin-left: 10px;
     flex-wrap: wrap!important;
-  }
-  .lazy img {
-    width: 140px!important;
-    height: 105px!important;
   }
   .hangzhou {
     width: 140px!important;
@@ -88,22 +104,26 @@
   #jiage {
     display: none!important;
   }
+  .ruler {
+    right: 10px!important;
+    bottom: 5px!important;
+  }
 }
-.active {
+.actives {
   display: flex;
   width: 1249px;
 }
-.active div {
+.actives div {
   cursor: pointer;
 }
-.active img {
+.actives img {
   width: 385.66px;
   height: 241.03px;
 }
-.active a {
+.actives a {
   color: #000;
 }
-.active span {
+.actives span {
   font-size: 18px;
   font-weight: 600;
 }
@@ -129,6 +149,7 @@
 .hangzhou span {
   font-size: 16px;
   font-weight: 700;
+  z-index: 99;
 }
 .hangzhou a {
   color: #008489;
@@ -137,7 +158,7 @@
   opacity: 0.6;
   transform: scale(1.1);
 }
-.hangzhou:hover .glyphicon-heart-empty {
+.hangzhou > div .glyphicon-heart-empty:hover {
   color: red!important;
   font-weight: 900;
   opacity: 1;
@@ -145,7 +166,7 @@
 .ruler {
   cursor: pointer;
   position: fixed;
-  bottom: 50px;
+  bottom: 25px;
   right: 20px;
   background-color: #fff;
   z-index: 5;

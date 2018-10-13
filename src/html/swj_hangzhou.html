@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>杭州</title>
     <!-- 引入bootstrap的和自加的css文件 -->
     <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/swj_common.css">
     <link rel="stylesheet" href="../styles/swj_hangzhou.css">
+    <link rel="stylesheet" href="../styles/public-reset.css">
+    <link rel="stylesheet" href="../styles/public.css">
+    <link rel="stylesheet" href="../fonts/public/icon_font/iconfont.css">
     <!-- <link rel="stylesheet" href="../js/hangzhou.js"> -->
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -69,251 +72,494 @@
 
 <body>
     <!-- 100% -->
-    <div style="width: 100%;height: auto;">
-        <!-- 有宽度 -->
-        <div style="width:max-width;margin: 0 auto;" class="have">
-            <!-- 模拟输入框 -->
-            <div style="height: 200px;"></div>
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for..." id="search_inp">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"id="go">搜索</button>
-                      </span>
-                </div>
-                <!-- /input-group -->
+    <div style="width: 100%;height: auto;overflow-x: hidden;">
+        <!-- 头部 -->
+        <div class="header" style="position: fixed;width:100%;background-color: #fff;z-index: 9999;">
+            <div class="logo" id="logo"><i class="iconfont icon-aibiying"></i>
+                <div class="sub-btn"><svg class="img" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg></div>
             </div>
+            <div class="search">
+                <i class="iconfont icon-sousuo"></i>
+                <input type="text" class="input-text" placeholder="搜索">
+                <div class="user-history ">
+                    <p>最近的搜索</p>
+                    <ul class="his-list ">
+                        <li>
+                            <i class="iconfont icon-shizhong "></i><a href="https://www.baidu.com "><b>历史纪录1</b><br>条件1·条件2</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shizhong "></i><a href=" "><b>历史纪录1</b><br>条件1·条件2</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shizhong "></i><a href=" "><b>历史纪录1</b><br>条件1·条件2</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shizhong "></i><a href=" "><b>历史纪录1</b><br>条件1·条件2</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shizhong "></i><a href=" "><b>历史纪录1</b><br>条件1·条件2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="header-nav ">
+                <li class="_currency ">
+                    <a><img src="../images/public/China.png " alt=" " class="country ">人民币（￥）<i></i></a>
+                </li>
+                <li class="sub currency ">
+                    <h4>常用货币</h4>
+                    <div class="list active "><img src="../images/public/China.png " alt=" ">人民币（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">美元（$）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">日元（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">港币（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">新台币（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">欧元（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">英镑（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">英镑（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">英镑（￥）<i class="iconfont icon-gou "></i></div>
+                    <div class="list "><img src="../images/public/China.png " alt=" ">英镑（￥）<i class="iconfont icon-gou "></i></div>
+                </li>
+                <li><a>手机端</a></li>
+                <li class="sub app ">
+                    <div class='left'>
+                        <img src="../images/public/qr1.png " alt=" ">
+                        <p>下载手机客户端</p>
+                    </div>
+                    <div class='right'>
+                        <img src="../images/public/qr2.png " alt=" ">
+                        <p>关注微信服务号</p>
+                    </div>
+                </li>
+                <li><a>成为房东/体验达人</a></li>
+                <li class="sub house ">
+                    <div class="rent ">
+                        <a href=" ">
+                            <h4>出租房源</h4>
+                            <p>在杭州接待旅行者，每月为您带来高达￥4391的收入</p>
+                            <i class="iconfont icon-fangzi "></i></a>
+                    </div>
+                    <div class="experience ">
+                        <a href=" ">开展体验</a>
+                    </div>
+                </li>
+                <li><a href="../html/story.html ">故事</a></li>
+                <li class="sub "></li>
+                <li><a>心愿单</a></li>
+                <li class="sub like ">
+                    <h4>心愿单<a href=" ">查看心愿单</a></h4>
+                    <div class="list ">
+                        <div class="text ">
+                            <div class="position ">杭州市</div>
+                            <div class="num1 ">1位客人</div>
+                            <div class="num2 ">6个房源</div>
+                        </div>
+                        <div class='pic'>
+                            <img src="../images/public/h1.jpg " alt="房源图片 ">
+                        </div>
+                    </div>
+                    <div class="list ">
+                        <div class="text ">
+                            <div class="position ">杭州市</div>
+                            <div class="num1 ">1位客人</div>
+                            <div class="num2 ">6个房源</div>
+                        </div>
+                        <div class='pic'>
+                            <img src="../images/public/h2.jpg " alt="房源图片 ">
+                        </div>
+                    </div>
+                </li>
+                <li><a href=" ">旅程</a></li>
+                <li class="sub "></li>
+                <li><a>消息</a></li>
+                <li class="sub message ">
+                    <div class="list ">消息（0）<a href=" ">查看所有</a></div>
+                    <div class="list ">通知<a href=" ">查看所有</a></div>
+                </li>
+                <li><a>帮助</a></li>
+                <li class="sub help "></li>
+                <li data-toggle="modal " data-target="#myModal " class='login'>
+                    <a style="display:none " class="userpic "><img src="../images/public/mario.JPG " alt=" " class="userpic "></a>
+                    <a class="index ">登陆/注册</a>
+                </li>
+                <li class="sub user-msg " style="display: none; ">
+                    <ul>
+                        <li><a href="./user_edit.html ">编辑个人资料</a></li>
+                        <li><a href=" ">旅行基金</a></li>
+                        <li><a href=" ">账号设置</a></li>
+                        <li><a href="./guide.html ">我的指南</a></li>
+                        <li><a href=" ">礼品卡</a></li>
+                        <li><a href=" ">商务爱彼迎</a></li>
+                        <li class="exit "><a href=" ">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="header-nav-min ">
+                <li><a href=" ">首页</a></li>
+                <li class="hr ">
+                    <hr>
+                </li>
+                <li><a href=" ">个人资料<i class="iconfont icon-yonghu "></i></a></li>
+                <li><a href=" ">旅程<i class="iconfont icon-601 "></i></a></li>
+                <li><a href=" ">消息<i class="iconfont icon-xinxi "></i></a></li>
+                <li><a href=" ">心愿单<i class="iconfont icon-aixin "></i></a></li>
+                <li><a href="./invite.html ">邀请好友<i class="iconfont icon-weibiaoti-1 "></i></a></li>
+                <li><a href=" ">故事</a></li>
+                <li class="hr ">
+                    <hr>
+                </li>
+                <li><a href=" ">商务爱彼迎</a></li>
+                <li class="hr ">
+                    <hr>
+                </li>
+                <li><a href=" ">出租房源<i class="iconfont icon-fangzi "></i></a><br>把房子租出去，<b> 每月多赚￥4,387</b></li>
+                <li><a href=" ">开展体验</a></li>
+                <li class="hr ">
+                    <hr>
+                </li>
+                <li><a href=" ">帮助</a></li>
+                <li><a href=" ">退出</a></li>
+            </ul>
+        </div>
+        <!-- 登陆注册模态框 -->
+        <div class="mod ">
+            <div class="modal fade " id="myModal " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
+                <div class="modal-dialog mad1 " role="document ">
+                    <div class="modal-content first active regist ">
+                        <div class="modal-header ">
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                            <h4 class="modal-title " id="myModalLabel ">注册爱彼迎账号</h4>
+                            <p>已有账号？<a>登陆</a></p>
+                        </div>
+                        <div class="modal-body phone ">
+                            <a><i class="iconfont icon-dianhua-copy "></i>手机号注册</a>
+                        </div>
+                        <div class="modal-body email ">
+                            <a><i class="iconfont icon-weibiaoti- "></i>邮箱注册</a>
+                        </div>
+                        <div class="modal-body other ">
+                        </div>
+                    </div>
+                    <div class="modal-content regist phone ">
+                        <div class="tips ">信息填写有误</div>
+                        <div class="modal-header ">
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                            <h4 class="modal-title " id="myModalLabel ">手机号注册</h4>
+                            <p>已有账号？<a>登陆</a></p>
+                        </div>
+                        <div class="modal-body input ">
+                            <div class="country ">+86<span><i class="iconfont icon-fangxiangshang "></i></span></div>
+                            <div class="inputnmb "><input type="text " placeholder="手机号 "></div>
+                        </div>
+                        <div class="modal-body verify ">
+                            <input type="text " placeholder="输入验证码 "><span class="result "></span><span class="generate ">点击获取验证码</span>
+                        </div>
+                        <div class="modal-body password ">
+                            <div class="box ">
+                                <input type="password " class="pwd "><i class="iconfont icon-kejian "></i>
+                            </div>
+                            <p class="length "><i class="iconfont icon-cha "></i><span class="val ">至少包含8个字符</span></p>
+                            <p class="word "><i class="iconfont icon-cha "></i><span class="val ">包含数字符号和大小写字母</span></p>
+                        </div>
+                        <div class="modal-body rule ">
+                            <div class="box "><input type="checkbox " class="check "></div>
+                            <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                        </div>
+                        <div class="modal-body button ">注册</div>
+                        <div class="modal-body other ">
+                            <a>使用其他方式注册</a>
+                        </div>
+                    </div>
+                    <div class="modal-content login phone ">
+                        <div class="tips ">信息填写有误</div>
+                        <div class="modal-header ">
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                            <h4 class="modal-title " id="myModalLabel ">手机号登陆</h4>
+                            <p>还没有账号？<a>注册</a></p>
+                        </div>
+                        <div class="modal-body input ">
+                            <div class="country ">+86<span><i class="iconfont icon-fangxiangshang "></i></span></div>
+                            <div class="inputnmb "><input type="text " placeholder="手机号 "></div>
+                        </div>
+                        <div class="modal-body password ">
+                            <div class="box ">
+                                <input type="password " class="pwd " placeholder="请输入密码 "><i class="iconfont icon-kejian "></i>
+                            </div>
+                        </div>
+                        <div class="modal-body rule ">
+                            <div class="box "><input type="checkbox " class="check "></div>
+                            <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                        </div>
+                        <div class="modal-body button ">登陆</div>
+                        <div class="modal-body other ">
+                            <a>使用其他方式登陆</a>
+                        </div>
+                    </div>
+                    <div class="modal-content regist email ">
+                        <div class="tips ">信息填写有误</div>
+                        <div class="modal-header ">
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                            <h4 class="modal-title " id="myModalLabel ">邮箱注册</h4>
+                            <p>已有账号？<a>登陆</a></p>
+                        </div>
+                        <div class="modal-body input ">
+                            <div class="inputnmb "><input type="text " placeholder="输入邮箱 "></div>
+                        </div>
+                        <div class="modal-body verify ">
+                            <input type="text " placeholder="输入验证码 "><span class="result "></span><span class="generate ">点击获取验证码</span>
+                        </div>
+                        <div class="modal-body password ">
+                            <div class="box ">
+                                <input type="password " class="pwd " placeholder="请输入密码 "><i class="iconfont icon-kejian "></i>
+                            </div>
+                            <p class="length "><i class="iconfont icon-cha "></i><span class="val ">至少包含8个字符</span></p>
+                            <p class="word "><i class="iconfont icon-cha "></i><span class="val ">包含数字符号和大小写字母</span></p>
+                        </div>
+                        <div class="modal-body rule ">
+                            <div class="box "><input type="checkbox " class="check "></div>
+                            <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                        </div>
+                        <div class="modal-body button ">注册</div>
+                        <div class="modal-body other ">
+                            <a>使用其他方式注册</a>
+                        </div>
+                    </div>
+                    <div class="modal-content login email ">
+                        <div class="tips ">信息填写有误</div>
+                        <div class="modal-header ">
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true ">&times;</span></button>
+                            <h4 class="modal-title " id="myModalLabel ">邮箱登陆</h4>
+                            <p>还没有账号？<a>注册</a></p>
+                        </div>
+                        <div class="modal-body input ">
+                            <div class="inputnmb "><input type="text " placeholder="输入邮箱 "></div>
+                        </div>
+                        <div class="modal-body password ">
+                            <div class="box ">
+                                <input type="password " class="pwd " placeholder="请输入密码 "><i class="iconfont icon-kejian "></i>
+                            </div>
+                        </div>
+                        <div class="modal-body rule ">
+                            <div class="box "><input type="checkbox " class="check "></div>
+                            <p class="msg ">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                        </div>
+                        <div class="modal-body button ">登陆</div>
+                        <div class="modal-body other ">
+                            <a>使用其他方式登陆</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 有宽度的盒子 -->
+
+        <div style="width:max-width;margin: 0 auto; " class="have ">
             <!-- /.col-lg-6 -->
         </div>
         <!-- /.row -->
 
         <!-- 头固定 -->
-        <div style="width:auto;line-height:64px;border: 1px solid rgba(226, 223, 223, 0.877);background-color: #fff;margin: 0 auto;" class="navbar navbar-fixed-top">
-
-
-            <div class="btn-group" role="group" aria-label="..." id="buts">
-                <button type="button" class="btn btn-default">日期</button>
-                <button type="button" class="btn btn-default">一位房客</button>
+        <div style="width:auto;line-height:64px;border: 1px solid rgba(226, 223, 223, 0.877);background-color: #fff;top: 80px; " class="navbar navbar-fixed-top ">
+            <div class="btn-group " role="group " aria-label="... " id="buts ">
+                <button type="button " class="btn btn-default ">日期</button>
+                <button type="button " class="btn btn-default ">一位房客</button>
 
             </div>
         </div>
         <!-- 探索标题 -->
-        <div style="margin:0 auto;">
-            <div class="housecity" style="margin-left:85px;">探索杭州</div>
-            <div style="margin-top:10px;" class="viewscreen">
-                <div class="fangxiang">
-                    <ul style="margin-left:0px;" class="lunbolike">
+        <div style="margin:0 auto; ">
+            <div class="housecity " style="margin-left:85px;margin-top: 200px; ">探索杭州</div>
+            <div style="margin-top:10px; " class="viewscreen ">
+                <div class="fangxiang ">
+                    <ul style="margin-left:0px; " class="lunbolike ">
                         <li>
-                            <img src="https://z1.muscache.cn/im/pictures/1de3cfee-c967-418d-9feb-f60bef526686.jpg?aki_policy=large" alt="餐饮"> 房源
+                            <img src="https://z1.muscache.cn/im/pictures/1de3cfee-c967-418d-9feb-f60bef526686.jpg?aki_policy=large " alt="餐饮 "> 房源
                         </li>
                         <li>
-                            <img src="https://z1.muscache.cn/im/pictures/d582a382-5613-44da-92da-9ce6f6c1a62b.jpg?aki_policy=large" alt="餐饮"> 体验
+                            <img src="https://z1.muscache.cn/im/pictures/d582a382-5613-44da-92da-9ce6f6c1a62b.jpg?aki_policy=large " alt="餐饮 "> 体验
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- 体验 -->
-        <div class="totry" style="margin-left:80px;">
-            <div class="swj_title">热门体验
-                <h4 style="margin-top:20px">在下趟旅程中，不妨预订由本地达人组织的体验活动&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="display:none;font-weight: 600;font-size: 18px;">></span></h4>
+        <div class="totry " style="margin-left:80px; ">
+            <div class="swj_title ">热门体验
+                <h4 style="margin-top:20px ">在下趟旅程中，不妨预订由本地达人组织的体验活动&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon gglyphicon glyphicon-menu-right " id="jiantou "></span></span>
+                </h4>
             </div>
-            <div style="display:flex;flex-wrap: wrap;width: 100%;" class="visit">
-                <div class="hangzhou">
+            <div style="display:flex;flex-wrap: wrap;width: 100%; " class="visit ">
+                <div class="hangzhou ">
 
-                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span><img src="https://z1.muscache.cn/im/pictures/c33630a8-7d4a-484a-b538-479b53cb93c5.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color:#fff; "></span><img src="https://z1.muscache.cn/im/pictures/c33630a8-7d4a-484a-b538-479b53cb93c5.jpg?aki_policy=large
+                    " alt=" "></div>
                     <small>摄影</small>
                     <br>
                     <span>摄影师带你游杭州，用镜头记录你的一天</span>
                     <p>每人￥360</p>
                     <a>4.79 
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
                             19</a>
                 </div>
-                <div class="hangzhou">
+                <div class="hangzhou ">
 
-                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span>
-                        <img src="https://z1.muscache.cn/im/pictures/cde1003f-5df7-4406-aa39-92742b06b4c6.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color:#fff; "></span>
+                        <img src="https://z1.muscache.cn/im/pictures/cde1003f-5df7-4406-aa39-92742b06b4c6.jpg?aki_policy=large " alt=" "></div>
                     <small>大自然</small>
                     <br>
                     <span>杭州西湖闲茶</span>
                     <p>每人￥236</p>
                     <a>4.87 
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
                             39</a>
                 </div>
-                <div class="hangzhou">
+                <div class="hangzhou ">
 
-                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
-                        <img src="https://z1.muscache.cn/im/pictures/dc454bbf-4e74-4c77-9d83-ea9dbe120aa1.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color: #fff; "></span>
+                        <img src="https://z1.muscache.cn/im/pictures/dc454bbf-4e74-4c77-9d83-ea9dbe120aa1.jpg?aki_policy=large " alt=" "></div>
                     <small>逛酒吧</small>
                     <br>
                     <span>Uncover Secret Laneway Bars</span>
                     <p>每人￥300</p>
                     <a>4.79 
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
                             19</a>
                 </div>
 
-                <div class="hangzhou">
+                <div class="hangzhou ">
 
-                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
-                        <img src="https://z1.muscache.cn/im/pictures/f23ea526-ba1a-4b95-9f01-165c00f3da0e.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color: #fff; "></span>
+                        <img src="https://z1.muscache.cn/im/pictures/f23ea526-ba1a-4b95-9f01-165c00f3da0e.jpg?aki_policy=large " alt=" "></div>
                     <small>一日游</small>
                     <br>
                     <span>来西湖龙井原产地体验一天茶农生活</span>
                     <p>每人￥158</p>
                     <a>4.79 
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
                             19</a>
                 </div>
-                <div class="hangzhou" id="none">
+                <div class="hangzhou " id="none ">
 
-                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
-                        <img src="https://z1.muscache.cn/im/pictures/c371bc3d-dee1-4b64-84c5-34cab5cd2110.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color: #fff; "></span>
+                        <img src="https://z1.muscache.cn/im/pictures/c371bc3d-dee1-4b64-84c5-34cab5cd2110.jpg?aki_policy=large " alt=" "></div>
                     <small>工作坊</small>
                     <br>
                     <span>自在坞手工文艺复兴（玻璃马赛克）</span>
                     <p>每人￥198</p>
                     <a>4.79 
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
                         19</a>
                 </div>
-                <div class="hangzhou" id="none">
+                <div class="hangzhou " id="none ">
 
-                    <div style="position:relative;"><span id="swj_heart" class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span>
-                        <img src="https://z1.muscache.cn/im/pictures/d1017c3a-d176-4d6c-a136-6d6a22912b27.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span id="swj_heart " class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color:#fff; "></span>
+                        <img src="https://z1.muscache.cn/im/pictures/d1017c3a-d176-4d6c-a136-6d6a22912b27.jpg?aki_policy=large " alt=" "></div>
                     <small>品茶</small>
                     <br>
                     <span>在西山国家森林公园来一次西湖龙井茶采摘体验</span>
                     <p>每人￥149</p>
                     <a>4.79 
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
                             19</a>
                 </div>
-                <div class="hangzhou" id="none">
+                <div class="hangzhou " id="none ">
 
-                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color: #fff;"></span>
-                        <img src="https://z1.muscache.cn/im/pictures/69ac8063-2bf4-4c1b-9b62-6c2cb5d22db6.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color: #fff; "></span>
+                        <img src="https://z1.muscache.cn/im/pictures/69ac8063-2bf4-4c1b-9b62-6c2cb5d22db6.jpg?aki_policy=large " alt=" "></div>
                     <small>摄影</small>
                     <br>
                     <span>摄影师带你游杭州，用镜头记录你的一天</span>
                     <p>每人￥360</p>
                     <a>4.79 
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
                             19</a>
                 </div>
-                <div class="hangzhou" id="none">
+                <div class="hangzhou " id="none ">
 
-                    <div style="position:relative;"><span class="glyphicon glyphicon-heart-empty" style="position: absolute;right: 25px;font-size: 20px;color:#fff;"></span>
-                        <img src="https://z1.muscache.cn/im/pictures/c33630a8-7d4a-484a-b538-479b53cb93c5.jpg?aki_policy=large" alt=""></div>
+                    <div style="position:relative; "><span class="glyphicon glyphicon-heart-empty " style="position: absolute;right: 25px;font-size: 20px;color:#fff; "></span>
+                        <img src="https://z1.muscache.cn/im/pictures/c33630a8-7d4a-484a-b538-479b53cb93c5.jpg?aki_policy=large " alt=" "></div>
                     <small>摄影</small>
                     <br>
                     <span>摄影师带你游杭州，用镜头记录你的一天</span>
                     <p>每人￥360</p>
                     <a>4.79 
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
                         19</a>
                 </div>
-                <div class="xianshi" style="
-                    width:290px;
-                    cursor: pointer;
-                    line-height:48px;
-                    border-radius: 5px;
-                    margin-left:10px;
-                    font-size:18px;
-                    color:rgb(0, 132, 137);
-                    font-weight: 600;
-                    text-align: left;">
-                    <span> 显示全部(20) <span class="glyphicon glyphicon-chevron-right"id="jiantou"></span></span>
+                <div class="xianshi " style=" width:290px; cursor: pointer; line-height:48px; border-radius: 5px; margin-left:10px; font-size:18px; color:rgb(0, 132, 137); font-weight: 600; text-align: left; ">
+                    <span> 显示全部(20) <span class="glyphicon gglyphicon glyphicon-menu-right "id="jiantou "></span></span>
                 </div>
 
             </div>
         </div>
 
         <!-- 房源 -->
-        <div class="totry">
-            <div class="swj_title" style="margin-left:80px;">住宿<span style="display:none;font-weight: 200;" class="glyphicon glyphicon-chevron-right"></span></div>
+        <div class="totry ">
+            <div class="swj_title " style="margin-left:80px; ">住宿&nbsp;&nbsp;&nbsp;<span style="display:none;font-weight: 200; " class="glyphicon gglyphicon glyphicon-menu-right "></span></div>
             <!-- 动态获取房源数据 -->
-            <ul class="tabs_house">
+            <ul class="tabs_house ">
 
             </ul>
-            <div class="xianshi" style="
-                    width:290px;
-                    cursor: pointer;
-                    line-height:48px;
-                    border-radius: 5px;
-                    margin-left:80px;
-                    font-size:18px;
-                    color:rgb(0, 132, 137);
-                    font-weight: 600;
-                    text-align: left;">
-                <span> 显示全部(2000+) <span class="glyphicon glyphicon-chevron-right"id="jiantou"></span></span>
+            <div class="xianshi " style="width:290px; cursor: pointer; line-height:48px; border-radius: 5px; margin-left:80px; font-size:18px; color:rgb(0, 132, 137); font-weight: 600; text-align: left; ">
+                <span> 显示全部(2000+) <span class="glyphicon gglyphicon glyphicon-menu-right "id="jiantou "></span></span>
             </div>
         </div>
         <!-- 成为房东 -->
-        <div class="totry">
-            <div class="swj_title" style="margin-left:80px;">选择超赞房东
-                <small><h4>这些经验丰富的房东将为您提供宾至如归的体验&nbsp;&nbsp;&nbsp;&nbsp;<span style="display:none;font-weight: 200;" class="glyphicon glyphicon-chevron-right"></span></h4></small>
+        <div class="totry ">
+            <div class="swj_title " style="margin-left:80px; ">选择超赞房东
+                <p>这些经验丰富的房东将为您提供宾至如归的体验&nbsp;&nbsp;&nbsp;&nbsp;<span style="display:none;font-weight: 200; " class="glyphicon gglyphicon glyphicon-menu-right "></span></p>
             </div>
 
-            <ul class="tabs_house1">
+            <ul class="tabs_house1 ">
 
             </ul>
-            <div class="xianshi" style="
-                        width:290px;
-                        cursor: pointer;
-                        line-height:48px;
-                        border-radius: 5px;
-                        margin-left:80px;
-                        font-size:18px;
-                        color:rgb(0, 132, 137);
-                        font-weight: 600;
-                        text-align: left;">
-                <span> 显示全部(2000+) <span class="glyphicon glyphicon-chevron-right"id="jiantou"></span></span>
+            <div class="xianshi " style=" width:290px; cursor: pointer; line-height:48px; border-radius: 5px; margin-left:80px; font-size:18px; color:rgb(0, 132, 137); font-weight: 600; text-align: left; ">
+                <span> 显示全部(2000+) <span class="glyphicon gglyphicon glyphicon-menu-right "id="jiantou "></span></span>
             </div>
         </div>
         <!-- 右下固定条 -->
-        <div class="ruler"><span class="glyphicon glyphicon-globe"></span>条款，隐私政策，货币及更多</div>
+        <div class="ruler "><span class="glyphicon glyphicon-globe "></span>条款，隐私政策，货币及更多</div>
     </div>
     </div>
 </body>
 <script src="../../node_modules/jquery/dist/jquery.min.js "></script>
-<script src="../js/echo.min.js"></script>
+<script src="../js/echo.min.js "></script>
 <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
-<script src="../js/hangzhou.js"></script>
+<script src="../js/hangzhou.js "></script>
+<script src="../js/public.js "></script>
+<script src="../js/user_edit.js "></script>
+
 
 <script>
     echo.init();
