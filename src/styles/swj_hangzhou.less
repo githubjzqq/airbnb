@@ -3,14 +3,27 @@
     margin-left: 15px;
 }
 @media (max-width: 743px) {
+    .navbar-fixed-top{
+        margin-left: 10px;
+        width: 365px!important;
+    }
     .swj_title{
-        margin-left: 40px!important;
+        width: 340px!important;
+        margin-left: 15px!important;
+        margin-right: 0!important;
+        
+            p{
+                font-size: 14px!important;
+            }
+      
     }
     #buts{
+
         margin-left: 40px;
     }
     .totry{
-        margin-left: 40px!important;
+        width: 365px!important;
+        margin-left:30px!important;
         h4{
             font-size: 12px;
         }
@@ -21,9 +34,10 @@
         font-size: 16px;
     }
     .visit{
-        width: 370px!important;
+        width: 330px!important;
         height: auto;
         flex-wrap: wrap!important;
+        margin-right: 0!important;
 
     }
     .hangzhou{
@@ -57,7 +71,7 @@
         display: none;
     }
     .housecity{
-        margin-left: 40px;
+        margin-left:35px!important;
     }
     .viewscreen{
         width: 320px!important;
@@ -76,6 +90,10 @@
              } 
          }
        }
+       .ruler{
+        right: 10px!important;
+        bottom: 10px!important;
+    }
 }
     #jiage{
         display: none!important;
@@ -92,10 +110,12 @@ img{
    transition: all 1s;
    width: max-width;
    height: 190.16px;
+ 
 }
 span{
    font-size: 16px;
    font-weight: 700;
+   z-index: 99;
 }
 a{
    color: rgb(0, 132, 137);
@@ -108,18 +128,23 @@ transform: scale(1.1);
 // overflow: hidden;
 }
 
-
-.hangzhou:hover .glyphicon-heart-empty{
-color: red!important;
-font-weight: 900;
-opacity: 1;
+.hangzhou>div .glyphicon-heart-empty:hover {
+    color: red!important;
+    font-weight: 900;
+    opacity: 1;
+    
 }
+
 .swj_title{
     width: 1000px;
     font-size: 22px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
+    p{
+        font-weight: 300;
+        font-size: 16px;
+    }
     
 }
 .swj_title:hover span{
@@ -130,7 +155,7 @@ opacity: 1;
 .ruler{
     cursor: pointer;
     position: fixed;
-    bottom:  50px;
+    bottom:  40px;
     right: 20px;
     background-color: #fff;
     z-index: 5;

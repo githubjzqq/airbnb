@@ -40,25 +40,25 @@
   #fix-top {
     width: 375px!important;
   }
-  .active {
+  .actives {
     width: 375px!important;
     display: block!important;
   }
-  .active img {
+  .actives img {
     width: 286px!important;
     height: 190px!important;
   }
-  .active small {
+  .actives small {
     font-size: 13px;
   }
-  .active span a {
+  .actives span a {
     word-wrap: break-word;
     font-size: 17px;
   }
-  .active p {
+  .actives p {
     font-size: 15px;
   }
-  .active div {
+  .actives div {
     width: 300px;
   }
   .tuwen {
@@ -109,21 +109,21 @@
     bottom: 5px!important;
   }
 }
-.active {
+.actives {
   display: flex;
   width: 1249px;
 }
-.active div {
+.actives div {
   cursor: pointer;
 }
-.active img {
+.actives img {
   width: 385.66px;
   height: 241.03px;
 }
-.active a {
+.actives a {
   color: #000;
 }
-.active span {
+.actives span {
   font-size: 18px;
   font-weight: 600;
 }

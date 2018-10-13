@@ -2,14 +2,24 @@
   margin-left: 15px;
 }
 @media (max-width: 743px) {
+  .navbar-fixed-top {
+    margin-left: 10px;
+    width: 365px!important;
+  }
   .swj_title {
-    margin-left: 40px!important;
+    width: 340px!important;
+    margin-left: 15px!important;
+    margin-right: 0!important;
+  }
+  .swj_title p {
+    font-size: 14px!important;
   }
   #buts {
     margin-left: 40px;
   }
   .totry {
-    margin-left: 40px!important;
+    width: 365px!important;
+    margin-left: 30px!important;
   }
   .totry h4 {
     font-size: 12px;
@@ -20,9 +30,10 @@
     font-size: 16px;
   }
   .visit {
-    width: 370px!important;
+    width: 330px!important;
     height: auto;
     flex-wrap: wrap!important;
+    margin-right: 0!important;
   }
   .hangzhou {
     width: 140px!important;
@@ -52,7 +63,7 @@
     display: none;
   }
   .housecity {
-    margin-left: 40px;
+    margin-left: 35px!important;
   }
   .viewscreen {
     width: 320px!important;
@@ -70,6 +81,10 @@
   .viewscreen li img {
     width: 100%!important;
     height: 77.63px!important;
+  }
+  .ruler {
+    right: 10px!important;
+    bottom: 10px!important;
   }
 }
 #jiage {
@@ -91,6 +106,7 @@
 .hangzhou span {
   font-size: 16px;
   font-weight: 700;
+  z-index: 99;
 }
 .hangzhou a {
   color: #008489;
@@ -99,7 +115,7 @@
   opacity: 0.6;
   transform: scale(1.1);
 }
-.hangzhou:hover .glyphicon-heart-empty {
+.hangzhou > div .glyphicon-heart-empty:hover {
   color: red!important;
   font-weight: 900;
   opacity: 1;
@@ -111,6 +127,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.swj_title p {
+  font-weight: 300;
+  font-size: 16px;
+}
 .swj_title:hover span {
   display: inline-block !important;
   padding: 0;
@@ -119,7 +139,7 @@
 .ruler {
   cursor: pointer;
   position: fixed;
-  bottom: 50px;
+  bottom: 40px;
   right: 20px;
   background-color: #fff;
   z-index: 5;
