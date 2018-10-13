@@ -13,7 +13,7 @@
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 .header .search.focus {
-  border: 1px solid #788;
+  border: 1px solid #bbb;
 }
 .header .search i {
   color: #484848;
@@ -27,7 +27,7 @@
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 .header .header-nav > li:not(.sub):hover {
-  border-color: #788;
+  border-color: #bbb;
 }
 .header .header-nav > li:not(.sub) a {
   color: #484848;

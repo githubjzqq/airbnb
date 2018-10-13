@@ -215,23 +215,32 @@ $(function() {
     //点击提交按钮；
 
     $('#save_pic').on('click', function(e) {
-        if ($('#pic_list .item.active').length && sessionStorage.userid) {
-            var path = $('#pic_list .item.active img').attr('src');
-            var data = 'path=' + path + '&userid=' + sessionStorage.userid;
-            console.log(path, data);
-            $.ajax({
-                url: '../php/user_edit_pic.php',
-                data: data,
-                type: 'post',
-                success: function(data) {
-                    sessionStorage.userheadimg = path;
-                    $('#save_pic').parent().siblings('.waiting').css({ 'display': 'block' }).html(data + '(2s后自动关闭)');
-                    setTimeout(function() {
-                        $('#save_pic').parent().siblings('.waiting').css({ 'display': '' }).empty();
-                        location.reload();
-                    }, 1500)
-                }
-            })
+        if (sessionStorage.userid) {
+            if ($('#pic_list .item.active').length) {
+                var path = $('#pic_list .item.active img').attr('src');
+                var data = 'path=' + path + '&userid=' + sessionStorage.userid;
+                console.log(path, data);
+                $.ajax({
+                    url: '../php/user_edit_pic.php',
+                    data: data,
+                    type: 'post',
+                    success: function(data) {
+                        sessionStorage.userheadimg = path;
+                        $('#save_pic').parent().siblings('.waiting').css({ 'display': 'block' }).html(data + '(2s后自动关闭)');
+                        setTimeout(function() {
+                            $('#save_pic').parent().siblings('.waiting').css({ 'display': '' }).empty();
+                            location.reload();
+                        }, 1500)
+                    }
+                })
+            }
+        } else {
+            $('#save_pic').parent().siblings('.waiting').css({ 'display': 'block' }).html('请先登陆!');
+            setTimeout(function() {
+                $('#save_pic').parent().siblings('.waiting').css({ 'display': '' }).empty();
+            }, 1500);
         }
+
+
     });
 });
