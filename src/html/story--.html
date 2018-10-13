@@ -10,6 +10,60 @@
     <link rel="stylesheet" href="../styles/public-reset.css">
     <link rel="stylesheet" href="../styles/public.css">
     <link rel="stylesheet" href="../fonts/public/icon_font/iconfont.css">
+    <style>
+        .header {
+            height: 80px;
+            background: none;
+            z-index: 10;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .header #logo i {
+            color: #FF5A5F;
+        }
+        
+        .header .search {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(200, 200, 200, 0.5);
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header .search.focus {
+            border: 1px solid #bbb;
+        }
+        
+        .header .search i {
+            color: #484848;
+            font-weight: bold;
+        }
+        
+        .header .search .input-text {
+            color: #484848;
+        }
+        
+        .header .search .user-history {
+            border: 1px solid #ddd;
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header .header-nav>li:not(.sub):hover {
+            border-color: #bbb;
+        }
+        
+        .header .header-nav>li:not(.sub) a {
+            color: #484848;
+        }
+        
+        .header .header-nav li.sub {
+            background-color: #fff;
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid#f1f1f1;
+        }
+        
+        .header .header-nav li.sub.app {
+            width: 420px;
+        }
+    </style>
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -164,7 +218,7 @@
         </ul>
     </div>
     <!-- 登陆注册模态框 -->
-    <div class="mod">
+    <div class="mod" style="z-index:2">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog mad1" role="document">
                 <div class="modal-content first active regist">
@@ -293,7 +347,8 @@
             </div>
         </div>
     </div>
-
+    <div class="main_load">
+    </div>
     <div class="footer">
         <div class="container">
             <div class="tab1 row">
@@ -384,6 +439,13 @@
     </div>
     <script src=" ../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('.main_load').load('./story.html', function() {
+                console.log('load')
+            });
+        });
+    </script>
     <script src="../js/public.js"></script>
     <script src="../js/user_edit.js"></script>
 </body>
