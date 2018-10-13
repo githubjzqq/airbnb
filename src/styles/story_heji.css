@@ -674,3 +674,19 @@ body {
     background: white;
     border-radius: 10%;
 }
+
+.bingfen img:hover {
+    transform: scale(1.1)
+}
+
+.fangzi img:hover {
+    transform: scale(1.1)
+}
+
+.kafei img:hover {
+    transform: scale(1.1)
+}
+
+.laofoye img:hover {
+    transform: scale(1.1)
+}
