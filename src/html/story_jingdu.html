@@ -12,7 +12,59 @@
 
 
 </head>
-
+<style>
+    ._pex5ot2 {
+        float: left;
+    }
+    
+    .viewscreen {
+        width: 1100px;
+        overflow: hidden;
+        margin: 50px auto;
+        position: relative;
+    }
+    
+    .lunbolike {
+        list-style: none;
+        width: 5000px;
+        padding: 10px;
+        /* position: absolute; */
+        /* margin-left: -210px; */
+        overflow: hidden;
+    }
+    
+    .lunbolike>li {
+        width: 264px;
+        height: 72px;
+        border: 2px solid #ccc;
+        float: left;
+        margin-right: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .lunbolike>li img {
+        width: 96px;
+        height: 72px;
+        overflow: hidden;
+    }
+    
+    .fangxiang span:nth-of-type(1) {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+    }
+    
+    .fangxiang span:nth-of-type(2) {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        cursor: pointer;
+    }
+</style>
 <body>
 <div class="all ">
     <!--标题部分-->
@@ -64,75 +116,59 @@
 
 <!--小轮播部分-->
 
-<div class="row ">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-    <div class="row ">
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
-            <div class="row ">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                    <a href="# " class="thumbnail ">
-                     <img src="../images/story/images1/fangyuan.jpg "alt="... "  >
-                    </a>
+<div style="margin-top:10px; " class="viewscreen ">
+    <div class="fangxiang ">
+        <ul style="margin-left:0px; " class="lunbolike ">
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/1de3cfee-c967-418d-9feb-f60bef526686.jpg?aki_policy=large " alt="餐饮 "> 餐饮
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/d582a382-5613-44da-92da-9ce6f6c1a62b.jpg?aki_policy=large " alt="餐饮 "> 近距离感受音乐会
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/ae6c9abe-19c3-4966-96c4-0b730632e3ab.jpg?aki_policy=large " alt="餐饮 "> 大自然
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/13e027a5-d884-400d-a271-0b06497c2903.jpg?aki_policy=large " alt="餐饮 "> 体验课和工作坊
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/1a2600f4-9072-48c2-928b-1186279c8636.jpg?aki_policy=large " alt="餐饮 "> 娱乐
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/57477ffc-e9bf-4435-8a49-b1b207f523ff.jpg?aki_policy=large " alt="餐饮 "> 运动
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/ae876dcb-917e-4e6a-9dc9-d5ac69c003e5.jpg?aki_policy=large " alt="餐饮 "> 历史
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/e908cf29-f5b6-4ddc-9a07-b597e46b240b.jpg?aki_policy=large " alt="餐饮 "> 夜生活
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/3aa896af-b99a-43e7-bea9-0ac569fedd29.jpg?aki_policy=large " alt="餐饮 "> 艺术
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/1de3cfee-c967-418d-9feb-f60bef526686.jpg?aki_policy=large " alt="餐饮 "> 健康与养生
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/e05a8eaf-1017-4028-bbf3-8d2c6e95dd2a.jpg?aki_policy=large " alt="餐饮 "> 社会公益
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/e908cf29-f5b6-4ddc-9a07-b597e46b240b.jpg?aki_policy=large " alt="餐饮 "> 餐饮
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/1de3cfee-c967-418d-9feb-f60bef526686.jpg?aki_policy=large " alt="餐饮 "> 披萨
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/2f563128-b30d-47a7-a2b4-524014f313c0.jpg?aki_policy=large " alt="餐饮 "> 美甲
+            </li>
+            <li>
+                <img src="https://z1.muscache.cn/im/pictures/63cbd89f-cd8d-42ea-9ceb-9e70aeb6f958.jpg?aki_policy=large " alt="音乐 "> 音乐
+            </li>
+
+        </ul>
+        <span class="glyphicon glyphicon-circle-arrow-right next " style="display: block;margin-left:0px;font-size: 56px;z-index: 5;opacity: 0.4; "></span>
+        <span class="glyphicon glyphicon-circle-arrow-left prev " style="display: none;margin-left:0px;font-size: 56px;z-index: 5;opacity: 0.7; "></span>
     </div>
-
-    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-        <span style="font-size:16px; "><strong>房源</strong></span>
-        <p>409</p>
-    </div>
-
-    </div>
-    </div>
-
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
-        <div class="row ">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                <a href="# " class="thumbnail ">
-                    <img src="../images/story/images1/fangyuan.jpg " alt="... ">
-                </a>
-            </div>
-
-            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-                <span style="font-size:16px; "><strong>房源</strong></span>
-                <p>283</p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
-        <div class="row ">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                <a href="# " class="thumbnail ">
-                    <img src="../images/story/images1/jingdian.jpg " alt="... ">
-                </a>
-            </div>
-
-            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-                <span style="font-size:16px; "><strong>景点</strong></span>
-                <p>104</p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
-        <div class="row ">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                <a href="# " class="thumbnail ">
-                    <img src="../images/story/images1/dianpu.jpg " alt="... ">
-                </a>
-            </div>
-
-            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-                <span style="font-size:16px; "><strong>店铺</strong></span>
-                <p>37</p>
-            </div>
-
-        </div>
-    </div>
-
-    </div>
-</div>
 </div>
 
 
@@ -158,14 +194,15 @@
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
                         <a href="# " style="text-decoration: none; ">
                             <div class="thumbnail bingfen ">
-                                <img src="../images/story/images1/bbdingwu.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                                <img src=" " data-echo="../images/story/images1/bbdingwu.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
     
                                 <div class="caption ">
                                     <span class="dingwu "><strong>房源</strong></span>
                                     <span><strong>京都</strong></span>
                                     <span>住进了教科书式的“京町屋”。</span>
                                     <div style="text-align:center ">
-                                        <img src="../images/story/images1/aatouxiang.jpg "style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                        <img src=" " data-echo="../images/story/images1/aatouxiang.jpg "style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up
+        "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                     </div>
                                 </div>
                             </div>
@@ -176,14 +213,15 @@
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                             <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail fangzi ">
-                            <img src="../images/story/images1/bbzhulin.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                            <img src=" " data-echo="../images/story/images1/bbzhulin.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
     
                             <div class="caption ">
                                 <span class="lvxing "><strong>房源</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>令人愉快难忘的旅行。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg "style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src=" " data-echo="../images/story/images1/aatouxiang.jpg "style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+        glyphicon-comment "> 76</span>
                                 </div>
                             </div>
     
@@ -194,14 +232,15 @@
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                             <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail kafei ">
-                            <img src="../images/story/images1/bbfangjian.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src=" " data-echo="../images/story/images1/bbfangjian.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
     
                             <div class="caption ">
                                 <span class="fangjian2 "><strong>房源</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>Family feeling in Kyoto.</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg "style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src=" " data-echo="../images/story/images1/aatouxiang.jpg "style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+        glyphicon-comment "> 76</span>
                                 </div>
                             </div>
     
@@ -212,14 +251,14 @@
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
                             <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail laofoye ">
-                            <img src="../images/story/images1/bbchuang.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src=" " data-echo="../images/story/images1/bbchuang.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
     
                             <div class="caption ">
                                 <span class="tingyuan " "><strong>房源</strong></span>
     <span><strong>京都</strong></span>
     <span>风雅庭院深几许，京都旧时画中过。</span>
     <div style="text-align:center ">
-        <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+        <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
     </div>
     </div>
 
@@ -264,14 +303,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail bingfen ">
-                            <img src="../images/story/images1/aameishi.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aameishi.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="huangshi "><strong>美食</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>店/食\荒石公园，一场关于自然的巡展。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
                         </div>
@@ -282,14 +321,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail fangzi ">
-                            <img src="../images/story/images1/aamaomi.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aamaomi.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="maomi "><strong>美食</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>猫咪的胡须是什么气味，玉林路的咖啡馆告诉你。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -300,14 +339,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail kafei ">
-                            <img src="../images/story/images1/aagougou.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aagougou.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="keji "><strong>美食</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>食|Hey! we go,来摸摸柯基的小短腿。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -318,14 +357,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail laofoye ">
-                            <img src="../images/story/images1/aadianpu.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aadianpu.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="wuzao " "><strong>美食</strong></span>
         <span><strong>京都</strong></span>
         <span>偶遇<无早>，那是未有网红少女打卡曝光的时光。</span>
         <div style="text-align:center ">
-            <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+            <img src=" " data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
         </div>
         </div>
     
@@ -366,14 +405,15 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px; padding-top: 0 ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail bingfen ">
-                            <img src="../images/story/images1/aawenhua.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                            <img src=" " data-echo="../images/story/images1/aawenhua.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="zhanlan "><strong>文化</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>展览|FOUND MUJI再发现再创造。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src=" " data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+                                    glyphicon-comment "> 76</span>
                                 </div>
                             </div>
                         </div>
@@ -384,14 +424,15 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail fangzi ">
-                            <img src="../images/story/images1/aajianzhu.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                            <img src=" " data-echo="../images/story/images1/aajianzhu.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="meishuguan "><strong>文化</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>艺|A4美术馆，成都的地标性艺术馆。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src=" " data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+                                    glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -402,14 +443,15 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail kafei ">
-                            <img src="../images/story/images1/aafangjian.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src=" " data-echo="../images/story/images1/aafangjian.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="huaqiaocheng "><strong>文化</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>展|华侨城，张克纯你眼中的灯会与孤独。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src=" " data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+                                    glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -420,14 +462,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail laofoye ">
-                            <img src="../images/story/images1/aabihua.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src=" " data-echo="../images/story/images1/aabihua.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="wenhua " "><strong>文化</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>展览|一介，今天你会遇到什么展?</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -470,14 +512,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail bingfen ">
-                            <img src="../images/story/images1/aameinv.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aameinv.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="chengshi "><strong>美食</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>在竹林和流水中吃一口六善酒店的下午茶。</span>
                                 <div style="text-align:center">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
                         </div>
@@ -488,14 +530,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail fangzi ">
-                            <img src="../images/story/images1/aahuaping.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aahuaping.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="meishia "><strong>美食</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>店/食\荒石公园，一场关于自然的巡展。</span>
                                 <div style="text-align:center">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -506,14 +548,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail kafei ">
-                            <img src="../images/story/images1/aamufangzi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aamufangzi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="fangyuana "><strong>房源</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>成都|藏匿在竹林中的树屋“凡朴”，寻找属于你我向往的生活。</span>
                                 <div style="text-align:center">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -524,14 +566,14 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
                     <a href="# " style="text-decoration: none; ">
                         <div class="thumbnail laofoye ">
-                            <img src="../images/story/images1/aajuhui.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+                            <img src="" data-echo="../images/story/images1/aajuhui.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
 
                             <div class="caption ">
                                 <span class="jingdu" " "><strong>景点</strong></span>
                                 <span><strong>京都</strong></span>
                                 <span>成都悠闲生活的缩影与写照之地。</span>
                                 <div style="text-align:center ">
-                                    <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
                                 </div>
                             </div>
 
@@ -544,12 +586,440 @@
         </div>
     </div>
 
-    <div style="padding-left:20px;font-size: 16px; ">
-        <a href="# " style="color: rgb(5, 138, 120); ">
-            <p>显示更多故事>></p>
-        </a>
 
+
+    <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+            <div class="row container ">
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail bingfen ">
+                            <img src="" data-echo="../images/story/images1/aameinv.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="chengshi "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>在竹林和流水中吃一口六善酒店的下午茶。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail fangzi ">
+                            <img src="" data-echo="../images/story/images1/aahuaping.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="meishia "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>店/食\荒石公园，一场关于自然的巡展。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail kafei ">
+                            <img src="" data-echo="../images/story/images1/aamufangzi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="fangyuana "><strong>房源</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都|藏匿在竹林中的树屋“凡朴”，寻找属于你我向往的生活。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail laofoye ">
+                            <img src="" data-echo="../images/story/images1/aajuhui.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="jingdu" " "><strong>景点</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都悠闲生活的缩影与写照之地。</span>
+                                <div style="text-align:center ">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
     </div>
+
+
+
+
+    <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+            <div class="row container ">
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail bingfen ">
+                            <img src="" data-echo="../images/story/images1/aameinv.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="chengshi "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>在竹林和流水中吃一口六善酒店的下午茶。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail fangzi ">
+                            <img src="" data-echo="../images/story/images1/aahuaping.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="meishia "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>店/食\荒石公园，一场关于自然的巡展。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail kafei ">
+                            <img src="" data-echo="../images/story/images1/aamufangzi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="fangyuana "><strong>房源</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都|藏匿在竹林中的树屋“凡朴”，寻找属于你我向往的生活。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail laofoye ">
+                            <img src="" data-echo="../images/story/images1/aajuhui.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="jingdu" " "><strong>景点</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都悠闲生活的缩影与写照之地。</span>
+                                <div style="text-align:center ">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+            <div class="row container ">
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail bingfen ">
+                            <img src="" data-echo="../images/story/images1/aameinv.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="chengshi "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>在竹林和流水中吃一口六善酒店的下午茶。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail fangzi ">
+                            <img src="" data-echo="../images/story/images1/aahuaping.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="meishia "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>店/食\荒石公园，一场关于自然的巡展。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail kafei ">
+                            <img src="" data-echo="../images/story/images1/aamufangzi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="fangyuana "><strong>房源</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都|藏匿在竹林中的树屋“凡朴”，寻找属于你我向往的生活。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail laofoye ">
+                            <img src="" data-echo="../images/story/images1/aajuhui.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="jingdu" " "><strong>景点</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都悠闲生活的缩影与写照之地。</span>
+                                <div style="text-align:center ">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+            <div class="row container ">
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail bingfen ">
+                            <img src="" data-echo="../images/story/images1/aameinv.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="chengshi "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>在竹林和流水中吃一口六善酒店的下午茶。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail fangzi ">
+                            <img src="" data-echo="../images/story/images1/aahuaping.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="meishia "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>店/食\荒石公园，一场关于自然的巡展。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail kafei ">
+                            <img src="" data-echo="../images/story/images1/aamufangzi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="fangyuana "><strong>房源</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都|藏匿在竹林中的树屋“凡朴”，寻找属于你我向往的生活。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail laofoye ">
+                            <img src="" data-echo="../images/story/images1/aajuhui.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="jingdu" " "><strong>景点</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都悠闲生活的缩影与写照之地。</span>
+                                <div style="text-align:center ">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+            <div class="row container ">
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail bingfen ">
+                            <img src="" data-echo="../images/story/images1/aameinv.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="chengshi "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>在竹林和流水中吃一口六善酒店的下午茶。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail fangzi ">
+                            <img src="" data-echo="../images/story/images1/aahuaping.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="meishia "><strong>美食</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>店/食\荒石公园，一场关于自然的巡展。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail kafei ">
+                            <img src="" data-echo="../images/story/images1/aamufangzi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="fangyuana "><strong>房源</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都|藏匿在竹林中的树屋“凡朴”，寻找属于你我向往的生活。</span>
+                                <div style="text-align:center">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
+                    <a href="# " style="text-decoration: none; ">
+                        <div class="thumbnail laofoye ">
+                            <img src="" data-echo="../images/story/images1/aajuhui.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                            <div class="caption ">
+                                <span class="jingdu" " "><strong>景点</strong></span>
+                                <span><strong>京都</strong></span>
+                                <span>成都悠闲生活的缩影与写照之地。</span>
+                                <div style="text-align:center ">
+                                    <img src="" data-echo="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </div>
@@ -561,8 +1031,57 @@
 
 
     <script src="../../node_modules/_jquery@3.3.1@jquery/dist/jquery.min.js "></script>
+    <script src="../js/echo.min.js"></script>
     <script src="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.min.js "></script>
 
+    <script>
+        $('.next').on('click', function() {
+            console.log(1)
+            $('ul').animate({
+                marginLeft: '-=294px'
+            }, 300, function() {
+                $('ul').stop(true, true)
+            })
+            console.log($('ul')[0].style.marginLeft)
+            if ($('ul')[0].style.marginLeft == "-2940px") {
+                $('.next').css({
+                    display: "none"
+                })
+            }
+            if ($('ul')[0].style.marginLeft != "-294px") {
+                $('.prev').css({
+                    display: "block"
+                })
+            }
+        })
+        $('.prev').on('click', function() {
+            console.log(1)
+            $('ul').animate({
+                marginLeft: '+=294px'
+            }, 300, function() {
+                $('ul').stop(true, true)
+            })
+            if ($('ul')[0].style.marginLeft == "-294px") {
+                $('.prev').css({
+                    display: "none"
+                })
+            }
+            if ($('ul')[0].style.marginLeft != "-2940px") {
+                $('.next').css({
+                    display: "block"
+                })
+            }
+
+
+        })
+    </script>
+
+
+
+
+    <script>
+        echo.init();
+    </script>
     </body>
 
 </html>

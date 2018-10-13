@@ -72,6 +72,9 @@ body {
 .content .content_left .shanghai > div:first-child .choose_coord {
   color: #008489;
 }
+.content .content_left .shanghai > div:first-child .choose_coord:hover {
+  cursor: pointer;
+}
 .content .content_left .shanghai .shanghai_header {
   font-size: 24px;
   line-height: 30px;
@@ -108,11 +111,15 @@ body {
   color: #916e0d;
 }
 .content .content_left .shanghai .choose .choose1_msg > a .choose1_name {
+  display: block;
   font-size: 17px;
   line-height: 21px;
   font-weight: 800;
   margin-bottom: 4px;
   color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .content_left .shanghai .choose .choose1_msg > a .choose1_recom {
   font-size: 12px;
@@ -137,6 +144,9 @@ body {
 }
 .content .content_left .hangzhou > div:first-child .choose_coord {
   color: #008489;
+}
+.content .content_left .hangzhou > div:first-child .choose_coord:hover {
+  cursor: pointer;
 }
 .content .content_left .hangzhou .hangzhou_header {
   font-size: 24px;
@@ -174,11 +184,15 @@ body {
   color: #916e0d;
 }
 .content .content_left .hangzhou .choose .choose1_msg > a .choose1_name {
+  display: block;
   font-size: 17px;
   line-height: 21px;
   font-weight: 800;
   margin-bottom: 4px;
   color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .content_left .hangzhou .choose .choose1_msg > a .choose1_recom {
   font-size: 12px;
@@ -245,6 +259,9 @@ body {
   font-weight: 800;
   margin-bottom: 4px;
   color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .content_left .shenzhen .choose .choose1_msg > a .choose1_recom {
   font-size: 12px;
@@ -269,6 +286,9 @@ body {
 }
 .content .content_left .jinan > div:first-child .choose_coord {
   color: #008489;
+}
+.content .content_left .jinan > div:first-child .choose_coord:hover {
+  cursor: pointer;
 }
 .content .content_left .jinan .jinan_header {
   font-size: 24px;
