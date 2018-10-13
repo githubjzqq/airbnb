@@ -583,7 +583,7 @@ $(function() {
                             divtextr.append(plus_meiwan)
                             var plus_starpj = $("<p class='plus_starpj'><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b>" + arr1[i].countpj + "</p>");
                             divtextr.append(plus_starpj);
-                            var userimg = $("<p class='plus_tx'>" + "<img src=." + arr[i].userheadimg + "> </p>");
+                            var userimg = $("<p class='plus_tx'>" + "<img src=" + arr[i].userheadimg + "> </p>");
                             divtextr.append(userimg);
                             k++;
                         }
@@ -628,7 +628,7 @@ $(function() {
                             divtextr.append(plus_starpj);
                             var plus_free = $("<p class='plus_free'>免费取消</p>");
                             divtextr.append(plus_free)
-                            var userimg = $("<p class='plus_tx'>" + "<img src=." + arr[i].userheadimg + "> </p>");
+                            var userimg = $("<p class='plus_tx'>" + "<img src=" + arr[i].userheadimg + "> </p>");
                             divtextr.append(userimg);
                             k++;
                         }

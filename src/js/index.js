@@ -97,7 +97,7 @@ $(function() {
                                 tempLi.append(houseName)
                                 var houseSize = $("<p class='house_size'>" + arr[i].housetype + "·" + arr[i].housesize + "</p>");
                                 tempLi.append(houseSize)
-                                var userimg = $("<p class='user_tx'>" + "<img src=." + arr[i].userheadimg + "> </p>");
+                                var userimg = $("<p class='user_tx'>" + "<img src=" + arr[i].userheadimg + "> </p>");
                                 tempLi.append(userimg);
                                 k++;
                             } else {
@@ -131,7 +131,7 @@ $(function() {
                                 tempLi.append(houseName)
                                 var houseSize = $("<p class='house_size'>" + arr[i].housetype + "·" + arr[i].housesize + "</p>");
                                 tempLi.append(houseSize)
-                                var userimg = $("<p class='user_tx'>" + "<img src=." + arr[i].userheadimg + "> </p>");
+                                var userimg = $("<p class='user_tx'>" + "<img src=" + arr[i].userheadimg + "> </p>");
                                 tempLi.append(userimg);
                                 k++;
                             } else {
@@ -197,8 +197,46 @@ $(function() {
                     }
                 }
             })
-
-            // 当我在input中遍历最近搜索时点击li做跳转页面
+            $('.aby_search').on('click', function() {
+                    if (arrcity.indexOf($('#search_inp').val()) != -1) {
+                        searchinp = $('#search_inp').val()
+                        console.log(searchinp)
+                        sessionStorage.setItem("city", searchinp)
+                        window.location.href = "../html/houseinfo.html"
+                    }
+                    if (typeof sessionStorage.getItem("head_search") == "object") {
+                        var arr = [];
+                        searchinp = $('#search_inp').val()
+                        var date = new Date();
+                        date = date.toLocaleString()
+                        var obj = {
+                            city: searchinp,
+                            time: date
+                        };
+                        arr.unshift(obj);
+                        arr = JSON.stringify(arr)
+                        sessionStorage.setItem("head_search", arr)
+                    } else {
+                        arr = sessionStorage.getItem("head_search");
+                        arr = JSON.parse(arr)
+                        searchinp = $('#search_inp').val();
+                        date = new Date();
+                        date = date.toLocaleString()
+                        obj = {
+                            city: searchinp,
+                            time: date
+                        }
+                        for (var i = 0; i < arr.length; i++) {
+                            if (arr[i].city == obj.city) {
+                                arr.splice(i, 1)
+                            }
+                        }
+                        arr.unshift(obj);
+                        arr = JSON.stringify(arr)
+                        sessionStorage.setItem("head_search", arr)
+                    }
+                })
+                // 当我在input中遍历最近搜索时点击li做跳转页面
             $(".lastest").on('click', 'li', function() {
                 var s = $(this).children().children("span:nth-child(1)").text();
                 console.log(s);
@@ -216,18 +254,22 @@ $(function() {
     function lastest() {
 
         var arr = sessionStorage.getItem("head_search");
-        arr = JSON.parse(arr);
-        for (var i = 0, k = 0; i < arr.length; i++) {
-            if (k < 6) {
-                var tempLi = $("<li class='col-lg-4 col-md-4'><a herf=''><span class='lastest_span1'>" + arr[i].city + "</span><span class='lastest_span1'>" + arr[i].time + "</span></a></li>");
-                $('.lastest').append(tempLi);
-                // tempLi.html(arr[i]);
-                k++;
-            } else {
-                break;
+        if (sessionStorage.head_search) {
+            arr = JSON.parse(arr);
+            for (var i = 0, k = 0; i < arr.length; i++) {
+                if (k < 6) {
+                    var tempLi = $("<li class='col-lg-4 col-md-4'><a herf=''><span class='lastest_span1'>" + arr[i].city + "</span><span class='lastest_span1'>" + arr[i].time + "</span></a></li>");
+                    $('.lastest').append(tempLi);
+                    // tempLi.html(arr[i]);
+                    k++;
+                } else {
+                    break;
+                }
             }
         }
+
     }
+
     lastest();
 
 
@@ -235,7 +277,7 @@ $(function() {
     $('.tabs_more').on('click', function() {
         console.log('1')
         sessionStorage.setItem("city", $('.tabs_more_city').html())
-        window.location.href = '../html/houseinfo.html';
+        window.location.href = 'houseinfo.html';
 
         return false;
     })
@@ -266,15 +308,17 @@ $(function() {
         }
         var arr = sessionStorage.getItem("housearr");
         arr = JSON.parse(arr);
-        for (var i = 0, k = 0; i < arr.length; i++) {
-            if (k < countimg) {
-                // console.log(arr1[i])
-                var tempLi = $("<li class='col-lg-4 col-md-6 col-sm-6 col-xs-10'></li>");
-                $('.history_ul').append(tempLi);
-                tempLi.html(arr[i])
-                k++;
-            } else {
-                break;
+        if (sessionStorage.housearr) {
+            for (var i = 0, k = 0; i < arr.length; i++) {
+                if (k < countimg) {
+                    // console.log(arr1[i])
+                    var tempLi = $("<li class='col-lg-4 col-md-6 col-sm-6 col-xs-10'></li>");
+                    $('.history_ul').append(tempLi);
+                    tempLi.html(arr[i])
+                    k++;
+                } else {
+                    break;
+                }
             }
         }
     }
