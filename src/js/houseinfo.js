@@ -370,7 +370,7 @@ $(function() {
         var arr = JSON.parse(data);
         // console.log(arr)
         //一开始将所有图片显示到页面
-        var arr1 = sessionStorage.getItem('arr1')
+        var arr1 = localStorage.getItem('arr1')
         var arr1 = JSON.parse(arr1);
         var price_inp = sessionStorage.getItem("price_inp");
         // console.log(price_inp);
@@ -389,12 +389,14 @@ $(function() {
             }
         }
         // console.log(arr)
+        // 获取首页收入数据
+        var cityinp = sessionStorage.getItem("cityinp")
 
         function fn() {
             for (var i = 0, k = 0; i < arr.length; i++) {
                 if (Number(arr1[i].countpj) > 14) {
                     if (k < 4) {
-                        if (searchCity == arr[i].housecity) {
+                        if (searchCity == arr[i].housecity || cityinp == arr[i].housecity) {
                             var tempLi = $("<li class='row'></li>");
                             $('.house_plus').append(tempLi);
                             var divimg = $("<div class='leftimg'><i class='glyphicon glyphicon-heart-empty'></i><img src=." + arr[i].houseimg + "></div>");
@@ -809,5 +811,25 @@ $(function() {
     // $('.house_house').css({
     //     height:
     // })
-    // btm
+    // 点击动态添加的房源 存入sessionStorage
+    var house, house1;
+    $(".house_housemin").on("click", 'li', function() {
+            if (typeof sessionStorage.getItem("housearr") == "object") {
+                var housearr = []
+                house = $(this).html()
+                housearr.unshift(house)
+                housearr = JSON.stringify(housearr)
+                sessionStorage.setItem("housearr", housearr)
+            } else {
+                var housearr1 = sessionStorage.getItem("housearr");
+                housearr1 = JSON.parse(housearr1);
+                house1 = $(this).html()
+                if (housearr1.indexOf(house1) == -1) {
+                    housearr1.unshift(house1)
+                    housearr1 = JSON.stringify(housearr1)
+                    sessionStorage.setItem("housearr", housearr1)
+                }
+            }
+        })
+        // btm
 });
