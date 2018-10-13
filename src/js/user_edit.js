@@ -227,7 +227,7 @@ $(function() {
                     type: 'post',
                     success: function(data) {
                         sessionStorage.userheadimg = path;
-                        $('#save_pic').parent().siblings('.waiting').css({ 'display': 'block' }).html('登陆成功(2s后自动关闭)');
+                        $('#save_pic').parent().siblings('.waiting').css({ 'display': 'block' }).html('修改成功(2s后自动关闭)');
                         setTimeout(function() {
                             $('#save_pic').parent().siblings('.waiting').css({ 'display': '' }).empty();
                             location.reload();
