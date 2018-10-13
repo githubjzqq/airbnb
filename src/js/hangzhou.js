@@ -24,6 +24,7 @@ $.get("../houseshuju.txt", function(data) {
     // console.log(arr1)
     var x = sessionStorage.getItem("aaa");
     console.log(x)
+    $("#swj_city").html(x)
 
     function fn() {
         // $('#go').on('click', function() {

@@ -154,47 +154,53 @@ $(function() {
                 }
             }
 
+
             // console.log(arrcity)
+            ////历史纪录查看函数
+            function history_jl(select) {
+                if (arrcity.indexOf($(select).val()) != -1) {
+                    searchinp = $(select).val()
+                    console.log(searchinp)
+                    sessionStorage.setItem("city", searchinp)
+                    window.location.href = "../html/houseinfo.html"
+                }
+                if (typeof sessionStorage.getItem("head_search") == "object") {
+                    var arr = [];
+                    searchinp = $(select).val()
+                    var date = new Date();
+                    date = date.toLocaleString()
+                    var obj = {
+                        city: searchinp,
+                        time: date
+                    };
+                    arr.unshift(obj);
+                    arr = JSON.stringify(arr)
+                    sessionStorage.setItem("head_search", arr)
+                } else {
+                    arr = sessionStorage.getItem("head_search");
+                    arr = JSON.parse(arr)
+                    searchinp = $(select).val();
+                    date = new Date();
+                    date = date.toLocaleString()
+                    obj = {
+                        city: searchinp,
+                        time: date
+                    }
+                    for (var i = 0; i < arr.length; i++) {
+                        if (arr[i].city == obj.city) {
+                            arr.splice(i, 1)
+                        }
+                    }
+                    arr.unshift(obj);
+                    arr = JSON.stringify(arr)
+                    sessionStorage.setItem("head_search", arr)
+                }
+            }
             var searchinp;
             $(document).on("keyup", function(e) {
                 if (e.key == "Enter") {
-                    if (arrcity.indexOf($('#search_inp').val()) != -1) {
-                        searchinp = $('#search_inp').val()
-                        console.log(searchinp)
-                        sessionStorage.setItem("city", searchinp)
-                        window.location.href = "../html/houseinfo.html"
-                    }
-                    if (typeof sessionStorage.getItem("head_search") == "object") {
-                        var arr = [];
-                        searchinp = $('#search_inp').val()
-                        var date = new Date();
-                        date = date.toLocaleString()
-                        var obj = {
-                            city: searchinp,
-                            time: date
-                        };
-                        arr.unshift(obj);
-                        arr = JSON.stringify(arr)
-                        sessionStorage.setItem("head_search", arr)
-                    } else {
-                        arr = sessionStorage.getItem("head_search");
-                        arr = JSON.parse(arr)
-                        searchinp = $('#search_inp').val();
-                        date = new Date();
-                        date = date.toLocaleString()
-                        obj = {
-                            city: searchinp,
-                            time: date
-                        }
-                        for (var i = 0; i < arr.length; i++) {
-                            if (arr[i].city == obj.city) {
-                                arr.splice(i, 1)
-                            }
-                        }
-                        arr.unshift(obj);
-                        arr = JSON.stringify(arr)
-                        sessionStorage.setItem("head_search", arr)
-                    }
+
+                    history_jl('#search_inp');
                 }
             })
             $('.aby_search').on('click', function() {
@@ -244,10 +250,20 @@ $(function() {
                     sessionStorage.setItem('city', s);
                     location.href = "../html/houseinfo.html"
                 }
-
             })
 
 
+            ///top部input输入框内容
+            ///输出城市信息跳转页面
+            $(document).on("keyup", function(e) {
+                if (e.key == "Enter") {
+                    if (arrcity.indexOf($(".input-text").val()) == -1) {
+                        sessionStorage.setItem("aaa", $(".input-text").val())
+                        window.location.href = "swj_hangzhou.html";
+
+                    }
+                }
+            })
 
         })
         // 在input中遍历最近搜索
@@ -324,14 +340,7 @@ $(function() {
     }
     history();
     ///输出城市信息跳转页面
-    $(document).on("keyup", function(e) {
-        if (e.key == "Enter") {
-            if ($(".input-text").val() == "杭州") {
-                sessionStorage.setItem("aaa", $(".input-text").val())
-                window.location.href = "../html/swj_hangzhou.html";
-            }
-        }
-    })
+
 
 
 
