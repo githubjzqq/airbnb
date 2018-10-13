@@ -1,43 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>jQuery UI 滑块（Slider） - 范围滑块</title>
-
-    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
-    <link rel="stylesheet" href="../../node_modules/jquery-ui-1.12.1.custom/jquery-ui.css">
-    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../../node_modules/jquery-ui-1.12.1.custom/jquery-ui.js "></script>
-
-    <script>
-        $(function() {
-            $("#slider-range").slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [75, 300],
-                slide: function(event, ui) {
-                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-                }
-            });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-                " - $" + $("#slider-range").slider("values", 1));
-        });
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 
 <body>
+    <script>
+        class A {
+            constructor(name, age) {
+                this.name = name
+                this.age = age
+            }
+            son() {
+                return this.name + this.age
+            }
 
-    <p>
-        <label for="amount">价格范围：</label>
-        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-    </p>
-
-    <div id="slider-range"></div>
-
-
+        }
+        var a = new A("zhangs", "18")
+        console.log(a.son())
+    </script>
 </body>
 
 </html>

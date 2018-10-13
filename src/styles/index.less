@@ -12,7 +12,11 @@ a,a:visited,a:link{
     text-decoration: none!important;
     color: #000;
 }
-
+@color-logo: #FF5A5F;;
+@color-nav:inherit ;
+@color-search-input-text:rgb(118, 118, 118);
+@color-nav-border:inherit;
+@color-border-div:rgb(241, 241, 241);
 //首页banner
 .aby_banner{
     // height: 480px;
@@ -216,28 +220,87 @@ a,a:visited,a:link{
     }
     
     &>div{
-        img{
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        a>p:nth-child(2){
-            color: rgb(160, 47, 24);
-            font-size: 1.1rem;
-            margin-top: 8px;
-            margin-bottom: 0;
-        }
-        a>p:nth-child(3){
-            color: rgb(72, 72, 72) !important;
-            font-weight: 800 !important; 
-            font-size: 1.5rem;
-            // margin-top: 8px;
-            margin-bottom: 0;
-        }
-        a>p:nth-child(4){
-            color: rgb(72, 72, 72) !important;
-            font-size: 1.3rem;
-            font-weight: normal;
-            // margin-top: 8px;
+        // img{
+        //     max-width: 100%;
+        //     border-radius: 5px;
+        // }
+        // a>p:nth-child(2){
+        //     color: rgb(160, 47, 24);
+        //     font-size: 1.1rem;
+        //     margin-top: 8px;
+        //     margin-bottom: 0;
+        // }
+        // a>p:nth-child(3){
+        //     color: rgb(72, 72, 72) !important;
+        //     font-weight: 800 !important; 
+        //     font-size: 1.5rem;
+        //     // margin-top: 8px;
+        //     margin-bottom: 0;
+        // }
+        // a>p:nth-child(4){
+        //     color: rgb(72, 72, 72) !important;
+        //     font-size: 1.3rem;
+        //     font-weight: normal;
+        //     // margin-top: 8px;
+        // }
+        .history_ul{
+            &>li{
+                padding-top: 10px;
+                @media screen and (min-width: 750px) {
+                    min-height: 370px;
+                }       
+                 &>img{
+                    max-width: 100%!important;
+                    border-radius: 5px;
+                }
+                &>p{
+                    margin: 0;
+                }
+                .plus_p1{
+                    color: rgb(87, 37, 51);
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    padding-top:8px ;
+                    &>span:nth-child(1){
+                        color: #fff;
+                        font-weight: 800;
+                        background-color:rgb(166,29,85);
+                        display: inline-block;
+                        padding: 1px 3px;
+                        font-size: 1.1rem;
+                        border-radius: 3px;
+                        margin-right: 3px;
+                    }
+                }
+                .plus_name{
+                    color: rgb(72, 72, 72) !important;
+                    font-weight: 800 !important;
+                    font-size: 1.5rem;
+                    overflow : hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+                .plus_price{
+                    color: rgb(72, 72, 72) !important;
+                    font-weight: 600 !important;
+                    font-size: 1.4rem;
+                    padding-top: 3px;
+                    margin: 0;
+                }
+               
+                    
+                .plus_starpj{
+                    color: rgb(72, 72, 72) !important;
+                    padding-top: 5px;
+                    .glyphicon-star{
+                        font-size: 1.3rem;
+                        color: rgb(0, 132, 137);
+                    }
+                }
+                
+            }
         }
     }
 }
@@ -259,6 +322,7 @@ a,a:visited,a:link{
     //     height: 100%;
     // }
     &>p{
+        padding-top: 15px;
         font-size: 2.2rem;
         font-weight: 800;
         padding-bottom: 10px;
