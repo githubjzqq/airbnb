@@ -30,8 +30,7 @@ $.get("../houseshuju.txt", function(data) {
                     if (k < countimg) {
                         var tempLi = $("<li class='col-lg-3 col-md-3 col-sm-6' style='cursor:pointer;font-weight:700;height:330px'><div class='gif' style=overflow:hidden;><img style='width:100%;height:190px' src=." + arr[i].houseimg + "></div></li>");
                         $('.tabs_house').append(tempLi);
-                        var housePrice = $("<div style=display:flex;justify-content:space-between>" + "<div>" + "<p class='house_price'>每晚￥" + arr[i].houseprice + '<br>' +
-                            '<span class="tabs_pj"style="color: rgb(0, 132, 137);"><i class="glyphicon glyphicon-flash"style="color: red;"></i><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b>' +
+                        var housePrice = $("<div style=display:flex;justify-content:space-between>" + "<div>" + "<p class='house_price'>每晚￥" + arr[i].houseprice + '<span class="tabs_pj"style="color: rgb(0, 132, 137);"><i class="glyphicon glyphicon-flash"style="color: red;"></i><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b>' +
                             "69条评价</span>" + "</p>" + "<p class='house_name'>" + arr[i].housetext + "</p>" + "<p class='house_size'>" + arr[i].housetype + "·" + arr[i].housesize + "</p>" + "</div>" +
                             "<div>" + "<p class='user_tx'>" + "<img style='border-radius: 50%!important;' src=." + arr[i].userheadimg + "> </p>" + "</div>" + "</div>");
                         tempLi.append(housePrice);
@@ -52,10 +51,10 @@ $.get("../houseshuju.txt", function(data) {
                     if (k < countimg) {
                         var tempLi = $("<li class='col-lg-3 col-md-3 col-sm-6' style='cursor:pointer;font-weight:700;height:330px'><div class='gif' style=overflow:hidden;><img style='width:100%;height:190px' src=." + arr[i].houseimg + "></div></li>");
                         $('.tabs_house1').append(tempLi);
-                        var housePrice = $("<div style=display:flex;justify-content:space-between>" + "<div>" + "<p class='house_price'>每晚￥" + arr[i].houseprice + '<br>' +
+                        var housePrice = $("<div style=display:flex;justify-content:space-between>" + "<div>" + "<p class='house_price'>每晚￥" + arr[i].houseprice +
                             '<span class="tabs_pj"style="color: rgb(0, 132, 137);"><i class="glyphicon glyphicon-flash"style="color: red;"></i><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b>' +
                             "69条评价</span>" + "</p>" + "<p class='house_name'>" + arr[i].housetext + "</p>" + "<p class='house_size'>" + arr[i].housetype + "·" + arr[i].housesize + "</p>" + "</div>" +
-                            "<div>" + "<p class='user_tx'>" + "<img style='border-radius: 50%!important;' src=." + arr[i].userheadimg + "> </p>" + "</div>" + "</div>");
+                            "<div>" + "<p class='user_tx'>" + "<img style='border-radius: 50%!important;width：40px;height:40px;' src=." + arr[i].userheadimg + "> </p>" + "</div>" + "</div>");
                         tempLi.append(housePrice);
                         k++;
                     } else {
