@@ -1,82 +1,106 @@
 .header {
-    height: 80px;
-    background: none;
-    z-index: 10;
-    border-bottom: 1px solid #eee;
+  height: 80px;
+  background: none;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
 }
-
 .header #logo i {
-    color: #FF5A5F;
+  color: #FF5A5F;
 }
-
 .header .search {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(200, 200, 200, 0.5);
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
-
 .header .search.focus {
-    border: 1px solid #bbb;
+  border: 1px solid #bbb;
 }
-
 .header .search i {
-    color: #484848;
-    font-weight: bold;
+  color: #484848;
+  font-weight: bold;
 }
-
 .header .search .input-text {
-    color: #484848;
+  color: #484848;
 }
-
 .header .search .user-history {
-    border: 1px solid #ddd;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
-
-.header .header-nav>li:not(.sub):hover {
-    border-color: #bbb;
+.header .header-nav > li:not(.sub):hover {
+  border-color: #bbb;
 }
-
-.header .header-nav>li:not(.sub) a {
-    color: #484848;
+.header .header-nav > li:not(.sub) a {
+  color: #484848;
 }
-
 .header .header-nav li.sub {
-    background-color: #fff;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid#f1f1f1;
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid#f1f1f1;
 }
-
 .header .header-nav li.sub.app {
-    width: 420px;
+  width: 420px;
 }
-
-.main>.container>.title {
-    padding: 20px;
+.main > .container > .title {
+  padding: 20px;
 }
-
-.main>.container>.title h1 {
-    font-weight: lighter;
-    font-size: 32px;
-    margin-bottom: 15px;
+.main > .container > .title h1 {
+  font-weight: lighter;
+  font-size: 32px;
+  margin-bottom: 15px;
 }
-
-.main>.container>.title p {
-    font-size: 16px;
-    max-width: 700px;
-    font-weight: 300;
-    line-height: 26px;
+.main > .container > .title p {
+  font-size: 16px;
+  max-width: 700px;
+  font-weight: 300;
+  line-height: 26px;
 }
-
-.main>.container>.title hr {
-    margin: 30px 0 10px;
+.main > .container > .title hr {
+  margin: 30px 0 10px;
 }
-
-.main>.container>.content {
-    padding: 20px;
+.main > .container > .content {
+  padding: 20px 20px 40px;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
 }
-
-.main>.container>.content>.title h3 {
-    font-size: 30px;
-    font-weight: 300;
+.main > .container > .content > .title {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+.main > .container > .content .city .big {
+  height: 300px;
+}
+.main > .container > .content .city .small {
+  height: 300px;
+}
+.main > .container > .content .city .small .contain {
+  height: 150px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 768px) {
+  .main > .container > .content .city .small {
+    height: 150px;
+  }
+}
+.main > .container > .content .city .contain {
+  background-clip: content-box;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+  height: 100%;
+  padding-bottom: 20px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main > .container > .content .city .contain h4 {
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+}
+.main > .container > .content .city .contain p {
+  color: #fff;
+  font-size: 13px;
+  padding: 0 10px;
 }
