@@ -3,12 +3,9 @@
 /*标题头部*/
 
 .header {
-    max-width: 652px;
     margin: 0 auto;
-}
-
-.container-fluid {
-    height: 100px;
+    height: 50%;
+    max-width: 666px;
 }
 
 
@@ -62,12 +59,12 @@
 /*图片部分*/
 
 .subject {
-    max-width: 652px;
     margin: 0 auto;
+    max-width: 652px;
 }
 
 .subject img {
-    max-width: 652px;
+    margin: 0 auto;
 }
 
 .subject2 {
@@ -77,7 +74,7 @@
 }
 
 .subject2 img {
-    max-width: 652px;
+    margin: 0 auto;
 }
 
 .subject3 {
@@ -87,7 +84,7 @@
 }
 
 .subject3 img {
-    max-width: 652px;
+    margin: 0 auto;
 }
 
 .subject4 {
@@ -97,7 +94,7 @@
 }
 
 .subject4 img {
-    max-width: 652px;
+    margin: 0 auto;
 }
 
 .subject5 {
@@ -107,7 +104,7 @@
 }
 
 .subject5 img {
-    max-width: 652px;
+    margin: 0 auto;
 }
 
 .subject6 {
@@ -117,7 +114,7 @@
 }
 
 .subject6 img {
-    max-width: 652px;
+    margin: 0 auto;
 }
 
 
