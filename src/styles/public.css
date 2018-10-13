@@ -34,7 +34,7 @@ html {
   font-size: 36px;
   font-weight: 0;
   height: 100%;
-  color: #fff;
+  color: #FF5A5F;
 }
 .header .sub-btn {
   display: none;
@@ -75,14 +75,14 @@ html {
   }
 }
 .header .search.focus {
-  border: 1px solid #fff;
+  border: 1px solid #bbb;
 }
 .header .search i {
   float: left;
   font-size: 24px;
   margin-top: 8px;
   padding-left: 12px;
-  color: #f1f1f1;
+  color: #484848;
 }
 .header .search .input-text {
   float: left;
@@ -96,8 +96,8 @@ html {
   background-color: transparent;
   border-radius: 5px;
   width: 412px;
-  color: #f1f1f1;
-  caret-color: #f1f1f1;
+  color: #484848;
+  caret-color: #484848;
 }
 @media (min-width: 420px) and (max-width: 610px) {
   .header .search .input-text {
@@ -173,7 +173,7 @@ html {
   font-size: 13px;
 }
 .header .header-nav > li:not(.sub):hover {
-  border-color: #fff;
+  border-color: #bbb;
 }
 .header .header-nav > li:not(.sub):not(.sub) {
   cursor: pointer;
@@ -205,7 +205,7 @@ html {
   font-size: 15px;
   font-weight: bold;
   vertical-align: middle;
-  color: #fff;
+  color: #484848;
 }
 .header .header-nav > li:not(.sub) a:hover {
   text-decoration: none;
@@ -443,6 +443,48 @@ html {
   .header .header-nav-min {
     display: block;
   }
+}
+.header {
+  height: 80px;
+  background: none;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
+.header #logo i {
+  color: #FF5A5F;
+}
+.header .search {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.header .search.focus {
+  border: 1px solid #bbb;
+}
+.header .search i {
+  color: #484848;
+  font-weight: bold;
+}
+.header .search .input-text {
+  color: #484848;
+}
+.header .search .user-history {
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.header .header-nav > li:not(.sub):hover {
+  border-color: #bbb;
+}
+.header .header-nav > li:not(.sub) a {
+  color: #484848;
+}
+.header .header-nav li.sub {
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid#f1f1f1;
+}
+.header .header-nav li.sub.app {
+  width: 420px;
 }
 .footer {
   height: auto;
