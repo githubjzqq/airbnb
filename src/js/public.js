@@ -16,10 +16,11 @@ $(function() {
         $('.header .header-nav li.login .userpic').css('display', 'block').children('img').attr('src', sessionStorage.userheadimg); //登陆后显示用户头像；
         $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
         $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
-        $('.mod').css('display', 'none');
-        $('.modal-backdrop').remove();
-        $('body').attr({ 'style': '', 'class': '' });
-        $('.header .header-nav>li').on('click', function(e) { //取消事件冒泡
+        // $('.mod').css('display', 'none');
+        // $('.modal-backdrop').remove();
+        // $('body').attr({ 'style': '', 'class': '' });
+        $('.header .header-nav>li').on('click', function(e) {
+            //取消事件冒泡
             e.stopPropagation();
         });
     }
@@ -48,6 +49,7 @@ $(function() {
                         $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('登陆成功');
                         setTimeout(function() {
                             successDom();
+                            location.reload();
                         }, 1000)
                     }
                 } else {
@@ -68,7 +70,7 @@ $(function() {
                 if (data) {
                     var user = JSON.parse(data);
                     if (user[1] == 'pwd_error') {
-                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': '' }).html('密码错误');
                     } else {
                         //储存用户信息；
                         var usermsg = sessionStorage;
@@ -76,9 +78,10 @@ $(function() {
                         for (var i in user) {
                             usermsg.setItem(i, user[i]);
                         }
-                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': 'yellowgreen' }).html('登陆成功');
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('登陆成功');
                         setTimeout(function() {
                             successDom();
+                            location.reload();
                         }, 1000);
                     }
                 } else {
@@ -153,7 +156,7 @@ $(function() {
             $('.header .sub-btn .img').toggleClass('trans');
             $('.header-nav-min').toggleClass('show');
         } else {
-            location.href = '../html/public.html';
+            location.href = '../html/index.html';
         }
     });
 
@@ -360,7 +363,7 @@ $(function() {
                         //登陆成功刷新页面；
                         setTimeout(function() {
                             location.reload();
-                        }, 500)
+                        }, 1500)
                     }
 
                 }
