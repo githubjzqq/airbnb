@@ -285,27 +285,24 @@ $(function() {
 
     //
 
+    // console.log($('.reserve_date>div:nth-child(2)>span:nth-child(1)>input')[0].offsetTop + 22);
+    // $('#ui-datepicker-div').removeAttr('style');
 
     //滚动条事件
     window.onscroll = function() {
         var top = document.documentElement.scrollTop || document.body.scrollTop;
+        // console.log(top);
 
-        //
-        // if (top > $('.list')[0].offsetTop) {
-        //     $('.content').addClass('fix1');
-        // } else {
-        //     $('.content').removeClass('fix1');
-        // }
-
-        //
         if (top > $('.content_list')[0].offsetTop && top < 3500) {
             $('.reserve').addClass('fix');
         } else {
             $('.reserve').removeClass('fix');
         }
 
+        if ('')
+
         //
-        if (top > 3500) {
+            if (top > 3500) {
             $('.reserve').addClass('abso');
         } else {
             $('.reserve').removeClass('abso');
