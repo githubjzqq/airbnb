@@ -45,7 +45,10 @@ $(function() {
                         for (var i in user) {
                             usermsg.setItem(i, user[i]);
                         };
-                        successDom();
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('登陆成功');
+                        setTimeout(function() {
+                            successDom();
+                        }, 1000)
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
@@ -67,14 +70,16 @@ $(function() {
                     if (user[1] == 'pwd_error') {
                         $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
                     } else {
-
                         //储存用户信息；
                         var usermsg = sessionStorage;
                         usermsg.setItem('login', true);
                         for (var i in user) {
                             usermsg.setItem(i, user[i]);
                         }
-                        successDom();
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': 'yellowgreen' }).html('登陆成功');
+                        setTimeout(function() {
+                            successDom();
+                        }, 1000);
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
@@ -108,14 +113,14 @@ $(function() {
     //搜索框获得焦点时出发事件；
     $('.header .search .input-text').on('focus', function() {
         $(this).parent('.search').addClass('focus'); //边框高亮；
-        $('.header .search .user-history').addClass('show'); //显示搜索历史；
-        $('.header-nav-min').removeClass('show'); //关闭nav-min(移动端);
+        $('.header .search .user-history').addClass('active'); //显示搜索历史；
+        $('.header-nav-min').removeClass('active'); //关闭nav-min(移动端);
     });
 
     //搜索框失去焦点时触发事件；
     $('.header .search .input-text').on('blur', function() {
         setTimeout(function() {
-            $('.header .search .user-history').removeClass('show'); //搜索历史隐藏；
+            $('.header .search .user-history').removeClass('active'); //搜索历史隐藏；
         }, 100);
         $(this).parent('.search').removeClass('focus'); //清除边框的高亮；
     });
@@ -351,9 +356,13 @@ $(function() {
                 if (regist.emailAd) {
                     //登陆功能函数，接收用户手机号和密码；
                     emailLogin(email, pwd, e);
-                    setTimeout(function() {
-                        location.reload();
-                    }, 500)
+                    if (sessionStorage.userid) {
+                        //登陆成功刷新页面；
+                        setTimeout(function() {
+                            location.reload();
+                        }, 500)
+                    }
+
                 }
             }
         } else {
@@ -406,21 +415,18 @@ $(function() {
                         error: function(err) {
                             console.log(err)
                         },
-                    })
-                }
+                    });
+                };
             } else {
                 //登陆操作；
                 if (regist.phoneAd) {
                     //登陆功能函数，接收用户手机号和密码；
                     phoneLogin(phoneNmb, pwd, e);
-                    setTimeout(function() {
-                        location.reload();
-                    }, 500);
-                }
-            }
+                };
+            };
         } else {
             $(this).siblings('.tips').css('display', 'block'); //报错；
-        }
+        };
     }
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', phone);
 });
