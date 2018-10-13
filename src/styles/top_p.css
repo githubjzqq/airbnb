@@ -1,0 +1,46 @@
+.header {
+  height: 80px;
+  width: 100%;
+  background: none;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  z-index: 99;
+  background: white;
+}
+.header #logo i {
+  color: #FF5A5F;
+}
+.header .search {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.header .search.focus {
+  border: 1px solid #bbb;
+}
+.header .search i {
+  color: #484848;
+  font-weight: bold;
+}
+.header .search .input-text {
+  color: #484848;
+}
+.header .search .user-history {
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.header .header-nav > li:not(.sub):hover {
+  border-color: #bbb;
+}
+.header .header-nav > li:not(.sub) a {
+  color: #484848;
+}
+.header .header-nav li.sub {
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid#f1f1f1;
+}
+.header .header-nav li.sub.app {
+  width: 420px;
+}

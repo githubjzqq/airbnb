@@ -5,54 +5,55 @@
 body {
   padding-top: 70px;
 }
-.header {
+.dining_header {
   border-bottom: 1px solid #ebebeb;
+  top: 80px!important;
 }
-.header .header_content {
+.dining_header .header_content {
   padding: 16px;
   display: flex;
   justify-content: space-between;
 }
-.header .header_content .header_left {
+.dining_header .header_content .header_left {
   margin-left: 25px;
 }
-.header .header_content .header_left .header_date {
+.dining_header .header_content .header_left .header_date {
   display: inline-block;
   border: 1px solid #ebebeb;
   border-radius: 5px;
   padding: 6px 12px;
   margin: 0 4px 0 8px;
 }
-.header .header_content .header_left .header_guest {
+.dining_header .header_content .header_left .header_guest {
   display: inline-block;
   border: 1px solid #ebebeb;
   border-radius: 5px;
   padding: 6px 12px;
   margin: 0 4px 0 8px;
 }
-.header .header_content .header_right {
+.dining_header .header_content .header_right {
   margin-right: 25px;
 }
-.header .header_content .header_right .show_map {
+.dining_header .header_content .header_right .show_map {
   display: inline-block;
   padding: 6px 12px;
   margin: 0 4px 0 8px;
 }
-.header .header_content .header_right .map_btn_bgc {
+.dining_header .header_content .header_right .map_btn_bgc {
   border: 1px solid #008489 !important;
   background-color: #ebebeb !important;
 }
-.header .header_content .header_right .map_btn {
+.dining_header .header_content .header_right .map_btn {
   background-color: #008489;
   border: none;
   border-radius: 20px;
   display: inline-block;
   width: 50px;
 }
-.header .header_content .header_right .map_btn .cuo {
+.dining_header .header_content .header_right .map_btn .cuo {
   left: 0!important;
 }
-.header .header_content .header_right .map_btn .dui {
+.dining_header .header_content .header_right .map_btn .dui {
   display: inline-block;
   color: #008489;
   background-color: white;
@@ -65,6 +66,9 @@ body {
   width: 30px;
   height: 30px;
   left: 20px;
+}
+.content {
+  margin-top: 145px;
 }
 .content .content_left .shanghai {
   margin: 40px 0;

@@ -2,6 +2,9 @@
 .row {
   margin: 0;
 }
+.banner {
+  margin-top: 80px!important;
+}
 .banner_left,
 .banner_right {
   padding: 0;
@@ -41,12 +44,12 @@
 .content_left {
   padding: 0;
 }
-.list {
+.content_list {
   margin-top: 16px;
 }
 .fix {
   position: fixed!important;
-  top: 50px!important;
+  top: 100px!important;
 }
 .fix1 {
   position: fixed!important;
@@ -1032,6 +1035,9 @@
     font-weight: 800;
     margin-bottom: 32px;
   }
+  .sim > div:nth-child(2) > div > div:hover > .carousel-control {
+    display: block!important;
+  }
   .sim .same > p:nth-child(1) {
     font-size: 12px;
     line-height: 16px;
@@ -1691,6 +1697,9 @@
     line-height: 30px;
     font-weight: 800;
     margin-bottom: 32px;
+  }
+  .sim > div:nth-child(2) > div > div:hover > .carousel-control {
+    display: block!important;
   }
   .sim .same > p:nth-child(1) {
     font-size: 12px;
