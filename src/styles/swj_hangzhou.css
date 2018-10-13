@@ -67,10 +67,8 @@
   }
   .viewscreen {
     width: 320px!important;
+    padding-left: 30px!important ;
     margin-left: 0!important;
-  }
-  .viewscreen ul {
-    margin-left: 40px!important;
   }
   .viewscreen li {
     width: 144px!important;

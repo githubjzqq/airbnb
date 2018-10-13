@@ -324,4 +324,17 @@ $(function() {
     }
     history();
     ///输出城市信息跳转页面
+    $(document).on("keyup", function(e) {
+        if (e.key == "Enter") {
+            if ($(".input-text").val() == "杭州") {
+                sessionStorage.setItem("aaa", $(".input-text").val())
+                window.location.href = "../html/swj_hangzhou.html";
+            }
+        }
+    })
+
+
+
+
+
 })
