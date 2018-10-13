@@ -370,7 +370,7 @@ a:link {
 }
 .aby_tabs .tabs_house > li .user_tx img {
   border-radius: 50%;
-  max-width: 70%!important;
+  max-width: 40px!important;
 }
 .aby_tabs .tabs_more {
   padding: 8px 16px;

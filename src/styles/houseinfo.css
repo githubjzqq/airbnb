@@ -1022,6 +1022,9 @@ a:link {
   border-radius: 50%;
   overflow: hidden;
 }
+.hi_contant .hi_contant_left .hi_plus .house_plus > li .righttext .righttextr .plus_tx img {
+  width: 100%;
+}
 .hi_contant .hi_contant_left .hi_plus > p {
   font-size: 1.7rem;
   margin-top: 10px;
@@ -1188,6 +1191,9 @@ a:link {
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
+}
+.hi_contant .hi_contant_left .hi_house .house_house > li .righttext .righttextr .plus_tx img {
+  width: 100%;
 }
 .hi_contant .hi_contant_right {
   padding-right: 0;
