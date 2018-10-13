@@ -1,0 +1,453 @@
+@charset "utf-8";
+.row{
+    margin: 0!important;
+}
+
+body { 
+    padding-top: 70px; 
+}
+//头部
+.header{
+    border-bottom: 1px solid rgb(235, 235, 235);
+    .header_content{
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        .header_left{
+            margin-left: 25px;
+            .header_date{
+                display: inline-block;
+                border: 1px solid rgb(235, 235, 235);
+                border-radius: 5px;
+                padding: 6px 12px;
+                margin: 0 4px 0 8px;
+            }
+            .header_guest{
+                display: inline-block;
+                border: 1px solid rgb(235, 235, 235);
+                border-radius: 5px;
+                padding: 6px 12px;
+                margin: 0 4px 0 8px;
+            }
+        }
+        .header_right{
+            margin-right: 25px;
+            .show_map{
+                display: inline-block;
+                padding: 6px 12px;
+                margin: 0 4px 0 8px;
+            }
+            
+            .map_btn_bgc{
+                border: 1px solid rgb(0, 132, 137)!important;
+                background-color: rgb(235, 235, 235)!important;
+            }
+            .map_btn{
+                background-color: rgb(0, 132, 137);
+                border: none;
+                border-radius: 20px;
+                display: inline-block;
+                width: 50px;
+                
+
+                .cuo{
+                    left: 0!important;
+                }
+                .dui{
+                    display: inline-block;
+                    color: rgb(0, 132, 137);
+                    background-color: white;
+                    border-radius: 50%;
+                    border: 1px solid rgb(0, 132, 137);
+                    text-align: center;
+                    line-height: 30px;
+                    vertical-align: middle;
+                    position: relative;
+                    width:  30px;
+                    height: 30px;
+                    left: 20px;
+                }
+            }
+        }
+    }
+}
+
+//内容
+.content{
+
+    //餐厅
+    .content_left{
+        //上海
+        .shanghai{
+            margin: 40px 0;
+            &>div:first-child{
+                .choose_coord{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    color: rgb(0, 132, 137);
+                }
+            }
+            .shanghai_header{
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 800;
+                padding-left: 15px;
+                padding-bottom: 8px;
+            }
+    
+            //餐厅展示
+            .choose_hide{
+                display: none!important;
+            }
+            .choose{
+                &>div{
+                    padding: 8px;
+                    position: relative;
+                    &>div:first-child:hover>.carousel-control{
+                        display: block!important;
+                    }
+                    .choose_like{
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                        font-size: 28px;
+                        color: white;
+                    }
+                }
+                .choose1_msg{
+                    &>a{
+                        display: block;
+                        padding: 8px 0;
+                        text-decoration: none;
+                        .choose1_style{
+                            margin-bottom: 2px;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(145, 110, 13);
+                        }
+                        .choose1_name{
+                            display: block;
+                            font-size: 17px;
+                            line-height: 21px;
+                            font-weight: 800;
+                            // max-width: 42px;
+                            margin-bottom: 4px;
+                            color: black;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .choose1_recom{
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(72, 72, 72);
+                        }
+                    }
+                }
+            }
+            //查看全部
+            .more_choose{
+                &>a{
+                    display: block;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: 800;
+                    color: rgb(0, 132, 137);
+                    padding-left: 15px;
+                    margin-top: 8px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+    
+            }
+        }
+        //杭州
+        .hangzhou{
+            margin: 40px 0;
+            &>div:first-child{
+                .choose_coord{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    color: rgb(0, 132, 137);
+                }
+            }
+            .hangzhou_header{
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 800;
+                padding-left: 15px;
+                padding-bottom: 8px;
+            }
+    
+            //餐厅展示
+            .choose_hide{
+                display: none!important;
+            }
+            .choose{
+                &>div{
+                    padding: 8px;
+                    position: relative;
+                    &>div:first-child:hover>.carousel-control{
+                        display: block!important;
+                    }
+                    .choose_like{
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                        font-size: 28px;
+                        color: white;
+                    }
+                }
+                .choose1_msg{
+                    &>a{
+                        display: block;
+                        padding: 8px 0;
+                        text-decoration: none;
+                        .choose1_style{
+                            margin-bottom: 2px;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(145, 110, 13);
+                        }
+                        .choose1_name{
+                            display: block;
+                            font-size: 17px;
+                            line-height: 21px;
+                            font-weight: 800;
+                            // min-height: 42px;
+                            margin-bottom: 4px;
+                            color: black;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .choose1_recom{
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(72, 72, 72);
+                        }
+                    }
+                }
+            }
+            //查看全部
+            .more_choose{
+                &>a{
+                    display: block;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: 800;
+                    color: rgb(0, 132, 137);
+                    padding-left: 15px;
+                    margin-top: 8px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+    
+            }
+        }
+        //深圳
+        .shenzhen{
+            margin: 40px 0;
+            &>div:first-child{
+                .choose_coord{
+                    color: rgb(0, 132, 137);
+                }
+            }
+            .shenzhen_header{
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 800;
+                padding-left: 15px;
+                padding-bottom: 8px;
+            }
+    
+            //餐厅展示
+            .choose_hide{
+                display: none!important;
+            }
+            .choose{
+                &>div{
+                    padding: 8px;
+                    position: relative;
+                    &>div:first-child:hover>.carousel-control{
+                        display: block!important;
+                    }
+                    .choose_like{
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                        font-size: 28px;
+                        color: white;
+                    }
+                }
+                .choose1_msg{
+                    &>a{
+                        display: block;
+                        padding: 8px 0;
+                        text-decoration: none;
+                        .choose1_style{
+                            margin-bottom: 2px;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(145, 110, 13);
+                        }
+                        .choose1_name{
+                            font-size: 17px;
+                            line-height: 21px;
+                            font-weight: 800;
+                            // max-width: 42px;
+                            margin-bottom: 4px;
+                            color: black;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .choose1_recom{
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(72, 72, 72);
+                        }
+                    }
+                }
+            }
+            //查看全部
+            .more_choose{
+                &>a{
+                    display: block;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: 800;
+                    color: rgb(0, 132, 137);
+                    padding-left: 15px;
+                    margin-top: 8px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+    
+            }
+        }
+        //济南
+        .jinan{
+            margin: 40px 0;
+            &>div:first-child{
+                .choose_coord{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    color: rgb(0, 132, 137);
+                }
+            }
+            .jinan_header{
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 800;
+                padding-left: 15px;
+                padding-bottom: 8px;
+            }
+    
+            //餐厅展示
+            .choose_hide{
+                display: none!important;
+            }
+            .choose{
+                
+                &>div{
+                    padding: 8px;
+                    position: relative;
+                    &>div:first-child:hover>.carousel-control{
+                        display: block!important;
+                    }
+                    .choose_like{
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                        font-size: 28px;
+                        color: white;
+                    }
+                }
+                
+                .choose1_msg{
+                    &>a{
+                        display: block;
+                        padding: 8px 0;
+                        text-decoration: none;
+                        .choose1_style{
+                            margin-bottom: 2px;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(145, 110, 13);
+                        }
+                        .choose1_name{
+                            font-size: 17px;
+                            line-height: 21px;
+                            font-weight: 800;
+                            // max-width: 42px;
+                            margin-bottom: 4px;
+                            color: black;
+                        }
+                        .choose1_recom{
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: rgb(72, 72, 72);
+                        }
+                    }
+                }
+            }
+            //查看全部
+            .more_choose{
+                &>a{
+                    display: block;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: 800;
+                    color: rgb(0, 132, 137);
+                    padding-left: 15px;
+                    margin-top: 8px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    //地图
+    .map_hide{
+        display: none!important;
+    }
+    //固定
+    .content_right{
+        position: fixed;
+        right: 0;
+    }
+}
+
+@media(max-width:768px){
+    .header_right{
+        display: none;
+    }
+}
+@media(min-width:768px)and(max-width:991px){
+    .header_right{
+        display: none;
+    }
+}
+@media(min-width:992px)and(max-width:1199px){
+    .choose7,.choose8{
+        display: none!important;
+    }
+    
+}
+@media(min-width:1200px){
+    
+}

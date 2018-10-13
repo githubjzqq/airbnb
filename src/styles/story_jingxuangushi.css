@@ -1,1 +1,356 @@
 @charset "utf-8";
+
+/*标题头部*/
+
+.header {
+    margin: 0 auto;
+    height: 50%;
+    max-width: 666px;
+}
+
+
+/*顶部头像*/
+
+.author {
+    max-width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+
+.author .photo {
+    margin: 0 auto;
+    font-size: 14px;
+    height: 50px;
+    width: 200px;
+}
+
+.author .photo .wenzi {
+    margin: 0 auto;
+    font-size: 14px;
+    height: 50px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+
+/*顶部右边关注*/
+
+.container-fluid .word>ul>li>a {
+    height: 35px;
+    width: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(5, 168, 197);
+    border: 1px solid rgb(5, 168, 197);
+    line-height: 4px;
+    border-radius: 5%;
+    margin-top: 40px;
+}
+
+
+/*图片部分*/
+
+.subject {
+    margin: 0 auto;
+    max-width: 652px;
+}
+
+.subject img {
+    margin: 0 auto;
+}
+
+.subject2 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject2 img {
+    margin: 0 auto;
+}
+
+.subject3 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject3 img {
+    margin: 0 auto;
+}
+
+.subject4 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject4 img {
+    margin: 0 auto;
+}
+
+.subject5 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject5 img {
+    margin: 0 auto;
+}
+
+.subject6 {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subject6 img {
+    margin: 0 auto;
+}
+
+
+/*体验感受标题*/
+
+.tiyan {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.row {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.tiyan .tiyan2 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row .title {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 652px;
+}
+
+
+/*体验感受内容*/
+
+.ganshou {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.ganshou>span {
+    line-height: 1.6em;
+    font-size: 18px;
+    color: rgb(80, 77, 77);
+}
+
+
+/*点赞情况*/
+
+.pinglun {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.pinglun .right-word {
+    float: right;
+}
+
+.pinglun .right-word a {
+    text-decoration: none;
+    color: rgb(80, 77, 77);
+}
+
+
+/*点赞收藏logo*/
+
+.logo {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.logo .logo-zan {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgb(207, 199, 199);
+    background-color: rgb(207, 199, 199);
+    line-height: 80px;
+}
+
+.logo .logo-cang {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgb(207, 199, 199);
+    background-color: rgb(207, 199, 199);
+    margin-left: 20px;
+    line-height: 80px;
+}
+
+@media screen and (max-width:375px) {
+    .logo .logo-zan {
+        width: 30px;
+        height: 30px;
+        float: left;
+        border-radius: 50%;
+        border: 1px solid rgb(207, 199, 199);
+        background-color: rgb(207, 199, 199);
+        line-height: 30px;
+    }
+    .logo .logo-cang {
+        width: 30px;
+        height: 30px;
+        float: left;
+        border-radius: 50%;
+        border: 1px solid rgb(207, 199, 199);
+        background-color: rgb(207, 199, 199);
+        margin-left: 20px;
+        line-height: 30px;
+    }
+}
+
+
+/*相关故事*/
+
+.about-story {
+    max-width: 652px;
+    margin: 0 auto;
+    height: 80px;
+    padding-top: 30px;
+}
+
+.about-story span {
+    font-size: 18px;
+}
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .jia {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .chenyoujian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .juyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .bali {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}

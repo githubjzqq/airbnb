@@ -1,7 +1,7 @@
 @color-logo:#FF5A5F;
 @color-nav:#484848;
 @color-search-input-text:#484848;
-@color-nav-border:#788;
+@color-nav-border:#bbb;
 .header {
     height: 80px;
     background: none;
@@ -285,6 +285,12 @@
                     }
                 }
                 .modal-footer{
+                    button{
+                        &:hover{
+                            box-shadow: 0 1px 5px rgba(0,0,0,.5);
+                        }
+                        border:none;
+                    }
                     .btn-default{
                         background-color: #ff5a5f;
                         color: #fff;
@@ -296,6 +302,18 @@
             }
         }
         .content.picture{
+            .waiting{
+                display: none;
+                line-height: 20px;
+                background-color: yellowgreen;
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translate(-50%,0);
+                color: #fff;
+                padding: 4px 10px;
+                border-radius: 20px;
+            }
             &>.row{
                 .title{
                     margin-bottom: 24px;
@@ -303,6 +321,10 @@
                 .pic{
                     padding: 0 20px 20px;
                     text-align: center;
+                    height: 192px;
+                    @media(max-width:768px){
+                        height: auto;
+                    }
                     img{
                         width: 100%;
                         @media(max-width:768px){
@@ -324,9 +346,63 @@
                         font-weight:bold;
                         border-radius: 5px;
                         margin-top:24px;
+                        user-select: none;
                         &:hover{
                             box-shadow:0 1px 5px rgba(0,0,0,.4);
                             border-color:#fff;
+                        }
+                    }
+                    .select_mod{
+                        &>div.modal-dialog{
+                            margin-top:200px;
+                        }
+                       .modal-content{
+                           padding: 30px;
+                           .modal-header{
+                                h4{
+                                    font-weight: bold;
+                                }
+                           }
+                           .modal-body{
+                               text-align: center;
+                                .item{
+                                    height: 80px;
+                                    width: 80px;
+                                    background-color: #f1f1f1;
+                                    display: inline-block;
+                                    margin: 5px 10px;
+                                    border: 2px solid #aaa;
+                                    img{
+                                        height: 100%;
+                                        width: 100%;
+                                        float: left;
+                                    }
+                                    &.active{
+                                        border-color:#ff5a5f;
+                                        border-width: 4px;
+                                        box-shadow: 0 1px 5px rgba(0,0,0,.6);
+                                    }
+                                    &:hover{
+                                        box-shadow: 0 1px 5px rgba(0,0,0,.4);
+                                    }
+                                }
+                           }
+                           .modal-footer{
+                                button{
+                                    &:hover{
+                                        box-shadow: 0 1px 5px rgba(0,0,0,.5);
+                                    }
+                                }
+                               .btn-default{
+                                   background-color: #ff5a5f;
+                                   color: #fff;
+                                   border:none;
+                                }
+                                .btn-primary{
+                                    border:none;
+                                   background-color: rgb(0, 132, 137);
+                               }
+                           }
                         }
                     }
                 }

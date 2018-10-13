@@ -1,4 +1,7 @@
 $(function() {
+    var login = 0; //储存登陆信息；
+    var regist = {}; //储存注册信息；
+    regist.url = '../php/regist.php';
     var regist = {}; //储存注册&登陆信息；
 
     //登陆成功后的DOM操作；
@@ -10,7 +13,7 @@ $(function() {
 
         //显示登陆后的用户基本信息；
         $('.header .header-nav li.sub.user-msg').attr('style', ''); //登陆后显示用户信息；
-        $('.header .header-nav li.login .userpic').css('display', 'block'); //登陆后显示用户头像；
+        $('.header .header-nav li.login .userpic').css('display', 'block').children('img').attr('src', sessionStorage.userheadimg); //登陆后显示用户头像；
         $('.header .header-nav li.login .index').css('display', 'none'); //登陆后隐藏登陆注册按钮；
         $('.header .header-nav li.login').attr('data-target', ''); //去除出点击出现模态框的绑定；
         $('.mod').css('display', 'none');
@@ -42,7 +45,10 @@ $(function() {
                         for (var i in user) {
                             usermsg.setItem(i, user[i]);
                         };
-                        successDom();
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('登陆成功');
+                        setTimeout(function() {
+                            successDom();
+                        }, 1000)
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
@@ -64,14 +70,16 @@ $(function() {
                     if (user[1] == 'pwd_error') {
                         $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('密码错误');
                     } else {
-
                         //储存用户信息；
                         var usermsg = sessionStorage;
                         usermsg.setItem('login', true);
                         for (var i in user) {
                             usermsg.setItem(i, user[i]);
                         }
-                        successDom();
+                        $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': 'yellowgreen' }).html('登陆成功');
+                        setTimeout(function() {
+                            successDom();
+                        }, 1000);
                     }
                 } else {
                     $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '', 'background': '' }).html('用户名或密码错误');
@@ -105,14 +113,14 @@ $(function() {
     //搜索框获得焦点时出发事件；
     $('.header .search .input-text').on('focus', function() {
         $(this).parent('.search').addClass('focus'); //边框高亮；
-        $('.header .search .user-history').addClass('show'); //显示搜索历史；
-        $('.header-nav-min').removeClass('show'); //关闭nav-min(移动端);
+        $('.header .search .user-history').addClass('active'); //显示搜索历史；
+        $('.header-nav-min').removeClass('active'); //关闭nav-min(移动端);
     });
 
     //搜索框失去焦点时触发事件；
     $('.header .search .input-text').on('blur', function() {
         setTimeout(function() {
-            $('.header .search .user-history').removeClass('show'); //搜索历史隐藏；
+            $('.header .search .user-history').removeClass('active'); //搜索历史隐藏；
         }, 100);
         $(this).parent('.search').removeClass('focus'); //清除边框的高亮；
     });
@@ -141,9 +149,11 @@ $(function() {
         };
     });
     $('#logo').on('click', function() {
-        if (window, innerWidth < 1128) {
+        if (window.innerWidth < 1128) {
             $('.header .sub-btn .img').toggleClass('trans');
-            $('.header-nav-min').toggleClass('show')
+            $('.header-nav-min').toggleClass('show');
+        } else {
+            location.href = '../html/public.html';
         }
     });
 
@@ -332,7 +342,7 @@ $(function() {
                             } else {
                                 $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('注册成功(2s后自动跳转)');
                                 setTimeout(function() {
-                                    emailLogin(email, pwd);
+                                    emailLogin(email, pwd, e);
                                 }, 2000);
                             }
                         },
@@ -345,7 +355,14 @@ $(function() {
                 //登陆操作；
                 if (regist.emailAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    if (emailLogin(email, pwd, e)) location.reload();
+                    emailLogin(email, pwd, e);
+                    if (sessionStorage.userid) {
+                        //登陆成功刷新页面；
+                        setTimeout(function() {
+                            location.reload();
+                        }, 500)
+                    }
+
                 }
             }
         } else {
@@ -391,27 +408,25 @@ $(function() {
                             } else {
                                 $(e.target).siblings('.tips').css({ 'display': 'block', 'color': '#fff', 'background': 'yellowgreen' }).html('注册成功(2s后自动跳转)');
                                 setTimeout(function() {
-                                    phoneLogin(phoneNmb, pwd);
+                                    phoneLogin(phoneNmb, pwd, e);
                                 }, 2000);
                             }
                         },
                         error: function(err) {
                             console.log(err)
                         },
-                    })
-                }
+                    });
+                };
             } else {
                 //登陆操作；
                 if (regist.phoneAd) {
                     //登陆功能函数，接收用户手机号和密码；
-                    if (phoneLogin(phoneNmb, pwd, e)) {
-                        location.reload();
-                    }
-                }
-            }
+                    phoneLogin(phoneNmb, pwd, e);
+                };
+            };
         } else {
             $(this).siblings('.tips').css('display', 'block'); //报错；
-        }
+        };
     }
     $('.mod .modal-dialog.mad1 .modal-content.phone .modal-body.button').on('click', phone);
 });

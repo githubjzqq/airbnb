@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>爱彼迎</title>
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="../src/fonts/index/iconfont.css">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../../src/fonts/index/iconfont.css">
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -17,16 +17,10 @@
 </head>
 
 <body>
+
     <div class="aby_all container-fluid">
-        <div class="aby_banner container-fluid">
-            <div class="banner_text container">
-                <h2>Airbnb爱彼迎</h2>
-                <h2>500万民宿 解锁别样十一假期</h2>
-                <div>
-                    <div></div><span>高达￥300首单礼</span>
-                    <!-- <div></div><span>高达￥300首单礼</span> -->
-                </div>
-            </div>
+        <div class="index_top">
+
         </div>
 
         <!-- 搜索框 -->
@@ -46,7 +40,7 @@
                     <div class="col-lg-4">
                         <p>国内热门</p>
                         <ul>
-                            <li><a href="">北京</a></li>
+                            <li><a href="../html/text.html">北京</a></li>
                             <li><a href="">上海</a></li>
                             <li><a href="">成都</a></li>
                             <li><a href="">重庆</a></li>
@@ -90,8 +84,8 @@
                 <!-- 最近搜索 -->
                 <div>
                     <p>最近搜索</p>
-                    <ul class="row">
-                        <li class="col-lg-4 col-md-4">
+                    <ul class="row lastest">
+                        <!-- <li class="col-lg-4 col-md-4">
                             <a href="">
                                 <span>北京</span>
                                 <span>任何时间</span>
@@ -120,7 +114,7 @@
                                 <span>济南</span>
                                 <span>任何时间</span>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
@@ -132,32 +126,7 @@
         <div class="aby_history container">
             <p>最近浏览过的</p>
             <div>
-                <ul class="row">
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-10">
-                        <a href="">
-                            <img src="./images/house/hz/hz1.jpg" alt="">
-                            <p>整套公寓·1张床</p>
-                            <p>温馨舒适整套房间,近高新园世界之窗深大华侨城深圳湾口岸深圳湾体育中心29</p>
-                            <p>每晚￥295</p>
-                        </a>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 hidden-xs">
-                        <a href="">
-                            <img src="./images/house/hz/hz2.jpg" alt="">
-                            <p>整套公寓·1张床</p>
-                            <p>温馨舒适整套房间,近高新园世界之窗深大华侨城深圳湾口岸深圳湾体育中心29</p>
-                            <p>每晚￥295</p>
-                        </a>
-                    </li>
-                    <li class="col-lg-4 hidden-md hidden-sm hidden-xs">
-                        <a href="">
-                            <img src="./images/house/hz/hz3.jpg" alt="">
-                            <p>整套公寓·1张床</p>
-                            <p>温馨舒适整套房间,近高新园世界之窗深大华侨城深圳湾口岸深圳湾体育中心29</p>
-                            <p>每晚￥295</p>
-                        </a>
-                    </li>
-
+                <ul class="row history_ul">
                 </ul>
             </div>
         </div>
@@ -168,7 +137,7 @@
             <ul class="row">
                 <li class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
                     <a href="" class="row pm">
-                        <div class="col-lg-5  col-md-4 col-sm-4 pm"><img src="./images/index/explore1.jpg" alt=""></div>
+                        <div class="col-lg-5  col-md-4 col-sm-4 pm"><img src="../images/index/explore1.jpg" alt=""></div>
                         <div class="col-lg-7 col-md-8 col-sm-8 pm">
                             <p class="exp_text">房源</p>
                         </div>
@@ -176,7 +145,7 @@
                 </li>
                 <li class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
                     <a href="" class="row pm">
-                        <div class="col-lg-5 col-md-4 col-sm-4 pm"><img src="./images/index/explore2.jpg" alt=""></div>
+                        <div class="col-lg-5 col-md-4 col-sm-4 pm"><img src="../images/index/explore2.jpg" alt=""></div>
                         <div class="col-lg-7 col-md-8 col-sm-8 pm">
                             <p class="exp_text">体验</p>
                         </div>
@@ -184,7 +153,7 @@
                 </li>
                 <li class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
                     <a href="" class="row pm">
-                        <div class="col-lg-5 col-md-4 col-sm-4 pm"><img src="./images/index/explore3.jpg" alt=""></div>
+                        <div class="col-lg-5 col-md-4 col-sm-4 pm"><img src="../images/index/explore3.jpg" alt=""></div>
                         <div class="col-lg-7 col-md-8 col-sm-4 pm">
                             <p class="exp_text">餐馆</p>
                         </div>
@@ -211,7 +180,8 @@
 
             </ul>
 
-            <span class="tabs_more"><a href="">查看更多成都房源</a></span>
+            <span class="tabs_more"><a>查看更多<span class="tabs_more_city">上海</span>房源</a>
+            </span>
 
         </div>
         <!-- tabs 房源 -->
@@ -221,7 +191,7 @@
             <ul class="row">
                 <li class="col-lg-2 col-sm-3 col-xs-4">
                     <a href="">
-                        <img src="./images/index/travel1.jpg" alt="">
+                        <img src="../images/index/travel1.jpg" alt="">
                         <p>
                             <span>香港</span>
                             <span>亚洲美食之都</span>
@@ -231,7 +201,7 @@
                 </li>
                 <li class="col-lg-2 col-sm-3 col-xs-4">
                     <a href="">
-                        <img src="./images/index/travel2.jpg" alt="">
+                        <img src="../images/index/travel2.jpg" alt="">
                         <p>
                             <span>清迈</span>
                             <span>泰国最文艺小城</span>
@@ -241,7 +211,7 @@
                 </li>
                 <li class="col-lg-2 col-sm-3 col-xs-4">
                     <a href="">
-                        <img src="./images/index/travel3.jpg" alt="">
+                        <img src="../images/index/travel3.jpg" alt="">
                         <p>
                             <span>伦敦</span>
                             <span>感受英伦风情</span>
@@ -251,7 +221,7 @@
                 </li>
                 <li class="col-lg-2 col-sm-3 hidden-xs">
                     <a href="">
-                        <img src="./images/index/travel4.jpg" alt="">
+                        <img src="../images/index/travel4.jpg" alt="">
                         <p>
                             <span>普吉岛</span>
                             <span>东南亚看海</span>
@@ -261,7 +231,7 @@
                 </li>
                 <li class="col-lg-2 hidden-md hidden-xs hidden-sm">
                     <a href="">
-                        <img src="./images/index/travel5.jpg" alt="">
+                        <img src="../images/index/travel5.jpg" alt="">
                         <p>
                             <span>洛杉矶</span>
                             <span>好莱坞式繁华</span>
@@ -271,7 +241,7 @@
                 </li>
                 <li class="col-lg-2 hidden-md hidden-xs hidden-sm">
                     <a href="">
-                        <img src="./images/index/travel6.jpg" alt="">
+                        <img src="../images/index/travel6.jpg" alt="">
                         <p>
                             <span>巴厘岛</span>
                             <span>度蜜月的首选</span>
@@ -321,77 +291,80 @@
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <a href="">
                         <div>
-                            <img src="./images/index/story1.jpg" alt="">
+                            <img src="../images/index/story1.jpg" alt="">
                             <span>美食</span>
                         </div>
                         <p><span>北京</span>Hi Kiehl’s !来一份金盏花…嗯…拿铁？</p>
-                        <p><b><img src="./images/user/tx1.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p><b><img src="../images/user/tx1.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
                     </a>
                 </li>
                 <li class="col-lg-3 col-sm-4 col-xs-6">
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <a href="">
                         <div>
-                            <img src="./images/index/story1.jpg" alt="">
+                            <img src="https://z2.muscache.cn/im/pictures/70df8db4-67e6-4eae-88e1-bf162c84667f.jpg?aki_policy=x_large" alt="">
                             <span>美食</span>
                         </div>
                         <p><span>成都</span>成都丨命中带辣，才会独爱此家新派川菜</p>
-                        <p><b><img src="./images/user/tx2.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p><b><img src="../images/user/tx2.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
                     </a>
                 </li>
                 <li class="col-lg-3 col-sm-4 col-xs-6">
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <a href="">
                         <div>
-                            <img src="./images/index/story3.jpg" alt="">
+                            <img src="../images/index/story3.jpg" alt="">
                             <span>景点</span>
                         </div>
                         <p><span>白川</span>冬季以外的白川乡，你见过吗？</p>
-                        <p><b><img src="./images/user/tx3.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p><b><img src="../images/user/tx3.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
                     </a>
                 </li>
                 <li class="col-lg-3 col-sm-4 col-xs-6">
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <a href="">
                         <div>
-                            <img src="./images/index/story4.jpg" alt="">
+                            <img src="../images/index/story4.jpg" alt="">
                             <span>景点</span>
                         </div>
                         <p><span>法国</span>法国最本真的样子，动人的罗纳-阿尔卑斯山谷</p>
-                        <p><b><img src="./images/user/tx4.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p><b><img src="../images/user/tx4.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
                     </a>
                 </li>
                 <li class="col-lg-3 col-sm-4 hidden-xs">
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <a href="">
                         <div>
-                            <img src="./images/index/story5.jpg" alt="">
+                            <img src="../images/index/story5.jpg" alt="">
                             <span>美食</span>
                         </div>
                         <p><span>北京</span>夹娃娃这件小事没那么简单</p>
-                        <p><b><img src="./images/user/tx5.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p><b><img src="../images/user/tx5.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
                     </a>
                 </li>
                 <li class="col-lg-3 col-sm-4 hidden-xs">
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <a href="">
                         <div>
-                            <img src="./images/index/story6.jpg" alt="">
+                            <img src="../images/index/story6.jpg" alt="">
                             <span>美食</span>
                         </div>
                         <p><span>上海</span>国际饭店招牌，没吃过等于没来过上海</p>
-                        <p><b><img src="./images/user/tx6.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p><b><img src="../images/user/tx6.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
                     </a>
                 </li>
                 <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <a href="">
                         <div>
-                            <img src="./images/index/story7.jpg" alt="">
+                            <img src="../images/index/story7.jpg" alt="">
                             <span>活动</span>
                         </div>
                         <p><span>澳大利亚</span>看牧羊犬们炫技，一场令人兴奋的赶羊Show</p>
-                        <p><b><img src="./images/user/tx7.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p>
+                            <b><img src="../images/user/tx7.jpg" alt=""></b>
+                            <i class="glyphicon glyphicon-thumbs-up"></i> 18 <i class="glyphicon glyphicon-comment"></i> 2
+                        </p>
                     </a>
                 </li>
                 <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
@@ -399,11 +372,11 @@
 
                     <a href="">
                         <div>
-                            <img src="./images/index/story7.jpg" alt="">
+                            <img src="https://z2.muscache.cn/im/pictures/e1ef1882-7b89-4445-a404-21b214b9aa48.jpg" alt="">
                             <span>美食</span>
                         </div>
                         <p><span>旧金山</span>相约酒乡：复古小火车上与你共渡浪漫“食”光</p>
-                        <p><b><img src="./images/user/tx8.jpg" alt=""></b><i></i>18 <i></i>2</p>
+                        <p><b><img src="../images/user/tx8.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
                     </a>
                 </li>
             </ul>
@@ -420,7 +393,7 @@
                 <li class="col-lg-3 col-sm-4 col-xs-6">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience1.jpg" alt="">
+                            <img src="../images/index/experience1.jpg" alt="">
                         </div>
                         <p>野生动物 · 克萨达(Quesada)</p>
                         <p>Experiencia con el Oso Perezoso</p>
@@ -431,7 +404,7 @@
                 <li class="col-lg-3 col-sm-4 col-xs-6">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience2.jpg" alt="">
+                            <img src="../images/index/experience2.jpg" alt="">
                         </div>
                         <p>攀岩下降? · 圣乔治</p>
                         <p>Private East Zion Slot Canyon Tour</p>
@@ -442,7 +415,7 @@
                 <li class="col-lg-3 col-sm-4 col-xs-6">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience3.jpg" alt="">
+                            <img src="../images/index/experience3.jpg" alt="">
                         </div>
                         <p>一日游 · 迪拜</p>
                         <p>Red Dunes Safari & BBQ @Al Khayma Camp</p>
@@ -453,7 +426,7 @@
                 <li class="col-lg-3 col-sm-4 col-xs-6">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience4.jpg" alt="">
+                            <img src="../images/index/experience4.jpg" alt="">
                         </div>
                         <p>乘船游览 · 江陵</p>
                         <p>Yacht along the coast with a captain</p>
@@ -464,7 +437,7 @@
                 <li class="col-lg-3 col-sm-4 hidden-xs">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience5.jpg" alt="">
+                            <img src="../images/index/experience5.jpg" alt="">
                         </div>
                         <p>户外漫步 · 波多黎各</p>
                         <p>Rainforest Water Slide Tour</p>
@@ -475,7 +448,7 @@
                 <li class="col-lg-3 col-sm-4 hidden-xs">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience6.jpg" alt="">
+                            <img src="../images/index/experience6.jpg" alt="">
                         </div>
                         <p>烹饪课 · 巴厘岛</p>
                         <p>Traditional Balinese Cooking Class</p>
@@ -486,7 +459,7 @@
                 <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience7.jpg" alt="">
+                            <img src="../images/index/experience7.jpg" alt="">
                         </div>
                         <p>工作坊 · 都柏林</p>
                         <p>Forge a silver ring with jewellers</p>
@@ -497,7 +470,7 @@
                 <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
                     <a href="">
                         <div>
-                            <img src="./images/index/experience8.jpg" alt="">
+                            <img src="../images/index/experience8.jpg" alt="">
                         </div>
                         <p>邂逅动物 · 西雅图</p>
                         <p>Wolf Encounter</p>
@@ -510,10 +483,13 @@
             <p><a href="">显示全部体验 <i class="glyphicon glyphicon-menu-right"></i></a></p>
         </div>
         <!-- aby_all -->
+        <!-- <div class="indexbtn">
+
+        </div> -->
     </div>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./js/index.js">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/index.js">
     </script>
 </body>
 

@@ -80,7 +80,7 @@
     position: absolute;
     // position: fixed;
     left: 1050px;
-    top: 500px;
+    // top: 500px;
     width: 326px;
     padding: 0 24px;
     border: 1px solid rgb(235, 235, 235);
@@ -459,12 +459,17 @@
         display: none;
     }
 
+    //类似房源
+    
+
 }
 @media(min-width:768px){
     //预定窗口
-    .reserve{
-        display: none;
-    }
+    // .reserve{
+    //     display: none;
+    // }
+
+    
 
     //banner
     .banner_right>div:nth-child(1)>div:nth-child(2),.banner_right>div:nth-child(2)>div:nth-child(2){
@@ -1150,7 +1155,10 @@
             font-weight: 800;
             margin-bottom: 32px;
         }
-        &>div:nth-child(3){
+        &>div:nth-child(2)>div>div:hover>.carousel-control{
+            display: block!important;
+        }
+        .same{
             &>p:nth-child(1){
                 font-size: 12px;
                 line-height: 16px;
@@ -1194,6 +1202,15 @@
     .reserve{
         display: none;
     }
+
+
+    //轮播隐藏
+    .lunbo2,.lunbo3{
+        display: none!important;
+    }
+
+
+
     //房间详情
     .content_left>div:nth-child(1){
         border-top: 1px solid rgb(235, 235, 235);
@@ -1704,12 +1721,12 @@
                     line-height: 22px;
                     font-weight: 800;
                 }
-                &>span:nth-child(2){
+                &>span:nth-child(3){
                     font-size: 14px;
                     line-height: 18px;
                     font-weight: 600;
                 }
-                &>span:nth-child(3){
+                &>span:nth-child(5){
                     font-size: 14px;
                     line-height: 18px;
                     font-weight: 600;
@@ -1720,7 +1737,7 @@
                 position: relative;
                 &>img{
                     position: absolute;
-                    max-width: 35%;
+                    max-width: 100%;
                     border-radius: 50%;
                     right: 0;
                     top: 0;
@@ -1736,7 +1753,7 @@
         &>div:nth-child(3){
             margin-top: 8px;
             &>div:first-child{
-                margin-right: 16px;
+                // margin-right: 16px;
                 &>span:first-child{
                     background: orange;
                     color: white;
@@ -1744,11 +1761,13 @@
                     line-height: 25px;
                     border-radius: 5px;
                     margin-right: 10px;
+                    font-size: 14px;
                 }
                 &>span:last-child{
                     float: left;
-                    text-align: center;
+                    text-align: left;
                     line-height: 30px;
+                    font-size: 14px;
                 }
             }
             &>div:last-child{
@@ -1759,6 +1778,7 @@
                 }
                 &>span:last-child{
                     line-height: 30px;
+                    font-size: 14px;
                 }
             }
         }
@@ -1863,7 +1883,10 @@
             font-weight: 800;
             margin-bottom: 32px;
         }
-        &>div:nth-child(3){
+        &>div:nth-child(2)>div>div:hover>.carousel-control{
+            display: block!important;
+        }
+        .same{
             &>p:nth-child(1){
                 font-size: 12px;
                 line-height: 16px;
@@ -1871,6 +1894,7 @@
                 margin-bottom: 2px;
                 padding-top: 8px;
             }
+            
             &>p:nth-child(2){
                 font-size: 16px;
                 line-height: 22px;
