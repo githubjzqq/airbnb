@@ -1,4 +1,7 @@
 @charset "utf-8";
+.city {
+  padding-top: 80px!important;
+}
 .fy_plus {
   margin: 40px 0;
 }

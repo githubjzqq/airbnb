@@ -298,7 +298,7 @@ $(function() {
         // }
 
         //
-        if (top > $('.list')[0].offsetTop && top < 3500) {
+        if (top > $('.content_list')[0].offsetTop && top < 3500) {
             $('.reserve').addClass('fix');
         } else {
             $('.reserve').removeClass('fix');
