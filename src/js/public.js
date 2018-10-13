@@ -153,7 +153,7 @@ $(function() {
             $('.header .sub-btn .img').toggleClass('trans');
             $('.header-nav-min').toggleClass('show');
         } else {
-            location.href = '../html/public.html';
+            location.href = '../html/index.html';
         }
     });
 
