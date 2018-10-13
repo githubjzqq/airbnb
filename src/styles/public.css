@@ -122,10 +122,10 @@ html {
   border-radius: 4px;
   background-color: #fff;
   padding: 30px;
-  visibility: hidden;
+  display: none;
 }
-.header .search .user-history.show {
-  visibility: visible;
+.header .search .user-history.active {
+  display: block;
 }
 .header .search .user-history p {
   font-size: 14px;
@@ -314,7 +314,7 @@ html {
   padding-bottom: 10px;
 }
 .header .header-nav li.sub.house p {
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 40px;
 }
 .header .header-nav li.sub.house .experience {

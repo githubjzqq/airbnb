@@ -1,4 +1,9 @@
 @charset "utf-8";
+.all {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 
 /*标题头部*/
 
@@ -366,6 +371,466 @@
 }
 
 .caption .haizi {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+
+/*全部故事*/
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .jia {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .chenyoujian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .juyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .bali {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+
+/*全部故事*/
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .jia {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .chenyoujian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .juyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .bali {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+
+/*全部故事*/
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .jia {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .chenyoujian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .juyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .bali {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+
+/*全部故事*/
+
+.thumbnail.bingfen {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.fangzi {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.kafei {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail.laofoye {
+    padding: 0;
+    border: 0;
+}
+
+.bingfen>img {
+    opacity: 9;
+}
+
+.fangzi>img {
+    opacity: 9;
+}
+
+.kafei>img {
+    opacity: 9;
+}
+
+.laofoye>img {
+    opacity: 9;
+}
+
+.caption {
+    text-align: center;
+}
+
+.bingfen {
+    position: relative;
+}
+
+.fangzi {
+    position: relative;
+}
+
+.kafei {
+    position: relative;
+}
+
+.laofoye {
+    position: relative;
+}
+
+.caption .jia {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .chenyoujian {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .juyuan {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(44, 42, 42);
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.caption .bali {
     position: absolute;
     font-size: 12px;
     color: rgb(44, 42, 42);

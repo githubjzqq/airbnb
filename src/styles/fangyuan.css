@@ -58,7 +58,6 @@
 .reserve {
   position: absolute;
   left: 1050px;
-  top: 500px;
   width: 326px;
   padding: 0 24px;
   border: 1px solid #ebebeb;
@@ -406,9 +405,6 @@
   }
 }
 @media (min-width: 768px) {
-  .reserve {
-    display: none;
-  }
   .banner_right > div:nth-child(1) > div:nth-child(2),
   .banner_right > div:nth-child(2) > div:nth-child(2) {
     display: none;
@@ -1036,32 +1032,32 @@
     font-weight: 800;
     margin-bottom: 32px;
   }
-  .sim > div:nth-child(3) > p:nth-child(1) {
+  .sim .same > p:nth-child(1) {
     font-size: 12px;
     line-height: 16px;
     font-weight: 800;
     margin-bottom: 2px;
     padding-top: 8px;
   }
-  .sim > div:nth-child(3) > p:nth-child(2) {
+  .sim .same > p:nth-child(2) {
     font-size: 16px;
     line-height: 22px;
     font-weight: 800;
     margin-bottom: 4px;
   }
-  .sim > div:nth-child(3) > p:nth-child(3) {
+  .sim .same > p:nth-child(3) {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 2px;
   }
-  .sim > div:nth-child(3) > p:nth-child(4) {
+  .sim .same > p:nth-child(4) {
     margin-bottom: 2px;
   }
-  .sim > div:nth-child(3) > p:nth-child(4) > span:first-child {
+  .sim .same > p:nth-child(4) > span:first-child {
     font-size: 9px;
     color: #008489;
   }
-  .sim > div:nth-child(3) > p:nth-child(4) > span:lasy-child {
+  .sim .same > p:nth-child(4) > span:lasy-child {
     font-size: 9px;
   }
 }
@@ -1071,6 +1067,10 @@
   }
   .reserve {
     display: none;
+  }
+  .lunbo2,
+  .lunbo3 {
+    display: none!important;
   }
   .content_left > div:nth-child(1) {
     border-top: 1px solid #ebebeb;
@@ -1544,12 +1544,12 @@
     line-height: 22px;
     font-weight: 800;
   }
-  .fangdong > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
+  .fangdong > div:nth-child(2) > div:nth-child(1) > span:nth-child(3) {
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
   }
-  .fangdong > div:nth-child(2) > div:nth-child(1) > span:nth-child(3) {
+  .fangdong > div:nth-child(2) > div:nth-child(1) > span:nth-child(5) {
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
@@ -1560,7 +1560,7 @@
   }
   .fangdong > div:nth-child(2) > div:nth-child(2) > img {
     position: absolute;
-    max-width: 35%;
+    max-width: 100%;
     border-radius: 50%;
     right: 0;
     top: 0;
@@ -1574,9 +1574,6 @@
   .fangdong > div:nth-child(3) {
     margin-top: 8px;
   }
-  .fangdong > div:nth-child(3) > div:first-child {
-    margin-right: 16px;
-  }
   .fangdong > div:nth-child(3) > div:first-child > span:first-child {
     background: orange;
     color: white;
@@ -1584,17 +1581,20 @@
     line-height: 25px;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 14px;
   }
   .fangdong > div:nth-child(3) > div:first-child > span:last-child {
     float: left;
-    text-align: center;
+    text-align: left;
     line-height: 30px;
+    font-size: 14px;
   }
   .fangdong > div:nth-child(3) > div:last-child > span:first-child img {
     width: 85%;
   }
   .fangdong > div:nth-child(3) > div:last-child > span:last-child {
     line-height: 30px;
+    font-size: 14px;
   }
   .fangdong > div:nth-child(4) > div {
     border: 1px solid #008489;
@@ -1692,32 +1692,32 @@
     font-weight: 800;
     margin-bottom: 32px;
   }
-  .sim > div:nth-child(3) > p:nth-child(1) {
+  .sim .same > p:nth-child(1) {
     font-size: 12px;
     line-height: 16px;
     font-weight: 800;
     margin-bottom: 2px;
     padding-top: 8px;
   }
-  .sim > div:nth-child(3) > p:nth-child(2) {
+  .sim .same > p:nth-child(2) {
     font-size: 16px;
     line-height: 22px;
     font-weight: 800;
     margin-bottom: 4px;
   }
-  .sim > div:nth-child(3) > p:nth-child(3) {
+  .sim .same > p:nth-child(3) {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 2px;
   }
-  .sim > div:nth-child(3) > p:nth-child(4) {
+  .sim .same > p:nth-child(4) {
     margin-bottom: 2px;
   }
-  .sim > div:nth-child(3) > p:nth-child(4) > span:first-child {
+  .sim .same > p:nth-child(4) > span:first-child {
     font-size: 9px;
     color: #008489;
   }
-  .sim > div:nth-child(3) > p:nth-child(4) > span:lasy-child {
+  .sim .same > p:nth-child(4) > span:lasy-child {
     font-size: 9px;
   }
 }

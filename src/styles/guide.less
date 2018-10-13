@@ -1,0 +1,104 @@
+@color-logo:#FF5A5F;
+@color-nav:#484848;
+@color-search-input-text:#484848;
+@color-nav-border:#bbb;
+.header {
+    height: 80px;
+    background: none;
+    z-index: 10;
+    border-bottom:1px solid #eee;
+    #logo{
+        i{
+            color: @color-logo;
+        }
+    }
+    .search{
+        background-color: rgba(255,255,255,.2);
+        border: 1px solid rgba(200,200,200,0.5);
+        box-shadow: 0 3px 4px rgba(0,0,0,.1);
+        &.focus{
+            border: 1px solid @color-nav-border;
+        }
+        i{
+            color: @color-search-input-text;
+            font-weight: bold;
+        }
+        .input-text{
+            color: @color-search-input-text;
+        }
+        .user-history{
+            border:1px solid #ddd;
+            box-shadow: 0 3px 4px rgba(0,0,0,.1);
+        }
+    }
+    .header-nav{
+        &>li:not(.sub){
+            &:hover{
+                border-color:@color-nav-border;
+            }
+            a{
+                color: @color-nav;
+            }
+        }
+        li.sub{
+            background-color: #fff;
+            box-shadow: 0 3px 4px rgba(0,0,0,.1);
+            border:1px solid#f1f1f1;
+            &.app{
+                width: 420px;
+            }
+        }
+    }
+}
+.main{
+    &>.container{
+        &>.title{
+            padding:20px;
+            h1{
+                font-weight: lighter;
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+                max-width: 700px;
+                font-weight: 300;
+                line-height: 26px;
+            }
+            hr{
+                margin:30px 0 10px;
+            }
+        }
+        &>.content{
+            padding: 20px;
+            &>.title{
+                font-size: 30px;
+                font-weight: 300;
+            }
+            .city{
+                .big{
+                    height: 300px;
+                    background-color: #f1f1f1;
+                }
+                .small{
+                    height: 300px;
+                    background-color: #ccd;
+                    .contain{
+                        height: 150px;
+                    }
+                }
+                .contain{
+                    background-color: #fff;
+                    height: 100%;
+                    h4{
+                        font-weight: bold;
+                        padding: 10px 0;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                } 
+            }
+        }
+    }
+}

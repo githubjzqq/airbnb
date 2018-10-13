@@ -1,0 +1,89 @@
+@color-logo:#FF5A5F;
+@color-nav:#484848;
+@color-search-input-text:#484848;
+@color-nav-border:#788;
+.header {
+    height: 80px;
+    background: none;
+    z-index: 10;
+    border-bottom:1px solid #eee;
+    #logo{
+        i{
+            color: @color-logo;
+        }
+    }
+    .search{
+        background-color: rgba(255,255,255,.2);
+        border: 1px solid rgba(200,200,200,0.5);
+        box-shadow: 0 3px 4px rgba(0,0,0,.1);
+        &.focus{
+            border: 1px solid @color-nav-border;
+        }
+        i{
+            color: @color-search-input-text;
+            font-weight: bold;
+        }
+        .input-text{
+            color: @color-search-input-text;
+        }
+        .user-history{
+            border:1px solid #ddd;
+            box-shadow: 0 3px 4px rgba(0,0,0,.1);
+        }
+    }
+    .header-nav{
+        &>li:not(.sub){
+            &:hover{
+                border-color:@color-nav-border;
+            }
+            a{
+                color: @color-nav;
+            }
+        }
+        li.sub{
+            background-color: #fff;
+            box-shadow: 0 3px 4px rgba(0,0,0,.1);
+            border:1px solid#f1f1f1;
+            &.app{
+                width: 420px;
+            }
+        }
+    }
+}
+.main{
+    .banner{
+        padding-bottom:125px;
+        background-image:url('../images/invite/banner.png');
+        position: relative;
+        .userpic{
+            height: 114px;
+            img{
+                height: 114px;
+                width: 114px;
+                border-radius: 50%;
+                display: block;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%,0);
+                margin-top: 48px;
+            }
+        }
+        h3{
+            text-align: center;
+            line-height: 35px;
+            margin: 25px 0 15px;
+            font-size: 32px;
+            color: #fff;
+        }
+        p{
+            text-align: center;
+            font-size:20px;
+            padding:0 10px;
+            color: #fff;
+            line-height: 40px;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
