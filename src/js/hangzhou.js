@@ -75,3 +75,15 @@ $.get("../houseshuju.txt", function(data) {
 
 
 });
+// 点击房源跳转
+$(".lunbolike li:nth-child(1)").on("click ", function() {
+        window.location.href = 'houseinfo.html';
+    })
+    // 点击体验跳转
+$(".lunbolike li:nth-child(2)").on("click ", function() {
+        window.location.href = 'swj_tansuotiyan.html';
+    })
+    // 点击图片跳转
+$(".hangzhou").on("click ", function() {
+    window.location.href = 'swj_tiyan.html';
+})

@@ -8,950 +8,22 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PRHtifCTK3xgLdsHAebXQARtI14HMBoO"></script>
     <title>体验</title>
     <!-- 引入bootstrap的和自加的css文件 -->
-    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../styles/swj_tiyan.css"> -->
-    <link rel="stylesheet" href="../styles/swj_common.css">
+    <link href="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/swj_tiyan1.css">
+    <!-- <link href="../styles/test.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../styles/public-reset.css">
     <link rel="stylesheet" href="../styles/public.css">
     <link rel="stylesheet" href="../fonts/public/icon_font/iconfont.css">
+    <link rel="stylesheet" href="../styles/swj_common.css">
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <style data-aphrodite="data-aphrodite">
-        ._ousp44 {
-            position: relative !important;
-            z-index: 20 !important;
-        }
-        
-        ._shsmsj {
-            background-color: #ffffff !important;
-            bottom: 0px !important;
-            height: 100% !important;
-            left: 0px !important;
-            position: fixed !important;
-            right: 0px !important;
-            top: 0px !important;
-            z-index: 10 !important;
-            -webkit-transform: translateY(-100%) !important;
-            -ms-transform: translateY(-100%) !important;
-            transform: translateY(-100%) !important;
-            -webkit-transition-duration: 0.2s !important;
-            transition-duration: 0.2s !important;
-            -webkit-transition-property: -webkit-transform, transform !important;
-            -moz-transition-property: transform !important;
-            transition-property: -ms-transform, -webkit-transform, transform !important;
-            -webkit-transition-timing-function: ease-out !important;
-            transition-timing-function: ease-out !important;
-        }
-        
-        @media print {
-            ._shsmsj {
-                display: none !important;
-            }
-        }
-        
-        ._dx84z0 {
-            margin-right: 8px !important;
-            max-width: 456px !important;
-        }
-        
-        ._8iqo2b {
-            position: relative !important;
-            z-index: 5 !important;
-        }
-        
-        ._17k3wpj {
-            background-color: #ffffff !important;
-            box-shadow: 0 1px 0 #EBEBEB !important;
-        }
-        
-        @media print {
-            ._17k3wpj {
-                box-shadow: none !important;
-            }
-        }
-        
-        ._hgs47m {
-            display: table !important;
-            width: 100% !important;
-            border-spacing: 0px !important;
-        }
-        
-        ._ni9axhe {
-            display: table-cell !important;
-            vertical-align: middle !important;
-        }
-        
-        ._10ejfg4u {
-            display: table-cell !important;
-            width: 100% !important;
-            vertical-align: middle !important;
-        }
-        
-        ._5nim5h {
-            display: table-cell !important;
-            height: 64px !important;
-            position: relative !important;
-            text-align: center !important;
-            text-decoration: none !important;
-            -webkit-transition: 0.25s color !important;
-            -moz-transition: 0.25s color !important;
-            transition: 0.25s color !important;
-            padding-left: 24px !important;
-            padding-right: 24px !important;
-            vertical-align: middle !important;
-            white-space: nowrap !important;
-        }
-        
-        @media (min-width: 744px) {
-            ._5nim5h {
-                height: 80px !important;
-            }
-        }
-        
-        ._36rlri {
-            display: inline-block !important;
-        }
-        
-        ._iiid5y {
-            color: #FF5A5F !important;
-            display: inline-block !important;
-            vertical-align: middle !important;
-            font-size: 34px !important;
-            -webkit-transition: 0.25s color !important;
-            -moz-transition: 0.25s color !important;
-            transition: 0.25s color !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._iiid5y {
-                font-size: 34px !important;
-                left: 45% !important;
-            }
-        }
-        
-        ._tqn903 {
-            color: #767676 !important;
-            display: inline-block !important;
-            font-size: 9px !important;
-            margin-left: 8px !important;
-            -webkit-transition: 1s color !important;
-            -moz-transition: 1s color !important;
-            transition: 1s color !important;
-        }
-        
-        ._1g2dfiu {
-            display: table-cell !important;
-        }
-        
-        ._1gbvotfo {
-            display: table-cell !important;
-            -webkit-appearance: none !important;
-            -moz-appearance: none !important;
-            appearance: none !important;
-            background: none !important;
-            border: none !important;
-            padding: 0px !important;
-            margin: 0px !important;
-        }
-        
-        ._1gbvotfo:focus {
-            outline: none !important;
-        }
-        
-        ._d5depq {
-            display: table-cell !important;
-            vertical-align: middle !important;
-            -webkit-transition-property: -webkit-transform, transform !important;
-            -moz-transition-property: transform !important;
-            transition-property: -ms-transform, -webkit-transform, transform !important;
-            -webkit-transition-duration: 250ms !important;
-            transition-duration: 250ms !important;
-            -webkit-transition-timing-function: ease-in-out !important;
-            transition-timing-function: ease-in-out !important;
-        }
-        
-        ._cfvh61 {
-            display: inherit !important;
-        }
-        
-        @media print {
-            ._cfvh61 {
-                display: none !important;
-            }
-        }
-        
-        ._e296pg {
-            position: relative !important;
-        }
-        
-        ._1udg6lu {
-            width: 100% !important;
-            padding-left: 48px !important;
-            padding-right: 48px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._1udg6lu {
-                padding-left: 24px !important;
-                padding-right: 24px !important;
-                overflow-x: hidden !important;
-            }
-        }
-        
-        @media (min-width: 1440px) {
-            ._1udg6lu {
-                width: 1440px !important;
-                margin: 0 auto !important;
-            }
-        }
-        
-        @media (max-width: 743px) {
-            ._un65bq {
-                width: 100vw !important;
-                margin-left: -webkit-calc(-50vw + 50%) !important;
-                margin-left: -moz-calc(-50vw + 50%) !important;
-                margin-left: calc(-50vw + 50%) !important;
-            }
-        }
-        
-        ._1glqb7j {
-            margin-top: 40px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._1glqb7j {
-                margin-top: 0px !important;
-            }
-        }
-        
-        ._xd7wqa {
-            width: 80% !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._xd7wqa {
-                width: 100% !important;
-            }
-        }
-        
-        ._4efw5a {
-            text-transform: uppercase !important;
-        }
-        
-        ._hdvsm7 {
-            -webkit-box-direction: normal !important;
-            -webkit-box-orient: horizontal !important;
-            position: absolute !important;
-            top: 40px !important;
-            right: 0px !important;
-            display: -webkit-box !important;
-            display: -moz-box !important;
-            display: -ms-flexbox !important;
-            display: -webkit-flex !important;
-            display: flex !important;
-            -webkit-flex-direction: row !important;
-            -ms-flex-direction: row !important;
-            flex-direction: row !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._hdvsm7 {
-                right: 0px !important;
-            }
-        }
-        
-        ._1nrp5up {
-            margin-right: 24px !important;
-        }
-        
-        ._1t0h0lo {
-            -webkit-box-direction: normal !important;
-            -webkit-box-orient: horizontal !important;
-            display: -webkit-box !important;
-            display: -moz-box !important;
-            display: -ms-flexbox !important;
-            display: -webkit-flex !important;
-            display: flex !important;
-            -webkit-flex-direction: row !important;
-            -ms-flex-direction: row !important;
-            flex-direction: row !important;
-            /* border-bottom: 1px solid rgba(196, 189, 189, 0.781); */
-        }
-        
-        @media (max-width: 743px) {
-            ._1t0h0lo {
-                -webkit-box-direction: normal !important;
-                -webkit-box-orient: vertical !important;
-                -webkit-flex-direction: column !important;
-                -ms-flex-direction: column !important;
-                flex-direction: column !important;
-            }
-        }
-        
-        ._uljuat {
-            min-width: 0px !important;
-            -webkit-flex: 2 !important;
-            -ms-flex: 2 !important;
-            flex: 2 !important;
-            margin-right: 48px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._uljuat {
-                margin-right: 0px !important;
-                -webkit-flex: none !important;
-                -ms-flex: none !important;
-                flex: none !important;
-            }
-        }
-        
-        ._oplyxi {
-            -webkit-flex: 1 !important;
-            -ms-flex: 1 !important;
-            flex: 1 !important;
-            max-width: 200px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._oplyxi {
-                -webkit-flex: none !important;
-                -ms-flex: none !important;
-                flex: none !important;
-                max-width: 100% !important;
-            }
-        }
-        
-        ._15fqfo3w {
-            -webkit-box-align: center !important;
-            -ms-flex-align: center !important;
-            -webkit-align-items: center !important;
-            align-items: center !important;
-            position: relative !important;
-            width: -webkit-calc(33.3333% - 5.333333333333333px) !important;
-            width: -moz-calc(33.3333% - 5.333333333333333px) !important;
-            width: calc(33.3333% - 5.333333333333333px) !important;
-            -webkit-flex: none !important;
-            -ms-flex: none !important;
-            flex: none !important;
-            padding-right: 24px !important;
-            display: block !important;
-            padding: 0px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._15fqfo3w {
-                width: 100% !important;
-                margin-bottom: 24px !important;
-            }
-        }
-        
-        ._vx7ityu {
-            position: -webkit-sticky !important;
-            position: sticky !important;
-            top: 0px !important;
-            max-width: 100% !important;
-            margin-right: 24px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._vx7ityu {
-                max-width: 100% !important;
-                margin-right: 0px !important;
-            }
-        }
-        
-        ._1rac2mq {
-            min-width: 0px !important;
-            width: 100% !important;
-            margin-left: 16px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._1rac2mq {
-                margin-left: 0px !important;
-            }
-        }
-        
-        ._15zu15p {
-            contain: strict !important;
-            width: 100% !important;
-            position: relative !important;
-        }
-        
-        ._n02jag {
-            position: absolute !important;
-            top: 0px !important;
-            bottom: 0px !important;
-            left: 0px !important;
-            right: 0px !important;
-        }
-        
-        ._1udg6lu {
-            position: absolute !important;
-            top: 0px !important;
-            bottom: 0px !important;
-            left: 0px !important;
-            right: 0px !important;
-            z-index: 2 !important;
-            /* background-size: cover !important;
-            background-position: center !important; */
-        }
-        
-        ._f7heglr {
-            margin: 0px !important;
-            word-wrap: break-word !important;
-            font-size: 12px !important;
-            line-height: 16px !important;
-            letter-spacing: normal !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            text-transform: undefined !important;
-            color: #484848 !important;
-            padding-top: undefined !important;
-            padding-bottom: undefined !important;
-            font-weight: 800 !important;
-        }
-        
-        ._18gim6s4 {
-            font-weight: 800 !important;
-            margin: 0px !important;
-            word-wrap: break-word !important;
-            font-size: 32px !important;
-            line-height: 36px !important;
-            letter-spacing: normal !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            text-transform: undefined !important;
-            color: #484848 !important;
-            padding-top: 6px !important;
-            padding-bottom: 6px !important;
-        }
-        
-        ._tpbrp {
-            color: inherit !important;
-            font-size: 1em !important;
-            font-weight: 700 !important;
-            line-height: inherit !important;
-            margin: 0px !important;
-            padding: 0px !important;
-        }
-        
-        ._12r18es {
-            background: #D8D8D8 !important;
-            border-radius: 50% !important;
-            border: 2px solid #ffffff !important;
-            overflow: hidden !important;
-        }
-        
-        ._110nrr2 {
-            -webkit-appearance: none !important;
-            -moz-appearance: none !important;
-            appearance: none !important;
-            background: transparent !important;
-            border: 0px !important;
-            cursor: pointer !important;
-            margin: 0px !important;
-            padding: 0px !important;
-            -webkit-user-select: auto !important;
-            -moz-user-select: auto !important;
-            -ms-user-select: auto !important;
-            user-select: auto !important;
-            text-decoration: none !important;
-        }
-        
-        ._110nrr2:active {
-            outline: 0px !important;
-        }
-        
-        ._foo5i5 {
-            /* white-space: pre-line !important; */
-            -ms-word-wrap: break-word !important;
-        }
-        
-        ._1d2geue7 {
-            font-weight: 600 !important;
-            margin: 0px !important;
-            word-wrap: break-word !important;
-            font-size: 18px !important;
-            line-height: 26px !important;
-            letter-spacing: normal !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            text-transform: undefined !important;
-            color: #484848 !important;
-            padding-top: undefined !important;
-            padding-bottom: undefined !important;
-        }
-        
-        ._18t4x8uu {
-            margin: 0px !important;
-            word-wrap: break-word !important;
-            font-size: 18px !important;
-            line-height: 26px !important;
-            letter-spacing: normal !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            text-transform: undefined !important;
-            color: #484848 !important;
-            padding-top: undefined !important;
-            padding-bottom: undefined !important;
-            font-weight: normal !important;
-        }
-        
-        ._q2vcgfe {
-            margin: 0px !important;
-            word-wrap: break-word !important;
-            font-size: 18px !important;
-            line-height: 26px !important;
-            letter-spacing: normal !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            text-transform: undefined !important;
-            color: #484848 !important;
-            padding-top: undefined !important;
-            padding-bottom: undefined !important;
-            font-weight: normal !important;
-            display: inline !important;
-        }
-        
-        ._11d4lg6 {
-            position: absolute !important;
-            top: -1px !important;
-        }
-        
-        ._jbdb3p {
-            padding-left: 24px !important;
-        }
-        
-        ._8tbpu3 {
-            font-family: Airmoji_Standalone !important;
-            font-weight: normal !important;
-        }
-        
-        ._1fs0qybj {
-            color: #008489 !important;
-            font: inherit !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            text-decoration: none !important;
-            vertical-align: middle !important;
-            -webkit-appearance: none !important;
-            -moz-appearance: none !important;
-            appearance: none !important;
-            background: transparent !important;
-            border: 0px !important;
-            cursor: pointer !important;
-            margin: 0px !important;
-            padding: 0px !important;
-            -webkit-user-select: auto !important;
-            -moz-user-select: auto !important;
-            -ms-user-select: auto !important;
-            user-select: auto !important;
-            text-align: left !important;
-        }
-        
-        ._1fs0qybj:hover {
-            text-decoration: underline !important;
-            color: #008489 !important;
-        }
-        
-        ._1fs0qybj:focus {
-            text-decoration: underline !important;
-        }
-        
-        ._1fs0qybj:active {
-            color: #006C70 !important;
-            outline: 0px !important;
-        }
-        
-        ._s50zru {
-            border-bottom: 1px solid #EBEBEB !important;
-        }
-        
-        ._1vx3fhy {
-            padding-top: 5px !important;
-        }
-        
-        ._1qbvfjv7 {
-            font-weight: 600 !important;
-            margin: 0px !important;
-            word-wrap: break-word !important;
-            font-size: 14px !important;
-            line-height: 18px !important;
-            letter-spacing: normal !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            text-transform: undefined !important;
-            color: #484848 !important;
-            padding-top: undefined !important;
-            padding-bottom: undefined !important;
-        }
-        
-        ._1y2fdh0 {
-            position: relative !important;
-            width: 100vw !important;
-            margin-left: -50vw !important;
-            margin-right: -50vw !important;
-            left: 50% !important;
-            right: 50% !important;
-        }
-        
-        ._16kww8a {
-            -webkit-box-align: center !important;
-            -ms-flex-align: center !important;
-            display: -webkit-box !important;
-            display: -moz-box !important;
-            display: -ms-flexbox !important;
-            display: -webkit-flex !important;
-            display: flex !important;
-            -webkit-align-items: center !important;
-            align-items: center !important;
-            position: relative !important;
-            width: -webkit-calc(33.3333% - 5.333333333333333px) !important;
-            width: -moz-calc(33.3333% - 5.333333333333333px) !important;
-            width: calc(33.3333% - 5.333333333333333px) !important;
-            -webkit-flex: none !important;
-            -ms-flex: none !important;
-            flex: none !important;
-            padding-right: 24px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._16kww8a {
-                width: 100% !important;
-                margin-bottom: 40px !important;
-            }
-        }
-        
-        ._53ak5m {
-            max-width: 360px !important;
-        }
-        
-        @media (max-width: 743px) {
-            ._53ak5m {
-                max-width: 100% !important;
-            }
-        }
-        
-        ._12bgzph {
-            padding-top: 48px !important;
-            padding-bottom: 64px !important;
-        }
-        
-        .fix {
-            height: 50px;
-            width: 100%;
-            margin: auto auto;
-        }
-        
-        .btn-right {
-            float: right;
-            border: none;
-            padding: 0;
-            background-color: #ff5a5f;
-            width: 200px;
-            height: 50px;
-            position: relative;
-            top: -20px;
-            border-radius: 5px;
-        }
-        
-        .btn-right div {
-            font-size: 16px;
-            width: 200px;
-            line-height: 50px;
-            color: aliceblue;
-            text-align: center;
-        }
-        
-        .user img {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-        }
-        
-        .xing a {
-            color: black;
-        }
-        
-        .xing span {
-            padding: 0;
-            color: #008489;
-            font-weight: 500;
-        }
-        
-        #calendar {
-            width: 270px;
-            /* margin: -420px auto; */
-            overflow: hidden;
-            border: 1px solid #000;
-            padding: 20px;
-            /* position: relative; */
-            /* left: 150px */
-        }
-        
-        #calendar h4 {
-            text-align: center;
-            margin-bottom: 10px
-        }
-        /* #calendar .a1 {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        */
-        
-        #calendar .a2 {
-            margin-left: 153px;
-        }
-        
-        #calendar .week {
-            height: 30px;
-            line-height: 20px;
-            border-bottom: 1px solid #000;
-            margin-bottom: 10px
-        }
-        
-        #calendar .week li {
-            float: left;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            list-style: none;
-        }
-        
-        #calendar .dateList {
-            overflow: hidden;
-            clear: both
-        }
-        
-        #calendar .dateList li {
-            float: left;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            list-style: none;
-        }
-        
-        #calendar .dateList .ccc {
-            color: #ccc;
-        }
-        
-        #calendar .dateList .red {
-            background: #F90;
-            color: #fff;
-        }
-        
-        #calendar .dateList .sun {
-            color: #f00;
-        }
-        
-        ._1hl4b1y {
-            overflow-y: auto !important;
-            max-height: 320px !important;
-            min-width: 268px !important;
-            flex: 1 1 0% !important;
-            margin: 8px !important;
-        }
-        
-        ._utb5aei {
-            cursor: pointer;
-            border: 1px solid #008489;
-            background-color: #fff;
-            color: #008489;
-            width: 62px;
-            height: 36px;
-            border-radius: 5px;
-        }
-        
-        ._fdp53bg {
-            display: inline-block !important;
-            vertical-align: top !important;
-            min-height: 100% !important;
-            position: absolute !important;
-            z-index: -1 !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-            visibility: hidden !important;
-        }
-        
-        ._1lds9wb {
-            display: inline-block !important;
-            vertical-align: top !important;
-            min-height: 100% !important;
-        }
-        
-        ._1svux14 {
-            text-align: center !important;
-            vertical-align: top !important;
-            user-select: none !important;
-            background: rgb(255, 255, 255) !important;
-        }
-        
-        ._gucugi {
-            color: rgb(72, 72, 72) !important;
-            font-size: 18px !important;
-            text-align: center !important;
-            padding-top: 22px !important;
-            padding-bottom: 37px !important;
-            caption-side: initial !important;
-        }
-        
-        ._2q1l5fu {
-            margin: 0px !important;
-            word-wrap: break-word !important;
-            font-size: 14px !important;
-            line-height: 18px !important;
-            letter-spacing: normal !important;
-            font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
-            color: #484848 !important;
-            font-weight: normal !important;
-        }
-        
-        ._p5jgym {
-            border-collapse: collapse !important;
-            border-spacing: 0px !important;
-        }
-        
-        body {
-            font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.43;
-            color: #484848;
-            background-color: #fff;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        tbody {
-            display: table-row-group;
-            vertical-align: middle;
-            border-color: inherit;
-        }
-        
-        b,
-        strong {
-            font-weight: bold;
-        }
-        
-        ._1t8snzw {
-            width: 819px;
-        }
-        
-        #help {
-            margin-left: 60px;
-        }
-        
-        #liketiyan {
-            margin-left: 60px;
-        }
-        
-        #careful {
-            margin-left: 60px;
-        }
-        
-        #whentiyan h1 {
-            padding-left: 60px;
-        }
-        
-        #youtry {
-            width: 1249px;
-            padding-left: 60px;
-        }
-        
-        @media (max-width: 743px) {
-            #youtry {
-                padding-left: 10px;
-                width: 370px;
-            }
-            #tiyanword {
-                font-size: 12px!important;
-            }
-            #tiyanplace {
-                width: 250px!important;
-                font-size: 12px!important;
-            }
-            ._1b045eb {
-                height: 428px!important;
-            }
-            #whentiyan h1 {
-                font-size: 20px!important;
-                margin-left: 50px!important;
-            }
-            #liketiyan {
-                margin-left: 40px;
-            }
-            ._1t8snzaw {
-                display: block!important;
-                width: auto;
-                margin-left: 50px;
-            }
-            ._u9jj6t {
-                display: block!important;
-            }
-            #careful {
-                margin-top: 500px!important;
-                margin-left: 40px;
-            }
-            ._e615pd {
-                margin-left: 0!important;
-            }
-            .tiyan {
-                margin: 0 auto!important;
-            }
-            ._1hl4b1y {
-                padding-left: 0!important;
-            }
-            ._189o4cy {
-                width: 309.667px!important;
-                height: 376px!important;
-                left: 34.5px!important;
-                top: -500px!important;
-                font-size: 10px!important;
-            }
-            ._189o4cy h1 {
-                font-size: 18px!important;
-            }
-            ._1mfbomi2 {
-                display: block!important;
-            }
-            ._1jl220aq {
-                display: none;
-            }
-            #help {
-                display: block!important;
-                margin-left: 40px;
-                width: 300px!important;
-            }
-            ._19ujlzq3 {
-                width: 50%!important;
-            }
-            .carousel-inner img {
-                width: 693px;
-                height: 683px;
-            }
-            ._xsb9xa img {
-                width: 180px!important;
-            }
-        }
-        
-        ._1mfbomi2 img {
-            height: 164.44px;
-            width: auto;
-            overflow: hidden;
-        }
-        
-        ._4qkm3d li {
-            float: left;
-        }
-        
-        ._4qkm3d li a {
-            color: #000;
-            margin-right: 10px;
-        }
-        
-        ._ll34wp li a {
-            color: #000;
-        }
-    </style>
+    <!-- <style data-aphrodite="data-aphrodite"> -->
 
 </head>
+
+
 
 <body>
     <div style="width:100%;">
@@ -1232,7 +304,7 @@
                 </div>
             </div>
         </div>
-        <div data-hypernova-key="experience_pdpbundlejs" data-hypernova-id="96580bf5-394f-4518-b6e3-4a390373af1e" class="alltiyan" style="margin: 0 auto;position: relative;top: 80px;">
+        <div data-hypernova-key="experience_pdpbundlejs" data-hypernova-id="96580bf5-394f-4518-b6e3-4a390373af1e" class="alltiyan" style="margin: 0 auto;">
             <div dir="ltr" data-reactroot="">
                 <div itemscope="" itemType="http://schema.org/SocialMediaPosting">
                     <meta itemProp="image" content="https://a0.muscache.com/im/pictures/2ce3945d-3259-4d02-8854-ef38ecc400ec.jpg?aki_policy=xl_poster" />
@@ -1248,9 +320,9 @@
                                         <div class="_15zu15p" style="padding-top:113.33333333333333%">
                                             <div class="_n02jag">
                                                 <div class="_1udg6lu">
-                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                                        <!-- 轮播列表 -->
-                                                        <ol class="carousel-indicators">
+                                                    <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> -->
+                                                    <!-- 轮播列表 -->
+                                                    <!-- <ol class="carousel-indicators">
                                                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                                                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -1258,9 +330,9 @@
                                                             <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                                                             <li data-target="#carousel-example-generic" data-slide-to="5"></li>
                                                             <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                                                        </ol>
-                                                        <!-- 插入图片 -->
-                                                        <div class="carousel-inner" role="listbox">
+                                                        </ol> -->
+                                                    <!-- 插入图片 -->
+                                                    <!-- <div class="carousel-inner" role="listbox">
                                                             <div class="item active">
                                                                 <img src="https://z2.muscache.cn/im/pictures/2ce3945d-3259-4d02-8854-ef38ecc400ec.jpg?aki_policy=poster" alt="第一张">
                                                             </div>
@@ -1283,9 +355,56 @@
                                                                 <img src="https://z2.muscache.cn/im/pictures/f0463437-b8af-4aaf-a279-d4339f91b9d4.jpg?aki_policy=poster" alt="第七张">
                                                             </div>
 
+                                                        </div> -->
+
+                                                    <!-- 轮播左右控制 -->
+                                                    <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </div> -->
+                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                                        <!-- Indicators -->
+                                                        <ol class="carousel-indicators">
+                                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                                                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                                                        </ol>
+
+                                                        <!-- Wrapper for slides -->
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="item active">
+                                                                <img src="https://z2.muscache.cn/im/pictures/2ce3945d-3259-4d02-8854-ef38ecc400ec.jpg?aki_policy=poster" alt="第一张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/2c8161bc-b1d3-4981-be71-e6399692a70f.jpg?aki_policy=poster" alt="第二张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/697b72d7-4331-4059-a6fe-b255dae6ebe2.jpg?aki_policy=poster" alt="第三张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/77836451-5f41-48d6-a640-560337d10e59.jpg?aki_policy=poster" alt="第四张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/78b100ad-195e-4748-b29d-dc8a5e4cdc95.jpg?aki_policy=poster" alt="第五张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/9dbeb577-b940-4d47-8060-f37094697ca2.jpg?aki_policy=poster" alt="第六张">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="https://z2.muscache.cn/im/pictures/f0463437-b8af-4aaf-a279-d4339f91b9d4.jpg?aki_policy=poster" alt="第七张">
+                                                            </div>
                                                         </div>
 
-                                                        <!-- 轮播左右控制 -->
+                                                        <!-- Controls -->
                                                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                                             <span class="sr-only">Previous</span>
@@ -1354,7 +473,7 @@
                                                         <div class="_2q1l5fu"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span></div>
                                                     </div>
                                                     <div class="_jbdb3p">
-                                                        <div class="_2q1l5fu">2小时</div>
+                                                        <div class="_2q1l5fu context2q">2小时</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1365,7 +484,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="_jbdb3p">
-                                                        <div class="_2q1l5fu">零食和饮品</div>
+                                                        <div class="_2q1l5fu context2q">零食和饮品</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1375,7 +494,7 @@
                                                         <div class="_2q1l5fu"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
                                                     </div>
                                                     <div class="_jbdb3p">
-                                                        <div class="_2q1l5fu">以英语和韩语提供</div>
+                                                        <div class="_2q1l5fu context2q">以英语和韩语提供</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1389,7 +508,7 @@
                                     <div class="_1t0h0lo">
                                         <div class="_uljuat">
                                             <div style="margin-bottom:16px">
-                                                <div class="_1d2geue7">体验内容</div>
+                                                <div class="_1d2geue7 contenttiyan">体验内容</div>
                                             </div>
                                             <div style="margin-bottom:24px">
                                                 <div class="_foo5i5">
@@ -1399,7 +518,7 @@
                                                 </div>
                                             </div>
                                             <div style="margin-bottom:16px">
-                                                <div class="_1d2geue7">其他应注意的事项</div>
+                                                <div class="_1d2geue7 contenttiyan1">其他应注意的事项</div>
                                             </div>
                                             <div style="margin-bottom:24px">
                                                 <div class="_foo5i5">
@@ -1418,10 +537,10 @@
                                                             <div style="margin-bottom:0">
                                                                 <div class="_2q1l5fu">free Drinks<span class="glyphicon glyphicon-glass "></span></div>
                                                                 <div class="_1vx3fhy">
-                                                                    <div class="_2q1l5fu">I&#x27;ll provide free (water, mixed coffee, soft drinks.)</div><br/></div>
+                                                                    <div class="_2q1l5fu _2qcontent">I&#x27;ll provide free (water, mixed coffee, soft drinks.)</div><br/></div>
                                                             </div>
                                                             <div style="margin-bottom:0">
-                                                                <div class="_2q1l5fu">free Snacks and sweets<span class="glyphicon glyphicon-cutlery "></span></div>
+                                                                <div class="_2q1l5fu _2qcontent">free Snacks and sweets<span class="glyphicon glyphicon-cutlery "></span></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1434,7 +553,7 @@
                                                 <div class="_foo5i5">
                                                     <div class="_2q1l5fu">
                                                         <div style="margin-bottom:4px">
-                                                            <div class="_2q1l5fu">Hat, sunglasses, sun block, sneakers</div>
+                                                            <div class="_2q1l5fu _2qcontent">Hat, sunglasses, sun block, sneakers</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1654,7 +773,7 @@
                                                 <div class="_d6xddq ">
                                                     <div><span class="_q2vcgfe ">강릉 2박 3일 여행 중 가장 기대했던 트립이었는데 너무 힐링되는 시간이어서 좋았어요!
                                                                 선장님 두 분이 항해 중에 요트의 역사나 원리, 요트에 있는 돛 등의 기능에 대해 알기 쉽게 설명해주시는 것도 정말 재밌었고, 저희 컨디션 챙겨주시면서 항해 진행해주시는 모습 등 배려 깊으신 말과 행동 하나 하나가 전부 감동이었습니다.
-                                                                2시간이 어떻게 지나갔는지도 모를 만큼 시간이 번개처럼 흘러갔고, 바다에 물도 담궈보고 요트에서 이리 저리 앉는 위치를 바꾸…<button type="button " class="_1fs0qybj " aria-busy="false ">查看更多</button></span></div>
+                                                                2시간이 어떻게 지나갔는지도 모를 만큼 시간이 번개처럼 흘러갔고, 바다에 물도 담궈보고 요트에서 이리 저리 앉는 위치를 바꾸…<button type="button" class="_1fs0qybj fs0qy" aria-busy="false ">查看更多</button></span></div>
                                                 </div>
                                                 <div style="margin-top: 16px; ">
                                                     <div class="_xsb9xa ">
@@ -1782,8 +901,10 @@
                                     <div class="_1okh7pi0" style="margin-top:20px;margin-bottom: 20px;">
                                         <div class="_ztbpzv" style="display:flex;margin-top: 15px;">
                                             <div>
-                                                <div class="_1qbvfjv7">13:30 − 15:30</div>
-                                                <div class="_2q1l5fu">人均￥313</div>
+                                                <div class="_1qbvfjv7">13:30 − 15:30
+                                                </div>
+                                                <div class="_2q1l5fu">
+                                                    人均￥313</div>
                                             </div>
                                             <div style="margin-left: 188px; "><button type="button" class="_utb5aei" aria-busy="false"><span class="_gzb2sgv">选择</span></button></div>
                                         </div>
@@ -1808,18 +929,18 @@
 
 
             <!-- 注意事项 -->
-            <div class="_1t0h0lo" id="careful" style="margin-top:30px;">
+            <div class="_1t0h0lo" id="careful" style="margin-top:80px; margin-left: 0;">
                 <div class="_16kww8a">
                     <div class="_53ak5m">
                         <section>
                             <div class="_18gim6s4">
-                                <h1 tabindex="-1" class="_tpbrp">注意事项</h1>
+                                <h1 tabindex="-1" class="_tpbrp _tpbrp1">注意事项</h1>
                             </div>
                         </section>
                     </div>
                 </div>
                 <div class="_1rac2mq">
-                    <div class="_u9jj6t" style="display: flex;">
+                    <div class="_u9jj6t">
                         <div class="_6vyxyu">
                             <div class="_e615pd">
                                 <div style="margin-bottom:3px;">
@@ -1917,7 +1038,7 @@
                 </div>
             </div>
             <!--类似体验 -->
-            <div class="_1t0h0lo" style="border-top: 1px solid #EBEBEB;margin-top:50px;margin-bottom: 30px;" id="liketiyan">
+            <div class="_1t0h0lo" style="border-top: 1px solid #EBEBEB;margin-top:50px;" id="liketiyan">
                 <div class="_16kww8a" style="margin-top:70px;">
                     <div class="_53ak5m">
                         <section>
@@ -2114,8 +1235,8 @@
                     </ul>
                 </div>
             </div> -->
-
-            <div class="footer">
+            <!-- 尾部 -->
+            <div class="footer" style="margin-top:40px;">
                 <div class="container">
                     <div class="tab1 row">
                         <div class="item col-md-3 col-sm-3">
@@ -2203,7 +1324,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <script type="text/javascript">
@@ -2226,8 +1346,8 @@
         // map.enableScrollWheelZoom(false); //开启鼠标滚轮缩放
     </script>
     <script type="application/json " data-hypernova-key="experience_pdpbundlejs " data-hypernova-id="96580bf5-394f-4518-b6e3-4a390373af1e"></script>
-    <script src="../../node_modules/jquery/dist/jquery.min.js "></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="../../node_modules/_jquery@3.3.1@jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.min.js "></script>
     <script src="../js/public.js"></script>
     <script src="../js/user_edit.js"></script>
     <script>

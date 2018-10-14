@@ -8,6 +8,7 @@ body {
 .dining_header {
   border-bottom: 1px solid #ebebeb;
   top: 80px!important;
+  z-index: 10!important;
 }
 .dining_header .header_content {
   padding: 16px;
