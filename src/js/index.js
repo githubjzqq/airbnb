@@ -257,7 +257,7 @@ $(function() {
             ///输出城市信息跳转页面
             $(document).on("keyup", function(e) {
                 if (e.key == "Enter") {
-                    if (arrcity.indexOf($(".input-text").val()) == -1) {
+                    if (arrcity.indexOf($(".input-text").val()) != -1) {
                         sessionStorage.setItem("aaa", $(".input-text").val())
                         window.location.href = "swj_hangzhou.html";
 
