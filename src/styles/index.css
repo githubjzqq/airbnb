@@ -323,6 +323,7 @@ a:link {
 .aby_tabs .tabs_house > li {
   padding-bottom: 20px;
   position: relative;
+  cursor: pointer;
 }
 .aby_tabs .tabs_house > li > img {
   max-width: 100%;

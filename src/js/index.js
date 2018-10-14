@@ -153,66 +153,29 @@ $(function() {
                     arrcity.push(arr[i].housecity)
                 }
             }
+            localStorage.setItem("arrcity", arrcity)
+
+            // 当我点击tabs中的房源时跳转到房源具体页面
+            $('.tabs_house').on('click', "li", function() {
+                location.href = "fangyuan.html"
+            })
+
+
 
 
             // console.log(arrcity)
             ////历史纪录查看函数
             function history_jl(select) {
-                if (arrcity.indexOf($(select).val()) != -1) {
-                    searchinp = $(select).val()
-                    console.log(searchinp)
-                    sessionStorage.setItem("city", searchinp)
-                    window.location.href = "../html/houseinfo.html"
-                }
-                if (typeof sessionStorage.getItem("head_search") == "object") {
-                    var arr = [];
-                    searchinp = $(select).val()
-                    var date = new Date();
-                    date = date.toLocaleString()
-                    var obj = {
-                        city: searchinp,
-                        time: date
-                    };
-                    arr.unshift(obj);
-                    arr = JSON.stringify(arr)
-                    sessionStorage.setItem("head_search", arr)
-                } else {
-                    arr = sessionStorage.getItem("head_search");
-                    arr = JSON.parse(arr)
-                    searchinp = $(select).val();
-                    date = new Date();
-                    date = date.toLocaleString()
-                    obj = {
-                        city: searchinp,
-                        time: date
-                    }
-                    for (var i = 0; i < arr.length; i++) {
-                        if (arr[i].city == obj.city) {
-                            arr.splice(i, 1)
-                        }
-                    }
-                    arr.unshift(obj);
-                    arr = JSON.stringify(arr)
-                    sessionStorage.setItem("head_search", arr)
-                }
-            }
-            var searchinp;
-            $(document).on("keyup", function(e) {
-                if (e.key == "Enter") {
-
-                    history_jl('#search_inp');
-                }
-            })
-            $('.aby_search').on('click', function() {
-                    if (arrcity.indexOf($('#search_inp').val()) != -1) {
-                        searchinp = $('#search_inp').val()
+                if ($(select).val()) {
+                    if (arrcity.indexOf($(select).val()) != -1) {
+                        searchinp = $(select).val()
                         console.log(searchinp)
                         sessionStorage.setItem("city", searchinp)
                         window.location.href = "../html/houseinfo.html"
                     }
                     if (typeof sessionStorage.getItem("head_search") == "object") {
                         var arr = [];
-                        searchinp = $('#search_inp').val()
+                        searchinp = $(select).val()
                         var date = new Date();
                         date = date.toLocaleString()
                         var obj = {
@@ -225,7 +188,7 @@ $(function() {
                     } else {
                         arr = sessionStorage.getItem("head_search");
                         arr = JSON.parse(arr)
-                        searchinp = $('#search_inp').val();
+                        searchinp = $(select).val();
                         date = new Date();
                         date = date.toLocaleString()
                         obj = {
@@ -241,6 +204,55 @@ $(function() {
                         arr = JSON.stringify(arr)
                         sessionStorage.setItem("head_search", arr)
                     }
+                }
+            }
+            var searchinp;
+            $(document).on("keyup", function(e) {
+                if (e.key == "Enter") {
+                    history_jl('#search_inp');
+                    history_jl('.input-text');
+                }
+            })
+            $('.aby_search').on('click', function() {
+                    if ($('#search_inp').val()) {
+                        if (arrcity.indexOf($('#search_inp').val()) != -1) {
+                            searchinp = $('#search_inp').val()
+                            console.log(searchinp)
+                            sessionStorage.setItem("city", searchinp)
+                            window.location.href = "../html/houseinfo.html"
+                        }
+                        if (typeof sessionStorage.getItem("head_search") == "object") {
+                            var arr = [];
+                            searchinp = $('#search_inp').val()
+                            var date = new Date();
+                            date = date.toLocaleString()
+                            var obj = {
+                                city: searchinp,
+                                time: date
+                            };
+                            arr.unshift(obj);
+                            arr = JSON.stringify(arr)
+                            sessionStorage.setItem("head_search", arr)
+                        } else {
+                            arr = sessionStorage.getItem("head_search");
+                            arr = JSON.parse(arr)
+                            searchinp = $('#search_inp').val();
+                            date = new Date();
+                            date = date.toLocaleString()
+                            obj = {
+                                city: searchinp,
+                                time: date
+                            }
+                            for (var i = 0; i < arr.length; i++) {
+                                if (arr[i].city == obj.city) {
+                                    arr.splice(i, 1)
+                                }
+                            }
+                            arr.unshift(obj);
+                            arr = JSON.stringify(arr)
+                            sessionStorage.setItem("head_search", arr)
+                        }
+                    }
                 })
                 // 当我在input中遍历最近搜索时点击li做跳转页面
             $(".lastest").on('click', 'li', function() {
@@ -249,6 +261,14 @@ $(function() {
                 if (arrcity.indexOf(s) != -1) {
                     sessionStorage.setItem('city', s);
                     location.href = "../html/houseinfo.html"
+                }
+            })
+            $(".his-list").on('click', 'li', function() {
+                var s = $(this).children().children("b").text();
+                console.log(s);
+                if (arrcity.indexOf(s) != -1) {
+                    sessionStorage.setItem('city', s);
+                    location.href = "swj_hangzhou.html"
                 }
             })
 
@@ -275,7 +295,9 @@ $(function() {
             for (var i = 0, k = 0; i < arr.length; i++) {
                 if (k < 6) {
                     var tempLi = $("<li class='col-lg-4 col-md-4'><a herf=''><span class='lastest_span1'>" + arr[i].city + "</span><span class='lastest_span1'>" + arr[i].time + "</span></a></li>");
+                    var tempLi1 = $("<li><i class='iconfont icon-shizhong' style='padding-right:10px'></i><a style='font-weight:400'><b style='font-weight:400'>" + arr[i].city + "</b><br>" + arr[i].time + "</a></li>");
                     $('.lastest').append(tempLi);
+                    $('.his-list').append(tempLi1);
                     // tempLi.html(arr[i]);
                     k++;
                 } else {

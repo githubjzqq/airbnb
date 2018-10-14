@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>餐厅</title>
+    <link href="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/dining.css">
+    <link rel="stylesheet" href="../images/dining/font/iconfont.css">
+    <link rel="stylesheet" href="../styles/public-reset.css">
+    <link rel="stylesheet" href="../styles/public.css">
+    <link rel="stylesheet" href="../fonts/public/icon_font/iconfont.css">
+    <link rel="stylesheet" href="../styles/top_p.css">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo" id="logo"><i class="iconfont icon-aibiying"></i>
+            <div class="sub-btn"><svg class="img" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg></div>
+        </div>
+        <div class="search">
+            <i class="iconfont icon-sousuo"></i>
+            <input type="text" class="input-text" placeholder="搜索">
+            <div class="user-history" style="display:none">
+                <p>最近的搜索</p>
+                <ul class="his-list">
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href="https://www.baidu.com"><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="header-nav">
+            <li class="_currency">
+                <a><img src="../images/public/China.png" alt="" class="country">人民币（￥）<i></i></a>
+            </li>
+            <li class="sub currency">
+                <h4>常用货币</h4>
+                <div class="list active"><img src="../images/public/China.png" alt="">人民币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">美元（$）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">日元（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">港币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">新台币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">欧元（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+            </li>
+            <li><a>手机端</a></li>
+            <li class="sub app">
+                <div class='left'>
+                    <img src="../images/public/qr1.png" alt="">
+                    <p>下载手机客户端</p>
+                </div>
+                <div class='right'>
+                    <img src="../images/public/qr2.png" alt="">
+                    <p>关注微信服务号</p>
+                </div>
+            </li>
+            <li><a>成为房东/体验达人</a></li>
+            <li class="sub house">
+                <div class="rent">
+                    <a href="">
+                        <h4>出租房源</h4>
+                        <p>在杭州接待旅行者，每月为您带来高达￥4391的收入</p>
+                        <i class="iconfont icon-fangzi"></i></a>
+                </div>
+                <div class="experience">
+                    <a href="">开展体验</a>
+                </div>
+            </li>
+            <li><a href="../html/story.html">故事</a></li>
+            <li class="sub"></li>
+            <li><a>心愿单</a></li>
+            <li class="sub like">
+                <h4>心愿单<a href="">查看心愿单</a></h4>
+                <div class="list">
+                    <div class="text">
+                        <div class="position">杭州市</div>
+                        <div class="num1">1位客人</div>
+                        <div class="num2">6个房源</div>
+                    </div>
+                    <div class='pic'>
+                        <img src="../images/public/h1.jpg" alt="房源图片">
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="text">
+                        <div class="position">杭州市</div>
+                        <div class="num1">1位客人</div>
+                        <div class="num2">6个房源</div>
+                    </div>
+                    <div class='pic'>
+                        <img src="../images/public/h2.jpg" alt="房源图片">
+                    </div>
+                </div>
+            </li>
+            <li><a href="">旅程</a></li>
+            <li class="sub"></li>
+            <li><a>消息</a></li>
+            <li class="sub message">
+                <div class="list">消息（0）<a href="">查看所有</a></div>
+                <div class="list">通知<a href="">查看所有</a></div>
+            </li>
+            <li><a>帮助</a></li>
+            <li class="sub help"></li>
+            <li data-toggle="modal" data-target="#myModal" class='login'>
+                <a style="display:none" class="userpic"><img src="../images/public/mario.JPG" alt="" class="userpic"></a>
+                <a class="index">登陆/注册</a>
+            </li>
+            <li class="sub user-msg" style="display: none;">
+                <ul>
+                    <li><a href="./user_edit.html">编辑个人资料</a></li>
+                    <li><a href="">旅行基金</a></li>
+                    <li><a href="">账号设置</a></li>
+                    <li><a href="">我的指南</a></li>
+                    <li><a href="">礼品卡</a></li>
+                    <li><a href="">商务爱彼迎</a></li>
+                    <li class="exit"><a href="">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="header-nav-min">
+            <li><a href="">首页</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">个人资料<i class="iconfont icon-yonghu"></i></a></li>
+            <li><a href="">旅程<i class="iconfont icon-601"></i></a></li>
+            <li><a href="">消息<i class="iconfont icon-xinxi"></i></a></li>
+            <li><a href="">心愿单<i class="iconfont icon-aixin"></i></a></li>
+            <li><a href="">邀请好友<i class="iconfont icon-weibiaoti-1"></i></a></li>
+            <li><a href="">故事</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">商务爱彼迎</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">出租房源<i class="iconfont icon-fangzi"></i></a><br>把房子租出去，<b> 每月多赚￥4,387</b></li>
+            <li><a href="">开展体验</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">帮助</a></li>
+            <li><a href="">退出</a></li>
+        </ul>
+    </div>
+    <!-- 登陆注册模态框 -->
+    <div class="mod">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog mad1" role="document">
+                <div class="modal-content first active regist">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">注册爱彼迎账号</h4>
+                        <p>已有账号？<a>登陆</a></p>
+                    </div>
+                    <div class="modal-body phone">
+                        <a><i class="iconfont icon-dianhua-copy"></i>手机号注册</a>
+                    </div>
+                    <div class="modal-body email">
+                        <a><i class="iconfont icon-weibiaoti-"></i>邮箱注册</a>
+                    </div>
+                    <div class="modal-body other">
+                    </div>
+                </div>
+                <div class="modal-content regist phone">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">手机号注册</h4>
+                        <p>已有账号？<a>登陆</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="country">+86<span><i class="iconfont icon-fangxiangshang"></i></span></div>
+                        <div class="inputnmb"><input type="text" placeholder="手机号"></div>
+                    </div>
+                    <div class="modal-body verify">
+                        <input type="text" placeholder="输入验证码"><span class="result"></span><span class="generate">点击获取验证码</span>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd"><i class="iconfont icon-kejian"></i>
+                        </div>
+                        <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
+                        <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">注册</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式注册</a>
+                    </div>
+                </div>
+                <div class="modal-content login phone">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">手机号登陆</h4>
+                        <p>还没有账号？<a>注册</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="country">+86<span><i class="iconfont icon-fangxiangshang"></i></span></div>
+                        <div class="inputnmb"><input type="text" placeholder="手机号"></div>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">登陆</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式登陆</a>
+                    </div>
+                </div>
+                <div class="modal-content regist email">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">邮箱注册</h4>
+                        <p>已有账号？<a>登陆</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="inputnmb"><input type="text" placeholder="输入邮箱"></div>
+                    </div>
+                    <div class="modal-body verify">
+                        <input type="text" placeholder="输入验证码"><span class="result"></span><span class="generate">点击获取验证码</span>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                        </div>
+                        <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
+                        <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">注册</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式注册</a>
+                    </div>
+                </div>
+                <div class="modal-content login email">
+                    <div class="tips">信息填写有误</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">邮箱登陆</h4>
+                        <p>还没有账号？<a>注册</a></p>
+                    </div>
+                    <div class="modal-body input">
+                        <div class="inputnmb"><input type="text" placeholder="输入邮箱"></div>
+                    </div>
+                    <div class="modal-body password">
+                        <div class="box">
+                            <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body rule">
+                        <div class="box"><input type="checkbox" class="check"></div>
+                        <p class="msg">我希望通过短信和电话收到爱彼迎与其合作伙伴的礼金券、推广信息、问卷调查和最新动态。</p>
+                    </div>
+                    <div class="modal-body button">登陆</div>
+                    <div class="modal-body other">
+                        <a>使用其他方式登陆</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dining">
+        <div class="container-fluid" style="padding:0;">
+            <!-- 头部 -->
+            <div class="dining_header navbar navbar-default navbar-fixed-top">
+                <div class="header_content">
+                    <div class="header_left">
+                        <span class="header_date">日期</span>
+                        <span class="header_guest">1位客人</span>
+                    </div>
+                    <div class="header_right">
+                        <span class="show_map">显示地图</span>
+                        <span class="map_btn">
+                            <span class="dui">√</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 内容 -->
+            <div class="content">
+                <div class="row">
+                    <!-- 餐厅 -->
+                    <div class="content_left col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="shanghai">
+                            <!-- 上海 -->
+                            <div class="row shanghai_header">
+                                <span>上海的餐厅</span>
+                                <span class="iconfont choose_coord">&#xe680;</span>
+                            </div>
+                            <div class="row choose">
+                                <!-- 餐厅1 -->
+                                <div class="choose1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic1" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic1" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/1d0cd98d-efa4-4ffc-b233-17861f4efca2.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/1d8e462c-74ef-4db2-a29b-705caf6cf040.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2c704ffa-a1db-4809-961e-484335978a07.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">上上谦串串香火锅</div>
+                                            <div class="choose1_recom">724位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅2 -->
+                                <div class="choose2 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic2" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/4b4afd13-253b-4079-9817-e83ecabec194.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/6dbac13e-a061-4657-acbf-43c7216f74e7.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/269b75cc-82a1-477c-81f4-db5d059b0242.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">五月罗马海鲜自助餐厅(八佰伴店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅3 -->
+                                <div class="choose3 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic3" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic3" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/45bbb729-4738-4c03-879f-daf44f49b042.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/497a262d-bccd-4bda-a6be-4224fa11c44b.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">宝莱纳餐厅(陆家嘴店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅4 -->
+                                <div class="choose4 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic4" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic4" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic4" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/687a45d8-98d6-4246-9cb2-6a3e0e505392.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/820a2254-b655-4889-b176-759ddf1cf617.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2774b256-73fe-4c5b-8ee2-5dbf41554eb9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/8418dc9a-a08a-46d4-aaba-a0b62579f620.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">全聚德(闸北店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="choose5 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic5" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic5" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic5" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic5" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic5" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/5589162b-d9c0-4b97-84a4-6e4c582d774e.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/48669076-801b-43a6-a6d1-6f854617e496.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/a9ca5bfb-d001-4d49-a782-2edd768b0148.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/aad6f4cd-9931-41b6-88c8-dc305dac094c.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic5" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic5" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">博多新记(复兴店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="choose6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic6" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic6" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic6" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic6" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic6" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b93fe7c4-9e47-4601-92c0-0238fe90e917.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b4490085-fee7-452a-8cfc-67beaeac42da.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic6" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic6" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">麦当劳(南京东路353广场餐厅)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="choose7 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic7" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic7" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic7" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic7" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic7" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/cbd8c349-2ff7-482b-8623-0684db731379.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/dbbb74c4-359c-4c9f-bdfd-7dc61e5c4a13.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/e4af068c-bc71-4d23-9f42-9afef5e95f8f.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ea3ef9b7-e120-4607-a740-426d601bb1d4.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic7" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic7" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">重庆高老九火锅(南京东路店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="choose8 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic8" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic8" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic8" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic8" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic8" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic8" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic8" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">上上谦串串香火锅(我格广场店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 更多 -->
+                            <div class="more_choose">
+                                <a href="#">
+                                    <span>查看全部（200+）</span>
+                                    <span class="iconfont">&#xe648;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 杭州 -->
+                        <div class="hangzhou">
+                            <!-- 杭州 -->
+                            <div class="row hangzhou_header">
+                                <span>杭州的餐厅</span>
+                                <span class="iconfont choose_coord">&#xe680;</span>
+                            </div>
+                            <div class="row choose">
+                                <!-- 餐厅1 -->
+                                <div class="choose1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic21" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic21" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic21" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic21" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic21" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/1d0cd98d-efa4-4ffc-b233-17861f4efca2.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/1d8e462c-74ef-4db2-a29b-705caf6cf040.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2c704ffa-a1db-4809-961e-484335978a07.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic21" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic21" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">湖光饭店(天目山路)</div>
+                                            <div class="choose1_recom">724位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅2 -->
+                                <div class="choose2 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic22" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic22" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic22" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic22" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic22" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/4b4afd13-253b-4079-9817-e83ecabec194.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/6dbac13e-a061-4657-acbf-43c7216f74e7.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/269b75cc-82a1-477c-81f4-db5d059b0242.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic22" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic22" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">新白鹿餐厅(西湖银泰店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅3 -->
+                                <div class="choose3 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic23" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic23" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic23" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic23" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic23" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/45bbb729-4738-4c03-879f-daf44f49b042.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/497a262d-bccd-4bda-a6be-4224fa11c44b.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic23" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic23" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">德悦海鲜大酒店</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅4 -->
+                                <div class="choose4 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic24" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic24" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic24" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic24" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic24" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/687a45d8-98d6-4246-9cb2-6a3e0e505392.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/820a2254-b655-4889-b176-759ddf1cf617.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2774b256-73fe-4c5b-8ee2-5dbf41554eb9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/8418dc9a-a08a-46d4-aaba-a0b62579f620.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic24" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic24" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">同乐舫(学院店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="choose5 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic25" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic25" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic25" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic25" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic25" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/5589162b-d9c0-4b97-84a4-6e4c582d774e.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/48669076-801b-43a6-a6d1-6f854617e496.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/a9ca5bfb-d001-4d49-a782-2edd768b0148.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/aad6f4cd-9931-41b6-88c8-dc305dac094c.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic25" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic25" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">杭州餐馆</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="choose6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic26" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic26" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic26" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic26" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic26" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b93fe7c4-9e47-4601-92c0-0238fe90e917.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b4490085-fee7-452a-8cfc-67beaeac42da.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic26" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic26" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">新白鹿餐厅(西湖银泰店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="choose7 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic27" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic27" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic27" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic27" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic27" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/cbd8c349-2ff7-482b-8623-0684db731379.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/dbbb74c4-359c-4c9f-bdfd-7dc61e5c4a13.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/e4af068c-bc71-4d23-9f42-9afef5e95f8f.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ea3ef9b7-e120-4607-a740-426d601bb1d4.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic27" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic27" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">藏鲜工坊(新塘店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="choose8 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic28" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic28" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic28" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic28" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic28" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic28" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic28" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">茶人村(龙井路店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 更多 -->
+                            <div class="more_choose">
+                                <a href="#">
+                                    <span>查看全部（200+）</span>
+                                    <span class="iconfont">&#xe648;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 深圳 -->
+                        <div class="shenzhen">
+                            <!-- 深圳 -->
+                            <div class="row shenzhen_header">
+                                <span>深圳的餐厅</span>
+                                <span class="iconfont choose_coord">&#xe680;</span>
+                            </div>
+                            <div class="row choose">
+                                <!-- 餐厅1 -->
+                                <div class="choose1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic31" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic31" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic31" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic31" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic31" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/1d0cd98d-efa4-4ffc-b233-17861f4efca2.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/1d8e462c-74ef-4db2-a29b-705caf6cf040.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2c704ffa-a1db-4809-961e-484335978a07.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic31" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic31" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">我爱寿司(甲岸店)</div>
+                                            <div class="choose1_recom">724位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅2 -->
+                                <div class="choose2 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic32" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic32" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic32" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic32" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic32" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/4b4afd13-253b-4079-9817-e83ecabec194.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/6dbac13e-a061-4657-acbf-43c7216f74e7.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/269b75cc-82a1-477c-81f4-db5d059b0242.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic32" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic32" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">汕头八合里海记牛肉店(南头街店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅3 -->
+                                <div class="choose3 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic33" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic33" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic33" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic33" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic33" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/45bbb729-4738-4c03-879f-daf44f49b042.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/497a262d-bccd-4bda-a6be-4224fa11c44b.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic33" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic33" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">大龙燚火锅(南山店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅4 -->
+                                <div class="choose4 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic34" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic34" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic34" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic34" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic34" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/687a45d8-98d6-4246-9cb2-6a3e0e505392.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/820a2254-b655-4889-b176-759ddf1cf617.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2774b256-73fe-4c5b-8ee2-5dbf41554eb9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/8418dc9a-a08a-46d4-aaba-a0b62579f620.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic34" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic34" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">香蜜轩(香蜜湖店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="choose5 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic35" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic35" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic35" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic35" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic35" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/5589162b-d9c0-4b97-84a4-6e4c582d774e.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/48669076-801b-43a6-a6d1-6f854617e496.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/a9ca5bfb-d001-4d49-a782-2edd768b0148.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/aad6f4cd-9931-41b6-88c8-dc305dac094c.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic35" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic35" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">潮香四海(下沙店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="choose6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic36" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic36" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic36" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic36" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic36" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b93fe7c4-9e47-4601-92c0-0238fe90e917.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b4490085-fee7-452a-8cfc-67beaeac42da.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic36" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic36" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">胡须佬鸡煲(四季火锅总店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="choose7 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic37" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic37" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic37" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic37" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic37" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/cbd8c349-2ff7-482b-8623-0684db731379.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/dbbb74c4-359c-4c9f-bdfd-7dc61e5c4a13.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/e4af068c-bc71-4d23-9f42-9afef5e95f8f.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ea3ef9b7-e120-4607-a740-426d601bb1d4.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic37" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic37" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">汕头八合里海记牛肉店(卓越中心店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="choose8 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic38" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic38" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic38" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic38" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic38" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic38" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic38" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">凤凰楼(圣廷苑店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 更多 -->
+                            <div class="more_choose">
+                                <a href="#">
+                                    <span>查看全部（200+）</span>
+                                    <span class="iconfont">&#xe648;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 济南 -->
+                        <div class="jinan">
+                            <!-- 济南 -->
+                            <div class="row jinan_header">
+                                <span>济南的餐厅</span>
+                                <span class="iconfont choose_coord">&#xe680;</span>
+                            </div>
+                            <div class="row choose">
+                                <!-- 餐厅1 -->
+                                <div class="choose1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic41" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic41" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic41" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic41" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic41" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/1d0cd98d-efa4-4ffc-b233-17861f4efca2.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/1d8e462c-74ef-4db2-a29b-705caf6cf040.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2c704ffa-a1db-4809-961e-484335978a07.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic41" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic41" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">济南绿地美利亚酒店</div>
+                                            <div class="choose1_recom">724位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅2 -->
+                                <div class="choose2 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic42" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic42" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic42" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic42" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic42" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/4b4afd13-253b-4079-9817-e83ecabec194.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/6dbac13e-a061-4657-acbf-43c7216f74e7.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/24c4c0f2-a288-49fe-a674-d758360f3369.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/269b75cc-82a1-477c-81f4-db5d059b0242.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic42" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic42" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">毛家饭店(无影山店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅3 -->
+                                <div class="choose3 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic43" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic43" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic43" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic43" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic43" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/45bbb729-4738-4c03-879f-daf44f49b042.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/497a262d-bccd-4bda-a6be-4224fa11c44b.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic43" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic43" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">皇家花园酒店</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 餐厅4 -->
+                                <div class="choose4 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic44" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic44" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic44" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic44" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic44" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/687a45d8-98d6-4246-9cb2-6a3e0e505392.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/820a2254-b655-4889-b176-759ddf1cf617.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/2774b256-73fe-4c5b-8ee2-5dbf41554eb9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/8418dc9a-a08a-46d4-aaba-a0b62579f620.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic44" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic44" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">佰烧自助餐(世茂店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="choose5 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic45" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic45" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic45" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic45" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic45" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/5589162b-d9c0-4b97-84a4-6e4c582d774e.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/48669076-801b-43a6-a6d1-6f854617e496.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/a9ca5bfb-d001-4d49-a782-2edd768b0148.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/aad6f4cd-9931-41b6-88c8-dc305dac094c.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic45" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic45" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">老金烧烤(山大路店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="choose6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic46" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic46" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic46" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic46" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic46" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b93fe7c4-9e47-4601-92c0-0238fe90e917.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/b4490085-fee7-452a-8cfc-67beaeac42da.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic46" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic46" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">聚福林海鲜城(中润店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="choose7 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic47" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic47" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic47" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic47" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic47" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/cbd8c349-2ff7-482b-8623-0684db731379.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/dbbb74c4-359c-4c9f-bdfd-7dc61e5c4a13.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/e4af068c-bc71-4d23-9f42-9afef5e95f8f.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ea3ef9b7-e120-4607-a740-426d601bb1d4.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic47" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic47" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">福泉海码头(奥体店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="choose8 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                    <!-- 展示 -->
+                                    <div id="carousel-example-generic48" class="carousel slide">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic48" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic48" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic48" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generic48" data-slide-to="3"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="../images/dining/c5bae3b7-9391-4a75-a252-92ac51f818a1.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/ad35ec8c-f028-4643-8828-1158710f58c9.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/80a853f2-9976-4538-a747-8a251fd0b90d.jpg" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img src="../images/dining/29c8e9c2-5a25-4a76-a418-22b7c410d365.jpg" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic48" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic48" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- 信息 -->
+                                    <div class="choose1_msg">
+                                        <a href="#">
+                                            <div class="choose1_style">餐厅</div>
+                                            <div class="choose1_name">全聚德(高新店)</div>
+                                            <div class="choose1_recom">528位房东推荐了该餐厅</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 更多 -->
+                            <div class="more_choose">
+                                <a href="#">
+                                    <span>查看全部（200+）</span>
+                                    <span class="iconfont">&#xe648;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 地图 -->
+                    <div class="content_right col-lg-4 col-md-4">
+                        <div id="allmap"></div>
+
+                        <!-- 地图控件 -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="../../node_modules/_jquery@3.3.1@jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/dining.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Y6l4ONGyiVrQt6mnnV7ASHsCQmrTGQFA"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/user_edit.js"></script>
+</body>
+
+</html>

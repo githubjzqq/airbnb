@@ -902,7 +902,7 @@ a,a:link,a:link{
                     margin-bottom: 20px;
                     margin-left: 5px;
                     display: flex;
-                    
+                    cursor: pointer;
 
                     .leftimg{
                         float: left;
@@ -1075,6 +1075,7 @@ a,a:link,a:link{
                     margin-bottom: 20px;
                     margin-left: 5px;
                     display: flex;
+                    cursor: pointer;
                     
 
                     .leftimg{
@@ -1265,8 +1266,15 @@ a,a:link,a:link{
     &>li{
         margin: 0;
         padding: 8px;
+        cursor: pointer;
         @media screen and (min-width: 750px) {
             min-height: 370px!important;
+        }
+        @media screen and (max-width: 530px) {
+            min-height: 280px!important;
+        }
+        @media screen and (max-width: 400px) {
+            min-height: 240px!important;
         }
         
         &>img{
@@ -1311,6 +1319,7 @@ a,a:link,a:link{
 }
 .house_housemin{
     &>li{
+        cursor: pointer;
         padding-top: 10px;
         @media screen and (min-width: 750px) {
             min-height: 370px;
@@ -1402,6 +1411,7 @@ a,a:link,a:link{
 
 .hi_housebtm_ul{
     &>li{
+        cursor: pointer;
         padding-top: 10px;
         @media screen and (min-width: 750px) {
             min-height: 370px;

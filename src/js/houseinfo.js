@@ -991,5 +991,16 @@ $(function() {
                 }
             }
         })
+        // 输入成功筛选
+    $(document).on("keyup", function(e) {
+            if (e.key == "Enter") {
+                console.log(1)
+                var arrcity = localStorage.getItem("arrcity")
+                if (arrcity.indexOf($(".input-text").val()) != -1) {
+                    sessionStorage.setItem("city", $(".input-text").val())
+                    window.location.reload();
+                }
+            }
+        })
         // btm
 });

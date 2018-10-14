@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../styles/story_heji.css">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/public-reset.css">
+    <link rel="stylesheet" href="../fonts/public/icon_font/iconfont.css">
+    <link rel="stylesheet" href="../styles/public.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo" id="logo"><i class="iconfont icon-aibiying"></i>
+            <div class="sub-btn"><svg class="img" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z
+              " fill-rule="evenodd"></path></svg></div>
+        </div>
+        <div class="search">
+            <i class="iconfont icon-sousuo"></i>
+            <input type="text" class="input-text" placeholder="搜索">
+            <div class="user-history">
+                <p>最近的搜索</p>
+                <ul class="his-list">
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href="https://www.baidu.com"><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shizhong"></i><a href=""><b>历史纪录1</b><br>条件1·条件2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="header-nav">
+            <li class="_currency">
+                <a><img src="../images/public/China.png" alt="" class="country">人民币（￥）<i></i></a>
+            </li>
+            <li class="sub currency">
+                <h4>常用货币</h4>
+                <div class="list active"><img src="../images/public/China.png" alt="">人民币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">美元（$）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">日元（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">港币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">新台币（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">欧元（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+                <div class="list"><img src="../images/public/China.png" alt="">英镑（￥）<i class="iconfont icon-gou"></i></div>
+            </li>
+            <li><a style="color:white">手机端</a></li>
+            <li class="sub app">
+                <div class='left'>
+                    <img src="../images/public/qr1.png" alt="">
+                    <p>下载手机客户端</p>
+                </div>
+                <div class='right'>
+                    <img src="../images/public/qr2.png" alt="">
+                    <p>关注微信服务号</p>
+                </div>
+            </li>
+            <li><a style="color:white">成为房东/体验达人</a></li>
+            <li class="sub house">
+                <div class="rent">
+                    <a href="">
+                        <h4>出租房源</h4>
+                        <p>在杭州接待旅行者，每月为您带来高达￥4391的收入</p>
+                        <i class="iconfont icon-fangzi"></i></a>
+                </div>
+                <div class="experience">
+                    <a href="">开展体验</a>
+                </div>
+            </li>
+            <li><a href="../html/story.html" style="color:white">故事</a></li>
+            <li class="sub"></li>
+            <li><a style="color:white">心愿单</a></li>
+            <li class="sub like">
+                <h4>心愿单<a href="">查看心愿单</a></h4>
+                <div class="list">
+                    <div class="text">
+                        <div class="position">杭州市</div>
+                        <div class="num1">1位客人</div>
+                        <div class="num2">6个房源</div>
+                    </div>
+                    <div class='pic'>
+                        <img src="../images/public/h1.jpg" alt="房源图片">
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="text">
+                        <div class="position">杭州市</div>
+                        <div class="num1">1位客人</div>
+                        <div class="num2">6个房源</div>
+                    </div>
+                    <div class='pic'>
+                        <img src="../images/public/h2.jpg" alt="房源图片">
+                    </div>
+                </div>
+            </li>
+            <li><a href="" style="color:white">旅程</a></li>
+            <li class="sub"></li>
+            <li><a style="color:white">消息</a></li>
+            <li class="sub message">
+                <div class="list">消息（0）<a href="">查看所有</a></div>
+                <div class="list">通知<a href="">查看所有</a></div>
+            </li>
+            <li><a style="color:white">帮助</a></li>
+            <li class="sub help"></li>
+            <li data-toggle="modal" data-target="#myModal" class='login'>
+                <a style="display:none" class="userpic"><img src="../images/public/mario.JPG" alt="" class="userpic"></a>
+                <a class="index" style="color:white">登陆/注册</a>
+            </li>
+            <li class="sub user-msg" style="display: none;">
+                <ul>
+                    <li><a href="./user_edit.html">编辑个人资料</a></li>
+                    <li><a href="">旅行基金</a></li>
+                    <li><a href="">账号设置</a></li>
+                    <li><a href="./guide.html">我的指南</a></li>
+                    <li><a href="">礼品卡</a></li>
+                    <li><a href="">商务爱彼迎</a></li>
+                    <li class="exit"><a href="">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="header-nav-min">
+            <li><a href="">首页</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">个人资料<i class="iconfont icon-yonghu"></i></a></li>
+            <li><a href="">旅程<i class="iconfont icon-601"></i></a></li>
+            <li><a href="">消息<i class="iconfont icon-xinxi"></i></a></li>
+            <li><a href="">心愿单<i class="iconfont icon-aixin"></i></a></li>
+            <li><a href="./invite.html">邀请好友<i class="iconfont icon-weibiaoti-1"></i></a></li>
+            <li><a href="">故事</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">商务爱彼迎</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">出租房源<i class="iconfont icon-fangzi"></i></a><br>把房子租出去，<b> 每月多赚￥4,387</b></li>
+            <li><a href="">开展体验</a></li>
+            <li class="hr">
+                <hr>
+            </li>
+            <li><a href="">帮助</a></li>
+            <li><a href="">退出</a></li>
+        </ul>
+    </div>
+
+
+
+    <!--内容部分-->
+    <div class="content container ">
+        <!--主题部分-->
+        <div class="title ">
+            <p><strong>倚湖临溪，以茶养心</strong></p>
+            <p><strong>所谓日日是好日</strong></p>
+        </div>
+        <!--主题底部横线-->
+        <div class="line "></div>
+        <!--主题文字说明-->
+        <div class="word ">
+            <span class="word-topic ">
+                自古盛产名茶的茶都杭州 ，茶文化历史由来已久。自然条件得天独厚的茶乡茶园葱茏绵延、青翠秀美，采茶赏景两相宜；西湖龙井、余杭径山、云石三清等名茶品类繁盛，各有千秋；更有上百间茶馆茶室和农家茶院煎煮撮泡出茶叶的鲜活清香，待茶客细品茶韵悠长......与茶血脉相融、传承千年的杭州还有哪些茶事茶趣茶文化，一起了解一下。
+            </span>
+        </div>
+
+        <!--标题8篇故事-->
+        <div class="pane "><strong class="pane-word ">8篇故事</strong></div>
+        <!--故事文本内容-->
+        <div class="temple ">
+            <span class="temple-topic ">
+                <strong>茶圣陆羽在《茶经》中曾载「钱塘生天竺、灵隐二寺」，据说杭州最早植茶的地方就是寺院。除了天竺三寺和灵隐寺，灵隐以西、有最美寺庙之称的「永福禅寺」也有一片清幽茶园，寺内福泉茶院有名的永福龙井就产自这里。</strong>
+            </span>
+        </div>
+        <!--故事文本内容下横线-->
+        <div class="line "></div>
+
+
+        <!--轮播-->
+        <div class="lunbo">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../images/story/images1/eechayuan.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/eefutian.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/eegushu.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/eepaizi.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--悟道文本内容-->
+            <div class="wudao">
+                <div class="wu">
+                    <span class="wu-dao"><strong>最美寺庙，上一堂树木禅音“课”。</strong></span>
+                </div>
+                <div class="author">
+                    <div class="photo"><img src="../images/story/images1/aatouxiang.jpg"><span>Joyii·杭州</span></div>
+                </div>
+
+                <div class="word2">
+                    <span class="word-topic2">
+                        许多游客到访灵隐后，便止步向前，或是登高上飞来峰，若不想上去，实际还有一条更美的风景路线在后头。从灵隐寺出来，往右走，跟着“永福禅寺”的指路牌走，来到这座被世人誉为“中国最美寺院”的寺庙；此外，它的僧侣们，琴棋书画，样样精通，也有个“中国最文艺寺院”的称号。永福寺在灵隐寺西边的石笋峰下，自东晋慧理禅师开山至今，已有1<a href="#">查看更多</a>
+                    </span>
+                </div>
+
+                <a href="#">
+                    <div class="circle">
+                        <div class="glyphicon glyphicon-thumbs-up zan"></div>
+                    </div>
+                </a>
+                <div class="huozan"><span class="huozan-word">18人已赞</span></div>
+            </div>
+
+        </div>
+
+
+        <!--茶叶博物馆内容-->
+        <div class="temple2 ">
+            <span class="temple-topic2 ">
+                   <strong>西湖区双峰村茶山山坡上的「中国茶叶博物馆」是中国目前唯一一间与茶文化相关的国家级专业博物馆。免费向公众开放的茶叶博物馆展览丰富多样，从茶史茶萃到茶俗茶具，尽述茶文化的源远深厚；还有茶室供游客品茶，在层叠环绕的茶园中体味杭茶气度。</strong>
+                </span>
+        </div>
+        <!--茶叶文本内容下横线-->
+        <div class="line "></div>
+
+        <!--轮播2-->
+        <div class="lunbo2">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../images/story/images1/shanlin.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/yedi.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/chahu.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/maowu.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!--博物馆纳凉内容-->
+            <div class="naliang">
+                <div class="liang">
+                    <span class="liang-title"><strong>在博物馆纳凉才是正经事</strong></span>
+                </div>
+                <div class="author2">
+                    <div class="photo2"><img src="../images/story/images1/aatouxiang.jpg"><span>晨·中国</span></div>
+                </div>
+
+                <div class="word3">
+                    <span class="word3-topic3">
+                        大概有很多小伙伴和我一样，去逛逛当地的博物馆，是旅行中必须的一种仪式感。特别的建筑、珍贵的藏品、深远的历史文化…都会让人留下更深刻的印象。当然有时候，蹭冷气/暖气/Wi-Fi/躲雨/躲太阳也可以是去参观博物馆的正当理由啦～和国内大部分城市相比，杭州的可爱之处不仅仅是西湖，还有散落在城市里的各色博物馆，关键是，所有的公<a href="#">查看更多</a>
+                    </span>
+                </div>
+
+                <a href="#">
+                    <div class="circle2">
+                        <div class="glyphicon glyphicon-thumbs-up zan2"></div>
+                    </div>
+                </a>
+                <div class="huozan2"><span class="huozan-word2">4人已赞</span></div>
+            </div>
+
+
+
+        </div>
+
+        <!--十里梅坞内容-->
+        <div class="temple3 ">
+            <span class="temple-topic3 ">
+           <strong>有「十里梅坞」之称的「梅家坞茶文化村」是一座有六百多年历史的古村，也是西湖龙井一级保护区和主产区之一。同狮峰龙井一样，这里产出的龙井以「色绿、香郁、味醇、形美」四绝闻名于世。</strong>
+        </span>
+        </div>
+        <!--茶叶文本内容下横线-->
+        <div class="line "></div>
+
+        <!--轮播3-->
+        <div class="lunbo3">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../images/story/images1/guniang.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/guniang2.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/guniang3.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/story/images1/guniang6.jpg" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+            <!--梅家坞茶内容-->
+            <div class="wucha">
+                <div class="cha">
+                    <span class="cha-title"><strong>最热闹的采茶季，最宁静的梅家坞茶园！</strong></span>
+                </div>
+                <div class="author3">
+                    <div class="photo3"><img src="../images/story/images1/aatouxiang.jpg"><span>Joyii·杭州</span></div>
+                </div>
+
+                <div class="word4">
+                    <span class="word4-topic4">
+                        夜里的一场如油春雨，悄悄复苏了梅坞、龙井山上的茶园！来梅家坞的公车上，一路可见山间景象，只见低瓦白墙茶楼人家与大片茶园错落有致。这个时候，最忙活也最开心的必定是茶农了…梅家坞，有山有貌，有坞有水，有茶有文，是西湖龙井茶一级保护区和主产地之一，也是杭州城郊最富茶乡特色的农家自然村落。在云栖竹径景区对面，就有这样一片大茶<a href="#">查看更多</a>
+                    </span>
+                </div>
+
+                <a href="#">
+                    <div class="circle3">
+                        <div class="glyphicon glyphicon-thumbs-up zan3"></div>
+                    </div>
+                </a>
+                <div class="huozan3"><span class="huozan-word3">13人已赞</span></div>
+            </div>
+
+        </div>
+
+
+
+        <!--故事集-->
+
+
+        <nav class="navbar navbar-default " style="margin-top:20px;margin-bottom:20px;border-top:0;border-bottom: 0;background: none;border-left: none;border-right: none; ">
+            <div class="container-fluid ">
+                <div class="navbar-header ">
+                    <button type="button " class="navbar-toggle collapsed " data-toggle="collapse " data-target="#bs-example-navbar-collapse-1 " aria-expanded="false ">
+                                      <span>查看全部</span>
+                                    </button>
+                    <a class="navbar-brand " href="# ">
+                        <span class="gushiji " style="font-size:24px; color: white;"><strong>相关故事集</strong></span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1 ">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li style="margin-right:20px;"><a href="# " style="color:white">查看全部</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!--故事集城市合辑-->
+
+
+        <div class="row ">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+                <div class="row container ">
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 gushi ">
+                        <!-- <span class="top "><strong>成都</strong></span>
+                    <span class="btm "><strong>热门搜索</strong></span> -->
+                        <a href="# ">
+                            <div class="thumbnail kaoya " style="background: none">
+                                <span class="heji "><strong>城市合辑</strong></span>
+                                <span class="top "><strong>在北京去哪吃</strong></span>
+                                <span class="btm "><strong>烤鸭才不像游客？</strong></span>
+                                <img src="../images/story/images1/kaoya.jpg " alt="... " style="border-radius: 5%;opacity: 0.8; ">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 gushi ">
+                        <a href="# ">
+                            <div class="thumbnail huoguo " style="background: none">
+                                <span class="heji "><strong>城市合辑</strong></span>
+                                <span class="top "><strong>重庆火锅江湖：</strong></span>
+                                <span class="btm "><strong>每家店都让人直流口水！</strong></span>
+                                <img src="../images/story/images1/huoguo.jpg " alt="... " style="border-radius: 5%;opacity: 0.7; ">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 gushi ">
+                        <a href="# ">
+                            <div class="thumbnail jianzhu " style="background: none">
+                                <span class="heji "><strong>故事周刊</strong></span>
+                                <span class="top "><strong>跟着懂行人</strong></span>
+                                <span class="btm "><strong>看遍广州的传奇建筑</strong></span>
+                                <img src="../images/story/images1/jianzhu.jpg " alt="... " style="border-radius: 5%;opacity: 0.7; ">
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--精选故事-->
+
+        <nav class="navbar navbar-default " style="margin-top:20px;margin-bottom:15px;border-top:0;border-bottom: 0; background: none;border-left: none;border-right: none;">
+            <div class="container-fluid ">
+                <div class="navbar-header ">
+                    <a class="navbar-brand " href="# ">
+                        <span class="gushiji " style="font-size:24px; color: white;"><strong>相关故事</strong></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!--主体内容-->
+
+        <div class="row ">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+                <div class="row container ">
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;padding-top: 0 ;padding-bottom: 0">
+                        <a href="# " style="text-decoration: none; ">
+                            <div class="thumbnail bingfen ">
+                                <img src="../images/story/images1/chengdubingfen.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                                <div class="caption ">
+                                    <span class="chengshi "><strong>美食</strong></span>
+                                    <span style="color:white;">成都</span>
+                                    <span style="color:white;font-size: 12px;">心甜花开：终于吃到心心念的手搓冰粉啦！</span>
+                                    <div style="text-align:center ;color:white;">
+                                        <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px;">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                        <a href="# " style="text-decoration: none; ">
+                            <div class="thumbnail fangzi ">
+                                <img src="../images/story/images1/xiamenfangzi.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+
+                                <div class="caption ">
+                                    <span class="fangyuan "><strong>美食</strong></span>
+                                    <span style="color:white;">厦门</span>
+                                    <span style="color:white;font-size: 12px;">大中路21GRAM重装回归</span>
+                                    <div style="text-align:center; color:white;">
+                                        <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                        <a href="# " style="text-decoration: none; ">
+                            <div class="thumbnail kafei ">
+                                <img src="../images/story/images1/xiamenkafei.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                                <div class="caption ">
+                                    <span class="kafeiguan "><strong>美食</strong></span>
+                                    <span style="color:white;">厦门</span>
+                                    <span style="color:white;font-size: 12px;">精品咖啡馆的先行者，32HOW</span>
+                                    <div style="text-align:center;color: white ">
+                                        <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left: 5px; padding-right: 5px;">
+                        <a href="# " style="text-decoration: none; ">
+                            <div class="thumbnail laofoye ">
+                                <img src="../images/story/images1/laofoye.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+
+                                <div class="caption ">
+                                    <span class="laofoye1 " "><strong>美食</strong></span>
+        <span style="color:white; ">成都</span>
+        <span style="color:white;font-size: 12px; ">对于老佛爷来说一切不好吃都是耍流氓</span>
+        <div style="text-align:center;color: white ">
+                <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+            </div>
+        </div>
+    
+        </div>
+        </a>
+        </div>
+    
+    
+        </div>
+        </div>
+        </div>
+        <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        
+                    <div class="row container ">
+        
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 fen " style="padding:5px;height: 320px;padding-top: 0 ">
+                            <a href="# " style="text-decoration: none; ">
+                                <div class="thumbnail bingfen ">
+                                    <img src="../images/story/images1/ccbeizi.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+        
+                                    <div class="caption ">
+                                        <span class="jueban "><strong>文化</strong></span>
+                                        <span style="color:white; "><strong>上海</strong></span>
+                                        <span style="color:white;font-size: 12px; ">你手中的咖啡杯可能是日本名家曾经在此展出过的绝版之作。</span>
+                                        <div style="text-align:center ;color: white ">
+                                            <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+                                        glyphicon-comment "> 76</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                        </div>
+        
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                            <a href="# " style="text-decoration: none; ">
+                                <div class="thumbnail fangzi ">
+                                    <img src="../images/story/images1/ccguanggao.jpg " style="height:242px;width: 242px; border-radius: 5%; " alt="... ">
+        
+                                    <div class="caption ">
+                                        <span class="tongnian "><strong>文化</strong></span>
+                                        <span style="color:white; "><strong>上海</strong></span>
+                                        <span style="color:white;font-size: 12px;; ">童年的六种温度 感受儿时记忆</span>
+                                        <div style="text-align:center;color: white ">
+                                            <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+                                        glyphicon-comment "> 76</span>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-right:5px;padding-left: 5px; ">
+                            <a href="# " style="text-decoration: none; ">
+                                <div class="thumbnail kafei ">
+                                    <img src="../images/story/images1/ccshuzhan.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+        
+                                    <div class="caption ">
+                                        <span class="zhongzhen "><strong>文化</strong></span>
+                                        <span style="color:white; "><strong>上海</strong></span>
+                                        <span style="color:white;font-size: 12px; ">世上可有什么爱比爱书更忠贞不渝？</span>
+                                        <div style="text-align:center;color: white ">
+                                            <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon
+                                        glyphicon-comment "> 76</span>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 " style="padding-left:5px;padding-right: 5px; ">
+                            <a href="# " style="text-decoration: none; ">
+                                <div class="thumbnail laofoye ">
+                                    <img src="../images/story/images1/ccjiqi.jpg " style="height:242px;width: 242px;border-radius: 5%; " alt="... ">
+        
+                                    <div class="caption ">
+                                        <span class="haizi " "><strong>文化</strong></span>
+                                    <span style="color:white;"><strong>上海</strong></span>
+                                    <span style="color:white;font-size: 12px;">藏在复兴公园的野孩子，咖啡和展览同样让人意犹未尽。</span>
+                                    <div style="text-align:center;color: white ">
+                                        <img src="../images/story/images1/aatouxiang.jpg " style="border-radius:50%;width: 20px;height: 20px; ">&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up "> 171</span>&nbsp;&nbsp;<span class="glyphicon glyphicon-comment "> 76</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/public.js "></script>
+    <script src="../js/user_edit.js "></script>
+
+
+</body>
+
+</html>

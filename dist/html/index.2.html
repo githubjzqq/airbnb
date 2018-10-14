@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>爱彼迎</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../../src/fonts/index/iconfont.css">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="aby_all container-fluid">
+        <div class="index_top">
+
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="aby_search container">
+            <div>
+                <div class="">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input type="text" name="" id="search_inp" placeholder="目的地，城市，地址">
+                    <button>搜索</button>
+                </div>
+            </div>
+            <div class="search_hover">
+                <div>
+                    <p>温馨提示：您还可以输入城市 + 景点、行政区名进行搜索，如：巴黎 埃菲尔铁塔</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>国内热门</p>
+                        <ul>
+                            <li><a href="../html/text.html">北京</a></li>
+                            <li><a href="">上海</a></li>
+                            <li><a href="">成都</a></li>
+                            <li><a href="">重庆</a></li>
+                            <li><a href="">杭州</a></li>
+                            <li><a href="">厦门</a></li>
+                            <li><a href="">广州</a></li>
+                            <li><a href="">西安</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>
+                            国际 / 港澳台热门
+                        </p>
+                        <ul>
+                            <li><a href="">大阪</a></li>
+                            <li><a href="">东京</a></li>
+                            <li><a href="">台北</a></li>
+                            <li><a href="">香港</a></li>
+                            <li><a href="">京都</a></li>
+                            <li><a href="">首尔</a></li>
+                            <li><a href="">巴黎</a></li>
+                            <li><a href="">洛杉矶</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>秋季好去处</p>
+                        <ul>
+                            <li><a href="">大理</a></li>
+                            <li><a href="">大连</a></li>
+                            <li><a href="">青岛</a></li>
+                            <li><a href="">西塘</a></li>
+                            <li><a href="">垦丁</a></li>
+                            <li><a href="">洛桑</a></li>
+                            <li><a href="">北海道</a></li>
+                            <li><a href="">圣彼得堡</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- 最近搜索 -->
+                <div>
+                    <p>最近搜索</p>
+                    <ul class="row lastest">
+                        <!-- <li class="col-lg-4 col-md-4">
+                            <a href="">
+                                <span>北京</span>
+                                <span>任何时间</span>
+                            </a>
+                        </li>
+                        <li class="col-lg-4 col-md-4">
+                            <a href="">
+                                <span>成都</span>
+                                <span>任何时间</span>
+                            </a>
+                        </li>
+                        <li class="col-lg-4 col-md-4">
+                            <a href="">
+                                <span>大阪</span>
+                                <span>任何时间</span>
+                            </a>
+                        </li>
+                        <li class="col-lg-4 col-md-4">
+                            <a href="">
+                                <span>大理</span>
+                                <span>任何时间</span>
+                            </a>
+                        </li>
+                        <li class="col-lg-4 col-md-4">
+                            <a href="">
+                                <span>济南</span>
+                                <span>任何时间</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- 搜索框 -->
+        <!-- 最近浏览过的 -->
+        <div class="aby_history container">
+            <p>最近浏览过的</p>
+            <div>
+                <ul class="row history_ul">
+                </ul>
+            </div>
+        </div>
+        <!-- 最近浏览过的 -->
+        <!-- 探索爱彼迎 -->
+        <div class="aby_explore container">
+            <p>探索爱彼迎</p>
+            <ul class="row">
+                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+                    <a href="" class="row pm">
+                        <div class="col-lg-5  col-md-4 col-sm-4 pm"><img src="../images/index/explore1.jpg" alt=""></div>
+                        <div class="col-lg-7 col-md-8 col-sm-8 pm">
+                            <p class="exp_text">房源</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+                    <a href="" class="row pm">
+                        <div class="col-lg-5 col-md-4 col-sm-4 pm"><img src="../images/index/explore2.jpg" alt=""></div>
+                        <div class="col-lg-7 col-md-8 col-sm-8 pm">
+                            <p class="exp_text">体验</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+                    <a href="" class="row pm">
+                        <div class="col-lg-5 col-md-4 col-sm-4 pm"><img src="../images/index/explore3.jpg" alt=""></div>
+                        <div class="col-lg-7 col-md-8 col-sm-4 pm">
+                            <p class="exp_text">餐馆</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 探索爱彼迎 -->
+        <!-- tabs 房源 -->
+        <div class="container aby_tabs">
+            <p>热门目的地</p>
+            <div>
+                <ul class="tabs_title">
+                    <li><a href="" class="active1">上海</a></li>
+                    <li><a href="">济南</a></li>
+                    <li><a href="">杭州</a></li>
+                    <li><a href="">深圳</a></li>
+                    <!-- <li><a href="">上海</a></li>
+                <li><a href="">济南</a></li>
+                <li><a href="">杭州</a></li> -->
+                </ul>
+            </div>
+            <ul class="tabs_house">
+
+            </ul>
+
+            <span class="tabs_more"><a>查看更多<span class="tabs_more_city">上海</span>房源</a>
+            </span>
+
+        </div>
+        <!-- tabs 房源 -->
+        <!-- 经典旅游城市 -->
+        <div class="aby_travel container">
+            <p>经典旅行城市</p>
+            <ul class="row">
+                <li class="col-lg-2 col-sm-3 col-xs-4">
+                    <a href="">
+                        <img src="../images/index/travel1.jpg" alt="">
+                        <p>
+                            <span>香港</span>
+                            <span>亚洲美食之都</span>
+                        </p>
+                        <p>人均￥440/晚</p>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-4">
+                    <a href="">
+                        <img src="../images/index/travel2.jpg" alt="">
+                        <p>
+                            <span>清迈</span>
+                            <span>泰国最文艺小城</span>
+                        </p>
+                        <p>人均￥168/晚</p>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-4">
+                    <a href="">
+                        <img src="../images/index/travel3.jpg" alt="">
+                        <p>
+                            <span>伦敦</span>
+                            <span>感受英伦风情</span>
+                        </p>
+                        <p>人均￥354/晚</p>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-sm-3 hidden-xs">
+                    <a href="">
+                        <img src="../images/index/travel4.jpg" alt="">
+                        <p>
+                            <span>普吉岛</span>
+                            <span>东南亚看海</span>
+                        </p>
+                        <p>人均￥360/晚</p>
+                    </a>
+                </li>
+                <li class="col-lg-2 hidden-md hidden-xs hidden-sm">
+                    <a href="">
+                        <img src="../images/index/travel5.jpg" alt="">
+                        <p>
+                            <span>洛杉矶</span>
+                            <span>好莱坞式繁华</span>
+                        </p>
+                        <p>人均￥445/晚</p>
+                    </a>
+                </li>
+                <li class="col-lg-2 hidden-md hidden-xs hidden-sm">
+                    <a href="">
+                        <img src="../images/index/travel6.jpg" alt="">
+                        <p>
+                            <span>巴厘岛</span>
+                            <span>度蜜月的首选</span>
+                        </p>
+                        <p>人均￥396/晚</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 经典旅游城市 -->
+        <div class="aby_pay container">
+            <ul class="row">
+                <li class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                    <div>
+                        <i class="iconfont icon-rectangle390"></i>
+                    </div>
+                    <div>
+                        <p>24小时中文客服</p>
+                        <p>400-841-0328</p>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div>
+                        <i class="iconfont icon-rectangle390"></i>
+                    </div>
+                    <div>
+                        <p>安全支付</p>
+                        <p>支付宝付款已向中国用户开通</p>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div>
+                        <i class="iconfont icon-logo"></i>
+                    </div>
+                    <div>
+                        <p>芝麻信用</p>
+                        <p>实名认证房东房客信息，真实可靠</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 热门故事 -->
+        <div class="aby_story container">
+            <p>热门故事</p>
+            <ul class="row">
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <a href="">
+                        <div>
+                            <img src="../images/index/story1.jpg" alt="">
+                            <span>美食</span>
+                        </div>
+                        <p><span>北京</span>Hi Kiehl’s !来一份金盏花…嗯…拿铁？</p>
+                        <p><b><img src="../images/user/tx1.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <a href="">
+                        <div>
+                            <img src="https://z2.muscache.cn/im/pictures/70df8db4-67e6-4eae-88e1-bf162c84667f.jpg?aki_policy=x_large" alt="">
+                            <span>美食</span>
+                        </div>
+                        <p><span>成都</span>成都丨命中带辣，才会独爱此家新派川菜</p>
+                        <p><b><img src="../images/user/tx2.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <a href="">
+                        <div>
+                            <img src="../images/index/story3.jpg" alt="">
+                            <span>景点</span>
+                        </div>
+                        <p><span>白川</span>冬季以外的白川乡，你见过吗？</p>
+                        <p><b><img src="../images/user/tx3.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <a href="">
+                        <div>
+                            <img src="../images/index/story4.jpg" alt="">
+                            <span>景点</span>
+                        </div>
+                        <p><span>法国</span>法国最本真的样子，动人的罗纳-阿尔卑斯山谷</p>
+                        <p><b><img src="../images/user/tx4.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 hidden-xs">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <a href="">
+                        <div>
+                            <img src="../images/index/story5.jpg" alt="">
+                            <span>美食</span>
+                        </div>
+                        <p><span>北京</span>夹娃娃这件小事没那么简单</p>
+                        <p><b><img src="../images/user/tx5.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 hidden-xs">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <a href="">
+                        <div>
+                            <img src="../images/index/story6.jpg" alt="">
+                            <span>美食</span>
+                        </div>
+                        <p><span>上海</span>国际饭店招牌，没吃过等于没来过上海</p>
+                        <p><b><img src="../images/user/tx6.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
+                    </a>
+                </li>
+                <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <a href="">
+                        <div>
+                            <img src="../images/index/story7.jpg" alt="">
+                            <span>活动</span>
+                        </div>
+                        <p><span>澳大利亚</span>看牧羊犬们炫技，一场令人兴奋的赶羊Show</p>
+                        <p>
+                            <b><img src="../images/user/tx7.jpg" alt=""></b>
+                            <i class="glyphicon glyphicon-thumbs-up"></i> 18 <i class="glyphicon glyphicon-comment"></i> 2
+                        </p>
+                    </a>
+                </li>
+                <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+
+                    <a href="">
+                        <div>
+                            <img src="https://z2.muscache.cn/im/pictures/e1ef1882-7b89-4445-a404-21b214b9aa48.jpg" alt="">
+                            <span>美食</span>
+                        </div>
+                        <p><span>旧金山</span>相约酒乡：复古小火车上与你共渡浪漫“食”光</p>
+                        <p><b><img src="../images/user/tx8.jpg" alt=""></b><i class="glyphicon glyphicon-thumbs-up"></i>18 <i class="glyphicon glyphicon-comment"></i>2</p>
+                    </a>
+                </li>
+            </ul>
+            <p><a href="">显示全部 <i class="glyphicon glyphicon-menu-right"></i></a></p>
+
+        </div>
+        <!-- 热门故事 -->
+
+        <!-- 高分体验 -->
+        <div class="aby_experience container">
+            <p>高分体验</p>
+            <h4>当地人和全球旅行者赞不绝口的体验</h4>
+            <ul class="row">
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience1.jpg" alt="">
+                        </div>
+                        <p>野生动物 · 克萨达(Quesada)</p>
+                        <p>Experiencia con el Oso Perezoso</p>
+                        <p>每人￥145</p>
+                        <p><span>4.98</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>200</span></p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience2.jpg" alt="">
+                        </div>
+                        <p>攀岩下降? · 圣乔治</p>
+                        <p>Private East Zion Slot Canyon Tour</p>
+                        <p>每人￥984</p>
+                        <p><span>5.0</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>135</span></p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience3.jpg" alt="">
+                        </div>
+                        <p>一日游 · 迪拜</p>
+                        <p>Red Dunes Safari & BBQ @Al Khayma Camp</p>
+                        <p>每人￥289</p>
+                        <p><span>4.97</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>215</span></p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience4.jpg" alt="">
+                        </div>
+                        <p>乘船游览 · 江陵</p>
+                        <p>Yacht along the coast with a captain</p>
+                        <p>每人￥313</p>
+                        <p><span>4.98</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>66</span></p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 hidden-xs">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience5.jpg" alt="">
+                        </div>
+                        <p>户外漫步 · 波多黎各</p>
+                        <p>Rainforest Water Slide Tour</p>
+                        <p>每人￥673</p>
+                        <p><span>4.99</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>184</span></p>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-sm-4 hidden-xs">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience6.jpg" alt="">
+                        </div>
+                        <p>烹饪课 · 巴厘岛</p>
+                        <p>Traditional Balinese Cooking Class</p>
+                        <p>每人￥175</p>
+                        <p><span>4.92</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>127</span></p>
+                    </a>
+                </li>
+                <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience7.jpg" alt="">
+                        </div>
+                        <p>工作坊 · 都柏林</p>
+                        <p>Forge a silver ring with jewellers</p>
+                        <p>每人￥612</p>
+                        <p><span>4.94</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>344</span></p>
+                    </a>
+                </li>
+                <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                    <a href="">
+                        <div>
+                            <img src="../images/index/experience8.jpg" alt="">
+                        </div>
+                        <p>邂逅动物 · 西雅图</p>
+                        <p>Wolf Encounter</p>
+                        <p>每人￥1,239</p>
+                        <p><span>4.95</span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span>1350</span></p>
+                    </a>
+                </li>
+                <!-- 高分体验 -->
+            </ul>
+            <p><a href="">显示全部体验 <i class="glyphicon glyphicon-menu-right"></i></a></p>
+        </div>
+        <!-- aby_all -->
+        <!-- <div class="indexbtn">
+
+        </div> -->
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/index.js">
+    </script>
+</body>
+
+</html>

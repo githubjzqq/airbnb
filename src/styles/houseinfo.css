@@ -895,6 +895,7 @@ a:link {
   margin-bottom: 20px;
   margin-left: 5px;
   display: flex;
+  cursor: pointer;
 }
 .hi_contant .hi_contant_left .hi_plus .house_plus > li .leftimg {
   float: left;
@@ -1060,6 +1061,7 @@ a:link {
   margin-bottom: 20px;
   margin-left: 5px;
   display: flex;
+  cursor: pointer;
 }
 .hi_contant .hi_contant_left .hi_house .house_house > li .leftimg {
   float: left;
@@ -1232,10 +1234,21 @@ a:link {
 .house_plusmin > li {
   margin: 0;
   padding: 8px;
+  cursor: pointer;
 }
 @media screen and (min-width: 750px) {
   .house_plusmin > li {
     min-height: 370px!important;
+  }
+}
+@media screen and (max-width: 530px) {
+  .house_plusmin > li {
+    min-height: 280px!important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .house_plusmin > li {
+    min-height: 240px!important;
   }
 }
 .house_plusmin > li > img {
@@ -1277,6 +1290,7 @@ a:link {
   color: #a61d55;
 }
 .house_housemin > li {
+  cursor: pointer;
   padding-top: 10px;
 }
 @media screen and (min-width: 750px) {
@@ -1356,6 +1370,7 @@ a:link {
   font-weight: 800;
 }
 .hi_housebtm_ul > li {
+  cursor: pointer;
   padding-top: 10px;
 }
 @media screen and (min-width: 750px) {
