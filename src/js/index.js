@@ -365,7 +365,56 @@ $(function() {
 
 
 
+    $(function() {
+        $('.input-text').on("keyup", function() {
+            $('.his-list,.his-ser').css({
+                display: "none"
+            })
+            var j = 0;
+            $.ajax({
+                type: "get",
+                url: "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + $('.input-text').val() + "&cb=fn",
+                // data: "data",
+                dataType: "jsonp",
+                jsonpCallback: "fn",
+                success: function(response) {
+                    for (var i in response.s) {
+                        if (j < 5) {
+                            $('.his-jsonp').append('<li>' + response.s[i] + '</li>');
+                            j++;
+                        }
+                    }
+                }
+
+            });
+            console.log(1)
+            $('.his-jsonp').empty();
+            if (!$('.input-text').val()) {
+                $('.his-list,.his-ser').css({
+                    display: "block"
+                })
+            }
+        })
+
+    })
 
 
+
+    // <
+    // script >
+    //     function fn(data) {
+    //         console.log(data);
+    //     }
+    // window.onload = function() {
+    //         var input = document.getElementById('userinput');
+    //         input.onkeyup = function() {
+    //             var url = "https://sug.so.360.cn/suggest?callback=fn&encodein=utf-8&encodeout=utf-8&format=json&fields=word&word=" + this.value;
+    //             var script = document.createElement('script');
+    //             script.src = url;
+    //             document.body.appendChild(script);
+    //             document.body.removeChild(script);
+    //         }
+    //     } <
+    //     /script>
 
 })
