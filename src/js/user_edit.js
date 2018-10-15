@@ -180,7 +180,14 @@ $(function() {
         })
     };
     //判断是否已经保存头像到本地；
-    if (!sessionStorage.pic) {
+    if (sessionStorage.pic) {
+        var obj = JSON.parse(sessionStorage.pic);
+        for (var i in obj) {
+            var item = $('<div class="item"></div>')
+            item.html('<img src="' + obj[i].path + '" alt="pic">');
+            $('#pic_list').append(item);
+        }
+    } else {
         downloadPic();
         var obj = JSON.parse(sessionStorage.pic);
         console.log(obj);
@@ -189,13 +196,6 @@ $(function() {
             item.html('<img src="' + obj[i].path + '" alt="pic">');
             $('#pic_list').append(item);
             location.reload();
-        }
-    } else {
-        var obj = JSON.parse(sessionStorage.pic);
-        for (var i in obj) {
-            var item = $('<div class="item"></div>')
-            item.html('<img src="' + obj[i].path + '" alt="pic">');
-            $('#pic_list').append(item);
         }
     }
 
