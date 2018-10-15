@@ -26,7 +26,7 @@ $(function() {
         //使用事件委托；
 
         //取消<a>的默认点击跳转事件；
-        event.preventDefault();
+        e.preventDefault();
         var index = $(e.target).index('.main .tabs_content .tabs li a');
         $(e.target).parent().siblings('li').removeClass('active');
         $(e.target).parent().addClass('active');
