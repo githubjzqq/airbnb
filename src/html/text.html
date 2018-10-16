@@ -6,23 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
 </head>
 
 <body>
+    <div class="aby_all">
+        <p>a$￥￥￥￥￥￥11a</p>
+        <button>a</button>
+    </div>
     <script>
-        class A {
-            constructor(name, age) {
-                this.name = name
-                this.age = age
-            }
-            son() {
-                return this.name + this.age
-            }
+        // var iconmx = $('._currency').text().trim()[$('._currency').text().trim().length - 2];
+        // var reg=/^$/
+        // console.log(iconmx)
+        $(function() {
+            $('button').on('click', function() {
+                // console.log(1)
+                // var iconm = $(this).text()[$(this).text().length - 2];
+                // sessionStorage.setItem('icon', iconm)
+                // var x = sessionStorage.getItem('icon')
+                // console.log($('p').text())
 
-        }
-        var a = new A("zhangs", "18")
-        console.log(a.son())
+                // console.log($('p').text().indexOf("￥"))
+                // location.reload(); 
+            })
+        })
     </script>
+
+    <!-- <script>
+        function change(o) {
+            o.url = "http://www.csser.com/";
+            var o = new Object();
+            o.url = "hjdsgfhgfhsa";
+            console.log(o.url);
+        }
+        var css = new Object();
+        change(css);
+        console.log(css.url);
+    </script> -->
 </body>
 
 </html>

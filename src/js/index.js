@@ -89,10 +89,16 @@ $(function() {
                         if (Number(arr1[i].countpj) > 12) {
                             if (k < countimg) {
                                 // console.log(arr1[i])
+
                                 var tempLi = $("<li class='col-lg-4 col-md-4 col-sm-6'><img src=." + arr[i].houseimg + "></li>");
                                 $('.tabs_house').append(tempLi);
-                                var housePrice = $("<p class='house_price'>每晚￥" + arr[i].houseprice + '<i class="glyphicon glyphicon-flash"></i>' + '<span class="tabs_pj"><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b>' + arr1[i].countpj + "条评价</span>" + "</p>");
-                                tempLi.append(housePrice)
+                                if (sessionStorage.getItem('iconmx') == "$") {
+                                    var housePrice = $("<p class='house_price'>每晚￥" + eval(arr[i].houseprice) + '<i class="glyphicon glyphicon-flash"></i>' + '<span class="tabs_pj"><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b>' + arr1[i].countpj + "条评价</span>" + "</p>");
+                                    tempLi.append(housePrice)
+                                } else {
+                                    var housePrice = $("<p class='house_price'>每晚￥" + arr[i].houseprice + '<i class="glyphicon glyphicon-flash"></i>' + '<span class="tabs_pj"><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b><b class="glyphicon glyphicon-star"></b>' + arr1[i].countpj + "条评价</span>" + "</p>");
+                                    tempLi.append(housePrice);
+                                }
                                 var houseName = $("<p class='house_name'>" + arr[i].housetext + "</p>");
                                 tempLi.append(houseName)
                                 var houseSize = $("<p class='house_size'>" + arr[i].housetype + "·" + arr[i].housesize + "</p>");
@@ -109,6 +115,50 @@ $(function() {
 
             }
             fn();
+
+
+
+            var iconmx = $('._currency').text().trim()[$('._currency').text().trim().length - 2];
+            sessionStorage.setItem('iconmx', iconmx)
+                // var reg=/^$/
+            console.log(iconmx)
+            $('.currency .list').on('click', function() {
+
+                var iconm = $(this).text()[$(this).text().length - 2];
+                for (var i = 0; i < 6; i++) {
+                    var x = $($('.aby_travel>ul>li>a>p:nth-child(3)')[i]).text().toString().replace(iconmx, iconm);
+                    // console.log(x)
+                    $($('.aby_travel>ul>li>a>p:nth-child(3)')[i]).html(x)
+                }
+                for (var i = 0; i < 8; i++) {
+                    var x = $($('.aby_experience>ul>li>a>p:nth-child(4)')[i]).text().toString().replace(iconmx, iconm);
+                    // console.log(x)
+                    $($('.aby_experience>ul>li>a>p:nth-child(4)')[i]).html(x)
+                }
+                for (var i = 0; i < 6; i++) {
+                    var x = $($('.house_price')[i]).html().toString().replace(iconmx, iconm);
+                    // console.log(x)
+                    $($('.house_price')[i]).html(x)
+                }
+                iconmx = $('._currency').text().trim()[$('._currency').text().trim().length - 2];
+                sessionStorage.setItem('iconmx', iconmx)
+
+                // } while ($('.tabs_house').html().indexOf(iconmx) != -1)
+                // location.reload();
+                // fn();
+                // location.reload();
+            })
+
+
+
+
+
+
+
+
+
+
+
 
             ///tabs 标题点击变色
             console.log($('.tabs_title'))
@@ -381,7 +431,9 @@ $(function() {
                     for (var i in response.s) {
                         if (j < 5) {
                             $('.his-jsonp').append('<li>' + response.s[i] + '</li>');
+
                             j++;
+
                         }
                     }
                 }
@@ -394,6 +446,10 @@ $(function() {
                     display: "block"
                 })
             }
+        })
+        $('.his-jsonp').on('click', "li", function(e) {
+            var valname = $(e.target).html();
+            $('.input-text')[0].value = valname
         })
 
     })
@@ -416,5 +472,10 @@ $(function() {
     //         }
     //     } <
     //     /script>
+
+
+
+    // 选择国旗将页面中的人民币换成$
+    // console.log($('.currency .list'))
 
 })
