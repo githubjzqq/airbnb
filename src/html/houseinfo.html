@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/public-reset.css">
+    <link rel="stylesheet" href="../styles/public.css">
     <link rel="stylesheet" href="../styles/houseinfo.css">
     <link rel="stylesheet" href="../fonts/public/icon_font/iconfont.css">
     <link rel="stylesheet" href="../../node_modules/jquery-ui-1.12.1.custom/jquery-ui.css">
@@ -26,7 +27,7 @@
 
 <body>
     <div class="hi_top container-fluid navbar-fixed-top">
-        <div class="header ">
+        <div class="header">
             <div class="logo" id="logo"><i class="iconfont icon-aibiying"></i>
                 <div class="sub-btn"><svg class="img" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg></div>
             </div>
@@ -73,11 +74,11 @@
                 </li>
                 <li><a>手机端</a></li>
                 <li class="sub app">
-                    <div class="left">
+                    <div class='left'>
                         <img src="../images/public/qr1.png" alt="">
                         <p>下载手机客户端</p>
                     </div>
-                    <div class="right">
+                    <div class='right'>
                         <img src="../images/public/qr2.png" alt="">
                         <p>关注微信服务号</p>
                     </div>
@@ -94,7 +95,7 @@
                         <a href="">开展体验</a>
                     </div>
                 </li>
-                <li><a href="">故事</a></li>
+                <li><a href="../html/story.html">故事</a></li>
                 <li class="sub"></li>
                 <li><a>心愿单</a></li>
                 <li class="sub like">
@@ -129,19 +130,19 @@
                 </li>
                 <li><a>帮助</a></li>
                 <li class="sub help"></li>
-                <li data-toggle="modal" data-target="#myModal">
-                    <!-- <img src="../images/public/mario.JPG" alt="" class="userpic"> -->
-                    <a>登陆/注册</a>
+                <li data-toggle="modal" data-target="#myModal" class='login'>
+                    <a style="display:none" class="userpic"><img src="../images/public/mario.JPG" alt="" class="userpic"></a>
+                    <a class="index">登陆/注册</a>
                 </li>
-                <li class="sub user-msg" style="visibility: hidden;">
+                <li class="sub user-msg" style="display: none;">
                     <ul>
-                        <li><a href="">编辑个人资料</a></li>
+                        <li><a href="./user_edit.html">编辑个人资料</a></li>
                         <li><a href="">旅行基金</a></li>
                         <li><a href="">账号设置</a></li>
-                        <li><a href="">我的指南</a></li>
+                        <li><a href="./guide.html">我的指南</a></li>
                         <li><a href="">礼品卡</a></li>
                         <li><a href="">商务爱彼迎</a></li>
-                        <li><a href="">推出</a></li>
+                        <li class="exit"><a href="">退出</a></li>
                     </ul>
                 </li>
             </ul>
@@ -154,7 +155,7 @@
                 <li><a href="">旅程<i class="iconfont icon-601"></i></a></li>
                 <li><a href="">消息<i class="iconfont icon-xinxi"></i></a></li>
                 <li><a href="">心愿单<i class="iconfont icon-aixin"></i></a></li>
-                <li><a href="">邀请好友<i class="iconfont icon-weibiaoti-1"></i></a></li>
+                <li><a href="./invite.html">邀请好友<i class="iconfont icon-weibiaoti-1"></i></a></li>
                 <li><a href="">故事</a></li>
                 <li class="hr">
                     <hr>
@@ -172,7 +173,6 @@
                 <li><a href="">退出</a></li>
             </ul>
         </div>
-
         <!-- 登陆注册模态框 -->
         <div class="mod">
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -210,8 +210,8 @@
                             <div class="box">
                                 <input type="password" class="pwd"><i class="iconfont icon-kejian"></i>
                             </div>
-                            <p class="tips length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
-                            <p class="tips word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                            <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
+                            <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
                         </div>
                         <div class="modal-body rule">
                             <div class="box"><input type="checkbox" class="check"></div>
@@ -264,8 +264,8 @@
                             <div class="box">
                                 <input type="password" class="pwd" placeholder="请输入密码"><i class="iconfont icon-kejian"></i>
                             </div>
-                            <p class="tips length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
-                            <p class="tips word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
+                            <p class="length"><i class="iconfont icon-cha"></i><span class="val">至少包含8个字符</span></p>
+                            <p class="word"><i class="iconfont icon-cha"></i><span class="val">包含数字符号和大小写字母</span></p>
                         </div>
                         <div class="modal-body rule">
                             <div class="box"><input type="checkbox" class="check"></div>

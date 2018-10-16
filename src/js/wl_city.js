@@ -2,7 +2,9 @@ $(function() {
     $.get('../php/wl_data.txt', function(data) {
         var data = JSON.parse(data);
         console.log(data);
-
+        var arr1 = localStorage.getItem("arr1")
+        arr1 = JSON.parse(arr1)
+        console.log(arr1)
         for (var j = 0; j < 4; j++) {
             var city_name = $('.city_name')[j].innerHTML.slice(0, 2);
             console.log(city_name);
@@ -19,7 +21,7 @@ $(function() {
                             tempLi.append(plus_name);
                             var plus_price = $("<p class='plus_price'>每晚￥ " + data[i].houseprice + "</p>");
                             tempLi.append(plus_price);
-                            var plus_starpj = $("<p class='plus_starpj'><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b>" + data[i].countpj + "</p>");
+                            var plus_starpj = $("<p class='plus_starpj'><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b><b class='glyphicon glyphicon-star'></b>" + arr1[i].countpj + "</p>");
                             tempLi.append(plus_starpj);
                             k++;
                         }
